@@ -1,0 +1,37 @@
+* {
+	padding:0;
+	margin:0;
+}
+.slider {
+	width:940px;
+	height:380px;
+	background:#fafafa;
+	position:relative;
+}
+.items {
+	display:none;
+}
+.pagination {
+	position:absolute;
+	left:16px; 
+	bottom:16px; 
+	width:62px; 
+	height:13px; 
+	z-index:99;
+}
+
+.pagination ul {margin:0px;}
+.pagination li {float:left; margin:0 2px 0 0px; }
+.pagination li a {display:block; background:url('../assets/images/pagination.png') right 0 no-repeat; width:13px; height:13px;}
+.pagination li.current a {
+	 background:url('../assets/images/pagination.png') 0 0 no-repeat;
+}
+.pagination li:hover a {
+	 background:url('../assets/images/pagination.png') 0 0 no-repeat;
+}
+.banner { width:940px; height:220px; position:absolute; left:0px; top:0px; padding-top:130px;}
+.banner p {font-size:40px; line-height:50px; color:#948d87; letter-spacing:-2px; margin-left:46px; text-transform:uppercase;}
+.banner p strong {font-size:36px; line-height:46px; display:inline-block; margin-top:4px; text-transform:none;}
+.banner p+p {margin-top:-10px; padding-left:34px;}
+.banner-right p { margin-left:515px !important; }
+.banner-right p+p { margin-left:550px !important; }

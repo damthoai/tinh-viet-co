@@ -1,0 +1,295 @@
+
+
+.partner{float:left;width:50%;height:70px;overflow:hidden;}
+.partner .partner-content{padding:5px;}
+.partner .partner-content .partner-items{height:50px;padding:0 5px;}
+
+
+/* paging */
+.paging{padding:5px 5px 0 0;}
+
+/* Popup */
+.popup_wrapper{height:100%;}
+
+/* <form container> */
+.form-container{}
+.form-container .frm-row{padding-bottom:5px;}
+.form-container .frm-label{float:left;display:block;width:200px;overflow:hidden;text-align:right;margin:0 5px 0 0;}
+.form-container .frm-input{}
+/* </form container> */
+
+/* <form login container> */
+.form-login-container{margin:50px auto;width:400px;}
+/* </form login container> */
+
+/* <error> */
+.form-error-container{margin:50px auto;width:550px;}
+
+/* <editor> */
+.form-editor-container{}
+
+/* <module> */
+.module{margin-bottom:10px;}
+.module .module-border{height:5px;overflow:hidden;font-size:1px;line-height:0;clear:both;}
+.module .module-header{padding:10px;min-height:0px;text-transform:uppercase;font-weight:bold;font-size:16px;}
+.module .module-content{padding:10px;min-height:0px;}
+.module .m-border{border-color:#9C9C9C;border-width:0 1px;border-style:solid;}
+.module .m-border-color{border-color:#9C9C9C;}
+.module .m-bg{background:#FFF;}
+.module div .b1, .module div .b2, .module div .b3, .module div .b4, .module div .b5{height:1px;overflow:hidden;font-size:1px;line-height:0;clear:both;}
+.module div .b1{height:0px;margin:0 5px;border-width:1px 0 0 0;}
+.module div .b2{margin:0 3px;border-width:0 2px;}
+.module div .b3{margin:0 2px;}
+.module div .b4{margin:0 1px;height:2px;}
+.module .bgcolor{background:#CCC;}
+/* </module> */
+
+.RadToolBar .rtbTemplate .RadInput{line-height:22px;display:-moz-inline-stack;display:inline-block;*display:inline;zoom:1;vertical-align:baseline;}
+
+.RadToolBar .RadComboBox,
+.RadMenu .RadComboBox,
+.RadMenu .skinLabel{vertical-align:middle;}
+.chucnang
+{
+    background-position: left top;
+    margin-top: 5px;
+    height: 24px;
+    border: 1px solid #688caf;
+    background-image: url('../assets/imgs/bg-chucnang.jpg');
+    background-repeat: repeat-x;
+    padding: 3px;
+}
+
+.save
+{
+    background-position: left top;
+    padding-left: 20px;
+    background-image: url('../assets/imgs/saveitem.gif');
+    background-repeat: no-repeat;
+    background-color:inherit;
+}
+.addNew
+{
+    background-position: left top;
+    padding-left: 20px;
+    background-image: url('../assets/imgs/21.png');
+    background-repeat: no-repeat;
+    background-color: inherit;
+}
+
+.edit
+{
+    background-position: left top;
+    padding-left: 20px;
+    background-image: url('../assets/imgs/edititem.gif');
+    background-repeat: no-repeat;
+    background-color: inherit;
+}
+.back
+{
+    background-position: left top;
+    padding-left: 20px;
+    background-image: url('../assets/imgs/goback.gif');
+    background-repeat: no-repeat;
+    background-color:inherit;
+    }
+    
+        
+    
+/* Customize*/
+.transp{behavior:url(/Lib/png.htc);}
+.label{display:block;float:left;}
+.left{text-align :left;}
+.right{text-align:right;}
+.center{text-align:center;}
+.fs16{font-size:16px;}
+.fs18{font-size:18px;}
+.fs20{font-size:20px;}
+.w0{width:0px;}
+.w15{width:15px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w65{width:65px;}
+.w70{width:70px;}
+.w80{width:80px;}
+.w90{width:90px;}
+.w100{width:100px;}
+.w135{width:135px;}
+.w150{width:150px;}
+.w160{width:160px;}
+.w200{width:200px;}
+.w220{width:220px;}
+.w240{width:240px;}
+.w250{width:250px;}
+.w270{width:270px;}
+.w290{width:290px;}
+.w300{width:300px;}
+.w340{width:340px;}
+.w350{width:350px;}
+.w370{width:370px;}
+.w400{width:400px;}
+.w430{width:430px;}
+.w450{width:450px;}
+.w500{width:500px;}
+.w650{width:650px;}
+.w750{width:750px;}
+.h29{height:29px;}
+.h0{height:0px;}
+.h50{height:50px;}
+.h100{height:100px;}
+.h150{height:150px;}
+.h200{height:200px;}
+.red{color:#ff0000;}
+.red1{color:#cc0000;}
+.green{color:#809F22;}
+.blue{color:Blue;}
+.blue1{color:#427AAB}
+.blue2{color:#CCE0F1}
+.blue3{color:#0162BB}
+.gray{color:#999;}
+.none{display:none;}
+.block{display:block;}
+.clear{clear:both;}
+.fleft{float:left;}
+.fright{float:right;}
+.fnone{float:none;}
+.bold{font-weight:bold;}
+.bold0{font-weight:normal;}
+.small{font-size:x-small;}
+.nowrap{white-space:nowrap;}
+.pd00{padding:0px;}
+.pd05{padding:5px;}
+.pd10{padding:10px;}
+.pr05{padding-right:5px;}
+.pb00{padding-bottom:0px;}
+.pb05{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pt05{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.b0{border:0;}
+.cpointer{cursor:pointer;}
+.mg00{margin:0;}
+.mg05{margin:0 5px;}
+.mr30{margin-right:30px;}
+.ml05{margin-left:5px;}
+.ohid{overflow:hidden;}
+
+
+.modal_window
+{
+	display: none; /* don't show it */
+	position: absolute; /* important so we can position it on center later */ /* styling bellow */
+	color: white;
+	line-height: normal;
+}
+
+/* style a specific modal window  */
+#modal_window
+{
+	min-width: 670px;
+	border: 10px solid #bbb;
+	background: #FFFFFF;
+	color: #333333;
+	display: none;
+	z-index: 999999;
+	position: absolute;
+/*border: 2px solid #935E2A;	*/
+/*--CSS3 Box Shadows--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+#modal_title
+{
+    /*--background: url('../images/menu_bg.gif') repeat-x;--*/
+	
+	background-position: left -4px;
+	font-size: 14pt;
+	color: #666666;
+	height: 25px;
+	padding-left: 10px;
+	font-weight: lighter;
+	cursor: move;
+}
+#modal_content
+{
+	padding:10px;
+}
+.activate_modal
+{
+	cursor: pointer;
+}
+.loadding-check
+{
+	background-image: url('../images/ajax-loader3.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	width:16px;
+	height:16px;
+	display:none;
+	vertical-align:middle;
+}
+.disable
+{
+	display:none;
+}
+.qlhd
+{
+	padding: 0 10px 0 10px;
+	width: 940px;
+}
+
+#modal_title img.close_button {
+    float: right;
+    margin: -45px -45px 0 0;
+}
+#modal_title img {
+    border: medium none;
+}
+
+.text
+{
+    width:200px;
+    height:20pt;
+}
+
+/*timepicker addon*/
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.gridview a
+{
+    color:Red;
+    font-weight:bold;
+    text-decoration:none;
+}
+.gridview a:hover
+{
+    text-decoration:underline;
+}
+.gridview
+{
+    margin-top:10px;
+	text-align: center;
+}
+.gridview .text
+{
+	width:100px
+}
+.box
+{
+    font-size:14px;
+    font-weight:bold;
+}
+ 
