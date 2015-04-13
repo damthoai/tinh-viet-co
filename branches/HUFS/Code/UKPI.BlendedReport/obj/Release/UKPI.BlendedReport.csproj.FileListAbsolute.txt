@@ -1,0 +1,68 @@
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\NPOI.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\EPPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\EPPlus.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\NPOI.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\EPPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\bin\Release\EPPlus.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
+D:\test\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\test\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+D:\test\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\test\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+D:\test\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+D:\test\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+D:\test\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+D:\test\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+D:\test\UKPI.BlendedReport\bin\Release\NPOI.dll
+D:\test\UKPI.BlendedReport\bin\Release\EPPlus.dll
+D:\test\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+D:\test\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+D:\test\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\test\UKPI.BlendedReport\bin\Release\EPPlus.xml
+D:\test\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+D:\test\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+D:\test\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\NPOI.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\EPPlus.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\EPPlus.xml
+D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
