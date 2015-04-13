@@ -1,0 +1,14 @@
+D:\test\UKPI.Core\bin\Debug\UKPI.Core.dll
+D:\test\UKPI.Core\bin\Debug\UKPI.Core.pdb
+D:\test\UKPI.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\test\UKPI.Core\bin\Debug\log4net.dll
+D:\test\UKPI.Core\obj\Debug\UKPI.Core.csprojResolveAssemblyReference.cache
+D:\test\UKPI.Core\obj\Debug\UKPI.Core.dll
+D:\test\UKPI.Core\obj\Debug\UKPI.Core.pdb
+D:\Disc D\HTCC\UKPI.Core\bin\Debug\UKPI.Core.dll
+D:\Disc D\HTCC\UKPI.Core\bin\Debug\UKPI.Core.pdb
+D:\Disc D\HTCC\UKPI.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disc D\HTCC\UKPI.Core\bin\Debug\log4net.dll
+D:\Disc D\HTCC\UKPI.Core\obj\Debug\UKPI.Core.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPI.Core\obj\Debug\UKPI.Core.dll
+D:\Disc D\HTCC\UKPI.Core\obj\Debug\UKPI.Core.pdb

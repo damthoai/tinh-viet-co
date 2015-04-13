@@ -1,0 +1,135 @@
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\NPOI.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+D:\test\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\test\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+D:\test\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\test\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+D:\test\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+D:\test\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\test\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\test\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+D:\test\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+D:\test\FPT.Componet.Excel\bin\Debug\NPOI.dll
+D:\test\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+D:\test\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+D:\test\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\test\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+D:\test\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\NPOI.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb

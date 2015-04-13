@@ -1,0 +1,20 @@
+D:\test\UKPI.ImportRegistration\bin\Debug\RegImportMapping.xml
+D:\test\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.dll
+D:\test\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.pdb
+D:\test\UKPI.ImportRegistration\bin\Debug\log4net.dll
+D:\test\UKPI.ImportRegistration\bin\Debug\UKPI.Core.dll
+D:\test\UKPI.ImportRegistration\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\test\UKPI.ImportRegistration\bin\Debug\UKPI.Core.pdb
+D:\test\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
+D:\test\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.dll
+D:\test\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.pdb
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\RegImportMapping.xml
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.dll
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.pdb
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\log4net.dll
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\UKPI.Core.dll
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Debug\UKPI.Core.pdb
+D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.dll
+D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.pdb
