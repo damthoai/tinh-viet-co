@@ -14,6 +14,7 @@ namespace UKPI.DataAccessObject
     {
         private static readonly ILog log = log4net.LogManager.GetLogger(typeof(ThongTinNhapKhoDao));
         private const string p_HUFS_GetMaxMaNhapKho = "p_HUFS_GetMaxMaNhapKho";
+        private const string p_HUFS_SearchXuatKho = "p_HUFS_SearchXuatKho";
         public string GetMaxMaNhapKho()
         {
 
@@ -63,6 +64,21 @@ namespace UKPI.DataAccessObject
             string newKey = "";
             newKey = KeyPrefix.MaNhapKho + paddingKey + keyNumber.ToString();
             return newKey;
+        }
+        public DataTable LoadThongTinXuatKho(string maThuoc)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@maThuoc", maThuoc);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_SearchXuatKho, Params);
+                return dtResult;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
         }
         public bool SaveThongTinNhapKho(ThongTinNhapKho thongTinNhapKho,List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail)
         {

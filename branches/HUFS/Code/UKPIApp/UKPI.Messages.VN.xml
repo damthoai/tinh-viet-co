@@ -1469,4 +1469,14 @@
     <Name>messages.frmKhamBenh.CheckTrungLapThuoc1</Name>
     <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
   </Messages>
+
+  <Messages>
+    <Name>messages.frmXuatKho.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmXuatKho.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
 </HUFS>

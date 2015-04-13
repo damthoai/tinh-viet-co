@@ -3413,4 +3413,15 @@
     <Value>Tổng thành tiền</Value>
   </Titles>
   <!-- End frmnhapkhothuoc-->
+
+  <!-- Start frmXuatKho-->
+  <Titles>
+    <Name>frmXuatKho.btnLuuIn</Name>
+    <Value>Lưu</Value>
+  </Titles>
+  <Titles>
+    <Name>frmXuatKho.btnExport</Name>
+    <Value>Export</Value>
+  </Titles>
+  <!-- End frmXuatKho-->
 </UKPI>

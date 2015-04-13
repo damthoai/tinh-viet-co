@@ -866,3 +866,4 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\obj\Debug\UKP
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\obj\Debug\UKPI.csproj.GenerateResource.Cache
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\obj\Debug\HHCC.exe.manifest
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\obj\Debug\HHCC.application
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\obj\Debug\UKPI.Presentation.frmXuatKho.resources
