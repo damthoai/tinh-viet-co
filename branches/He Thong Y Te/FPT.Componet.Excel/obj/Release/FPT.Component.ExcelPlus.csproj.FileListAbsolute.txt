@@ -1,0 +1,60 @@
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Library\EPPlus_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Library\NPOI_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll.config
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\EPPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Interop.Excel.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\NPOI.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\Ionic.Zip.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\bin\Release\EPPlus.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Library\EPPlus_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Library\Ionic_Utils_Zip_license.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Library\NPOI_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll.config
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\EPPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Interop.Excel.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\NPOI.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\Ionic.Zip.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\bin\Release\EPPlus.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb
+D:\test\FPT.Componet.Excel\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\test\FPT.Componet.Excel\bin\Release\Library\EPPlus_License.txt
+D:\test\FPT.Componet.Excel\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\test\FPT.Componet.Excel\bin\Release\Library\NPOI_License.txt
+D:\test\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll.config
+D:\test\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll
+D:\test\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\test\FPT.Componet.Excel\bin\Release\EPPlus.dll
+D:\test\FPT.Componet.Excel\bin\Release\Interop.Excel.dll
+D:\test\FPT.Componet.Excel\bin\Release\NPOI.dll
+D:\test\FPT.Componet.Excel\bin\Release\Ionic.Zip.dll
+D:\test\FPT.Componet.Excel\bin\Release\EPPlus.xml
+D:\test\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\test\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
+D:\test\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Library\EPPlus_License.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Library\NPOI_License.txt
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll.config
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\EPPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Interop.Excel.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\NPOI.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\Ionic.Zip.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\EPPlus.xml
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb

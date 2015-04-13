@@ -1,0 +1,21 @@
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.AppSetting.resources
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csproj.GenerateResource.Cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csprojResolveAssemblyReference.cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.AppSetting.resources
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csproj.GenerateResource.Cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.pdb
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.dll
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.pdb
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.AppSetting.resources
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csproj.GenerateResource.Cache
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.dll
+D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.pdb

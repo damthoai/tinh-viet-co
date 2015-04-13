@@ -1,0 +1,347 @@
+D:\Disc D\HTCC\UKPIApp\bin\Debug\HHCC.exe.config
+D:\Disc D\HTCC\UKPIApp\obj\Debug\HHCC.exe
+D:\Disc D\HTCC\UKPIApp\obj\Debug\HHCC.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Log4Net.config
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\applications.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\book.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\btnClose.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\btnSearch.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\btnSelect.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\calendar.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Cancel_2.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\cancel_4.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\cascade.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\chart.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\chart2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\check.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Clipboard.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\compstui-3.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\configure.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\contact_list.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Delete.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\delivery.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\edit.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\English.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\exec.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\exit.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\export.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\export2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Eye.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\files_add.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\files_edit.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\find.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\find2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\find3.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Folder.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\folder_downloads.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\help.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\home.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\import.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\lock.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\logout.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\maintainuser.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\maximized.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\min.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\money.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\money2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\move.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\new.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\paint.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\save_as3.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\stock.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\stock2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\style.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\swap.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\swap2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\up.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\user.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\user2.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\users.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\user_add.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\user_edit.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\Vietnam.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Icons\VMIIcon.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\arrival1024.jpg
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\dreamsky12.jpg
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\gfx_42.jpg
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\gfx_422 Medium.jpg
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\mac_button_blue.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\mac_button_cyan.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\mac_button_maveric.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\mac_button_orange.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\mac_button_silver.png
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\Thienthan.jpg
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Images\VMIIcon.ico
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Library\EPPlus_License.txt
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Library\NPOI_License.txt
+D:\Disc D\HTCC\UKPIApp\bin\Debug\AuditResultDetail.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\AuditResultInformation.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\BlendConfig.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\RegImportMapping.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\KPITemplate.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Messages.EN.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Messages.VN.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Titles.EN.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Titles.VN.xml
+D:\Disc D\HTCC\UKPIApp\bin\Debug\HHCC.exe.manifest
+D:\Disc D\HTCC\UKPIApp\bin\Debug\HHCC.application
+D:\Disc D\HTCC\UKPIApp\bin\Debug\HHCC.exe
+D:\Disc D\HTCC\UKPIApp\bin\Debug\HHCC.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\dotnetskin.skincontrols.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\ExportCSVDLL.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Interop.Excel.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\log4net.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\MT.WindowsUI.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\purecomponents.nicepanel.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.AuditResult.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.BlendedReport.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Core.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.ImportRegistration.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UnicodeConvertLibs.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\EPPlus.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\NPOI.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\Ionic.Zip.dll
+D:\Disc D\HTCC\UKPIApp\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.AuditResult.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.BlendedReport.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.Core.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\UKPI.ImportRegistration.pdb
+D:\Disc D\HTCC\UKPIApp\bin\Debug\EPPlus.xml
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.DataGridComboBoxColumn.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.DataGridDisableCellEventArgs.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.DataGridRadioColumn.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.DataGridSetDataSourceCellEventArgs.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.DataGridTimePickerColumn.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.MDMenuItem.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Controls.MDToolBarButton.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Languages.MessageEN.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Languages.MessageVN.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Languages.TitleEN.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Languages.TitleVN.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL0ForL1.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL1ForL2.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL2ForL3.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL3ForL4.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.UpdateStaffInfo.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ChooseStaffToAddManual.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReviewTimesheets.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.RejectedTimesheet.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.AuditHistoryFrm.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmAutPolicy.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmChangeCustCode.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmChangePWD.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmAddStaffUser.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmAddUser.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmLogin.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmMaintainUsers.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmParameter.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmUserRole.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.cpoTodoList.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateHoliday.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeaveMaternity.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeaveAccident.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeavePlan.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateTimesheetManual.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageShiftForTeam.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmNVQL_Users.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageStaffs.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmArchiveDataFromProwatch.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmMapUserLevel.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmUpdateStaffCc.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmUpdateStaff.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageTeam.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageStaffInGroup.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateTimesheet.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL0.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL4.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL3.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL2.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL1.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmAbout.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmReportAuditing.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.frmMain.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Presentation.frmHistoryTracking.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Properties.Resources.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.Utils.FormattableTextBoxColumn.resources
+D:\Disc D\HTCC\UKPIApp\obj\Debug\UKPI.csproj.GenerateResource.Cache
+D:\Disc D\HTCC\UKPIApp\obj\Debug\HHCC.exe.manifest
+D:\Disc D\HTCC\UKPIApp\obj\Debug\HHCC.application
+D:\test\UKPIApp\bin\Debug\HHCC.exe.config
+D:\test\UKPIApp\obj\Debug\HHCC.exe
+D:\test\UKPIApp\obj\Debug\HHCC.pdb
+D:\test\UKPIApp\bin\Debug\Log4Net.config
+D:\test\UKPIApp\bin\Debug\Icons\applications.ico
+D:\test\UKPIApp\bin\Debug\Icons\book.ico
+D:\test\UKPIApp\bin\Debug\Icons\btnClose.png
+D:\test\UKPIApp\bin\Debug\Icons\btnSearch.png
+D:\test\UKPIApp\bin\Debug\Icons\btnSelect.png
+D:\test\UKPIApp\bin\Debug\Icons\calendar.ico
+D:\test\UKPIApp\bin\Debug\Icons\Cancel_2.png
+D:\test\UKPIApp\bin\Debug\Icons\cancel_4.png
+D:\test\UKPIApp\bin\Debug\Icons\cascade.ico
+D:\test\UKPIApp\bin\Debug\Icons\chart.ico
+D:\test\UKPIApp\bin\Debug\Icons\chart2.ico
+D:\test\UKPIApp\bin\Debug\Icons\check.ico
+D:\test\UKPIApp\bin\Debug\Icons\Clipboard.ico
+D:\test\UKPIApp\bin\Debug\Icons\compstui-3.ico
+D:\test\UKPIApp\bin\Debug\Icons\configure.ico
+D:\test\UKPIApp\bin\Debug\Icons\contact_list.ico
+D:\test\UKPIApp\bin\Debug\Icons\Delete.ico
+D:\test\UKPIApp\bin\Debug\Icons\delivery.ico
+D:\test\UKPIApp\bin\Debug\Icons\edit.ico
+D:\test\UKPIApp\bin\Debug\Icons\English.ico
+D:\test\UKPIApp\bin\Debug\Icons\exec.ico
+D:\test\UKPIApp\bin\Debug\Icons\exit.ico
+D:\test\UKPIApp\bin\Debug\Icons\export.ico
+D:\test\UKPIApp\bin\Debug\Icons\export2.ico
+D:\test\UKPIApp\bin\Debug\Icons\Eye.ico
+D:\test\UKPIApp\bin\Debug\Icons\files_add.ico
+D:\test\UKPIApp\bin\Debug\Icons\files_edit.ico
+D:\test\UKPIApp\bin\Debug\Icons\find.ico
+D:\test\UKPIApp\bin\Debug\Icons\find2.ico
+D:\test\UKPIApp\bin\Debug\Icons\find3.ico
+D:\test\UKPIApp\bin\Debug\Icons\Folder.ico
+D:\test\UKPIApp\bin\Debug\Icons\folder_downloads.ico
+D:\test\UKPIApp\bin\Debug\Icons\help.ico
+D:\test\UKPIApp\bin\Debug\Icons\home.ico
+D:\test\UKPIApp\bin\Debug\Icons\import.ico
+D:\test\UKPIApp\bin\Debug\Icons\lock.ico
+D:\test\UKPIApp\bin\Debug\Icons\logout.ico
+D:\test\UKPIApp\bin\Debug\Icons\maintainuser.ico
+D:\test\UKPIApp\bin\Debug\Icons\maximized.ico
+D:\test\UKPIApp\bin\Debug\Icons\min.ico
+D:\test\UKPIApp\bin\Debug\Icons\money.ico
+D:\test\UKPIApp\bin\Debug\Icons\money2.ico
+D:\test\UKPIApp\bin\Debug\Icons\move.ico
+D:\test\UKPIApp\bin\Debug\Icons\new.ico
+D:\test\UKPIApp\bin\Debug\Icons\paint.ico
+D:\test\UKPIApp\bin\Debug\Icons\save_as3.ico
+D:\test\UKPIApp\bin\Debug\Icons\stock.ico
+D:\test\UKPIApp\bin\Debug\Icons\stock2.ico
+D:\test\UKPIApp\bin\Debug\Icons\style.ico
+D:\test\UKPIApp\bin\Debug\Icons\swap.ico
+D:\test\UKPIApp\bin\Debug\Icons\swap2.ico
+D:\test\UKPIApp\bin\Debug\Icons\up.ico
+D:\test\UKPIApp\bin\Debug\Icons\user.ico
+D:\test\UKPIApp\bin\Debug\Icons\user2.ico
+D:\test\UKPIApp\bin\Debug\Icons\users.ico
+D:\test\UKPIApp\bin\Debug\Icons\user_add.ico
+D:\test\UKPIApp\bin\Debug\Icons\user_edit.ico
+D:\test\UKPIApp\bin\Debug\Icons\Vietnam.ico
+D:\test\UKPIApp\bin\Debug\Icons\VMIIcon.ico
+D:\test\UKPIApp\bin\Debug\Images\arrival1024.jpg
+D:\test\UKPIApp\bin\Debug\Images\dreamsky12.jpg
+D:\test\UKPIApp\bin\Debug\Images\gfx_42.jpg
+D:\test\UKPIApp\bin\Debug\Images\gfx_422 Medium.jpg
+D:\test\UKPIApp\bin\Debug\Images\mac_button_blue.png
+D:\test\UKPIApp\bin\Debug\Images\mac_button_cyan.png
+D:\test\UKPIApp\bin\Debug\Images\mac_button_maveric.png
+D:\test\UKPIApp\bin\Debug\Images\mac_button_orange.png
+D:\test\UKPIApp\bin\Debug\Images\mac_button_silver.png
+D:\test\UKPIApp\bin\Debug\Images\Thienthan.jpg
+D:\test\UKPIApp\bin\Debug\Images\VMIIcon.ico
+D:\test\UKPIApp\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\test\UKPIApp\bin\Debug\Library\EPPlus_License.txt
+D:\test\UKPIApp\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\test\UKPIApp\bin\Debug\Library\NPOI_License.txt
+D:\test\UKPIApp\bin\Debug\AuditResultDetail.xml
+D:\test\UKPIApp\bin\Debug\AuditResultInformation.xml
+D:\test\UKPIApp\bin\Debug\BlendConfig.xml
+D:\test\UKPIApp\bin\Debug\RegImportMapping.xml
+D:\test\UKPIApp\bin\Debug\KPITemplate.xml
+D:\test\UKPIApp\bin\Debug\UKPI.Messages.EN.xml
+D:\test\UKPIApp\bin\Debug\UKPI.Messages.VN.xml
+D:\test\UKPIApp\bin\Debug\UKPI.Titles.EN.xml
+D:\test\UKPIApp\bin\Debug\UKPI.Titles.VN.xml
+D:\test\UKPIApp\bin\Debug\HHCC.exe.manifest
+D:\test\UKPIApp\bin\Debug\HHCC.application
+D:\test\UKPIApp\bin\Debug\HHCC.exe
+D:\test\UKPIApp\bin\Debug\HHCC.pdb
+D:\test\UKPIApp\bin\Debug\dotnetskin.skincontrols.dll
+D:\test\UKPIApp\bin\Debug\ExportCSVDLL.dll
+D:\test\UKPIApp\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\test\UKPIApp\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\test\UKPIApp\bin\Debug\Interop.Excel.dll
+D:\test\UKPIApp\bin\Debug\log4net.dll
+D:\test\UKPIApp\bin\Debug\MT.WindowsUI.dll
+D:\test\UKPIApp\bin\Debug\purecomponents.nicepanel.dll
+D:\test\UKPIApp\bin\Debug\UKPI.AuditResult.dll
+D:\test\UKPIApp\bin\Debug\UKPI.BlendedReport.dll
+D:\test\UKPIApp\bin\Debug\UKPI.Core.dll
+D:\test\UKPIApp\bin\Debug\UKPI.ImportRegistration.dll
+D:\test\UKPIApp\bin\Debug\UnicodeConvertLibs.dll
+D:\test\UKPIApp\bin\Debug\EPPlus.dll
+D:\test\UKPIApp\bin\Debug\NPOI.dll
+D:\test\UKPIApp\bin\Debug\Ionic.Zip.dll
+D:\test\UKPIApp\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\test\UKPIApp\bin\Debug\UKPI.AuditResult.pdb
+D:\test\UKPIApp\bin\Debug\UKPI.BlendedReport.pdb
+D:\test\UKPIApp\bin\Debug\UKPI.Core.pdb
+D:\test\UKPIApp\bin\Debug\UKPI.ImportRegistration.pdb
+D:\test\UKPIApp\bin\Debug\EPPlus.xml
+D:\test\UKPIApp\obj\Debug\UKPI.csprojResolveAssemblyReference.cache
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.DataGridComboBoxColumn.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.DataGridDisableCellEventArgs.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.DataGridRadioColumn.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.DataGridSetDataSourceCellEventArgs.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.DataGridTimePickerColumn.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.MDMenuItem.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Controls.MDToolBarButton.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Languages.MessageEN.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Languages.MessageVN.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Languages.TitleEN.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Languages.TitleVN.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL0ForL1.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL1ForL2.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL2ForL3.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.AddL3ForL4.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.UpdateStaffInfo.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ChooseStaffToAddManual.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReviewTimesheets.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.RejectedTimesheet.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.AuditHistoryFrm.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmAutPolicy.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmChangeCustCode.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmChangePWD.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmAddStaffUser.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmAddUser.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmLogin.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmMaintainUsers.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmParameter.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmUserRole.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.cpoTodoList.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateHoliday.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeaveMaternity.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeaveAccident.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateLeavePlan.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateTimesheetManual.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageShiftForTeam.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmNVQL_Users.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageStaffs.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmArchiveDataFromProwatch.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmMapUserLevel.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmUpdateStaffCc.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmUpdateStaff.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageTeam.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmManageStaffInGroup.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmCreateTimesheet.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL0.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL4.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL3.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL2.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.FrmApproveTimesheetL1.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmAbout.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmReportAuditing.resources
+D:\test\UKPIApp\obj\Debug\UKPI.frmMain.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Presentation.frmHistoryTracking.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Properties.Resources.resources
+D:\test\UKPIApp\obj\Debug\UKPI.Utils.FormattableTextBoxColumn.resources
+D:\test\UKPIApp\obj\Debug\UKPI.csproj.GenerateResource.Cache
+D:\test\UKPIApp\obj\Debug\HHCC.exe.manifest
+D:\test\UKPIApp\obj\Debug\HHCC.application
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\bin\Debug\HHCC.exe.config
