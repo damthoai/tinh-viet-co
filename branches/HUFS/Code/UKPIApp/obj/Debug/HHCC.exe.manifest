@@ -100,14 +100,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="5660672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="5664768">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZRAZHlUU2XvWpkJk1P7Fwum6T5E=</dsig:DigestValue>
+        <dsig:DigestValue>hrSWTKGs6DZrxz+I91telqnx99E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -939,40 +939,40 @@
       <dsig:DigestValue>kK6zh3bJcqjte/RwMcd8ZMcKqxg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.EN.xml" size="64829" writeableType="applicationData">
+  <file name="UKPI.Messages.EN.xml" size="66529" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9tsr9dMRlv8ZQ7mIuMImfx7sZlc=</dsig:DigestValue>
+      <dsig:DigestValue>UT/eTULCZ7H255d99yEIKish9Mg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.VN.xml" size="47965" writeableType="applicationData">
+  <file name="UKPI.Messages.VN.xml" size="49661" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>POQ8G2SIZYlnM6mcJhdaLZSHS44=</dsig:DigestValue>
+      <dsig:DigestValue>xAGGPL0sv81W4jF1HZnS8OzAkUM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="92753" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="92757" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ECcSERKq/6y1xxT6/Ai9c5ln+Ig=</dsig:DigestValue>
+      <dsig:DigestValue>kj3OitYuZzndXaqGV3x5KGrvAtQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.VN.xml" size="90999" writeableType="applicationData">
+  <file name="UKPI.Titles.VN.xml" size="91003" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>an67Elzt6kUQ7rRYY7UHXGBquSQ=</dsig:DigestValue>
+      <dsig:DigestValue>1bHsK9fohUWGCMmOqQIsudFSPaU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Unilever.jpg" size="6652">

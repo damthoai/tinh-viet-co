@@ -31,6 +31,7 @@ namespace UKPI.Presentation
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
         private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
         QuyetDinhNghiPhep quyetDinhNghiPhep ;
+        private Dictionary<int, string> danhSachThuoc = new Dictionary<int, string>();
         readonly System.Data.DataTable _dt = null;
         ComboBox cbm;
         DataGridViewCell currentCell;
@@ -165,6 +166,7 @@ namespace UKPI.Presentation
 
             DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
             tenThuocColumn.HeaderText = "Tên thuốc";
+            tenThuocColumn.ReadOnly = true;
             tenThuocColumn.Width = 130;
             grdToaThuoc.Columns.Add(tenThuocColumn);
 
@@ -182,16 +184,19 @@ namespace UKPI.Presentation
             DataGridViewCheckBoxColumn baoHiemColumn = new DataGridViewCheckBoxColumn();
             baoHiemColumn.Width = 120;
             baoHiemColumn.HeaderText = "Thuốc BH";
+            baoHiemColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(baoHiemColumn);
 
             DataGridViewTextBoxColumn donViTinhColumn = new DataGridViewTextBoxColumn();
             donViTinhColumn.Width = 130;
             donViTinhColumn.HeaderText = "Đơn vị tính";
+            donViTinhColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(donViTinhColumn);
 
             DataGridViewTextBoxColumn hamLuongColumn = new DataGridViewTextBoxColumn();
             hamLuongColumn.Width = 130;
             hamLuongColumn.HeaderText = "Hàm lượng";
+            hamLuongColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(hamLuongColumn);
 
             DataGridViewTextBoxColumn soLuongColumn = new DataGridViewTextBoxColumn();
@@ -202,6 +207,7 @@ namespace UKPI.Presentation
             DataGridViewTextBoxColumn giaColumn = new DataGridViewTextBoxColumn();
             giaColumn.Width = 130;
             giaColumn.HeaderText = "Giá";
+            giaColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaColumn);
 
             DataGridViewComboBoxColumn cachUongColumn = new DataGridViewComboBoxColumn();
@@ -215,6 +221,7 @@ namespace UKPI.Presentation
             DataGridViewTextBoxColumn thanhTienColumn = new DataGridViewTextBoxColumn();
             thanhTienColumn.Width = 130;
             thanhTienColumn.HeaderText = "Thành tiến";
+            thanhTienColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(thanhTienColumn);
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
             grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
@@ -1218,6 +1225,20 @@ namespace UKPI.Presentation
                     if (currentCell.ColumnIndex == 2)
                     {
                    //     MessageBox.Show(ttt.MedicineName);
+                        if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
+                        {
+                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                        }
+                        else if (danhSachThuoc.ContainsKey(currentCell.RowIndex))
+                        {
+                            danhSachThuoc.Remove(currentCell.RowIndex);
+                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                        }
+                        else
+                        {
+                            MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
                         this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
                         this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
                         this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.DonViTinh;

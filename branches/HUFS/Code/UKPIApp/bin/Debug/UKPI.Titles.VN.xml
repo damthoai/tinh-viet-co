@@ -3390,11 +3390,11 @@
   </Titles>
     <Titles>
     <Name>frmnhapkhothuoc.lblDonViCungCap</Name>
-    <Value>Đơn vị cung cấp</Value>
+    <Value>Đơn vị cung cấp *</Value>
   </Titles>
    <Titles>
     <Name>frmnhapkhothuoc.lblMaDonViCungCap</Name>
-    <Value>Mã đơn vị cung cấp</Value>
+    <Value>Mã đơn vị cung cấp *</Value>
   </Titles>
   <Titles>
     <Name>frmnhapkhothuoc.btnXoaThuoc</Name>

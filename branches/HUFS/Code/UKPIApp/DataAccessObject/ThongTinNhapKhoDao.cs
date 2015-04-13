@@ -61,7 +61,7 @@ namespace UKPI.DataAccessObject
             }
 
             string newKey = "";
-            newKey = KeyPrefix.MaKhamBenh + paddingKey + keyNumber.ToString();
+            newKey = KeyPrefix.MaNhapKho + paddingKey + keyNumber.ToString();
             return newKey;
         }
         public bool SaveThongTinNhapKho(ThongTinNhapKho thongTinNhapKho,List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail)
