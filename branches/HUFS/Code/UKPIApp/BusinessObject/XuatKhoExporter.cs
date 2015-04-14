@@ -156,7 +156,7 @@ namespace UKPI.BusinessObject
                 drDataTemp[XuatKhoExportColumns.SoLuong] = dr[XuatKhoExportColumns.SoLuong];
                 drDataTemp[XuatKhoExportColumns.XuatKho] = dr[XuatKhoExportColumns.XuatKho];
                 drDataTemp[XuatKhoExportColumns.MaLoThuoc] = dr[XuatKhoExportColumns.MaLoThuoc];
-                drDataTemp[XuatKhoExportColumns.MaLoThuoc] = dr[XuatKhoExportColumns.MaLoThuoc];
+                drDataTemp[XuatKhoExportColumns.HanSuDung] = dr[XuatKhoExportColumns.HanSuDung];
                 drDataTemp[XuatKhoExportColumns.PhongKhamKho] = dr[XuatKhoExportColumns.PhongKhamKho];
                 drDataTemp[XuatKhoExportColumns.MaKhamBenh] = dr[XuatKhoExportColumns.MaKhamBenh];
                 drDataTemp[XuatKhoExportColumns.Status] = dr[XuatKhoExportColumns.Status];

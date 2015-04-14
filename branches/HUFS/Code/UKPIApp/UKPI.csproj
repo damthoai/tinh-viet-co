@@ -194,6 +194,7 @@
     <Compile Include="DataAccessObject\ClsNgayNghiHopLeDao.cs" />
     <Compile Include="DataAccessObject\ManageStaffOfGroupDao.cs" />
     <Compile Include="DataAccessObject\CreatedTimesheetDao.cs" />
+    <Compile Include="DataAccessObject\QuanLyThuocDao.cs" />
     <Compile Include="DataAccessObject\ShareEntityDao.cs" />
     <Compile Include="DataAccessObject\TeamDao.cs" />
     <Compile Include="DataAccessObject\ParameterDao.cs" />
@@ -249,6 +250,18 @@
     </Compile>
     <Compile Include="Presentation\Authenticate\frmAddStaffUser.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmChinhSachGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmChinhSachGia.Designer.cs">
+      <DependentUpon>frmChinhSachGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmdanhmucthuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmdanhmucthuoc.Designer.cs">
+      <DependentUpon>frmdanhmucthuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmXuatKho.cs">
       <SubType>Form</SubType>
@@ -384,6 +397,7 @@
     </Compile>
     <Compile Include="ValueObject\BoPhan.cs" />
     <Compile Include="ValueObject\CachUongThuoc.cs" />
+    <Compile Include="ValueObject\ChinhSachGia.cs" />
     <Compile Include="ValueObject\clsCreateTimesheet.cs" />
     <Compile Include="ValueObject\clsCalamViec.cs" />
     <Compile Include="ValueObject\clsNhanVien.cs" />
@@ -392,6 +406,7 @@
     <Compile Include="ValueObject\clsNgayNghiChiTiet.cs" />
     <Compile Include="ValueObject\clsTeam.cs" />
     <Compile Include="ValueObject\clsLichLamViec.cs" />
+    <Compile Include="ValueObject\DanhMucThuoc.cs" />
     <Compile Include="ValueObject\GioiTinh.cs" />
     <Compile Include="ValueObject\KeyPrefix.cs" />
     <Compile Include="ValueObject\KhuVuc.cs" />
@@ -971,6 +986,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Authenticate\frmUserRole.resx">
       <DependentUpon>frmUserRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmChinhSachGia.resx">
+      <DependentUpon>frmChinhSachGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmdanhmucthuoc.resx">
+      <DependentUpon>frmdanhmucthuoc.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmXuatKho.resx">

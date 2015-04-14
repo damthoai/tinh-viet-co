@@ -3424,4 +3424,56 @@
     <Value>Export</Value>
   </Titles>
   <!-- End frmXuatKho-->
+
+ <!-- Start frmdanhmucthuoc-->
+  <Titles>
+    <Name>frmdanhmucthuoc.btnLuuIn</Name>
+    <Value>Lưu/Cập nhật</Value>
+  </Titles>
+
+  <!-- End frmdanhmucthuoc-->
+
+ <!-- Start frmChinhSachGia-->
+  <Titles>
+    <Name>frmChinhSachGia.lblMaChinhSachGia</Name>
+    <Value>Mã chính sách giá</Value>
+  </Titles>
+  
+  <Titles>
+    <Name>frmChinhSachGia.lblTenChinhSachGia</Name>
+    <Value>Tên chính sách giá</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblHoatDong</Name>
+    <Value>Hoạt động</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblThoiGianBatDau</Name>
+    <Value>Thời gian bắt đầu</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblThoiGianKetThuc</Name>
+    <Value>Thời gian kết thúc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblNgayNgungHoatDong</Name>
+    <Value>Ngày ngưng hoạt động</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.btnThemMoi</Name>
+    <Value>Thêm mới</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.btnLuu</Name>
+    <Value>Lưu</Value>
+  </Titles>
+<Titles>
+    <Name>frmChinhSachGia.btnCapNhat</Name>
+    <Value>Cập nhật</Value>
+  </Titles>
+<Titles>
+    <Name>frmChinhSachGia.btnChiTietChinhSachGia</Name>
+    <Value>Chi tiết chính sách giá</Value>
+  </Titles>
+  <!-- End frmChinhSachGia-->
 </UKPI>

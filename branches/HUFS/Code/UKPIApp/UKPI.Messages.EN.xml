@@ -1977,4 +1977,24 @@
     <Name>messages.frmKhamBenh.CheckTrungLapThuoc1</Name>
     <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
   </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
 </HUFS>
