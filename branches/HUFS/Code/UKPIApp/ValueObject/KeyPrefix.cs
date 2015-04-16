@@ -9,5 +9,6 @@ namespace UKPI.ValueObject
     {
         public static string MaKhamBenh = "MKB";
         public static string MaNhapKho = "NKT";
+        public static string MaChinhSachGia = "MCSG";
     }
 }

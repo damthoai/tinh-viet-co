@@ -175,6 +175,6 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bi
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Debug\NPOI.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Debug\EPPlus.xml
-E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache

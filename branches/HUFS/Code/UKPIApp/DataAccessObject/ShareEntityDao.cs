@@ -400,6 +400,48 @@ namespace UKPI.DataAccessObject
             }
         }
 
+        public List<DonViTinh> LoadDonViTinh()
+        {
+            List<DonViTinh> arrs = new List<DonViTinh>();
+            SqlConnection con = Connection;
+            SqlDataReader reader = null;
+            SqlCommand cmd = null;
+
+            try
+            {
+                cmd = new SqlCommand("SELECT  MaDonViTinh, TenDonViTinh FROM HUFS_DONVITINH", con);
+
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+
+                reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    DonViTinh pk = new DonViTinh();
+                    pk.MaDonViTinh = (int)reader[0];
+                    pk.TenDonViTinh = (string)reader[1];
+                    arrs.Add(pk);
+                }
+
+                reader.Close();
+                return arrs;
+            }
+            catch (SqlException ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+        }
         public List<LyDoChiTiet> LoadLyDoChiTiet(int reasonId)
         {
             List<LyDoChiTiet> arrs = new List<LyDoChiTiet>();

@@ -29,11 +29,13 @@ namespace UKPI.Presentation
         private clsBaseBO _bo = new clsBaseBO();
         private readonly clsCommon _common = new clsCommon();
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
+        private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
         private readonly QuanLyThuocDao _quanLyThuocDao = new QuanLyThuocDao();
         QuyetDinhNghiPhep quyetDinhNghiPhep ;
         readonly System.Data.DataTable _dt = null;
         ComboBox cbm;
         DataGridViewCell currentCell;
+        private int currentRowIndex;
         private DateTimePicker cellDateTimePicker;
         private int _checkRowsCount = 0;
         private Dictionary<int, string> danhSachThuoc = new Dictionary<int, string>();
@@ -84,7 +86,7 @@ namespace UKPI.Presentation
         private void grdChinhSachGia_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             currentCell = this.grdChinhSachGia.CurrentCell;
-            if (currentCell != null)
+            if (currentCell != null && btnLuu.Enabled == false)
             {
                 txtMaChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[1].FormattedValue;
                 txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[2].FormattedValue;
@@ -94,6 +96,9 @@ namespace UKPI.Presentation
                 dtpNgayNgungHoatDong.Value = DateTime.Parse((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[6].FormattedValue);
                 grdChinhSachGia.Rows[currentCell.RowIndex].Cells[0].Value = true;
                 DeselectOrtherCheckbox(currentCell.RowIndex);
+                btnCapNhat.Enabled = true;
+                btnChiTietChinhSachGia.Enabled = true;
+                currentRowIndex = currentCell.RowIndex;
             }
         }
         private void DeselectOrtherCheckbox(int currentRowIndex)
@@ -108,6 +113,14 @@ namespace UKPI.Presentation
                     continue;
             }
         }
+
+        private void DeselectCheckbox()
+        {
+            for (int i = 0; i < grdChinhSachGia.Rows.Count; i++)
+            {      
+                    grdChinhSachGia.Rows[i].Cells[0].Value = false;
+            }
+        }
         void oDateTimePicker_CloseUp(object sender, EventArgs e)
         {
             // Hiding the control after use   
@@ -119,6 +132,11 @@ namespace UKPI.Presentation
        //     LoadThongTinNhanVien();
             LoadAllChinhSachGia();
             SetDefaultInputValue();
+            btnLuu.Enabled = false;
+            btnCapNhat.Enabled = true;
+            btnChiTietChinhSachGia.Enabled = true;
+            btnThemMoi.Enabled = true;
+
         }
         private void LoadAllChinhSachGia()
         {
@@ -234,6 +252,58 @@ namespace UKPI.Presentation
 
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
+            if (txtTenChinhSachGia.Text.Trim() == "")
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.TenChinhSachGia"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (dtpThoiGianBatDau.Value > dtpThoiGianKetThuc.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayBatDau"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (dtpThoiGianKetThuc.Value < dtpThoiGianBatDau.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayKetThuc"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayHetHan"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
+            ChinhSachGiaDT chinhSachGia = new ChinhSachGiaDT();
+            chinhSachGia.MaChinhSachGia = txtMaChinhSachGia.Text;
+            chinhSachGia.TenChinhSachGia = txtTenChinhSachGia.Text;
+            chinhSachGia.HoatDong = cbHoatDong.Checked;
+            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value;
+            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value;
+            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value;
+            chinhSachGia.CreatedDate = DateTime.Now;
+            chinhSachGia.LastUpdatedDate = DateTime.Now;
+            chinhSachGia.CreatedBy = ttNhanVien.FullName;
+            chinhSachGia.LastUpdatedBy = ttNhanVien.FullName;
+
+            if (_quanLyThuocDao.SaveChinhSachGia(chinhSachGia))
+            {
+                DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.Success"), clsResources.GetMessage("messages.frmChinhSachGia.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    ResetChinhSachGiaSauKhiTao();
+                    grdChinhSachGia.DataSource = _quanLyThuocDao.LoadChinhSachGia();
+                    btnLuu.Enabled = false;
+                }
+                return;
+            }
+            else
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.Error"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             //ThongTinNhapKho thongTinNhapKho = BuildThongTinNhapKho();
             //if (thongTinNhapKho != null)
             //{
@@ -253,6 +323,117 @@ namespace UKPI.Presentation
             //        return;
             //    }
             //}
+        }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            btnCapNhat.Enabled = false;
+            btnChiTietChinhSachGia.Enabled = false;
+            btnLuu.Enabled = true;
+            TaoMoiChinhSachGia();
+            DeselectCheckbox();
+        }
+
+        private void ResetChinhSachGiaSauKhiTao()
+        {
+            txtMaChinhSachGia.Text = _quanLyThuocDao.GenerateNewMaChinhSachGia();
+            txtTenChinhSachGia.Text = "";
+            cbHoatDong.Checked = false;
+            dtpThoiGianBatDau.Value = DateTime.Now;
+            dtpThoiGianKetThuc.Value = DateTime.Now;
+            dtpNgayNgungHoatDong.Value = DateTime.Now;
+        }
+        private void TaoMoiChinhSachGia()
+        {
+            txtMaChinhSachGia.Text = _quanLyThuocDao.GenerateNewMaChinhSachGia();
+            txtTenChinhSachGia.Text = "";
+            cbHoatDong.Checked = false;
+            dtpNgayNgungHoatDong.Value = DateTime.Now;
+            dtpThoiGianKetThuc.Value = DateTime.Now;
+            dtpThoiGianBatDau.Value = DateTime.Now;
+        }
+
+        private void dtpThoiGianBatDau_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpThoiGianKetThuc_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgayNgungHoatDong_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            if (txtTenChinhSachGia.Text.Trim() == "")
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.TenChinhSachGia"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (dtpThoiGianBatDau.Value > dtpThoiGianKetThuc.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayBatDau"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (dtpThoiGianKetThuc.Value < dtpThoiGianBatDau.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayKetThuc"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value)
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayHetHan"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
+            ChinhSachGiaDT chinhSachGia = new ChinhSachGiaDT();
+            chinhSachGia.MaChinhSachGia = txtMaChinhSachGia.Text;
+            chinhSachGia.TenChinhSachGia = txtTenChinhSachGia.Text;
+            chinhSachGia.HoatDong = cbHoatDong.Checked;
+            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value;
+            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value;
+            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value;
+            chinhSachGia.CreatedDate = DateTime.Now;
+            chinhSachGia.LastUpdatedDate = DateTime.Now;
+            chinhSachGia.CreatedBy = ttNhanVien.FullName;
+            chinhSachGia.LastUpdatedBy = ttNhanVien.FullName;
+
+            if (_quanLyThuocDao.UpdateChinhSachGia(chinhSachGia))
+            {
+                DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.Success"), clsResources.GetMessage("messages.frmChinhSachGia.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                   // ResetChinhSachGiaSauKhiTao();
+                    grdChinhSachGia.DataSource = _quanLyThuocDao.LoadChinhSachGia();
+                    //if (currentRowIndex >= 0)
+                    //{
+                    //    DeselectOrtherCheckbox(currentRowIndex);
+                    //    grdChinhSachGia.Rows[currentCell.RowIndex].Cells[0].Value = true;
+                    //}
+                    DeselectCheckbox();
+                    btnLuu.Enabled = false;
+                }
+                return;
+            }
+            else
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.Error"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+
+        private void btnChiTietChinhSachGia_Click(object sender, EventArgs e)
+        {
+            frmChinhSachGiaChiTiet frmChiTiet = new frmChinhSachGiaChiTiet();
+            frmChiTiet.SetMaChinhSachGia(txtMaChinhSachGia.Text);
+            frmChiTiet.Show();
         }
      
 

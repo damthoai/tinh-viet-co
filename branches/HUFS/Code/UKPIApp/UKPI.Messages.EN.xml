@@ -1997,4 +1997,77 @@
     <Name>messages.frmdanhmucthuoc.ErrorTitle</Name>
     <Value>Lỗi</Value>
   </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayBatDau</Name>
+    <Value> Ngày bắt đầu lớn hơn ngày kết thúc</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayKetThuc</Name>
+    <Value> Ngày kết thúc lớn hơn ngày bắt đầu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayHetHan</Name>
+    <Value> Ngày hết hạn không hợp lệ</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.TenChinhSachGia</Name>
+    <Value> Hãy nhập tên chính sách giá</Value>
+  </Messages>
+
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc</Name>
+    <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
+  </Messages>
+  
 </HUFS>

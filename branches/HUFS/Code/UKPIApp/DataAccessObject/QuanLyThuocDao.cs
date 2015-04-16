@@ -15,7 +15,11 @@ namespace UKPI.DataAccessObject
         private static readonly ILog log = log4net.LogManager.GetLogger(typeof(QuanLyThuocDao));
         private const string HUFS_SelectDanhMucThuoc = "HUFS_SelectDanhMucThuoc";
         private const string HUFS_DanhMucThuoc = "HUFS_DanhMucThuoc";
-        private const string p_HUFS_GetAllChinhSachGia = "p_HUFS_GetAllChinhSachGia";
+        private const string p_HUFS_GetAllChinhSachGia = "p_HUFS_GetAllChinhSachGiaNew";
+        private const string p_HUFS_GetMaxMaChinhSachGia = "p_HUFS_GetMaxMaChinhSachGia";
+        private const string p_HUFS_UpdateChinhSachGia = "p_HUFS_UpdateChinhSachGia";
+        private const string HUFS_GetChinhSachGiaChiTiet = "HUFS_GetChinhSachGiaChiTiet";
+        private const string HUFS_ChinhSachGiaChiTiet = "HUFS_ChinhSachGiaChiTiet";
         public DataTable LoadDanhMucThuoc()
         {
             try
@@ -28,6 +32,135 @@ namespace UKPI.DataAccessObject
                 log.Error(ex.Message, ex);
                 return null;
             }
+        }
+
+        public string GetMaxMaChinhSachGia()
+        {
+
+            try
+            {
+                string maxMaChinhSachGia = "";
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_GetMaxMaChinhSachGia);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    maxMaChinhSachGia = dr["MaxMaChinhSachGia"].ToString();
+                    break;
+                }
+                return maxMaChinhSachGia;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return "";
+            }
+        }
+        public List<ChinhSachGiaChiTiet> GetChinhSachGiaChiTiet(string maChinhSachGia)
+        {
+
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@MaChinhSachGia", maChinhSachGia);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, HUFS_GetChinhSachGiaChiTiet, Params);
+                return this.ConvertDataTableToList<ChinhSachGiaChiTiet>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
+        public bool UpdateChinhGiaChiTiet(List<ChinhSachGiaChiTiet> listChinhSachGiaChiTiet)
+        {
+            try
+            {
+                for (int i = 0; i < listChinhSachGiaChiTiet.Count; i++)
+                {
+                    SqlParameter[] Params = new SqlParameter[8];
+                    Params[0] = new SqlParameter("@MaChinhSachGia", listChinhSachGiaChiTiet[i].MaChinhSachGia);
+                    Params[1] = new SqlParameter("@TenThuoc", listChinhSachGiaChiTiet[i].MedicineName);
+                    Params[2] = new SqlParameter("@MaThuoc", listChinhSachGiaChiTiet[i].MedicineID);
+                    Params[3] = new SqlParameter("@GiaDNMua", listChinhSachGiaChiTiet[i].GiaDNMua);
+                    Params[4] = new SqlParameter("@GiaDNMuaVAT", listChinhSachGiaChiTiet[i].GiaDNMuaVAT);
+                    Params[5] = new SqlParameter("@DonViTinh", listChinhSachGiaChiTiet[i].DonViTinh);
+                    Params[6] = new SqlParameter("@DienGiai", listChinhSachGiaChiTiet[i].DienGiai);
+                    Params[7] = new SqlParameter("@HoatDong", listChinhSachGiaChiTiet[i].HoatDong);
+                    DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, HUFS_ChinhSachGiaChiTiet, Params);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return false;
+            }
+        }
+        public bool SaveChinhSachGia(ChinhSachGiaDT chinhSachGia)
+        {
+            try
+            {
+                List<ChinhSachGiaDT> listChinhSachGiaDT = new List<ChinhSachGiaDT>();
+                listChinhSachGiaDT.Add(chinhSachGia);
+                this.BulkInsert(ConvertToDataTable(listChinhSachGiaDT), "HUFS_CHINHSACH_HEADER");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return false;
+            }
+        }
+        public bool UpdateChinhSachGia(ChinhSachGiaDT chinhSachGia)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[8];
+                Params[0] = new SqlParameter("@MaChinhSachGia", chinhSachGia.MaChinhSachGia);
+                Params[1] = new SqlParameter("@TenChinhSachGia", chinhSachGia.TenChinhSachGia);
+                Params[2] = new SqlParameter("@ThoiGianBatDau", chinhSachGia.ThoiGianBatDau);
+                Params[3] = new SqlParameter("@ThoiGianKetThuc", chinhSachGia.ThoiGianKetThuc);
+                Params[4] = new SqlParameter("@HoatDong", chinhSachGia.HoatDong);
+                Params[5] = new SqlParameter("@NgayNgungHoatDong", chinhSachGia.NgayNgungHoatDong);
+                Params[6] = new SqlParameter("@LastUpdatedDate", chinhSachGia.LastUpdatedDate);
+                Params[7] = new SqlParameter("@LastUpdatedBy", chinhSachGia.LastUpdatedBy);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_UpdateChinhSachGia, Params);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return false;
+            }
+        }
+        public string GenerateNewMaChinhSachGia()
+        {
+            string currentMaxMaChinhSachGia = GetMaxMaChinhSachGia();
+            //MKB000000000040
+            int lenght = currentMaxMaChinhSachGia.Length;
+            int prefixLenght = KeyPrefix.MaChinhSachGia.Length;
+
+            string currentNumber = currentMaxMaChinhSachGia.Remove(0, prefixLenght);
+            long keyNumber = 0;
+            try
+            {
+                keyNumber = long.Parse(currentNumber);
+            }
+            catch
+            {
+
+            }
+            keyNumber += 1;
+
+            int newNumberLenght = keyNumber.ToString().Length;
+            string paddingKey = "";
+            for (int i = 0; i < lenght - (prefixLenght + newNumberLenght); i++)
+            {
+                paddingKey += "0";
+            }
+
+            string newKey = "";
+            newKey = KeyPrefix.MaChinhSachGia + paddingKey + keyNumber.ToString();
+            return newKey;
         }
 
         public DataTable LoadChinhSachGia()

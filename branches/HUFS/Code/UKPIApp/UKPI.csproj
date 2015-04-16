@@ -174,6 +174,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObject\BenhNhanExporter.cs" />
+    <Compile Include="BusinessObject\TonKhoExporter.cs" />
     <Compile Include="BusinessObject\XuatKhoExporter.cs" />
     <Compile Include="BusinessObject\ManageStaffOfGroupBO.cs">
       <SubType>Code</SubType>
@@ -187,6 +189,7 @@
     <Compile Include="BusinessObject\CreatedTimesheet.cs" />
     <Compile Include="BusinessObject\EditApproveTimesheetExporter.cs" />
     <Compile Include="BusinessObject\ParameterBo.cs" />
+    <Compile Include="DataAccessObject\BaoCaoYTeDao.cs" />
     <Compile Include="DataAccessObject\NhanVienUsersDao.cs" />
     <Compile Include="DataAccessObject\NhanVienDao.cs" />
     <Compile Include="DataAccessObject\CaLamViecDao.cs" />
@@ -250,6 +253,24 @@
     </Compile>
     <Compile Include="Presentation\Authenticate\frmAddStaffUser.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmbaocaotonkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmbaocaotonkho.Designer.cs">
+      <DependentUpon>frmbaocaotonkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmbaocaolichsubenhnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmbaocaolichsubenhnhan.Designer.cs">
+      <DependentUpon>frmbaocaolichsubenhnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmChinhSachGiaChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmChinhSachGiaChiTiet.Designer.cs">
+      <DependentUpon>frmChinhSachGiaChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmChinhSachGia.cs">
       <SubType>Form</SubType>
@@ -395,9 +416,11 @@
     <Compile Include="Presentation\frmApproveTimesheetL2.Designer.cs">
       <DependentUpon>frmApproveTimesheetL2.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValueObject\BenhNhanExportColumns.cs" />
     <Compile Include="ValueObject\BoPhan.cs" />
     <Compile Include="ValueObject\CachUongThuoc.cs" />
     <Compile Include="ValueObject\ChinhSachGia.cs" />
+    <Compile Include="ValueObject\ChinhSachGiaChiTiet.cs" />
     <Compile Include="ValueObject\clsCreateTimesheet.cs" />
     <Compile Include="ValueObject\clsCalamViec.cs" />
     <Compile Include="ValueObject\clsNhanVien.cs" />
@@ -406,7 +429,9 @@
     <Compile Include="ValueObject\clsNgayNghiChiTiet.cs" />
     <Compile Include="ValueObject\clsTeam.cs" />
     <Compile Include="ValueObject\clsLichLamViec.cs" />
+    <Compile Include="ValueObject\ChinhSachGiaDT.cs" />
     <Compile Include="ValueObject\DanhMucThuoc.cs" />
+    <Compile Include="ValueObject\DonViTinh.cs" />
     <Compile Include="ValueObject\GioiTinh.cs" />
     <Compile Include="ValueObject\KeyPrefix.cs" />
     <Compile Include="ValueObject\KhuVuc.cs" />
@@ -422,6 +447,7 @@
     <Compile Include="ValueObject\ThongTinNhapKho.cs" />
     <Compile Include="ValueObject\ThongTinNhapKhoDetail.cs" />
     <Compile Include="ValueObject\ThongTinThuoc.cs" />
+    <Compile Include="ValueObject\TonKhoExportColumns.cs" />
     <Compile Include="ValueObject\XuatKhoExportColumns.cs" />
     <None Include="App.config">
       <SubType>Designer</SubType>
@@ -986,6 +1012,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Authenticate\frmUserRole.resx">
       <DependentUpon>frmUserRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmbaocaotonkho.resx">
+      <DependentUpon>frmbaocaotonkho.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmbaocaolichsubenhnhan.resx">
+      <DependentUpon>frmbaocaolichsubenhnhan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmChinhSachGiaChiTiet.resx">
+      <DependentUpon>frmChinhSachGiaChiTiet.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmChinhSachGia.resx">

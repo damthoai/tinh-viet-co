@@ -113,6 +113,7 @@ namespace UKPI.Presentation
             this.dtpNgayNgungHoatDong.Name = "dtpNgayNgungHoatDong";
             this.dtpNgayNgungHoatDong.Size = new System.Drawing.Size(121, 20);
             this.dtpNgayNgungHoatDong.TabIndex = 83;
+            this.dtpNgayNgungHoatDong.ValueChanged += new System.EventHandler(this.dtpNgayNgungHoatDong_ValueChanged);
             // 
             // dtpThoiGianBatDau
             // 
@@ -122,6 +123,7 @@ namespace UKPI.Presentation
             this.dtpThoiGianBatDau.Name = "dtpThoiGianBatDau";
             this.dtpThoiGianBatDau.Size = new System.Drawing.Size(121, 20);
             this.dtpThoiGianBatDau.TabIndex = 82;
+            this.dtpThoiGianBatDau.ValueChanged += new System.EventHandler(this.dtpThoiGianBatDau_ValueChanged);
             // 
             // cbHoatDong
             // 
@@ -192,9 +194,9 @@ namespace UKPI.Presentation
             this.lblTenChinhSachGia.AutoSize = true;
             this.lblTenChinhSachGia.Location = new System.Drawing.Point(8, 62);
             this.lblTenChinhSachGia.Name = "lblTenChinhSachGia";
-            this.lblTenChinhSachGia.Size = new System.Drawing.Size(100, 13);
+            this.lblTenChinhSachGia.Size = new System.Drawing.Size(104, 13);
             this.lblTenChinhSachGia.TabIndex = 28;
-            this.lblTenChinhSachGia.Text = "Tên chính sách giá";
+            this.lblTenChinhSachGia.Text = "Tên chính sách giá*";
             // 
             // lblMaChinhSachGia
             // 
@@ -213,6 +215,7 @@ namespace UKPI.Presentation
             this.dtpThoiGianKetThuc.Name = "dtpThoiGianKetThuc";
             this.dtpThoiGianKetThuc.Size = new System.Drawing.Size(121, 20);
             this.dtpThoiGianKetThuc.TabIndex = 39;
+            this.dtpThoiGianKetThuc.ValueChanged += new System.EventHandler(this.dtpThoiGianKetThuc_ValueChanged);
             // 
             // btnCapNhat
             // 
@@ -224,6 +227,7 @@ namespace UKPI.Presentation
             this.btnCapNhat.TabIndex = 79;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnLuu
             // 
@@ -247,6 +251,7 @@ namespace UKPI.Presentation
             this.btnThemMoi.TabIndex = 76;
             this.btnThemMoi.Text = "Thêm mới";
             this.btnThemMoi.UseVisualStyleBackColor = true;
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -403,6 +408,7 @@ namespace UKPI.Presentation
             this.btnChiTietChinhSachGia.TabIndex = 80;
             this.btnChiTietChinhSachGia.Text = "Chi tiết chính sách giá";
             this.btnChiTietChinhSachGia.UseVisualStyleBackColor = true;
+            this.btnChiTietChinhSachGia.Click += new System.EventHandler(this.btnChiTietChinhSachGia_Click);
             // 
             // grdChinhSachGia
             // 

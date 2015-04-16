@@ -3441,7 +3441,7 @@
   
   <Titles>
     <Name>frmChinhSachGia.lblTenChinhSachGia</Name>
-    <Value>Tên chính sách giá</Value>
+    <Value>Tên chính sách giá*</Value>
   </Titles>
   <Titles>
     <Name>frmChinhSachGia.lblHoatDong</Name>
@@ -3471,9 +3471,67 @@
     <Name>frmChinhSachGia.btnCapNhat</Name>
     <Value>Cập nhật</Value>
   </Titles>
-<Titles>
+  <Titles>
     <Name>frmChinhSachGia.btnChiTietChinhSachGia</Name>
     <Value>Chi tiết chính sách giá</Value>
   </Titles>
   <!-- End frmChinhSachGia-->
+  <!-- Start frmChinhSachGiaChiTiet-->
+  <Titles>
+    <Name>frmChinhSachGiaChiTiet.btnXoaThuoc</Name>
+    <Value>Xóa thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGiaChiTiet.btnLuuIn</Name>
+    <Value>Lưu</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGiaChiTiet.btnDong</Name>
+    <Value>Đóng</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGiaChiTiet.lblMaChinhSachGia</Name>
+    <Value>Mã chính sách giá</Value>
+  </Titles>
+  <!-- End frmChinhSachGia-->
+  <!-- Start frmbaocaolichsubenhnhan-->
+  <Titles>
+    <Name>frmbaocaolichsubenhnhan.lblTenBenhNhan</Name>
+    <Value>Tên bệnh nhân</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaolichsubenhnhan.lblMaBenhNhan</Name>
+    <Value>Mã bệnh nhân</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaolichsubenhnhan.lblMaBHYT</Name>
+    <Value>Mã BHYT</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaolichsubenhnhan.btnSearch</Name>
+    <Value>Tìm kiếm</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaolichsubenhnhan.btnExport</Name>
+    <Value>Export</Value>
+  </Titles>
+  <!-- End frmbaocaolichsubenhnhan-->
+  <!-- Start frmbaocaotonkho-->
+  <Titles>
+    <Name>frmbaocaotonkho.lblKho</Name>
+    <Value>Kho</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaotonkho.lblLoaiThuoc</Name>
+    <Value>Loại thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaotonkho.btnSearch</Name>
+    <Value>Tìm kiếm</Value>
+  </Titles>
+  <Titles>
+    <Name>frmbaocaotonkho.btnExport</Name>
+    <Value>Export</Value>
+  </Titles>
+  <!-- Start frmbaocaotonkho-->
 </UKPI>
