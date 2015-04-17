@@ -71,6 +71,7 @@ namespace UKPI.Presentation
             GetParam();
             SetDefauldValue();
             InitDataControl();
+            this.Text = "QUYẾT ĐỊNH NGHỈ PHÉP CÓ BẢO HIỂM";
             // Save original columns
             //_originalColumns = new DataGridViewColumn[grdStores.Columns.Count];
             //grdStores.Columns.CopyTo(_originalColumns, 0);

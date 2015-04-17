@@ -58,3 +58,18 @@ D:\Disc D\HTCC\FPT.Componet.Excel\bin\Release\EPPlus.xml
 D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
 D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
 D:\Disc D\HTCC\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Library\EPPlus_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Library\Ionic_Utils_Zip_license.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Library\NPOI_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll.config
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\EPPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Interop.Excel.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\NPOI.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\Ionic.Zip.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\bin\Release\EPPlus.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\FPT.Componet.Excel\obj\Release\FPT.Component.ExcelPlus.pdb

@@ -69,7 +69,7 @@ namespace UKPI.Presentation
 
             clsTitleManager.InitTitle(this);
 
-
+            this.Text = "CHI TIẾT CHÍNH SÁCH GIÁ";
            // txtMaChinhSachGia.Text = maChinhSachGia;
             // Save original columns
            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;

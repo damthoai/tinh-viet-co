@@ -19,3 +19,10 @@ D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.AppSettin
 D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csproj.GenerateResource.Cache
 D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.dll
 D:\Disc D\HTCC\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\bin\Release\SetupCustomAction.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.AppSetting.resources
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.csproj.GenerateResource.Cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\SetupCustomAction\obj\Release\SetupCustomAction.pdb

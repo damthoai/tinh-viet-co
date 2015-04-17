@@ -11,3 +11,9 @@ D:\Disc D\HTCC\UKPI.Core\bin\Release\ICSharpCode.SharpZipLib.dll
 D:\Disc D\HTCC\UKPI.Core\bin\Release\log4net.dll
 D:\Disc D\HTCC\UKPI.Core\obj\Release\UKPI.Core.dll
 D:\Disc D\HTCC\UKPI.Core\obj\Release\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release\log4net.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Release\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Release\UKPI.Core.pdb

@@ -31,4 +31,3 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Debug\I
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Debug\log4net.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.pdb
-E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.csprojResolveAssemblyReference.cache

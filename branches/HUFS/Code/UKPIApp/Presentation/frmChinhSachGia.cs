@@ -78,6 +78,7 @@ namespace UKPI.Presentation
             //this.cellDateTimePicker.Visible = false;
             //this.grdChinhSachGia.Controls.Add(cellDateTimePicker);
             SetDefauldValue();
+            this.Text = "NHẬP KHO THUỐC";
            // Save original columns
            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
            // grdStores.Columns.CopyTo(_originalColumns, 0);
@@ -91,9 +92,9 @@ namespace UKPI.Presentation
                 txtMaChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[1].FormattedValue;
                 txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[2].FormattedValue;
                 cbHoatDong.Checked = (bool)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[5].FormattedValue;
-                dtpThoiGianBatDau.Value = DateTime.Parse((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[3].FormattedValue);
-                dtpThoiGianKetThuc.Value = DateTime.Parse((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[4].FormattedValue);
-                dtpNgayNgungHoatDong.Value = DateTime.Parse((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[6].FormattedValue);
+                dtpThoiGianBatDau.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[3].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                dtpThoiGianKetThuc.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[4].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                dtpNgayNgungHoatDong.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[6].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
                 grdChinhSachGia.Rows[currentCell.RowIndex].Cells[0].Value = true;
                 DeselectOrtherCheckbox(currentCell.RowIndex);
                 btnCapNhat.Enabled = true;
@@ -145,14 +146,23 @@ namespace UKPI.Presentation
 
         private void SetDefaultInputValue()
         {
-            if (grdChinhSachGia.Rows.Count > 0)
+            try
             {
-                txtMaChinhSachGia.Text = (string)grdChinhSachGia.Rows[0].Cells[1].FormattedValue;
-                txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[0].Cells[2].FormattedValue;
-                cbHoatDong.Checked = (bool)grdChinhSachGia.Rows[0].Cells[5].FormattedValue;
-                dtpThoiGianBatDau.Value = DateTime.Parse((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue);
-                dtpThoiGianKetThuc.Value = DateTime.Parse((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue);
-                dtpNgayNgungHoatDong.Value = DateTime.Parse((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue);
+                if (grdChinhSachGia.Rows.Count > 0)
+                {
+                    txtMaChinhSachGia.Text = (string)grdChinhSachGia.Rows[0].Cells[1].FormattedValue;
+                    txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[0].Cells[2].FormattedValue;
+                    cbHoatDong.Checked = (bool)grdChinhSachGia.Rows[0].Cells[5].FormattedValue;
+                    //dtpThoiGianBatDau.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue));
+                    dtpThoiGianBatDau.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    //dtpThoiGianKetThuc.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue));
+                    //dtpNgayNgungHoatDong.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue));
+                    dtpThoiGianKetThuc.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    dtpNgayNgungHoatDong.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         private void BuildGridViewData()

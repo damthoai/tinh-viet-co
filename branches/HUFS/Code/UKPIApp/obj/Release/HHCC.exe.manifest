@@ -95,19 +95,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>btVoQ17f2s3wkp9f8aZwLP7+uyI=</dsig:DigestValue>
+        <dsig:DigestValue>M+NsQDIUtHAs9lC2aVmt4Ir0SeI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="5378048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="6868992">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Km856H0f0eUp52Of2DlHlYvSfZU=</dsig:DigestValue>
+        <dsig:DigestValue>1PpJgSQHHsO2QCgcoQU+Aciptfs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -203,7 +203,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vKcXQI5vSnX6o7CwWB3+dRzY9Tc=</dsig:DigestValue>
+        <dsig:DigestValue>ol/GsUMBpcrBEMgDvwBJn7GShzU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -215,7 +215,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>69TMIPnjGQOIq4l0OwObuuIqNvE=</dsig:DigestValue>
+        <dsig:DigestValue>UilYpUfyI4Sk0N4r8dCbivamWEk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -227,7 +227,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fTmfLQWoZVduN6GcdA2mTzW3jGQ=</dsig:DigestValue>
+        <dsig:DigestValue>Q7yaITFtiXr5ixaX5zanXY0Zwkg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -239,7 +239,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>qrai1lppkUPtv62NsqHtSUEG4lQ=</dsig:DigestValue>
+        <dsig:DigestValue>lJdFh8MRCBcx5dy81462TlfvOg0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -282,13 +282,13 @@
       <dsig:DigestValue>oUMoMyhWr1j8EJwnDGfNWQC2lsI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="HHCC.exe.config" size="6732">
+  <file name="HHCC.exe.config" size="6725">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>0TJYVgR/SIWLcN2GorRN2WXvPwQ=</dsig:DigestValue>
+      <dsig:DigestValue>VVxksPejV9LljDupLl8vHfeMozo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icons\applications.ico" size="29926">
@@ -939,40 +939,40 @@
       <dsig:DigestValue>kK6zh3bJcqjte/RwMcd8ZMcKqxg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.EN.xml" size="71562" writeableType="applicationData">
+  <file name="UKPI.Messages.EN.xml" size="69148" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>iUhhQ+5ckPSvkBM9gCPxc9YxTWk=</dsig:DigestValue>
+      <dsig:DigestValue>CHof3Ba63hjVR6vThBCGtfA+OG8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.VN.xml" size="54113" writeableType="applicationData">
+  <file name="UKPI.Messages.VN.xml" size="52764" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>R9onx6iMCPF4AqHEpkONrIGMlLk=</dsig:DigestValue>
+      <dsig:DigestValue>gNH+kyLYBg1jpvgyYpXmlOYpdMQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="111399" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="95925" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>7wf4Q6Ls+g7IHL/9UvOvGFR0VAE=</dsig:DigestValue>
+      <dsig:DigestValue>P3EGB6H/shvelIINCNLguRc4g4s=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.VN.xml" size="105657" writeableType="applicationData">
+  <file name="UKPI.Titles.VN.xml" size="94230" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fTKDfJaSRXnYzUJ1ysF3tan735c=</dsig:DigestValue>
+      <dsig:DigestValue>qmL9bqi9ue+UNioD1KDZSXNIFbM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Unilever.jpg" size="6652">

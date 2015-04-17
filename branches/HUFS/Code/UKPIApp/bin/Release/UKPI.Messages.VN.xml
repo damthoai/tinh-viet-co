@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<UKPI>
+<HUFS>
   <Messages>
     <Name>frmChangeCustCode.CustomerExist</Name>
     <Value>Khách hàng cũ không tồn tại vui lòng nhập mới</Value>
@@ -1350,277 +1350,232 @@
     <Name>messages.FrmCreateTimesheet.WantToContinue</Name>
     <Value>Lịch Làm Việc Đã Tồn Tại.  Bạn Có Muốn Tạo Lại không?</Value>
   </Messages>
-  <Messages>
-    <Name>messages.FrmManageStaffInGroup.NoDataFound</Name>
-    <Value>Không có dữ liệu nào được chọn!</Value>
-  </Messages>
-  <!--Mesages for From Create timesheet-->
 
   <Messages>
-    <Name>messages.FrmCreateTimesheet.success</Name>
-    <Value>Tạo Lịch Làm Việc Thành Công!</Value>
+    <Name>messages.frmKhamBenh.Waring</Name>
+    <Value>Bạn có muốn xác nhận không ?</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateTimesheet.fail</Name>
-    <Value>Tạo Lịch Làm Việc Thất bại</Value>
+    <Name>messages.frmKhamBenh.Title</Name>
+    <Value>Cảnh báo</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateTimesheet.NotExistCaLamViec</Name>
-    <Value>Ca Làm Việc Nhóm {0} Tuần {1} Chưa được định nghĩa!</Value>
-  </Messages>
-
-  <!--End-->
-  <!--Measages for from Manage Staff in group-->
-  <Messages>
-    <Name>messages.FrmManageStaffInGroup.Removesuccess</Name>
-    <Value>Gỡ nhân viên thành công</Value>
+    <Name>messages.frmNghiPhep.Waring</Name>
+    <Value>Từ ngày > Đến ngày .Hãy nhập lại</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmManageStaffInGroup.Addsuccess</Name>
-    <Value>Thêm nhân viên thành công</Value>
-  </Messages>
-
-
-  <!--End-->
-
-  <!--Measages for from Manage Team-->
-  <Messages>
-    <Name>messages.FrmManageTeam.AddNewsuccess</Name>
-    <Value>Tạo nhóm thành công</Value>
-  </Messages>
-
-  <Messages>
-    <Name>messages.FrmManageTeam.UnActivesuccess</Name>
-    <Value>Ngưng hoạt động nhóm thành công</Value>
-  </Messages>
-
-
-  <!--End-->
-  <!--Measages for from Manage Team-->
-  <Messages>
-    <Name>messages.FrmManageShiftForTeam.success</Name>
-    <Value>Tạo Ca Làm Việc Cho Nhóm thành công</Value>
-  </Messages>
-
-  <Messages>
-    <Name>messages.FrmManageShiftForTeam.unSuccess</Name>
-    <Value>Tạo Ca Làm Việc Cho Nhóm Thất Bại</Value>
-  </Messages>
-
-  <Messages>
-    <Name>messages.FrmManageShiftForTeam.save.success</Name>
-    <Value>Lưu Ca Làm Việc Cho Nhóm Thành Công</Value>
-  </Messages>
-
-  <Messages>
-    <Name>messages.FrmManageShiftForTeam.save.UnSuccess</Name>
-    <Value>Lưu Ca Làm Việc Cho Nhóm Thất Bại</Value>
-  </Messages>
-
-  <Messages>
-    <Name>errors.string.FrmManageShiftForTeam.WeekNotMatch</Name>
-    <Value>Đến tuần {0} phải lớn hơn từ tuần {1}</Value>
+    <Name>messages.frmNghiPhep.Waring1</Name>
+    <Value> Đến ngày nhỏ hơn Từ ngày .Hãy nhập lại</Value>
   </Messages>
   
-  <!--End-->
-
-  <!--Measages for from Create Holidays-->
   <Messages>
-    <Name>messages.FrmCreateHoliday.save.success</Name>
-    <Value>Lưu ngày nghỉ thành công!</Value>
+    <Name>messages.frmNghiPhep.Title</Name>
+    <Value>Cảnh báo</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateHoliday.save.UnSuccess</Name>
-    <Value>Lưu ngày nghỉ thất bại!</Value>
-  </Messages>
-
-
-  <!--End-->
-
-  <!--Measages for from Create leave plan-->
-  <Messages>
-    <Name>messages.FrmCreateLeavePlan.save.success</Name>
-    <Value>Lưu ngày nghỉ thành công!</Value>
+    <Name>messages.frmKhamBenh.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateLeavePlan.save.UnSuccess</Name>
-    <Value>Lưu ngày nghỉ thất bại!</Value>
-  </Messages>
-  <Messages>
-    <Name>messages.FrmCreateLeavePlan.EmailSubject</Name>
-    <Value>Email Thông Báo đăng ký ngày nghỉ!</Value>
+    <Name>messages.frmKhamBenh.SuccessTitle</Name>
+    <Value>Thông tin</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateLeavePlan.DateValid</Name>
-    <Value>Từ ngày {0} Phải nhỏ hơn hoặc bằng đến ngày {1}!</Value>
+    <Name>messages.frmKhamBenh.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateLeavePlan.DateExists</Name>
-    <Value>Ngày {0} đến ngày {1} đã được đăng ký nghỉ!</Value>
-  </Messages>
-
-  <!--End-->
-  <!--Measages for from Create leave accident-->
-  <Messages>
-    <Name>messages.FrmCreateLeaveAccident.save.success</Name>
-    <Value>Lưu ngày nghỉ thành công!</Value>
+    <Name>messages.frmKhamBenh.ErrorTitle</Name>
+    <Value>Lỗi</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateLeaveAccident.save.UnSuccess</Name>
-    <Value>Lưu ngày nghỉ thất bại!</Value>
-
-    <Messages>
-      <Name>messages.FrmCreateLeaveAccident.EmailSubject</Name>
-      <Value>Email Thông Báo đăng ký ngày nghỉ!</Value>
-    </Messages>
+    <Name>messages.frmKhamBenh.CheckValidSoLuong</Name>
+    <Value>Số lượng thuốc không hợp lệ .Vui lòng nhập lại</Value>
   </Messages>
+
   <Messages>
-    <Name>messages.FrmCreateLeaveAccident.DateValid</Name>
-    <Value>Từ ngày {0} Phải nhỏ hơn hoặc bằng đến ngày {1}!</Value>
+    <Name>messages.frmKhamBenh.CheckSoLuongTrongKho</Name>
+    <Value>Thuốc này không còn trong kho</Value>
+  </Messages>
+  
+  <Messages>
+    <Name>messages.frmKhamBenh.CheckTrungLapThuoc</Name>
+    <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
   </Messages>
 
 
 
-  <Messages>
-    <Name>messages.FrmCreateLeaveAccident.DateExists</Name>
-    <Value>Ngày {0} đến ngày {1} đã được đăng ký nghỉ!</Value>
-  </Messages>
-
-  <!--End-->
-  <!--Measages for from Create leave accident-->
-  <Messages>
-    <Name>messages.FrmCreateLeaveMaternity.save.success</Name>
-    <Value>Lưu ngày nghỉ thành công!</Value>
-  </Messages>
-
-  <Messages>
-    <Name>messages.FrmCreateLeaveMaternity.save.UnSuccess</Name>
-    <Value>Lưu ngày nghỉ thất bại!</Value>
-
-    <Messages>
-      <Name>messages.FrmCreateLeaveMaternity.EmailSubject</Name>
-      <Value>Email Thông Báo đăng ký ngày nghỉ!</Value>
-    </Messages>
-  </Messages>
-  <Messages>
-    <Name>messages.FrmCreateLeaveMaternity.DateValid</Name>
-    <Value>Từ ngày {0} Phải nhỏ hơn hoặc bằng đến ngày {1}!</Value>
-  </Messages>
-
 
 
   <Messages>
-    <Name>messages.FrmCreateLeaveMaternity.DateExists</Name>
-    <Value>Ngày {0} đến ngày {1} đã được đăng ký nghỉ!</Value>
-  </Messages>
-
-  <!--End-->
-
-  <!--From FrmCreateTimesheetManual -->
-  <Messages>
-    <Name>messages.FrmCreateTimesheetManual.DatetimeNotMatch</Name>
-    <Value>Ngày {0} phải lớn hơn ngày hiện tại {1}!</Value>
-  </Messages>
-  <Messages>
-    <Name>messages.FrmCreateTimesheetManual.NoDataCheck</Name>
-    <Value>Không có dữ liệu được chọn!</Value>
+    <Name>messages.frmnhapkhothuoc.Title</Name>
+    <Value>Cảnh báo</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateTimesheetManual.RemoveSuccess</Name>
-    <Value>Gỡ nhân viên thành công!</Value>
+    <Name>messages.frmnhapkhothuoc.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmCreateTimesheetManual.SaveSuccessful</Name>
-    <Value>Thêm Lich Làm Việc Cho Nhân Viên Thành Công!</Value>
-  </Messages>
-  <!--END-->
-  <!--FrmUpdateStaff-->
-  <Messages>
-    <Name>messages.FrmUpdateStaff.SaveSucess</Name>
-    <Value>Thêm Nhân Viên Thành Công!</Value>
-  </Messages>
-  <Messages>
-    <Name>  messages.FrmUpdateStaff.NoDataToSave</Name>
-    <Value>Không Có Nhân Viên Mới!</Value>
-  </Messages>
-  <!--END-->
-
-  <!--UpdateStaffInfo-->
-  <Messages>
-    <Name>errors.string.ExistData</Name>
-    <Value>{0} đã tồn tại trong hệ thống. Vui lòng nhập lại {1}.</Value>
+    <Name>messages.frmnhapkhothuoc.SuccessTitle</Name>
+    <Value>Thông tin</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.UpdateStaffInfo.SaveSucess</Name>
-    <Value>Lưu thông tin nhân viên thành công</Value>
-  </Messages>
-
-
-  <!--End-->
-
-  <!--Measages for from Manage Staff in group-->
-  <Messages>
-    <Name>messages.FrmNVQL_Users.Removesuccess</Name>
-    <Value>Gỡ nhân viên thành công</Value>
+    <Name>messages.frmnhapkhothuoc.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmNVQL_Users.Addsuccess</Name>
-    <Value>Thêm nhân viên thành công</Value>
+    <Name>messages.frmnhapkhothuoc.ErrorTitle</Name>
+    <Value>Lỗi</Value>
   </Messages>
 
   <Messages>
-    <Name>messages.FrmNVQL_Users.NoDataFound</Name>
-    <Value>Không có nhân viên nào được chọn!</Value>
+    <Name>messages.frmnhapkhothuoc.CheckValidSoLuong</Name>
+    <Value>Số lượng thuốc không hợp lệ .Vui lòng nhập lại</Value>
   </Messages>
-  <!--End-->
-  <!--AddL3ForL4-->
+
   <Messages>
-    <Name>messages.AddL3ForL4.success</Name>
-    <Value>Lưu L3 vào L4 thành công!</Value>
+    <Name>messages.frmnhapkhothuoc.CheckTrungLapThuoc</Name>
+    <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.CheckHanSuDungThuoc</Name>
+    <Value>Bạn vui lòng nhập hạn sử dụng thuốc</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.ValidateThongSoNhapKho</Name>
+    <Value>Bạn vui lòng nhập thông tin bắt buộc</Value>
+  </Messages>
+  
+  <Messages>
+    <Name>messages.frmKhamBenh.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmXuatKho.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmXuatKho.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmdanhmucthuoc.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayBatDau</Name>
+    <Value> Ngày bắt đầu lớn hơn ngày kết thúc</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayKetThuc</Name>
+    <Value> Ngày kết thúc lớn hơn ngày bắt đầu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.NgayHetHan</Name>
+    <Value> Ngày hết hạn không hợp lệ</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGia.TenChinhSachGia</Name>
+    <Value> Hãy nhập tên chính sách giá</Value>
+  </Messages>
+
+
+
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc1</Name>
+    <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
+  </Messages>
+
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.Success</Name>
+    <Value> Dữ liệu đã được cập nhật thành công</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.SuccessTitle</Name>
+    <Value>Thông tin</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.Error</Name>
+    <Value> Có lỗi trong quá trình cập nhật dữ liệu</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc</Name>
+    <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
   </Messages>
   <Messages>
-    <Name>message.AddL3ForL4.Nodata</Name>
-    <Value>Không có dữ liệu được chọn</Value>
+    <Name>messages.frmKhambenh.frmKhambenh</Name>
+    <Value>KHÁM BỆNH CÓ BẢO HIỂM</Value>
   </Messages>
-
-
-
-  <!--END-->
-
-  <!--AddL2ForL3-->
-  <Messages>
-    <Name>messages.AddL2ForL3.success</Name>
-    <Value>Lưu L2 vào L3 thành công!</Value>
-  </Messages>
-
-  <!--END-->
-
-  <!--AddL1ForL2-->
-  <Messages>
-    <Name>messages.AddL1ForL2.success</Name>
-    <Value>Lưu L1 vào L2 thành công!</Value>
-  </Messages>
-
-  <!--END-->
-
-  <!--AddL0ForL1-->
-  <Messages>
-    <Name>messages.AddL0ForL1.success</Name>
-    <Value>Lưu trưởng nhóm Thắng Lợi vào L1 thành công!</Value>
-  </Messages>
-
-  <!--END-->
-
-</UKPI>
+</HUFS>

@@ -66,3 +66,20 @@ D:\Disc D\HTCC\UKPI.BlendedReport\bin\Release\EPPlus.xml
 D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
 D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
 D:\Disc D\HTCC\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\NPOI.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\EPPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bin\Release\EPPlus.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb

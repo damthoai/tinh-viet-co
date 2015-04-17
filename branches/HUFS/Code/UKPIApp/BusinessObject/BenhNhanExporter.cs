@@ -237,12 +237,12 @@ namespace UKPI.BusinessObject
 
             // Channel
             format = new RangesFormat<CellStyle>();
-            format.Ranges.Add(new FRangeAddress(1, 2, 1, 4));
-            format.Format.BackGroundColor = Color.FromArgb(153, 51, 0);
-            format.Format.TextStyle.TextColor = Color.White;
-            format.Format.TextStyle.Size = 14;
-            format.Format.TextStyle.Bold = true;
-            result.Add(format);
+            //format.Ranges.Add(new FRangeAddress(1, 2, 1, 4));
+            //format.Format.BackGroundColor = Color.FromArgb(153, 51, 0);
+            //format.Format.TextStyle.TextColor = Color.White;
+            //format.Format.TextStyle.Size = 14;
+            //format.Format.TextStyle.Bold = true;
+            //result.Add(format);
 
             //// Time period
             //format = new RangesFormat<CellStyle>();
@@ -258,44 +258,44 @@ namespace UKPI.BusinessObject
             //format.Format.BackGroundColor = Color.FromArgb(255, 204, 153);
             //format.Format.TextStyle.TextColor = Color.Blue;
             //result.Add(format);
-            BorderStyle bdStyle = new BorderStyle();
-            bdStyle.BorderColor = Color.Black;
-            bdStyle.Weight = BorderWeight.Thin;
-            bdStyle.Style = LineStyle.Thin;
+            //BorderStyle bdStyle = new BorderStyle();
+            //bdStyle.BorderColor = Color.Black;
+            //bdStyle.Weight = BorderWeight.Thin;
+            //bdStyle.Style = LineStyle.Thin;
 
 
 
             // Column headers: black background
-            format = new RangesFormat<CellStyle>();
-            format.Ranges.Add(new FRangeAddress(3, 2, 3, _columnEndOfExtraDS + 3));
-            format.Format.HAlign = FHorizontalAlignment.Left;
-            format.Format.BackGroundColor = Color.White;
-            format.Format.TextStyle.TextColor = Color.Black;
-            format.Format.Border.Top = bdStyle;
-            format.Format.Border.Left = bdStyle;
-            format.Format.Border.Right = bdStyle;
-            format.Format.Border.Bottom = bdStyle;
-            format.Format.TextStyle.Bold = true;
-            format.Format.TextStyle.Underline = true;
+            //format = new RangesFormat<CellStyle>();
+            //format.Ranges.Add(new FRangeAddress(3, 2, 3, _columnEndOfExtraDS + 3));
+            //format.Format.HAlign = FHorizontalAlignment.Left;
+            //format.Format.BackGroundColor = Color.White;
+            //format.Format.TextStyle.TextColor = Color.Black;
+            //format.Format.Border.Top = bdStyle;
+            //format.Format.Border.Left = bdStyle;
+            //format.Format.Border.Right = bdStyle;
+            //format.Format.Border.Bottom = bdStyle;
+            //format.Format.TextStyle.Bold = true;
+            //format.Format.TextStyle.Underline = true;
 
-            result.Add(format);
+            //result.Add(format);
 
             // Define bolder style
 
 
             // Bolder "Basic Display Set"
-            format = new RangesFormat<CellStyle>();
+            //format = new RangesFormat<CellStyle>();
 
 
 
-            format.Ranges.Add(new FRangeAddress(4, 2, _countNoOfRow + 3, _columnEndOfExtraDS + 3));
-            format.Format.Border.Top = bdStyle;
-            format.Format.Border.Left = bdStyle;
-            format.Format.Border.Right = bdStyle;
-            format.Format.Border.Bottom = bdStyle;
-            format.Format.HAlign = FHorizontalAlignment.Center;
+            //format.Ranges.Add(new FRangeAddress(4, 2, _countNoOfRow + 3, _columnEndOfExtraDS + 3));
+            //format.Format.Border.Top = bdStyle;
+            //format.Format.Border.Left = bdStyle;
+            //format.Format.Border.Right = bdStyle;
+            //format.Format.Border.Bottom = bdStyle;
+            //format.Format.HAlign = FHorizontalAlignment.Center;
 
-            result.Add(format);
+            //result.Add(format);
 
 
 

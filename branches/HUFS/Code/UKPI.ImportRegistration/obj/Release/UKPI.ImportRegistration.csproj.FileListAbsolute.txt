@@ -18,3 +18,13 @@ D:\Disc D\HTCC\UKPI.ImportRegistration\bin\Release\UKPI.Core.pdb
 D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
 D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.dll
 D:\Disc D\HTCC\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\RegImportMapping.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\UKPI.ImportRegistration.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\UKPI.ImportRegistration.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\log4net.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\bin\Release\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Release\UKPI.ImportRegistration.pdb

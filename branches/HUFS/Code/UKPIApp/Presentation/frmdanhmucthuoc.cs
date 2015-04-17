@@ -75,6 +75,7 @@ namespace UKPI.Presentation
             //this.cellDateTimePicker.Visible = false;
             //this.grdToaThuoc.Controls.Add(cellDateTimePicker);
             SetDefauldValue();
+            this.Text = "XUẤT KHO THUỐC";
            // Save original columns
            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
            // grdStores.Columns.CopyTo(_originalColumns, 0);

@@ -68,7 +68,7 @@ namespace UKPI.Presentation
             clsTitleManager.InitTitle(this);
             GetParam();
             SetDefauldValue();
-           
+            this.Text = "KHÁM BỆNH CÓ BẢO HIỂM";
 
             // Save original columns
            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;

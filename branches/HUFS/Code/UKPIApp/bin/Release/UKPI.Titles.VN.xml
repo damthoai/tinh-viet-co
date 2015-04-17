@@ -1043,7 +1043,7 @@
   </Titles>
   <Titles>
     <Name>FrmCreateTimesheet.lblOutsource</Name>
-    <Value>Thắng Lợi</Value>
+    <Value>Outsource</Value>
   </Titles>
   <Titles>
     <Name>FrmCreateTimesheet.lblL3Ten</Name>
@@ -1095,32 +1095,11 @@
     <Name>FrmCreateTimesheet.lblCurrentWeek</Name>
     <Value>Tuần Hiện Tại</Value>
   </Titles>
-
-
-  <Titles>
-    <Name>FrmCreateTimesheet.lblTuNgay</Name>
-    <Value>Tử Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheet.lblDenNgay</Name>
-    <Value>Đến Ngày</Value>
-  </Titles>
-
-
-
-
-
   <!--End-->
 
 
 
   <!--ThoaiDc FrmApproveTimesheetL0-->
-  <Titles>
-    <Name>FrmApproveTimesheetL0.Title</Name>
-    <Value>Duyệt kết quả chấm công L1 outsource</Value>
-  </Titles>
-
-
   <Titles>
     <Name>FrmApproveTimesheetL0.lblToDate</Name>
     <Value>Đến ngày</Value>
@@ -1135,7 +1114,7 @@
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL0.lblOnOff</Name>
-    <Value>Hợp Lệ</Value>
+    <Value>On/Off</Value>
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL0.lblGroup</Name>
@@ -1191,8 +1170,6 @@
 
 
   <!--ThoaiDc FrmApproveTimesheetL1-->
-
-
   <Titles>
     <Name>FrmApproveTimesheetL1.lblToDate</Name>
     <Value>Đến ngày</Value>
@@ -1207,7 +1184,7 @@
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL1.lblOnOff</Name>
-    <Value>Hợp Lệ</Value>
+    <Value>On/Off</Value>
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL1.lblGroup</Name>
@@ -1278,7 +1255,7 @@
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL2.lblOnOff</Name>
-    <Value>Hợp Lệ</Value>
+    <Value>On/Off</Value>
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL2.lblGroup</Name>
@@ -1347,7 +1324,7 @@
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL3.lblOnOff</Name>
-    <Value>Hợp Lệ</Value>
+    <Value>On/Off</Value>
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL3.lblGroup</Name>
@@ -1417,7 +1394,7 @@
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL4.lblOnOff</Name>
-    <Value>Hợp Lệ</Value>
+    <Value>On/Off</Value>
   </Titles>
   <Titles>
     <Name>FrmApproveTimesheetL4.lblGroup</Name>
@@ -1925,12 +1902,12 @@
   </Titles>
   <!--DongTC-->
   <Titles>
-    <Name>frmMain.mnuCategory</Name>
-    <Value>Category</Value>
+    <Name>frmMain.mnuKhamBenh</Name>
+    <Value>Khám Bệnh</Value>
   </Titles>
   <Titles>
-    <Name>frmMain.mnuDefineCategory</Name>
-    <Value>Define Category</Value>
+    <Name>frmMain.mnuKhambenhCT</Name>
+    <Value>Khám Bệnh CT</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuDefineStores</Name>
@@ -1963,23 +1940,23 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuApprovedTimesheetL1</Name>
-    <Value>1. Duyệt kết quả chấm công L1 </Value>
+    <Value>Duyệt kết quả chấm công L1 </Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuApprovedTimesheetL2</Name>
-    <Value>3. Duyệt kết quả chấm công L2</Value>
+    <Value>Duyệt kết quả chấm công L2</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuApprovedTimesheetL3</Name>
-    <Value>4. Duyệt kết quả chấm công L3</Value>
+    <Value>Duyệt kết quả chấm công L3</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuApprovedTimesheetL4</Name>
-    <Value>5. Duyệt kết quả chấm công HR</Value>
+    <Value>Duyệt kết quả chấm công HR</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuApprovedTimesheetL0</Name>
-    <Value>2. Duyệt kết quả chấm công L1 outsource</Value>
+    <Value>Duyệt kết quả chấm công L1 outsource</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuListTimesheet</Name>
@@ -1987,65 +1964,8 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuCreatedTimesheet</Name>
-    <Value>1. Tạo Lịch Làm Việc</Value>
+    <Value>Tạo Lịch Làm Việc</Value>
   </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuCreateTimesheetManual</Name>
-    <Value>2. Thay đổi chi tiết lịch làm việc</Value>
-  </Titles>
-
-
-  <Titles>
-    <Name>frmMain.mnuManageStaffGroup</Name>
-    <Value>Nhóm - Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuUpdateStaff</Name>
-    <Value>8. Lấy NV mới từ prowatch</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuUpdateStaffCc</Name>
-    <Value>10. Cập nhật NV chấm công</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuManageStaffs</Name>
-    <Value>9. Quản lý thông tin nhân viên</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuManageShiftForTeam</Name>
-    <Value>3. Quản Lý Ca Làm Việc</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuCreateLeavePlan</Name>
-    <Value>4. Đăng Ký Phép</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuCreateLeaveAccident</Name>
-    <Value>6. Đăng Ký Phép Tai Nạn</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuCreateLeaveMaternity</Name>
-    <Value>7. Đăng Ký Phép Thai Sản</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuCreateHoliday</Name>
-    <Value>5. Quản Lý Ngày Nghỉ Trong Năm</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuManageStaffOfGroup</Name>
-    <Value>1. Quản lý danh sách NV trong nhóm</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuManageTeam</Name>
-    <Value>2. Thông tin chung các nhóm</Value>
-  </Titles>
-
   <Titles>
     <Name>frmMain.mnuImportStore</Name>
     <Value>Import Store</Value>
@@ -2059,7 +1979,7 @@
     <Value>Edit Store</Value>
   </Titles>
   <Titles>
-    <Name>frmMain.mnuKPIData</Name>
+    <Name>frmMain.mnHUFSData</Name>
     <Value>KPI</Value>
   </Titles>
   <Titles>
@@ -2117,7 +2037,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.Title</Name>
-    <Value>UKPI System</Value>
+    <Value>HUFS System</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuPromotion_View</Name>
@@ -2129,7 +2049,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuFile</Name>
-    <Value>Tệp</Value>
+    <Value>File</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuPPO</Name>
@@ -2157,7 +2077,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuCloseAllWindow</Name>
-    <Value>Đóng Tất Cả Cửa Sổ</Value>
+    <Value>Close All Windows</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuSC</Name>
@@ -2189,11 +2109,11 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuSysAdmin</Name>
-    <Value>Quản Trị</Value>
+    <Value>Admin</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuWindow</Name>
-    <Value>Cửa Sổ</Value>
+    <Value>Window</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuHelp</Name>
@@ -2237,7 +2157,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuAddUser</Name>
-    <Value>Thêm Người Dùng</Value>
+    <Value>Add User</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuTrackingUser</Name>
@@ -2245,28 +2165,19 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuLogin</Name>
-    <Value>Đăng Nhập</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuLogout</Name>
-    <Value>Đăng Xuất</Value>
-  </Titles>
-
-  <!--<Titles>
-    <Name>frmMain.mnuLogin</Name>
     <Value>Log in</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuLogout</Name>
     <Value>Log out</Value>
-  </Titles>-->
+  </Titles>
   <Titles>
     <Name>frmMain.mnuSKU_Priority</Name>
     <Value>Define Priority</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuWindowCascade</Name>
-    <Value>Thu Nhỏ Các Cửa Sổ</Value>
+    <Value>Cascade windows</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuHelpTopic</Name>
@@ -2278,11 +2189,11 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuMaintainUsers</Name>
-    <Value>Quản Lý Người Dùng</Value>
+    <Value>Manage User</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuUserRole</Name>
-    <Value>Quản Lý Quyền</Value>
+    <Value>Manage Role</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuPromotion_Maintain</Name>
@@ -2318,15 +2229,15 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuChangePWD</Name>
-    <Value>Thay Đổi Mật Khẩu</Value>
+    <Value>Change password</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuWindowTileHorizontal</Name>
-    <Value>Sắp Xếp Cửa Sổ Ngang</Value>
+    <Value>Tile windows horizontally</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuWindowTileVertical</Name>
-    <Value>Sắp Xếp Cửa Sổ Dọc</Value>
+    <Value>Tile windows vertically</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuSeperate</Name>
@@ -2346,7 +2257,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuExit</Name>
-    <Value>Thoát</Value>
+    <Value>Exit</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuPromotion_QTY</Name>
@@ -2374,7 +2285,7 @@
   </Titles>
   <Titles>
     <Name>frmMain.mnuParameter</Name>
-    <Value>Cấu Hình Tham Số</Value>
+    <Value>Configure Parameter</Value>
   </Titles>
   <Titles>
     <Name>frmMain.mnuExportParam</Name>
@@ -2456,30 +2367,6 @@
     <Name>frmMain.mnuRptPromotionAllocated</Name>
     <Value>Promotion Allocated</Value>
   </Titles>
-
-  <Titles>
-    <Name>frmMain.mnuManageTeam</Name>
-    <Value>Quản Lý Nhóm</Value>
-  </Titles>
-
-
-
-  <Titles>
-    <Name>frmMain.mnuUpdateStaff</Name>
-    <Value>Lấy NV mới từ prowatch</Value>
-  </Titles>
-  <Titles>
-    <Name>frmMain.mnuManageStaffs</Name>
-    <Value>Quản lý thông tin nhân viên</Value>
-  </Titles>
-
-
-  <Titles>
-    <Name>frmMain.mnuUpdateStaffCc</Name>
-    <Value>Cập nhật NV chấm công</Value>
-  </Titles>
-
-
   <!-- End of frmMain -->
   <!--DongTC frmStoreList-->
   <Titles>
@@ -2597,7 +2484,7 @@
   <!--frmParameter DongTC-->
   <Titles>
     <Name>frmParameter.Title</Name>
-    <Value>UKPI - Parameter Management</Value>
+    <Value>HUFS - Parameter Management</Value>
   </Titles>
   <Titles>
     <Name>frmParameter.lblParameterGroup</Name>
@@ -3291,716 +3178,360 @@
     <Name>ExportCheckList.SOG.PrinciplesTitle</Name>
     <Value>Tuân theo Hướng Dẫn và Quy Định của công ty áp dụng cho siêu thị</Value>
   </Titles>
-  <!--FrmAddThanhVienNhom-->
+   <!-- Start frmKhambenh-->
   <Titles>
-    <Name>FrmManageStaffInGroup.lblTenNVCC</Name>
-    <Value>Tên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.btnTimNVNhom</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblTenNV</Name>
-    <Value>Tên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblNhom</Name>
-    <Value>Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.btnTimNVCC</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.btnAddNV</Name>
-    <Value>Thêm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.btnRemoveNV</Name>
-    <Value>Gỡ</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblTVNhom</Name>
-    <Value>Danh Sách Nhân Viên Trong Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblNvCC</Name>
-    <Value>Danh Sách Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblWeeApply</Name>
-    <Value>Thông Tin Thành Viên Shóm Sẽ Được Áp Dụng Sau Tuần</Value>
+    <Name>frmKhambenh.lblPhongKham</Name>
+    <Value>Phòng Khám</Value>
   </Titles>
 
   <Titles>
-    <Name>FrmManageStaffInGroup.lblCardNo</Name>
-    <Value>Mã Thẽ</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblLoaiNV</Name>
-    <Value>Loại NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblMaSo</Name>
-    <Value>Mã Số NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblFName</Name>
-    <Value>Họ</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblLName</Name>
-    <Value>Tên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblOutsource</Name>
-    <Value>Thắng Lợi</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblTruongNhom</Name>
-    <Value>Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblGoupType</Name>
-    <Value>Loại Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblTuanHienTai</Name>
-    <Value>Tuần Hiện Tại</Value>
-  </Titles>
-
-
-  <Titles>
-    <Name>FrmManageStaffInGroup.lblMaTruongNhom</Name>
-    <Value>Mã Trưởng Nhóm</Value>
+    <Name>frmKhambenh.lblNgayKham</Name>
+    <Value>Ngày Khám</Value>
   </Titles>
 
   <Titles>
-    <Name>FrmManageStaffInGroup.lblMaUnilever</Name>
-    <Value>Mã NV Unilever</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffInGroup.Title</Name>
-    <Value>Quản lý danh sách NV trong nhóm</Value>
+    <Name>frmKhambenh.lblBenhNhan</Name>
+    <Value>Bệnh Nhân</Value>
   </Titles>
 
   <Titles>
-    <Name>FrmManageStaffInGroup.lblMaNvUnilever1</Name>
-    <Value>Mã NV Unilever</Value>
+    <Name>frmKhambenh.lblMaNhanVien</Name>
+    <Value>Mã Nhân Viên</Value>
   </Titles>
-  <!--End-->
+  <Titles>
+    <Name>frmKhambenh.lblMaBHYT</Name>
+    <Value>Mã BHXH</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblGioiTinh</Name>
+    <Value>Giới tính</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblNamSinh</Name>
+    <Value>Năm sinh</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblBoPhan</Name>
+    <Value>Bộ Phận</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblCongTy</Name>
+    <Value>Công ty</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblKhuVuc</Name>
+    <Value>Khu vực</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblNhomBenh</Name>
+    <Value>Nhóm bệnh</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblChanDoan</Name>
+    <Value>Chẩn đoán</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblQdnp</Name>
+    <Value>Quyết định nghỉ phép</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblTuNgay</Name>
+    <Value>Từ ngày</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblDenNgay</Name>
+    <Value>Đến ngày</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblSndn</Name>
+    <Value>Số ngày được nghỉ</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnQuyetDinh</Name>
+    <Value>QĐ</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblLyDo</Name>
+    <Value>Lý do</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblDienGiai</Name>
+    <Value>Diễn giải</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblMaICD</Name>
+    <Value>Mã ICD</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblDienGiaICD</Name>
+    <Value>Diễn giải ICD</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.frmKhambenh</Name>
+    <Value>KHÁM BỆNH CÓ BẢO HIỂM</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnXoaThuoc</Name>
+    <Value>Xóa Thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnXacNhan</Name>
+    <Value>Xác Nhận</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnLuuIn</Name>
+    <Value>Lưu/In</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnDong</Name>
+    <Value>Đóng</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.lblTongThanhTien</Name>
+    <Value>Tổng thành tiền</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.ColTenThuoc</Name>
+    <Value>Tên thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.ColMaThuoc</Name>
+    <Value>Mã thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.ColThuocBH</Name>
+    <Value>Thuốc BH</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.colDonViTinh</Name>
+    <Value>Đơn vị tính</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.ColHamLuong</Name>
+    <Value>Hàm lượng</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.ColSoLuong</Name>
+    <Value>Số lượng</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.colGia</Name>
+    <Value>Giá</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.colCachUong</Name>
+    <Value>Cách uống</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.grdToanThuoc.colThanhTien</Name>
+    <Value>Thành tiền</Value>
+  </Titles>
 
-  <!--FrmQuanLyNhom-->
+  <!-- End frmKhambenh-->
 
+  <!-- Start frmNghiPhep-->
   <Titles>
-    <Name>FrmManageTeam.lblNhom</Name>
-    <Value>Nhóm</Value>
+    <Name>frmNghiPhep.lblBenhNhan</Name>
+    <Value>Bệnh nhân</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblTeamLead</Name>
-    <Value>Trưởng Nhóm</Value>
+    <Name>frmNghiPhep.lblTuLuc</Name>
+    <Value>Từ lúc</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblMaNV</Name>
-    <Value>Mã NV Unilever</Value>
+    <Name>frmNghiPhep.lblDenLuc</Name>
+    <Value>Đến Lúc</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.btnAddNew</Name>
-    <Value>Thêm</Value>
+    <Name>frmNghiPhep.lblSndn</Name>
+    <Value>Số ngày được nghỉ</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblLoaiNhom</Name>
-    <Value>Loại Nhóm</Value>
+    <Name>frmNghiPhep.lblLyDo</Name>
+    <Value>Lý do</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblActive</Name>
-    <Value>Hoạt Động</Value>
+    <Name>frmNghiPhep.lblLyDoChiTiet</Name>
+    <Value>Lý do chi tiet</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblNote</Name>
-    <Value>Ghi Chú</Value>
+    <Name>frmNghiPhep.lblDienGiai</Name>
+    <Value>Diễn giải</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.btnUnActive</Name>
-    <Value>Ngưng Hoạt Động</Value>
+    <Name>frmNghiPhep.lblChuThich</Name>
+    <Value>Chú thích</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.lblMaNhom</Name>
-    <Value>Mã Nhóm</Value>
+    <Name>frmNghiPhep.btnXacNhan</Name>
+    <Value>Xác nhận</Value>
+  </Titles>
+  <!-- End frmNghiPhep-->
+<!-- Start frmnhapkhothuoc-->
+    <Titles>
+    <Name>frmnhapkhothuoc.lblNhanVienNhap</Name>
+    <Value>Nhân viên nhập</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.btnSave</Name>
+    <Name>frmnhapkhothuoc.lblMaNhanVienNhap</Name>
+    <Value>Mã nhân viên nhập</Value>
+  </Titles>
+    <Titles>
+    <Name>frmnhapkhothuoc.lblPhongKhamKho</Name>
+    <Value>Phòng khám/Kho</Value>
+  </Titles>
+    <Titles>
+    <Name>frmnhapkhothuoc.lblMaHopDong</Name>
+    <Value>Mã số HĐĐ*</Value>
+  </Titles>
+    <Titles>
+    <Name>frmnhapkhothuoc.lblNgayNhapKho</Name>
+    <Value>Ngày nhập kho</Value>
+  </Titles>
+    <Titles>
+    <Name>frmnhapkhothuoc.lblDonViCungCap</Name>
+    <Value>Đơn vị cung cấp *</Value>
+  </Titles>
+   <Titles>
+    <Name>frmnhapkhothuoc.lblMaDonViCungCap</Name>
+    <Value>Mã đơn vị cung cấp *</Value>
+  </Titles>
+  <Titles>
+    <Name>frmnhapkhothuoc.btnXoaThuoc</Name>
+    <Value>Xóa Thuốc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmnhapkhothuoc.btnLuuIn</Name>
+    <Value>Lưu/In</Value>
+  </Titles>
+  <Titles>
+    <Name>frmnhapkhothuoc.btnDong</Name>
+    <Value>Đóng</Value>
+  </Titles>
+    <Titles>
+    <Name>frmnhapkhothuoc.lblTongThanhTien</Name>
+    <Value>Tổng thành tiền</Value>
+  </Titles>
+  <!-- End frmnhapkhothuoc-->
+
+  <!-- Start frmXuatKho-->
+  <Titles>
+    <Name>frmXuatKho.btnLuuIn</Name>
     <Value>Lưu</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageTeam.btnSearch</Name>
-    <Value>Tìm Kiếm</Value>
+    <Name>frmXuatKho.btnExport</Name>
+    <Value>Export</Value>
   </Titles>
-  <Titles>
-    <Name>FrmManageTeam.lblTeamSearch</Name>
-    <Value>Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageTeam.lblHoSearch</Name>
-    <Value>Họ Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageTeam.lblTenSearch</Name>
-    <Value>Tên Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageTeam.btnSeachTeam</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageTeam.lblOutsource</Name>
-    <Value>Thắng Lợi</Value>
-  </Titles>
-  <!--End-->
+  <!-- End frmXuatKho-->
 
-  <!--Form Manage Shift for Team-->
+ <!-- Start frmdanhmucthuoc-->
   <Titles>
-    <Name>FrmManageShiftForTeam.lblOutsource</Name>
-    <Value>Thắng Lợi</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageShiftForTeam.lblToWeek</Name>
-    <Value>Đến Tuần:</Value>
+    <Name>frmdanhmucthuoc.btnLuuIn</Name>
+    <Value>Lưu/Cập nhật</Value>
   </Titles>
 
-  <Titles>
-    <Name>FrmManageShiftForTeam.lblNhom</Name>
-    <Value>Nhóm</Value>
-  </Titles>
+  <!-- End frmdanhmucthuoc-->
 
+ <!-- Start frmChinhSachGia-->
   <Titles>
-    <Name>FrmManageShiftForTeam.lblFromWeek</Name>
-    <Value>Từ Tuần:</Value>
+    <Name>frmChinhSachGia.lblMaChinhSachGia</Name>
+    <Value>Mã chính sách giá</Value>
+  </Titles>
+  
+  <Titles>
+    <Name>frmChinhSachGia.lblTenChinhSachGia</Name>
+    <Value>Tên chính sách giá*</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageShiftForTeam.btnCreateShiftForTeam</Name>
-    <Value>Tạo Ca Làm Việc Cho Nhóm</Value>
+    <Name>frmChinhSachGia.lblHoatDong</Name>
+    <Value>Hoạt động</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageShiftForTeam.btnAddNew</Name>
+    <Name>frmChinhSachGia.lblThoiGianBatDau</Name>
+    <Value>Thời gian bắt đầu</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblThoiGianKetThuc</Name>
+    <Value>Thời gian kết thúc</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.lblNgayNgungHoatDong</Name>
+    <Value>Ngày ngưng hoạt động</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.btnThemMoi</Name>
+    <Value>Thêm mới</Value>
+  </Titles>
+  <Titles>
+    <Name>frmChinhSachGia.btnLuu</Name>
     <Value>Lưu</Value>
   </Titles>
-
-  <Titles>
-    <Name>FrmManageShiftForTeam.lblDauDocTheVao</Name>
-    <Value>Đầu đọc thẻ vào</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmManageShiftForTeam.lblDauDocTheRa</Name>
-    <Value>Đầu đọc thẻ ra</Value>
+<Titles>
+    <Name>frmChinhSachGia.btnCapNhat</Name>
+    <Value>Cập nhật</Value>
   </Titles>
   <Titles>
-    <Name>FrmManageShiftForTeam.lblDNCalamviec</Name>
-    <Value>Xem ca làm việc nhóm</Value>
+    <Name>frmChinhSachGia.btnChiTietChinhSachGia</Name>
+    <Value>Chi tiết chính sách giá</Value>
   </Titles>
-
-
-  <!--END-->
-  <!--Form Tao Ngay Nghi-->
+  <!-- End frmChinhSachGia-->
+  <!-- Start frmChinhSachGiaChiTiet-->
   <Titles>
-    <Name>FrmCreateLeavePlan.lblLeaveFromDay</Name>
-    <Value>Dăng Ký nghỉ Ngày</Value>
+    <Name>frmChinhSachGiaChiTiet.btnXoaThuoc</Name>
+    <Value>Xóa thuốc</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblTruongNhom</Name>
-    <Value>Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeavePlan.btnAddNew</Name>
+    <Name>frmChinhSachGiaChiTiet.btnLuuIn</Name>
     <Value>Lưu</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblNhanVien</Name>
-    <Value>Nhân Viên</Value>
+    <Name>frmChinhSachGiaChiTiet.btnDong</Name>
+    <Value>Đóng</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblLeaveToDay</Name>
-    <Value>Đến Ngày</Value>
+    <Name>frmChinhSachGiaChiTiet.lblMaChinhSachGia</Name>
+    <Value>Mã chính sách giá</Value>
   </Titles>
+  <!-- End frmChinhSachGia-->
+  <!-- Start frmbaocaolichsubenhnhan-->
   <Titles>
-    <Name>FrmCreateLeavePlan.lblLyDo2</Name>
-    <Value>Lý Do 2</Value>
+    <Name>frmbaocaolichsubenhnhan.lblTenBenhNhan</Name>
+    <Value>Tên bệnh nhân</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblDienGiai</Name>
-    <Value>Diễn Giải</Value>
+    <Name>frmbaocaolichsubenhnhan.lblMaBenhNhan</Name>
+    <Value>Mã bệnh nhân</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblLyDo1</Name>
-    <Value>Lý Do 1</Value>
+    <Name>frmbaocaolichsubenhnhan.lblMaBHYT</Name>
+    <Value>Mã BHYT</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.lblTenNhanVien</Name>
-    <Value>Tên Nhân Viên</Value>
+    <Name>frmbaocaolichsubenhnhan.btnSearch</Name>
+    <Value>Tìm kiếm</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateLeavePlan.btnSearch</Name>
-    <Value>Tìm</Value>
+    <Name>frmbaocaolichsubenhnhan.btnExport</Name>
+    <Value>Export</Value>
   </Titles>
-
-  <!--END-->
-  <!--Form Create Holidays -->
+  <!-- End frmbaocaolichsubenhnhan-->
+  <!-- Start frmbaocaotonkho-->
   <Titles>
-    <Name>FrmCreateHoliday.lblLeaveFromDay</Name>
-    <Value>Ngày Nghĩ Từ</Value>
+    <Name>frmbaocaotonkho.lblKho</Name>
+    <Value>Kho</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateHoliday.lblLoaiNgayNghi</Name>
-    <Value>Loại Ngày Nghĩ</Value>
+    <Name>frmbaocaotonkho.lblLoaiThuoc</Name>
+    <Value>Loại thuốc</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateHoliday.btnAddNew</Name>
-    <Value>Lưu</Value>
+    <Name>frmbaocaotonkho.btnSearch</Name>
+    <Value>Tìm kiếm</Value>
   </Titles>
   <Titles>
-    <Name>FrmCreateHoliday.lblDienGiai</Name>
-    <Value>Diễn Giải</Value>
+    <Name>frmbaocaotonkho.btnExport</Name>
+    <Value>Export</Value>
   </Titles>
-  <Titles>
-    <Name>FrmCreateHoliday.lblNamSearch</Name>
-    <Value>Năm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateHoliday.btnSearch</Name>
-    <Value>Tìm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateHoliday.lblLeaveToDay</Name>
-    <Value>Đến Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateHoliday.lblNam</Name>
-    <Value>Năm</Value>
-  </Titles>
-  <!-- END-->
-  <!--Form Tao Ngay Nghi Tai Nan-->
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblLeaveFromDay</Name>
-    <Value>Dăng Ký nghỉ Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblTruongNhom</Name>
-    <Value>Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.btnAddNew</Name>
-    <Value>Lưu</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblNhanVien</Name>
-    <Value>Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblLeaveToDay</Name>
-    <Value>Đến Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblLyDo2</Name>
-    <Value>Lý Do 2</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblDienGiai</Name>
-    <Value>Diễn Giải</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblLyDo1</Name>
-    <Value>Lý Do 1</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblTenNhanVien</Name>
-    <Value>Tên Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.btnSearch</Name>
-    <Value>Tìm</Value>
-  </Titles>
-
-  <!--END-->
-  <!--Form Tao Ngay Nghi Thai san-->
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblLeaveFromDay</Name>
-    <Value>Dăng Ký nghỉ Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblTruongNhom</Name>
-    <Value>Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.btnAddNew</Name>
-    <Value>Lưu</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblNhanVien</Name>
-    <Value>Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblLeaveToDay</Name>
-    <Value>Đến Ngày</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblLyDo2</Name>
-    <Value>Lý Do 2</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblDienGiai</Name>
-    <Value>Diễn Giải</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblLyDo1</Name>
-    <Value>Lý Do 1</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.lblTenNhanVien</Name>
-    <Value>Tên Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveMaternity.btnSearch</Name>
-    <Value>Tìm</Value>
-  </Titles>
-
-  <!--END-->
-  <!--ThoaiDc FrmCreateTimesheetManual-->
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL3MaSo</Name>
-    <Value>L3 Mã Số</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL2Ten</Name>
-    <Value>L2 Xác Nhận</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL2MaSo</Name>
-    <Value>L2 Mã Số</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL1MaSo</Name>
-    <Value>L1 Mã Số</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblOutsource</Name>
-    <Value>Thắng Lợi</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL3Ten</Name>
-    <Value>L3 Xác Nhận</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.btnSearch</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblTruongNhom</Name>
-    <Value>Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL0Ten</Name>
-    <Value>L0 Xác Nhận</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblNhom</Name>
-    <Value>Nhóm </Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblMaTruongNhom</Name>
-    <Value>Mã Số Trưởng Nhóm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL1Ten</Name>
-    <Value>L1 Xác Nhận</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL0MaSo</Name>
-    <Value>L0 Mã Số</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblLichLamViecTuan</Name>
-    <Value>Lịch Làm Việc Tuần</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.btnXemLich</Name>
-    <Value>Xem Lịch</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL4Ten</Name>
-    <Value>L4 Xác Nhận</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblL4MaSo</Name>
-    <Value>L4 Mã Số</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateTimesheetManual.lblCurrentWeek</Name>
-    <Value>Tuần Hiện Tại</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmCreateLeaveAccident.lblNgay</Name>
-    <Value>Ngày</Value>
-  </Titles>
-
-  <!--End-->
-  <!-- FrmManageStaffs-->
-  <Titles>
-    <Name>FrmManageStaffs.btnSave</Name>
-    <Value>Lưu</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffs.btnTimNV</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffs.lblFName</Name>
-    <Value>FName</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffs.lblLName</Name>
-    <Value>LName</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffs.lblOutsource</Name>
-    <Value>Dữ liệu chưa hoàn thiện</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmManageStaffs.lblEmail</Name>
-    <Value>Email</Value>
-  </Titles>
-
-  <!--End-->
-  <!-- FrmCreateTimesheetManual-->
-  <Titles>
-    <Name>FrmUpdateStaff.Title</Name>
-    <Value>Cập Nhật NV Chấm Công</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmUpdateStaff.btnSave</Name>
-    <Value>Lưu</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmUpdateStaff.btnTimNVProWatch</Name>
-    <Value>Xem nhân viên mới từ Prowatch</Value>
-  </Titles>
-
-
-  <!--End-->
-  <!-- FrmManageStaffs-->
-  <Titles>
-    <Name>FrmUpdateStaffCc.btnSave</Name>
-    <Value>Cập nhật NV chấm công</Value>
-  </Titles>
-  <!--End-->
-
-  <!--FrmNVQL_Users-->
-
-
-  <Titles>
-    <Name>frmMain.mnuNVQL_Users</Name>
-    <Value>Tạo NV Quản Lý</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmNVQL_Users.Title</Name>
-    <Value>Tạo Người Dùng Quản Lý</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblUserName</Name>
-    <Value>Chọn Tên Đăng Nhập</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.btnTimNVCC</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblTVNhom</Name>
-    <Value>Nhân Viên Quản Lý</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblNvCC</Name>
-    <Value>Nhân Viên Chấm Công</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.btnAddNV</Name>
-    <Value>Thêm NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.btnRemoveNV</Name>
-    <Value>Gỡ NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblCardNo</Name>
-    <Value>Mã Thẻ</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblLoaiNV</Name>
-    <Value>Loại NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblMaNVUnilever</Name>
-    <Value>Mã NV Unilever</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblFName</Name>
-    <Value>Họ</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblLName</Name>
-    <Value>Tên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblNhanVien</Name>
-    <Value>Nhân Viên</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblMaNV</Name>
-    <Value>Mã NV</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.lblMaUnilever</Name>
-    <Value>Mã NV Unilever</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmNVQL_Users.btnSave</Name>
-    <Value>Lưu</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmNVQL_Users.lblNvUser</Name>
-    <Value>Nhân Viên Quản Lý</Value>
-  </Titles>
-
-  <!--End-->
-
-  <!--ThoaiDc frmAddStaffUser-->
-
-  <Titles>
-    <Name>frmAddStaffUser.lblUserName</Name>
-    <Value> Tên Đăng Nhập </Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblPassword</Name>
-    <Value>Mật Khẩu</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblConfirmPassword</Name>
-    <Value>Xác Nhận Mật Khẩu</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblFirstName</Name>
-    <Value>Tên</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblLastName</Name>
-    <Value>Họ</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblAddress</Name>
-    <Value>Địa Chỉ</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblStartDate</Name>
-    <Value>Ngày Bắt Đầu</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblEndDate</Name>
-    <Value>Ngày Kết Thúc</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblEmail</Name>
-    <Value>Email</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblDescription</Name>
-    <Value>Ghi Chú</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.btnSave</Name>
-    <Value>Lưu</Value>
-  </Titles>
-
-  <Titles>
-    <Name>frmAddStaffUser.lbLevel</Name>
-    <Value>Cấp Bật</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblURoleID</Name>
-    <Value>Quyền Hệ Thống</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblPhone</Name>
-    <Value>Số Điện Thoại</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.btnCapQL</Name>
-    <Value>Cấp QL</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.btnCancel</Name>
-    <Value>Hủy</Value>
-  </Titles>
-  <Titles>
-    <Name>frmAddStaffUser.lblMaNvUnilever</Name>
-    <Value>Mã NV Unilever</Value>
-  </Titles>
-
-  <!--End-->
-  <!--frmArchiveDataFromProwatch-->
-  <Titles>
-    <Name>frmMain.mnuArchiveDataFromProwatch</Name>
-    <Value>Archived dữ liệu prowatch</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmArchiveDataFromProwatch.Title</Name>
-    <Value>Archived dữ liệu prowatch</Value>
-  </Titles>
-
-  <!--END-->
-
-  <!--FrmMapUserLevel-->
-
-  <Titles>
-    <Name>frmMain.mnuMapUserLevel</Name>
-    <Value>Liên kết cấp bật nhân viên</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmMapUserLevel.Title</Name>
-    <Value>Liên kết cấp bật nhân viên</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmMapUserLevel.lblCardNo</Name>
-    <Value>Card no</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmMapUserLevel.lblLoaiNV</Name>
-    <Value>UserName</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmMapUserLevel.lblMaNVUnilever</Name>
-    <Value>Mã NV Unilever</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmMapUserLevel.lblFName</Name>
-    <Value>FName</Value>
-  </Titles>
-  <Titles>
-    <Name>FrmMapUserLevel.lblLName</Name>
-    <Value>LName</Value>
-  </Titles>
-
-  <Titles>
-    <Name>FrmMapUserLevel.btnTimNVProWatch</Name>
-    <Value>Tìm Kiếm</Value>
-  </Titles>
-
-
-  <!--END-->
-
-
+  <!-- Start frmbaocaotonkho-->
 </UKPI>
