@@ -48,3 +48,13 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistrati
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.pdb
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\RegImportMapping.xml
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.dll
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\UKPI.ImportRegistration.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\log4net.dll
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\UKPI.Core.dll
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\bin\Debug\UKPI.Core.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.csprojResolveAssemblyReference.cache
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.dll
+D:\Working\PartTime\HUFS\Code\UKPI.ImportRegistration\obj\Debug\UKPI.ImportRegistration.pdb
