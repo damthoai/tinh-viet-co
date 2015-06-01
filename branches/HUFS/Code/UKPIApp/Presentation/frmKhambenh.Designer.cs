@@ -102,6 +102,7 @@ namespace UKPI.Presentation
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTongThanhTien = new System.Windows.Forms.Label();
             this.txtTongThanhTien = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
             this.grpThongTinKhamBenh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
@@ -111,6 +112,7 @@ namespace UKPI.Presentation
             // 
             this.grpThongTinKhamBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpThongTinKhamBenh.Controls.Add(this.btnSearch);
             this.grpThongTinKhamBenh.Controls.Add(this.txtDienGiaiICD);
             this.grpThongTinKhamBenh.Controls.Add(this.cbbMaICD);
             this.grpThongTinKhamBenh.Controls.Add(this.lblDienGiaiICD);
@@ -417,7 +419,7 @@ namespace UKPI.Presentation
             // 
             // txtMaBHYT
             // 
-            this.txtMaBHYT.BackColor = System.Drawing.Color.Red;
+            this.txtMaBHYT.BackColor = System.Drawing.Color.White;
             this.txtMaBHYT.Location = new System.Drawing.Point(101, 153);
             this.txtMaBHYT.Name = "txtMaBHYT";
             this.txtMaBHYT.Size = new System.Drawing.Size(156, 20);
@@ -444,7 +446,7 @@ namespace UKPI.Presentation
             // lblBoPhan
             // 
             this.lblBoPhan.AutoSize = true;
-            this.lblBoPhan.Location = new System.Drawing.Point(6, 237);
+            this.lblBoPhan.Location = new System.Drawing.Point(8, 238);
             this.lblBoPhan.Name = "lblBoPhan";
             this.lblBoPhan.Size = new System.Drawing.Size(47, 13);
             this.lblBoPhan.TabIndex = 46;
@@ -479,15 +481,15 @@ namespace UKPI.Presentation
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.Location = new System.Drawing.Point(101, 112);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(101, 86);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.ReadOnly = true;
             this.txtMaNhanVien.Size = new System.Drawing.Size(156, 20);
             this.txtMaNhanVien.TabIndex = 42;
+            this.txtMaNhanVien.MouseLeave += new System.EventHandler(this.txtMaNhanVien_MouseLeave);
             // 
             // txtBenhNhan
             // 
-            this.txtBenhNhan.Location = new System.Drawing.Point(101, 86);
+            this.txtBenhNhan.Location = new System.Drawing.Point(101, 112);
             this.txtBenhNhan.Name = "txtBenhNhan";
             this.txtBenhNhan.ReadOnly = true;
             this.txtBenhNhan.Size = new System.Drawing.Size(156, 20);
@@ -496,7 +498,7 @@ namespace UKPI.Presentation
             // lblMaNhanVien
             // 
             this.lblMaNhanVien.AutoSize = true;
-            this.lblMaNhanVien.Location = new System.Drawing.Point(9, 121);
+            this.lblMaNhanVien.Location = new System.Drawing.Point(9, 93);
             this.lblMaNhanVien.Name = "lblMaNhanVien";
             this.lblMaNhanVien.Size = new System.Drawing.Size(75, 13);
             this.lblMaNhanVien.TabIndex = 40;
@@ -505,7 +507,7 @@ namespace UKPI.Presentation
             // lblBenhNhan
             // 
             this.lblBenhNhan.AutoSize = true;
-            this.lblBenhNhan.Location = new System.Drawing.Point(8, 93);
+            this.lblBenhNhan.Location = new System.Drawing.Point(9, 119);
             this.lblBenhNhan.Name = "lblBenhNhan";
             this.lblBenhNhan.Size = new System.Drawing.Size(61, 13);
             this.lblBenhNhan.TabIndex = 29;
@@ -762,6 +764,17 @@ namespace UKPI.Presentation
             this.txtTongThanhTien.TabIndex = 70;
             this.txtTongThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnSearch.Location = new System.Drawing.Point(263, 88);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(26, 23);
+            this.btnSearch.TabIndex = 76;
+            this.btnSearch.Text = "...";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
             // grdToaThuoc
             // 
             this.grdToaThuoc.AllowUserToAddRows = false;
@@ -885,5 +898,6 @@ namespace UKPI.Presentation
         private Controls.DataGridView_RowNum grdToaThuoc;
         private System.Windows.Forms.Label lblTongThanhTien;
         private System.Windows.Forms.TextBox txtTongThanhTien;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

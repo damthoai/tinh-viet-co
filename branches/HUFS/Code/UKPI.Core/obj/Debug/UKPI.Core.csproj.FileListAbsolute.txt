@@ -35,6 +35,5 @@ D:\Working\PartTime\HUFS\Code\UKPI.Core\bin\Debug\UKPI.Core.dll
 D:\Working\PartTime\HUFS\Code\UKPI.Core\bin\Debug\UKPI.Core.pdb
 D:\Working\PartTime\HUFS\Code\UKPI.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\Working\PartTime\HUFS\Code\UKPI.Core\bin\Debug\log4net.dll
-D:\Working\PartTime\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.csprojResolveAssemblyReference.cache
 D:\Working\PartTime\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.dll
 D:\Working\PartTime\HUFS\Code\UKPI.Core\obj\Debug\UKPI.Core.pdb

@@ -1,5 +1,6 @@
 ﻿using log4net;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using UKPI.Utils;
@@ -14,6 +15,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_TinhSoLuongThuoc = "p_HUFS_TinhSoLuongThuoc";
         private const string p_HUFS_insertDataForTransaction = "p_HUFS_insertDataForTransaction";
         private const string p_HUFS_InsertThongTinKhamBenh = "p_HUFS_InsertThongTinKhamBenh";
+        private const string p_HUFS_searchThongTinBenhNhan = "p_HUFS_searchThongTinBenhNhan";
         public ThongTinBenhNhan GetThongTinBenhNhan(string maBenhNhan)
         {
             ThongTinBenhNhan info = new ThongTinBenhNhan();
@@ -175,6 +177,23 @@ namespace UKPI.DataAccessObject
 
         }
 
+        public List<ThongTinBenhNhan> SearchThongTinBenhNhan(string maBenhNhan, string tenBenhNhan)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[2];
+                Params[0] = new SqlParameter("@MaBenhNhan", maBenhNhan);
+                Params[1] = new SqlParameter("@TenBenhNhan", tenBenhNhan);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_searchThongTinBenhNhan, Params);
+
+                return this.ConvertDataTableToList<ThongTinBenhNhan>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
         public string GetMaxMaKhamBenh()
         {
 

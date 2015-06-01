@@ -1578,4 +1578,14 @@
     <Name>messages.frmKhambenh.frmKhambenh</Name>
     <Value>KHÁM BỆNH CÓ BẢO HIỂM</Value>
   </Messages>
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.SelectNhanVien</Name>
+    <Value>Bạn chưa chọn nhân viên</Value>
+  </Messages>
 </HUFS>

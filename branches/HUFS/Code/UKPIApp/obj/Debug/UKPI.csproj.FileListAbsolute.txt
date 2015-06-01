@@ -1052,3 +1052,4 @@ D:\Working\PartTime\HUFS\Code\UKPIApp\obj\Debug\HHCC.exe.manifest
 D:\Working\PartTime\HUFS\Code\UKPIApp\obj\Debug\HHCC.application
 D:\Working\PartTime\HUFS\Code\UKPIApp\obj\Debug\HHCC.exe
 D:\Working\PartTime\HUFS\Code\UKPIApp\obj\Debug\HHCC.pdb
+D:\Working\PartTime\HUFS\Code\UKPIApp\obj\Debug\UKPI.Presentation.frmSearchNhanVien.resources

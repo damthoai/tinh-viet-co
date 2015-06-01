@@ -15,5 +15,6 @@ namespace UKPI.ValueObject
         public int NamSinh {get;set;}
         public string CongTy {get;set;}
         public int BoPhan {get;set;}
+        public string TenBoPhan { get; set; }
     }
 }

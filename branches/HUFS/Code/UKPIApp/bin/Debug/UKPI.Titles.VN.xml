@@ -3326,6 +3326,10 @@
     <Name>frmKhambenh.grdToanThuoc.colThanhTien</Name>
     <Value>Thành tiền</Value>
   </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnSearch</Name>
+    <Value>...</Value>
+  </Titles>
 
   <!-- End frmKhambenh-->
 
@@ -3533,5 +3537,24 @@
     <Name>frmbaocaotonkho.btnExport</Name>
     <Value>Export</Value>
   </Titles>
-  <!-- Start frmbaocaotonkho-->
+  <!-- End frmbaocaotonkho-->
+
+  <!-- Start frmSearchNhanVien-->
+  <Titles>
+    <Name>frmSearchNhanVien.lblMaBenhNhan</Name>
+    <Value>Mã nhân viên</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.lblTenBenhNhan</Name>
+    <Value>Tên nhân viên</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.btnSearch</Name>
+    <Value>Tìm</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.btnChon</Name>
+    <Value>Chọn</Value>
+  </Titles>
+  <!-- End frmSearchNhanVien-->
 </UKPI>

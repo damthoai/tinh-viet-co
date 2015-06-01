@@ -2069,5 +2069,14 @@
     <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc</Name>
     <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
   </Messages>
-  
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.SelectNhanVien</Name>
+    <Value>Bạn chưa chọn nhân viên</Value>
+  </Messages>
 </HUFS>

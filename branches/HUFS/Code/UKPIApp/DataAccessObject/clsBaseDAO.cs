@@ -1487,13 +1487,20 @@ namespace UKPI.DataAccessObject
         }
         public List<T> ConvertDataTableToList<T>(DataTable dt)
         {
-            List<T> data = new List<T>();
-            foreach (DataRow row in dt.Rows)
+            try
             {
-                T item = GetItem<T>(row);
-                data.Add(item);
+                List<T> data = new List<T>();
+                foreach (DataRow row in dt.Rows)
+                {
+                    T item = GetItem<T>(row);
+                    data.Add(item);
+                }
+                return data;
             }
-            return data;
+            catch
+            {
+                return null;
+            }
         }
         private  T GetItem<T>(DataRow dr)
         {

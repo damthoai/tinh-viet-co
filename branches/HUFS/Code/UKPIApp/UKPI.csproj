@@ -284,6 +284,12 @@
     <Compile Include="Presentation\frmdanhmucthuoc.Designer.cs">
       <DependentUpon>frmdanhmucthuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmSearchNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSearchNhanVien.Designer.cs">
+      <DependentUpon>frmSearchNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmXuatKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1032,6 +1038,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmdanhmucthuoc.resx">
       <DependentUpon>frmdanhmucthuoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSearchNhanVien.resx">
+      <DependentUpon>frmSearchNhanVien.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmXuatKho.resx">
