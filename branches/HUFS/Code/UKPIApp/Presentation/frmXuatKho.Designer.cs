@@ -66,6 +66,8 @@ namespace UKPI.Presentation
             this.HanSuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhongKhamKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExport = new System.Windows.Forms.Button();
+            this.lblPhongKhamKho = new System.Windows.Forms.Label();
+            this.cbbPhongKham = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +79,7 @@ namespace UKPI.Presentation
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(86, 23);
             this.btnLuuIn.TabIndex = 78;
-            this.btnLuuIn.Text = "Lưu/In";
+            this.btnLuuIn.Text = "Xuất Kho";
             this.btnLuuIn.UseVisualStyleBackColor = true;
             this.btnLuuIn.Click += new System.EventHandler(this.btnLuuIn_Click);
             // 
@@ -349,11 +351,34 @@ namespace UKPI.Presentation
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click_1);
             // 
+            // lblPhongKhamKho
+            // 
+            this.lblPhongKhamKho.AutoSize = true;
+            this.lblPhongKhamKho.Location = new System.Drawing.Point(363, 31);
+            this.lblPhongKhamKho.Name = "lblPhongKhamKho";
+            this.lblPhongKhamKho.Size = new System.Drawing.Size(91, 13);
+            this.lblPhongKhamKho.TabIndex = 81;
+            this.lblPhongKhamKho.Text = "Phòng khám/Kho";
+            // 
+            // cbbPhongKham
+            // 
+            this.cbbPhongKham.DisplayMember = "RoomName";
+            this.cbbPhongKham.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbPhongKham.DropDownWidth = 130;
+            this.cbbPhongKham.FormattingEnabled = true;
+            this.cbbPhongKham.Location = new System.Drawing.Point(477, 28);
+            this.cbbPhongKham.Name = "cbbPhongKham";
+            this.cbbPhongKham.Size = new System.Drawing.Size(156, 21);
+            this.cbbPhongKham.TabIndex = 80;
+            this.cbbPhongKham.ValueMember = "RoomID";
+            // 
             // frmXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 648);
+            this.Controls.Add(this.lblPhongKhamKho);
+            this.Controls.Add(this.cbbPhongKham);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnLuuIn);
             this.Controls.Add(this.grdToaThuoc);
@@ -362,6 +387,7 @@ namespace UKPI.Presentation
             this.Text = "XUẤT KHO THUỐC";
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -394,5 +420,7 @@ namespace UKPI.Presentation
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhamBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn HanSuDung;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhongKhamKho;
+        private System.Windows.Forms.Label lblPhongKhamKho;
+        private System.Windows.Forms.ComboBox cbbPhongKham;
     }
 }

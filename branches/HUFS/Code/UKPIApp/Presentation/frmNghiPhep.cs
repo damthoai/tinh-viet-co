@@ -639,74 +639,28 @@ namespace UKPI.Presentation
 
         private void radMonth_CheckedChanged(object sender, EventArgs e)
         {
-            //if (radMonth.Checked != true) return;
-            //cboWeek.Enabled = false;
-            //cboMonth.Enabled = true;
-            //SetFromToDate();
         }
 
         private void radWeek_CheckedChanged(object sender, EventArgs e)
         {
-            //if (radWeek.Checked != true) return;
-            //cboWeek.Enabled = true;
-            //cboMonth.Enabled = false;
-            //SetFromToDate();
         }
 
         private void cboWeek_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // SetFromToDate();
         }
 
         private void cboMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // SetFromToDate();
         }
 
 
         private void btnApproveSave_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    if (this.OnApprove())
-            //    {
-            //        //SendEmailForL2();
-            //        MessageBox.Show(clsResources.GetMessage("messages.save.success"), clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        // SearchData();
-            //        btnSearch_Click(null, null);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    Log.Error(ex.Message, ex);
-            //}
-
 
         }
         public void SendEmailForL2()
         {
-            //try
-            //{
-            //    string tenTruongNhom = clsSystemConfig.FullName;
-            //    DataTable tb = _lichLamViecBo.GetEmailOfLeverApprove(Int32.Parse(clsSystemConfig.MaNhanVien.ToString()), 1);
-            //    string emailL2 = tb.Rows[0]["Email"].ToString();
-            //    string tenNVQLL2 = tb.Rows[0]["FullName"].ToString();
-
-            //    string body = "";
-
-            //    body = "<p>Chào " + tenNVQLL2 + " </p></br></br></br> ";
-            //    body += "<p>Email Thông báo phê duyệt chấm công: </p></br>";
-            //    body += "<p>Trưởng nhóm:  " + tenTruongNhom + " đả phê duyệt chấm công cho nhóm:  " + txtTeam.Text + " từ ngày: " + dtpFromDate.Text + " đến ngày: " + dtpToDate.Text + ".</p></br></br>";
-            //    body += "<p>Đăng nhập vào hệ thống chấm công của bạn để xem và tiếp tục phê duyệt chấm công cho nhóm : " + txtTeam.Text + ".</p>";
-            //    body += "<p>Thân ái</p>";
-
-            //    _common.SendEmail("", emailL2, "Email Thông báo phê duyệt Chấm công.", body);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Log.Error(ex.Message, ex);
-            //    throw ex;
-            //}
+       
 
         }
 
@@ -715,263 +669,58 @@ namespace UKPI.Presentation
         {
             var lstLichLamViec = new List<ClsLichLamViec>();
 
-            //var table = grdStores.DataSource as System.Data.DataTable;
-            //if (table == null) return lstLichLamViec;
-            //lstLichLamViec.AddRange(from DataRow row in table.Rows
-            //                        where (bool)row[ChamCongLichLamViecDAO.DaLayDuLieuChamCong] == true
-            //                        select new ClsLichLamViec
-            //                        {
-            //                            SysId = long.Parse(row[ChamCongLichLamViecDAO.SysID].ToString()),
-            //                            L1XacNhan = true,
-            //                            L1XacNhan_Date = DateTime.Now.ToString(clsCommon.ApproveTimesheet.DateFormatDb),
-            //                            L1XacNhan_Id = clsSystemConfig.UserName,
-            //                            L1XacNhan_TenNgan = clsSystemConfig.UserName,
-            //                            LastUpDate = DateTime.Now.ToString(clsCommon.ApproveTimesheet.DateFormatDb),
-            //                            lastUpdateId = clsSystemConfig.MaNhanVien.ToString(),
-            //                            Note = row[ChamCongLichLamViecDAO.Note].ToString()
-            //                        });
 
             return lstLichLamViec;
         }
 
         private bool OnApprove()
         {
-            //try
-            //{
-            //    var dtStores = grdStores.DataSource as System.Data.DataTable;
-            //    if (dtStores == null || dtStores.Rows.Count == 0)
-            //    {
-            //        return true;
-            //    }
-
-            //    // Get TimePeriod
-
-            //    Cursor.Current = Cursors.WaitCursor;
-            //    var lichLamViec = new ChamCongLichLamViecBo();
-            //    var lstChamCong = GetDataToApproveSave();
-            //    lichLamViec.XacNhanChamCongLichLamViec(lstChamCong);
-
-            //    grdStores.Refresh();
-
-            //    //BindDataToGrid();
-            //    // System.Windows.Forms.Application.DoEvents();
-
-            //    return true;
-            //}
-            //catch (Exception ex)
-            //{
-            //    Log.Error(ex.Message, ex);
-            //    throw ex;
-            //}
-            //finally
-            //{
-            //    Cursor.Current = Cursors.Default;
-            //}
-
+            
             return true;
         }
 
         private void btnSearchTimesheet_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    var strSysId = GetItemToGetTimesheet();
-            //    if (strSysId.Length == 0 || strSysId.Length == -1)
-            //    {
-            //        MessageBox.Show(clsResources.GetMessage("message.FrmApproveTimesheet.NoTimesheetFound"));
-            //    }
-            //    else
-            //    {
-
-            //        strSysId = strSysId.ToString(CultureInfo.InvariantCulture).Substring(1, strSysId.Length - 1);
-            //        var week = cboWeek.Enabled == true ? cboWeek.SelectedItem.ToString() : "";
-            //        var fromDate = dtpFromDate.Value.ToString(clsCommon.ApproveTimesheet.DateFormatDb, CultureInfo.InvariantCulture);
-            //        var toDate = dtpToDate.Value.ToString(clsCommon.ApproveTimesheet.DateFormatDb, CultureInfo.InvariantCulture);
-            //        var teamLead = cboTruongNhomL1.SelectedValue.ToString();
-            //        var team = txtMaNhom.Text;
-            //        //var status = cboStatus.SelectedValue.ToString() != "-1" ? cboStatus.SelectedValue.ToString() : "";
-            //        //var onOff = cboOnOff.SelectedValue.ToString() != "0" ? cboOnOff.SelectedValue.ToString() : "";
-            //        var shift = cboShift.SelectedValue.ToString() != "0" ? cboShift.SelectedValue.ToString() : "";
-            //        var lichLamViec = new ChamCongLichLamViecBo();
-            //        lichLamViec.LayDuLieuChamCongVaLuu(DateTime.Now.ToString(clsCommon.ApproveTimesheet.DateFormatDb),
-            //            clsSystemConfig.UserName,
-            //            week,
-            //            fromDate,
-            //            toDate, teamLead,
-            //            shift,
-            //            team);
-            //        BindDataToGrid();
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    Log.Error(ex.Message, ex);
-            //    throw ex;
-            //}
+          
         }
         public string GetItemToGetTimesheet()
         {
-            //const string strSysId = "";
-
-            //var table = grdStores.DataSource as System.Data.DataTable;
-            //if (table == null) return strSysId;
-
-            //return table.Rows.Cast<DataRow>().Where(row => (bool)row[ChamCongLichLamViecDAO.L1XacNhan] == false && (bool)row[ChamCongLichLamViecDAO.DaLayDuLieuChamCong] == false).Aggregate(strSysId, (current, row) => current + "," + row[ChamCongLichLamViecDAO.SysID].ToString());
+          
             return "";
         }
 
      
         private void cboTruongNhomL1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //DataTable teamTb = _tsBo.GetNhomByNhomTruong(cboTruongNhomL1.SelectedValue.ToString());
-            //if (teamTb.Rows.Count > 0)
-            //{
-            //    txtTeam.Text = teamTb.Rows[0][clsCommon.CreateTimesheet.Nhom].ToString();
-            //    txtMaNhom.Text = teamTb.Rows[0][clsCommon.CreateTimesheet.NhomId].ToString();
-            //}
+            
         }
 
      
 
         private void grdStores_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            //var rowIndex = e.RowIndex;
-            //if (e.ColumnIndex == 23)
-            //{
-            //    if (grdStores.Rows[rowIndex].Cells["LyDoOT"].Value.ToString() == "OT Làm Thay")
-            //    {
-            //        grdStores.Rows[rowIndex].Cells["MaUThayThe"].Style.BackColor = Color.Red;
-            //        grdStores.Rows[rowIndex].Cells["MaUThayThe"].Value = "*****";
-            //        grdStores.Rows[rowIndex].Cells["NhanVienThayThe"].Style.BackColor = Color.Red;
-            //        grdStores.Rows[rowIndex].Cells["NhanVienThayThe"].Value = "*****";
-            //    }
-            //    else
-            //    {
-            //        grdStores.Rows[rowIndex].Cells["MaUThayThe"].Style.BackColor = Color.White;
-            //        grdStores.Rows[rowIndex].Cells["MaUThayThe"].Value = "";
-            //        grdStores.Rows[rowIndex].Cells["NhanVienThayThe"].Style.BackColor = Color.White;
-            //        grdStores.Rows[rowIndex].Cells["NhanVienThayThe"].Value = "";
-            //    }
-            //}
-
-            //if (grdStores.CurrentCell.ColumnIndex == 19
-            //    || grdStores.CurrentCell.ColumnIndex == 20
-            //    || grdStores.CurrentCell.ColumnIndex == 21
-            //    || grdStores.CurrentCell.ColumnIndex == 22
-
-            //    )
-            //{
-            //    var otHeSo1 = grdStores.Rows[rowIndex].Cells["OTHS1"].Value.ToString() == ""
-            //        ? 0
-            //        : Int16.Parse(grdStores.Rows[rowIndex].Cells["OTHS1"].Value.ToString());
-            //    var otHeSo15 = grdStores.Rows[rowIndex].Cells["OTHS15"].Value.ToString() == ""
-            //       ? 0
-            //       : Int16.Parse(grdStores.Rows[rowIndex].Cells["OTHS15"].Value.ToString());
-            //    var otHeSo2 = grdStores.Rows[rowIndex].Cells["OTHS2"].Value.ToString() == ""
-            //                       ? 0
-            //                       : Int16.Parse(grdStores.Rows[rowIndex].Cells["OTHS2"].Value.ToString());
-            //    var totalOtThucTe = grdStores.Rows[rowIndex].Cells["ToTalOTL1"].Value.ToString() == ""
-            //                       ? 0
-            //                       : Int16.Parse(grdStores.Rows[rowIndex].Cells["ToTalOTL1"].Value.ToString());
-
-            //    if (otHeSo1 + otHeSo15 + otHeSo2 > totalOtThucTe)
-            //    {
-            //        grdStores.Rows[rowIndex].Cells["OTHS1"].Style.BackColor = Color.Red;
-            //        grdStores.Rows[rowIndex].Cells["OTHS1"].Value = "0";
-
-            //        grdStores.Rows[rowIndex].Cells["OTHS15"].Style.BackColor = Color.Red;
-            //        grdStores.Rows[rowIndex].Cells["OTHS15"].Value = "0";
-
-            //        grdStores.Rows[rowIndex].Cells["OTHS2"].Style.BackColor = Color.Red;
-            //        grdStores.Rows[rowIndex].Cells["OTHS2"].Value = "0";
-
-            //    }
-            //    else
-            //    {
-            //        grdStores.Rows[rowIndex].Cells["OTHS1"].Style.BackColor = Color.White;
-            //        grdStores.Rows[rowIndex].Cells["OTHS15"].Style.BackColor = Color.White;
-            //        grdStores.Rows[rowIndex].Cells["OTHS2"].Style.BackColor = Color.White;
-            //    }
-
-
-
-            //}
-
-
-
+   
 
         }
 
         private void grdStores_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-            //var columnIndex = grdStores.CurrentCell.ColumnIndex;
-            //e.Control.KeyPress -= new KeyPressEventHandler(tb_KeyPress);
-            //if ( grdStores.CurrentCell.ColumnIndex == 19
-            //    || grdStores.CurrentCell.ColumnIndex == 20
-            //    || grdStores.CurrentCell.ColumnIndex == 21
-            //    || grdStores.CurrentCell.ColumnIndex == 22
-                
-            //    ) //Desired Column
-            //{
-            //    var tb = e.Control as TextBox;
-            //    if (tb != null) 
-            //    {
-            //        tb.KeyPress += tb_KeyPress;
-            //    }
-            //}
-
-            //if (grdStores.CurrentCell.ColumnIndex == 12
-            //    || grdStores.CurrentCell.ColumnIndex == 13
-            //    )
-            //{
-            //    var tb1 = e.Control as TextBox;
-            //    if (tb1 != null)
-            //    {
-            //        tb1.KeyPress += tb1_KeyPress;
-            //    }
-
-            //}
-
+  
         }
 
         void tb1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)
-            // && e.KeyChar != 'h')
-            //{
-            //    e.Handled = true;
-            //}
-
-            //// only allow one decimal point
-            //var textBox = sender as TextBox;
-            //if (textBox != null && (e.KeyChar == 'h'
-            //                                  && textBox.Text.IndexOf('h') > -1))
-            //{
-            //    e.Handled = true;
-            //}
+           
         }
 
         void tb_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)
-            //&& e.KeyChar != '.')
-            //{
-            //    e.Handled = true;
-            //}
-
-            //// only allow one decimal point
-            //var textBox = sender as TextBox;
-            //if (textBox != null && (e.KeyChar == '.'
-            //                                  && textBox.Text.IndexOf('.') > -1))
-            //{
-            //    e.Handled = true;
-            //}
+           
         }
 
         private void grdStores_DataSourceChanged(object sender, EventArgs e)
         {
-            //this.OnGridDataSourceChanged();
+
         }
 
         private void lblFromDate_Click(object sender, EventArgs e)
@@ -991,7 +740,6 @@ namespace UKPI.Presentation
 
         private void cbbLyDo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //txtLyDoChiTiet.Text = this.cbbLyDo.GetItemText(this.cbbLyDo.SelectedItem);
             cbbLyDoChiTiet.DataSource = _shareEntityDao.LoadLyDoChiTiet((int)cbbLyDo.SelectedValue);
         }
 
@@ -1002,7 +750,7 @@ namespace UKPI.Presentation
                 DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmNghiPhep.Waring"), clsResources.GetMessage("messages.frmNghiPhep.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else {
-                txtSndn.Text = (dtpDenNgay.Value.Date - dtpTuNgay.Value.Date).TotalDays.ToString();
+                txtSndn.Text = ((dtpDenNgay.Value.Date - dtpTuNgay.Value.Date).TotalDays + 1).ToString();
             }
         }
 
@@ -1013,7 +761,7 @@ namespace UKPI.Presentation
                 DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmNghiPhep.Waring1"), clsResources.GetMessage("messages.frmNghiPhep.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else {
-                txtSndn.Text = (dtpDenNgay.Value.Date - dtpTuNgay.Value.Date).TotalDays.ToString();
+                txtSndn.Text = ((dtpDenNgay.Value.Date - dtpTuNgay.Value.Date).TotalDays + 1).ToString();
             }
         
         }

@@ -75,6 +75,7 @@ namespace UKPI.Presentation
             ////this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             //this.cellDateTimePicker.Visible = false;
             //this.grdToaThuoc.Controls.Add(cellDateTimePicker);
+            cbbPhongKham.Enabled = false;
             SetDefauldValue();
             this.Text = "XUẤT KHO THUỐC";
            // Save original columns
@@ -91,10 +92,19 @@ namespace UKPI.Presentation
         private void SetDefauldValue()
         {
         //    BuildGridViewRow();
+            BindPhongKham();
             LoadThongTinXuatKho();
         }
 
-        
+        private void BindPhongKham()
+        {
+            //cbbPhongKham.DataSource = _shareEntityDao.LoadDanhSachPhongKham();
+            List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
+            cbbPhongKham.DataSource = listPhongKham;
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
+            int currentIndex = listPhongKham.FindIndex(a => a.RoomName == currentKho);
+            cbbPhongKham.SelectedIndex = currentIndex;
+        }
         private void LoadThongTinXuatKho()
         {
            // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);

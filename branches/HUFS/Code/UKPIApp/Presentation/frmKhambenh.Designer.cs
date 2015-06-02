@@ -191,7 +191,7 @@ namespace UKPI.Presentation
             this.lblDienGiaiICD.Size = new System.Drawing.Size(69, 13);
             this.lblDienGiaiICD.TabIndex = 73;
             this.lblDienGiaiICD.Text = "Diễn giải ICD";
-            this.lblDienGiaiICD.Click += new System.EventHandler(this.lblDienGiaiICD_Click);
+ 
             // 
             // lblMaICD
             // 
@@ -237,7 +237,7 @@ namespace UKPI.Presentation
             this.lblLyDo.Size = new System.Drawing.Size(33, 13);
             this.lblLyDo.TabIndex = 68;
             this.lblLyDo.Text = "Lý do";
-            this.lblLyDo.Click += new System.EventHandler(this.label1_Click_1);
+
             // 
             // chkQuyetDinh
             // 
@@ -363,7 +363,7 @@ namespace UKPI.Presentation
             this.lblNhomBenh.Size = new System.Drawing.Size(62, 13);
             this.lblNhomBenh.TabIndex = 55;
             this.lblNhomBenh.Text = "Nhóm bệnh";
-            this.lblNhomBenh.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // cbbKhuVuc
             // 
@@ -822,8 +822,8 @@ namespace UKPI.Presentation
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmKhambenh";
             this.Text = "KHÁM BỆNH CÓ BẢO HIỂM";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditStore_FormClosing);
-            this.Load += new System.EventHandler(this.frmEditStore_Load);
+            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditStore_FormClosing);
+            //this.Load += new System.EventHandler(this.frmEditStore_Load);
             this.grpThongTinKhamBenh.ResumeLayout(false);
             this.grpThongTinKhamBenh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();

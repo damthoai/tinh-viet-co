@@ -3421,11 +3421,15 @@
   <!-- Start frmXuatKho-->
   <Titles>
     <Name>frmXuatKho.btnLuuIn</Name>
-    <Value>Lưu</Value>
+    <Value>Xuất Kho</Value>
   </Titles>
   <Titles>
     <Name>frmXuatKho.btnExport</Name>
     <Value>Export</Value>
+  </Titles>
+  <Titles>
+    <Name>frmXuatKho.lblPhongKhamKho</Name>
+    <Value>Phòng khám/Kho</Value>
   </Titles>
   <!-- End frmXuatKho-->
 
