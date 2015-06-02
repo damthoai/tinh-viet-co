@@ -40,5 +40,7 @@ namespace UKPI.ValueObject
         public int Flag { get; set; }
         public string TenDonViTinh { get; set; }
         public string CachUongThuoc { get; set; }
+        public string MaThuocYTe { get; set; }
+        public string MaThuocYTeHienThi { get; set; }
     }
 }

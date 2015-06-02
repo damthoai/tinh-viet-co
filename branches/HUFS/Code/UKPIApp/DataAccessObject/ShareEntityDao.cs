@@ -249,10 +249,13 @@ namespace UKPI.DataAccessObject
                 cmd = new SqlCommand("SELECT MedicineID,MedicineName,Description,Status,KhuyenMai,"+
                                     " GiaDNMua ,GiaDNMuaVAT,GiaThucMua,GiaKMMua,GiaDNBan,GiaThucBan, "+
                                     " MaKM,BaoHiem,MaChinhSachGia,DienGiai,STTTheoDMTCuaBYT,TenThanhPhanThuoc,HamLuong "+
-                                    ",SoDKHoacGPKD,DangBaoCheDuongUong,NhaSanXuat,QuocGia,DonViTinh,HoatDong,CachUong,Flag,GiaDNBanVAT,TenDonViTinh,CachUongThuoc " +
+                                    ",SoDKHoacGPKD,DangBaoCheDuongUong,NhaSanXuat,QuocGia,DonViTinh,HoatDong,CachUong,Flag,GiaDNBanVAT,TenDonViTinh,CachUongThuoc,MaThuocYTe,(CASE WHEN BaoHiem = 1 AND [MaThuocYTe] IN (SELECT a.MaThuocYTe FROM HUFS_MEDICINE a WHERE a.BaoHiem = 0 AND a.MaThuocYTe = MaThuocYTe) THEN [MaThuocYTe]+'_bh' " +
+                                  " ELSE [MaThuocYTe] " +
+                                  " END) AS [MaThuocYTeHienThi] " +
                                     " FROM HUFS_MEDICINE "+
                                     " INNER JOIN HUFS_DONVITINH ON HUFS_MEDICINE.DonViTinh = HUFS_DONVITINH.MaDonViTinh " +
-                                    " INNER JOIN HUFS_CACHUONGTHUOC ON HUFS_MEDICINE.CachUong = HUFS_CACHUONGTHUOC.MaUongThuoc"
+                                    " INNER JOIN HUFS_CACHUONGTHUOC ON HUFS_MEDICINE.CachUong = HUFS_CACHUONGTHUOC.MaUongThuoc "+
+                                    " ORDER BY MedicineID "
                                     , con);
 
                 if (con.State != ConnectionState.Open)
@@ -291,6 +294,8 @@ namespace UKPI.DataAccessObject
                     pk.GiaDNBan = (double)reader[26];
                     pk.TenDonViTinh = (string)reader[27];
                     pk.CachUongThuoc = (string)reader[28];
+                    pk.MaThuocYTe = (string)reader[29];
+                    pk.MaThuocYTeHienThi = (string)reader[30];
                     arrs.Add(pk);
                 }
 

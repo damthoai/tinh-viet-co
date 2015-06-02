@@ -278,7 +278,7 @@ namespace UKPI.Presentation
             col.Width = 130;
             col.HeaderText = "Mã thuốc";
             col.DataSource = _shareEntityDao.LoadThongTinThuoc();
-            col.DisplayMember = "MedicineID";
+            col.DisplayMember = "MaThuocYTeHienThi";
             col.ValueMember = "MedicineID";
             grdToaThuoc.Columns.Add(col);
            // grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
