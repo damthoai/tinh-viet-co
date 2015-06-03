@@ -392,6 +392,11 @@ namespace UKPI.Presentation
                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidDonThuoc"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (string.IsNullOrEmpty(txtMaNhanVien.Text) && string.IsNullOrEmpty(txtBenhNhan.Text))
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidThongTinNhanVien"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.Waring"), clsResources.GetMessage("messages.frmKhamBenh.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
@@ -405,6 +410,11 @@ namespace UKPI.Presentation
             if (string.IsNullOrEmpty(txtTongThanhTien.Text))
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidDonThuoc"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtMaNhanVien.Text) && string.IsNullOrEmpty(txtBenhNhan.Text))
+            {
+                MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidThongTinNhanVien"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             //MessageBox.Show(_thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh());
@@ -431,9 +441,11 @@ namespace UKPI.Presentation
         {
             this.quyetDinhNghiPhep = qd;
         }
+        
         private ThongTinKhamBenh BuildThongTinKhamBenh()
         {
             List<string> listmaThuoc = new List<string>();
+            Dictionary<CustomKey, string> dic = _shareEntityDao.BuildTuDienThuoc();
             ThongTinKhamBenh thongTinKhamBenh = new ThongTinKhamBenh();
             thongTinKhamBenh.MaKhamBenh = _thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh();
             thongTinKhamBenh.PhongKhamBenh = cbbPhongKham.GetItemText(cbbPhongKham.SelectedItem);
@@ -482,6 +494,8 @@ namespace UKPI.Presentation
                     thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
                     thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
                     thongTinDonThuoc.SoLuong = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
+                    CustomKey ck = new CustomKey(thongTinDonThuoc.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue );
+                    thongTinDonThuoc.MaThuoc = dic[ck];
                     try
                     {
                         int checkSoluong = int.Parse(thongTinDonThuoc.SoLuong);

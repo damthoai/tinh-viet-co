@@ -129,7 +129,7 @@ namespace UKPI.Presentation
             col.Width = 140;
             col.HeaderText = "Mã thuốc";
             col.DataSource = _shareEntityDao.LoadThongTinThuoc();
-            col.DisplayMember = "MedicineID";
+            col.DisplayMember = "MaThuocYTeHienThi";
             col.ValueMember = "MedicineID";
             grdToaThuoc.Columns.Add(col);
 
@@ -421,6 +421,7 @@ namespace UKPI.Presentation
         private List<ThongTinNhapKhoDetail> BuildThongTinNhapKhoDetail(string maNhapKho)
         {
             List<string> listmaThuoc = new List<string>();
+            Dictionary<CustomKey, string> dic = _shareEntityDao.BuildTuDienThuoc();
             List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail = new List<ThongTinNhapKhoDetail>();
             if (grdToaThuoc.Rows.Count > 0)
             {
@@ -451,6 +452,8 @@ namespace UKPI.Presentation
                     thongTinNhapKhoDetail.ThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
                     thongTinNhapKhoDetail.MaNhapKho = maNhapKho;
                     thongTinNhapKhoDetail.LoThuoc = DateTime.Now.ToString("yyyyMMddHHmmss");
+                    CustomKey ck = new CustomKey(thongTinNhapKhoDetail.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
+                    thongTinNhapKhoDetail.MaThuoc = dic[ck];
                     try
                     {
                         int checkSoluong = int.Parse(thongTinNhapKhoDetail.SoLuong);

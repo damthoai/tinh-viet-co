@@ -1512,7 +1512,11 @@ namespace UKPI.DataAccessObject
                 foreach (PropertyInfo pro in temp.GetProperties())
                 {
                     if (pro.Name == column.ColumnName)
+                    {
+                        if (dr[column.ColumnName] == DBNull.Value)
+                            dr[column.ColumnName] = string.Empty;
                         pro.SetValue(obj, dr[column.ColumnName], null);
+                    }
                     else
                         continue;
                 }

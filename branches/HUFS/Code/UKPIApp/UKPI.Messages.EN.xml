@@ -1916,7 +1916,11 @@
   <Messages>
     <Name>messages.frmKhamBenh.CheckValidDonThuoc</Name>
     <Value>Đơn thuốc không hợp lệ. Không thể xác nhận đơn thuốc</Value>
-
+  </Messages>
+  
+   <Messages>
+    <Name>messages.frmKhamBenh.CheckValidThongTinNhanVien</Name>
+    <Value>Thông tin nhân viên không hợp lệ</Value>
   </Messages>
   <Messages>
     <Name>messages.frmKhamBenh.CheckSoLuongTrongKho</Name>

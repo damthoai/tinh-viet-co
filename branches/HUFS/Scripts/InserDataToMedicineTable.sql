@@ -31,7 +31,7 @@ INSERT INTO [DMSPOP].[dbo].[HUFS_MEDICINE]
            ,[CachUong]
            ,[Flag]
            ,[MaThuocYTe])
-     SELECT 'ME0000000007' AS [MedicineID]
+     SELECT 'ME0000000008' AS [MedicineID]
       ,[MedicineName]
       ,[Description]
       ,[CreatedDate]
@@ -62,9 +62,9 @@ INSERT INTO [DMSPOP].[dbo].[HUFS_MEDICINE]
       ,[HoatDong]
       ,[CachUong]
       ,[Flag]
-      ,'ME0000000007' AS [MaThuocYTe]
+      ,'ME0000000002' AS [MaThuocYTe]
 
   FROM [HUFS_MEDICINE]
-  WHERE [MedicineID] = 'ME0000000006'
+  WHERE [MedicineID] = 'ME0000000002'
 
 

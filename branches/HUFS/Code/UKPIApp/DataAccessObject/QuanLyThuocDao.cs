@@ -20,6 +20,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_UpdateChinhSachGia = "p_HUFS_UpdateChinhSachGia";
         private const string HUFS_GetChinhSachGiaChiTiet = "HUFS_GetChinhSachGiaChiTiet";
         private const string HUFS_ChinhSachGiaChiTiet = "HUFS_ChinhSachGiaChiTiet";
+        private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
         public DataTable LoadDanhMucThuoc()
         {
             try
@@ -180,6 +181,7 @@ namespace UKPI.DataAccessObject
         public bool LuuThongTinDanhMucThuoc(DataTable tblDanhMucThuoc)
         {
             List<DanhMucThuoc> listDanhMucThuoc = ConvertDataTableToList<DanhMucThuoc>(tblDanhMucThuoc);
+            Dictionary<CustomKey, string> dic = _shareEntityDao.BuildTuDienThuoc();
             try
             {
                 for (int i = 0; i < listDanhMucThuoc.Count; i++)

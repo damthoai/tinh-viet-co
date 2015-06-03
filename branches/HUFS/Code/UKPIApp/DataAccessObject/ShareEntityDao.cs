@@ -11,8 +11,11 @@ namespace UKPI.DataAccessObject
 {
     public  class ShareEntityDao :clsBaseDAO
     {
+      
         private static readonly ILog log = log4net.LogManager.GetLogger(typeof(ShareEntityDao));
         private static string m_strConn = clsCommon.GetConnectionString();
+        private const string p_HUFS_LoadThongTinThuoc = "p_HUFS_LoadThongTinThuoc";
+        private const string p_HUFS_LoadThongTinThuocTheoMaThuocYTe = "p_HUFS_LoadThongTinThuocTheoMaThuocYTe";
         public  List<PhongKham> LoadDanhSachPhongKham()
         {
             List<PhongKham> arrs = new List<PhongKham>();
@@ -236,7 +239,7 @@ namespace UKPI.DataAccessObject
                     con.Close();
             }
         }
-
+        /*
         public List<ThongTinThuoc> LoadThongTinThuoc()
         {
             List<ThongTinThuoc> arrs = new List<ThongTinThuoc>();
@@ -318,7 +321,62 @@ namespace UKPI.DataAccessObject
                     con.Close();
             }
         }
-
+        */
+        public List<ThongTinThuoc> LoadThongTinThuoc()
+        {
+            try
+            {
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadThongTinThuoc);
+                return this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
+        public List<ThongTinThuoc> LoadThongTinThuocTheoMaThuocYTe(string maThuocYTe, bool baoHiem)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[2];
+                Params[0] = new SqlParameter("@maThuocYTe", maThuocYTe);
+                Params[1] = new SqlParameter("@baoHiem", baoHiem);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadThongTinThuocTheoMaThuocYTe, Params);
+                List<ThongTinThuoc> list = this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
+                return list;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
+        public Dictionary<CustomKey, string> BuildTuDienThuoc()
+        {
+            List<ThongTinThuoc> list = LoadThongTinThuoc();
+            Dictionary<CustomKey, string> dic = new Dictionary<CustomKey, string>(new CustomKey.EqualityComparer());
+            for(int i = 0;i<list.Count;i++)
+            {
+                CustomKey key = new CustomKey(list[i].MaThuocYTeHienThi, list[i].BaoHiem);
+                string value = list[i].MedicineID;
+                if (!dic.ContainsKey(key))
+                    dic.Add(key, value);
+                else
+                    continue;
+            }
+            return dic;
+        }
+        public string LoadMaThuocThucTheoMaThuocYTe(string maThuocYTe, bool baoHiem)
+        {
+            List<ThongTinThuoc> list = LoadThongTinThuocTheoMaThuocYTe(maThuocYTe, baoHiem);
+            if (list != null && list.Count == 1)
+            {
+                return list[0].MedicineID;
+            }
+            else
+                return null;
+        }
         public List<CachUongThuoc> LoadThongTinCachUongThuoc()
         {
             List<CachUongThuoc> arrs = new List<CachUongThuoc>();

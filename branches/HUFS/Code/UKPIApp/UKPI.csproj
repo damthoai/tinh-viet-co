@@ -436,6 +436,7 @@
     <Compile Include="ValueObject\clsTeam.cs" />
     <Compile Include="ValueObject\clsLichLamViec.cs" />
     <Compile Include="ValueObject\ChinhSachGiaDT.cs" />
+    <Compile Include="ValueObject\CustomKey.cs" />
     <Compile Include="ValueObject\DanhMucThuoc.cs" />
     <Compile Include="ValueObject\DonViTinh.cs" />
     <Compile Include="ValueObject\GioiTinh.cs" />
