@@ -16,6 +16,8 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_insertDataForTransaction = "p_HUFS_insertDataForTransaction";
         private const string p_HUFS_InsertThongTinKhamBenh = "p_HUFS_InsertThongTinKhamBenh";
         private const string p_HUFS_searchThongTinBenhNhan = "p_HUFS_searchThongTinBenhNhan";
+        private const string p_HUFS_TinhSoLuongThuocTrongKho = "p_HUFS_TinhSoLuongThuocTrongKho";
+        private const string p_HUFS_insertDataForTransactionTheoKho = "p_HUFS_insertDataForTransactionTheoKho";
         public ThongTinBenhNhan GetThongTinBenhNhan(string maBenhNhan)
         {
             ThongTinBenhNhan info = new ThongTinBenhNhan();
@@ -86,6 +88,30 @@ namespace UKPI.DataAccessObject
                 return -1;
             }
         }
+
+        public int CheckSoLuongThuocTrongKho(string maThuoc, int soLuongXuat,string tenKho)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[3];
+                Params[0] = new SqlParameter("@maThuoc", maThuoc);
+                Params[1] = new SqlParameter("@soluongxuat", soLuongXuat);
+                Params[2] = new SqlParameter("@tenKho", tenKho);
+                int soLuong = -1;
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_TinhSoLuongThuocTrongKho, Params);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    soLuong = int.Parse(dr["Result"].ToString());
+                    break;
+                }
+                return soLuong;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return -1;
+            }
+        }
         private bool InsertThongTinGiaoDich(string maThuoc,double soLuong, bool nhapKho, bool xuatKho,string maKhamBenh)
         {
             try
@@ -100,6 +126,26 @@ namespace UKPI.DataAccessObject
                 return true;
             }
             catch {
+                return false;
+            }
+        }
+
+        private bool InsertThongTinGiaoDich(string maThuoc, double soLuong, bool nhapKho, bool xuatKho, string maKhamBenh,string tenKho)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[6];
+                Params[0] = new SqlParameter("@MaThuoc", maThuoc);
+                Params[1] = new SqlParameter("@Soluong", soLuong);
+                Params[2] = new SqlParameter("@NhapKho", nhapKho);
+                Params[3] = new SqlParameter("@XuatKho", xuatKho);
+                Params[4] = new SqlParameter("@MaKhamBenh", maKhamBenh);
+                Params[5] = new SqlParameter("@TenKho", tenKho);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_insertDataForTransactionTheoKho, Params);
+                return true;
+            }
+            catch
+            {
                 return false;
             }
         }
@@ -150,7 +196,7 @@ namespace UKPI.DataAccessObject
                                                                  double.Parse(thongTinKhamBenh.ThongTinToaThuoc[i].SoLuong),
                                                                  false,
                                                                  true,
-                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].MaKhamBenh);
+                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].MaKhamBenh, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
                             if (!result)
                             {
                                 transaction.Rollback();

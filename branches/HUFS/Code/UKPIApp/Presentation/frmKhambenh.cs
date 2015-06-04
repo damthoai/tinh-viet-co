@@ -427,6 +427,7 @@ namespace UKPI.Presentation
                     {
                         grdToaThuoc.Rows.Clear();
                         grdToaThuoc.Rows.Add(1);
+                        txtTongThanhTien.Text = string.Empty;
                     }
                     return;
                 }
@@ -499,7 +500,7 @@ namespace UKPI.Presentation
                     try
                     {
                         int checkSoluong = int.Parse(thongTinDonThuoc.SoLuong);
-                        if(checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc,checkSoluong) == -1)
+                        if (checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc, checkSoluong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) < 0)
                         {
                             MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return null;
@@ -589,8 +590,8 @@ namespace UKPI.Presentation
                         if (isValidSoLuongThuoc)
                         {
                             string maThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString();
-                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong);
-                            if (soLuongThuocTrongKho == -1)
+                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong,System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                            if (soLuongThuocTrongKho < 0)
                             {
                                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckSoLuongTrongKho"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
@@ -658,8 +659,8 @@ namespace UKPI.Presentation
                         if (isValidSoLuongThuoc)
                         {
                             string maThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString();
-                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong);
-                            if (soLuongThuocTrongKho == -1)
+                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                            if (soLuongThuocTrongKho < 0)
                             {
                                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckSoLuongTrongKho"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
