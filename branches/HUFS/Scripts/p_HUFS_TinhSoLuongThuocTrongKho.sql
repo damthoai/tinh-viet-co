@@ -73,10 +73,10 @@ BEGIN
         INNER JOIN HUFS_KHAMBENH_HEADER KH ON T.MaKhamBenh = KH.MaKhamBenh
     WHERE T.XuatKho = 1 AND KH.PhongKhamBenh = @tenKho AND T.MaThuoc = @maThuoc
     
-    SELECT SUM (T.SoLuong)
-    FROM HUFS_TRANSACTION T 
-        INNER JOIN HUFS_KHAMBENH_HEADER KH ON T.MaKhamBenh = KH.MaKhamBenh
-    WHERE T.XuatKho = 1 AND KH.PhongKhamBenh = 'Phòng Khám Khu B' AND T.MaThuoc = 'ME0000000007'
+    --SELECT SUM (T.SoLuong)
+    --FROM HUFS_TRANSACTION T 
+    --    INNER JOIN HUFS_KHAMBENH_HEADER KH ON T.MaKhamBenh = KH.MaKhamBenh
+    --WHERE T.XuatKho = 1 AND KH.PhongKhamBenh = 'Phòng Khám Khu B' AND T.MaThuoc = 'ME0000000007'
     
     SET @SoLuongThuocConLai = @SoLuongThuocHienCoTrongKho - @SoLuongTrongHangDoiGiaoDich
 	SET @Result = @SoLuongThuocConLai - @soluongxuat
