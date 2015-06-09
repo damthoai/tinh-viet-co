@@ -107,7 +107,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>06oliCm8WKRg4bgflw2JfKZdREk=</dsig:DigestValue>
+        <dsig:DigestValue>InznaM7PgEWuk8oIdyEyomyS9l8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -282,13 +282,13 @@
       <dsig:DigestValue>oUMoMyhWr1j8EJwnDGfNWQC2lsI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="HHCC.exe.config" size="6865">
+  <file name="HHCC.exe.config" size="6916">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ngc+yN+Q8waf/6ZF4Cr2c32wuho=</dsig:DigestValue>
+      <dsig:DigestValue>ZYQfdwOUzhH31SX+Zinf5BvZDB0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icons\applications.ico" size="29926">

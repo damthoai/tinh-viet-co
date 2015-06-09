@@ -569,18 +569,22 @@ namespace UKPI.Presentation
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            parentForm.SetThoiGianNghiPhepStart(dtpTuNgay.Value.ToString("dd-MM-yyyy"));
-            parentForm.SetThoiGianNghiPhepEnd(dtpDenNgay.Value.ToString("dd-MM-yyyy"));
-            parentForm.SetSoNgayDuocNghi(txtSndn.Text);
+            parentForm.SetThoiGianNghiPhepStart(dtpTuNgay.Value);
+            parentForm.SetThoiGianNghiPhepEnd(dtpDenNgay.Value);
+            
             parentForm.SetLyDo(cbbLyDo.GetItemText(this.cbbLyDo.SelectedItem)); 
             parentForm.SetDIenGiai(txtDienGiai.Text);
             QuyetDinhNghiPhep quyetDinhNghiPhep = new QuyetDinhNghiPhep();
-            quyetDinhNghiPhep.TuNgay = dtpTuNgay.Value.ToString("dd-MM-yyyy");
-            quyetDinhNghiPhep.DenNgay = dtpDenNgay.Value.ToString("dd-MM-yyyy");
+            quyetDinhNghiPhep.TuNgay = dtpTuNgay.Value;
+            quyetDinhNghiPhep.DenNgay = dtpDenNgay.Value;
             quyetDinhNghiPhep.LyDo = cbbLyDo.GetItemText(this.cbbLyDo.SelectedItem);
             quyetDinhNghiPhep.LyDoChiTiet = cbbLyDoChiTiet.GetItemText(this.cbbLyDoChiTiet.SelectedItem);
             quyetDinhNghiPhep.DienGiai = txtDienGiai.Text;
-            quyetDinhNghiPhep.SoNgayNghi = txtSndn.Text;
+            try
+            {
+                quyetDinhNghiPhep.SoNgayNghi = int.Parse(txtSndn.Text);
+                parentForm.SetSoNgayDuocNghi(quyetDinhNghiPhep.SoNgayNghi);
+            }catch{}
             quyetDinhNghiPhep.ChuThich = txtChuThich.Text;
             parentForm.SetQuyetDinhNghiPhep(quyetDinhNghiPhep);
             this.Close();

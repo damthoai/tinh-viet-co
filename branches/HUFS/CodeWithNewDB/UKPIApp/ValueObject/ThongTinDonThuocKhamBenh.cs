@@ -12,11 +12,11 @@ namespace UKPI.ValueObject
         public string MaThuoc { get; set; }
         public string DonViTinh { get; set; }
         public string HamLuong { get; set; }
-        public string ThuocBH { get; set; }
+        public bool ThuocBH { get; set; }
         public string SoLuong { get; set; }
-        public string Gia { get; set; }
+        public decimal Gia { get; set; }
         public string CachUong { get; set; }
-        public string ThanhTien { get; set; }
+        public decimal ThanhTien { get; set; }
         public string MaKhamBenh { get; set; }
     }
 }

@@ -10,19 +10,19 @@ namespace UKPI.ValueObject
         public string MedicineID { get; set; }
         public string MedicineName { get; set; }
         public string Description { get; set; }
-        public string CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string CreatedBy { get; set; }
-        public string LastUpdatedDate { get; set; }
+        public DateTime LastUpdatedDate { get; set; }
         public string LastUpdatedBy { get; set; }
         public bool Status { get; set; }
         public bool KhuyenMai { get; set; }
-        public double GiaDNMua { get; set; }
-        public double GiaDNMuaVAT { get; set; }
-        public double GiaThucMua { get; set; }
-        public double GiaKMMua { get; set; }
-        public double GiaDNBan { get; set; }
-        public double GiaDNBanVAT { get; set; }
-        public double GiaThucBan { get; set; }
+        public decimal GiaDNMua { get; set; }
+        public decimal GiaDNMuaVAT { get; set; }
+        public decimal GiaThucMua { get; set; }
+        public decimal GiaKMMua { get; set; }
+        public decimal GiaDNBan { get; set; }
+        public decimal GiaDNBanVAT { get; set; }
+        public decimal GiaThucBan { get; set; }
         public string MaKM { get; set; }
         public bool BaoHiem { get; set; }
         public string MaChinhSachGia { get; set; }

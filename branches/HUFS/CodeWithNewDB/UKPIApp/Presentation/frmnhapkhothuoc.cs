@@ -311,12 +311,12 @@ namespace UKPI.Presentation
             else
             {
                 quyetDinhNghiPhep = new QuyetDinhNghiPhep();
-                quyetDinhNghiPhep.TuNgay = string.Empty;
-                quyetDinhNghiPhep.DenNgay = string.Empty;
+                quyetDinhNghiPhep.TuNgay = null;
+                quyetDinhNghiPhep.DenNgay = null;
                 quyetDinhNghiPhep.LyDo = string.Empty;
                 quyetDinhNghiPhep.LyDoChiTiet = string.Empty;
                 quyetDinhNghiPhep.DienGiai = string.Empty;
-                quyetDinhNghiPhep.SoNgayNghi = string.Empty;
+                quyetDinhNghiPhep.SoNgayNghi = null;
                 quyetDinhNghiPhep.ChuThich = string.Empty;
                 thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
             }
@@ -332,7 +332,7 @@ namespace UKPI.Presentation
                         continue;
                     thongTinDonThuoc.TenThuoc = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
                     thongTinDonThuoc.MaThuoc  =  (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
-                    thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue == true ? "x": "";
+                    thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
                     thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
                     thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
                     thongTinDonThuoc.SoLuong = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
@@ -349,9 +349,9 @@ namespace UKPI.Presentation
                         MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null;
                     }
-                    thongTinDonThuoc.Gia = (string)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
+                    thongTinDonThuoc.Gia = (decimal)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
                     thongTinDonThuoc.CachUong = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
-                    thongTinDonThuoc.ThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+                    thongTinDonThuoc.ThanhTien = (decimal)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
                     thongTinDonThuoc.MaKhamBenh = thongTinKhamBenh.MaKhamBenh;
                     //if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
                     //{
