@@ -72,7 +72,7 @@ namespace UKPI.Presentation
             this.cellDateTimePicker.Format = DateTimePickerFormat.Custom;
             this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
             this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePickerValueChanged);
-            //this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
+            this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             this.cellDateTimePicker.Visible = false;
             this.grdToaThuoc.Controls.Add(cellDateTimePicker);
             cbbPhongKham.Enabled = false;
