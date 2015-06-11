@@ -11,13 +11,13 @@ namespace UKPI.ValueObject
         public string TenThuoc {get;set;}
         public string MaThuoc {get;set;}
         public bool ThuocBH {get;set;}
-        public string SoLuong {get;set;}
-        public string GiaThoiDiemNhap {get;set;}
-        public string GiaTT {get;set;}
-        public string GiaST {get;set;}
-        public string ThanhTien {get;set;}
+        public int SoLuong {get;set;}
+        public decimal GiaThoiDiemNhap {get;set;}
+        public decimal GiaTT { get; set; }
+        public decimal GiaST { get; set; }
+        public decimal ThanhTien { get; set; }
         public string MaNhapKho {get;set;}
         public string LoThuoc {get;set;}
-        public string HanSuDung { get; set; }
+        public DateTime HanSuDung { get; set; }
     }
 }

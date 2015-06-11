@@ -518,7 +518,7 @@ namespace UKPI.Presentation
                     decimal currentGia = 0;
                     try
                     {
-                        currentGia = thongTinDonThuoc.Gia != null ? decimal.Parse(gia) : 0;
+                        currentGia = decimal.Parse(gia);
                         thongTinDonThuoc.Gia = currentGia;
                     }
                     catch
@@ -555,7 +555,7 @@ namespace UKPI.Presentation
         {
             if (!string.IsNullOrEmpty(txtMaNhanVien.Text))
             {
-                for (int i = grdToaThuoc.Rows.Count - 1; i >= 0; i--)
+                for (int i = grdToaThuoc.Rows.Count - 1; i > 0; i--)
                 {
                     if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
                     {

@@ -72,7 +72,7 @@ namespace UKPI.Presentation
             this.cellDateTimePicker.Format = DateTimePickerFormat.Custom;
             this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
             this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePickerValueChanged);
-            //this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
+            this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             this.cellDateTimePicker.Visible = false;
             this.grdToaThuoc.Controls.Add(cellDateTimePicker);
             cbbPhongKham.Enabled = false;
@@ -218,10 +218,6 @@ namespace UKPI.Presentation
          }
 
       
-     
-       
-       
-
         private void Export()
         {
             
@@ -250,25 +246,6 @@ namespace UKPI.Presentation
 
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(_thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh());
-            //ThongTinKhamBenh ttkb = BuildThongTinKhamBenh();
-            //if(ttkb != null ){
-            //    if (_thongTinKhamBenhDao.SaveThongTinKhamBenh(ttkb))
-            //    {
-            //        DialogResult result =  MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Success"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        if (result == DialogResult.OK)
-            //        {
-            //            grdToaThuoc.Rows.Clear();
-            //            grdToaThuoc.Rows.Add(1);
-            //        }
-            //        return;
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        return;
-            //    }
-            //}
             if (!ValidateThongSoNhapKho())
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.ValidateThongSoNhapKho"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -278,17 +255,26 @@ namespace UKPI.Presentation
             if (thongTinNhapKho != null)
             {
                 List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail = BuildThongTinNhapKhoDetail(thongTinNhapKho.MaNhapKho);
-                if (_thongTinNhapKhoDao.SaveThongTinNhapKho(thongTinNhapKho, listThongTinNhapKhoDetail))
+                if (listThongTinNhapKhoDetail != null && listThongTinNhapKhoDetail.Count > 0)
                 {
-                    DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Success"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if (result == DialogResult.OK)
+                    if (_thongTinNhapKhoDao.SaveThongTinNhapKho(thongTinNhapKho, listThongTinNhapKhoDetail))
                     {
-                        grdToaThuoc.Rows.Clear();
-                        grdToaThuoc.Rows.Add(1);
+                        DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Success"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (result == DialogResult.OK)
+                        {
+                            grdToaThuoc.Rows.Clear();
+                            grdToaThuoc.Rows.Add(1);
+                        }
+                        return;
                     }
-                    return;
+                    else
+                    {
+                        MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                 }
-                else {
+                else
+                {
                     MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -440,28 +426,26 @@ namespace UKPI.Presentation
                         MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckHanSuDungThuoc"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null;
                     }
-                    DateTime dt = DateTime.ParseExact(hanSuDung.Replace("-",""), "ddMMyyyy",
-                                  CultureInfo.InvariantCulture);
-                    dt.ToString("yyyyMMdd");
-                    thongTinNhapKhoDetail.HanSuDung = dt.ToString("yyyyMMdd");;
+                    //DateTime dt = DateTime.ParseExact(hanSuDung.Replace("-",""), "ddMMyyyy",
+                    //              CultureInfo.InvariantCulture);
+                    //dt.ToString("yyyyMMdd");
+                    string strHanSuDung = (string)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
+                    thongTinNhapKhoDetail.HanSuDung = DateTime.ParseExact(strHanSuDung, System.Configuration.ConfigurationManager.AppSettings["DateFormat"], CultureInfo.InvariantCulture);
                     thongTinNhapKhoDetail.ThuocBH = (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
-                    thongTinNhapKhoDetail.SoLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
-                    thongTinNhapKhoDetail.GiaThoiDiemNhap = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
-                    thongTinNhapKhoDetail.GiaTT = (string)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
-                    thongTinNhapKhoDetail.GiaST = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
-                    thongTinNhapKhoDetail.ThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
                     thongTinNhapKhoDetail.MaNhapKho = maNhapKho;
                     thongTinNhapKhoDetail.LoThuoc = DateTime.Now.ToString("yyyyMMddHHmmss");
                     CustomKey ck = new CustomKey(thongTinNhapKhoDetail.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
                     thongTinNhapKhoDetail.MaThuoc = dic[ck];
                     try
                     {
-                        int checkSoluong = int.Parse(thongTinNhapKhoDetail.SoLuong);
-                        if (checkSoluong <= 0)
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return null;
-                        }
+                        string strThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+                        thongTinNhapKhoDetail.ThanhTien = decimal.Parse(strThanhTien);
+                    }
+                    catch { }
+                    try
+                    {
+                        string strSoLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
+                        thongTinNhapKhoDetail.SoLuong = int.Parse(strSoLuong);
                     }
                     catch
                     {
@@ -471,7 +455,8 @@ namespace UKPI.Presentation
 
                     try
                     {
-                        float.Parse(thongTinNhapKhoDetail.GiaTT);
+                        string strGiaTT = (string)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
+                        thongTinNhapKhoDetail.GiaTT = decimal.Parse(strGiaTT);
                     }
                     catch
                     {
@@ -480,7 +465,8 @@ namespace UKPI.Presentation
                     }
                     try
                     {
-                        float.Parse(thongTinNhapKhoDetail.GiaST);
+                        string strGiaST = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
+                        thongTinNhapKhoDetail.GiaST = decimal.Parse(strGiaST);
                     }
                     catch
                     {
@@ -489,7 +475,8 @@ namespace UKPI.Presentation
                     }
                     try
                     {
-                        float.Parse(thongTinNhapKhoDetail.GiaThoiDiemNhap);
+                        string strGiaThoiDiemNhap = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
+                        thongTinNhapKhoDetail.GiaThoiDiemNhap = decimal.Parse(strGiaThoiDiemNhap);
                     }
                     catch
                     {
@@ -514,7 +501,7 @@ namespace UKPI.Presentation
         }
         private void btnXoaThuoc_Click(object sender, EventArgs e)
         {
-            for (int i = grdToaThuoc.Rows.Count - 1; i >= 0; i--)
+            for (int i = grdToaThuoc.Rows.Count - 1; i > 0; i--)
             {
                 if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
                 {
@@ -560,10 +547,10 @@ namespace UKPI.Presentation
                         return;
                     }
                 }
-                double currentGia = 0;
+                decimal currentGia = 0;
                 try
                 {
-                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value != null ? double.Parse(this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value.ToString()) : 0;
+                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value != null ? decimal.Parse(this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value.ToString()) : 0;
 
                 }
                 catch
@@ -576,7 +563,7 @@ namespace UKPI.Presentation
                     MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidGiaSauThue"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                double currentTienThuoc = currentSoLuong * currentGia;
+                decimal currentTienThuoc = currentSoLuong * currentGia;
                // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
                 this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
@@ -587,10 +574,10 @@ namespace UKPI.Presentation
                 int currentSoLuong = 0;
                 bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
                 bool isValidSoLuongThuoc = this.grdToaThuoc[currentCell.ColumnIndex-3, currentCell.RowIndex].Value != null && this.grdToaThuoc[currentCell.ColumnIndex-3, currentCell.RowIndex].Value.ToString() != "";
-                double currentGia = 0;
+                decimal currentGia = 0;
                 try
                 {
-                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? double.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
+                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? decimal.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
 
                 }
                 catch
@@ -621,8 +608,8 @@ namespace UKPI.Presentation
                         return;
                     }
                 }
-               
-                double currentTienThuoc = currentSoLuong * currentGia;
+
+                decimal currentTienThuoc = currentSoLuong * currentGia;
                 // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
                 this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
@@ -630,10 +617,10 @@ namespace UKPI.Presentation
             //check gia thoi diem nhap
             if (currentCell != null && currentCell.ColumnIndex == 6)
             {
-                double currentGia = 0;
+                decimal currentGia = 0;
                 try
                 {
-                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? double.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
+                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? decimal.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
 
                 }
                 catch
@@ -651,10 +638,10 @@ namespace UKPI.Presentation
             //check gia truoc thue
             if (currentCell != null && currentCell.ColumnIndex == 7)
             {
-                double currentGia = 0;
+                decimal currentGia = 0;
                 try
                 {
-                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? double.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
+                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? decimal.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
                 }
                 catch
                 {
@@ -673,13 +660,13 @@ namespace UKPI.Presentation
 
         private void CalculateTotal()
         {
-            double total = 0;
+            decimal total = 0;
 
             foreach (DataGridViewRow row in grdToaThuoc.Rows)
             {
                 if (row.Cells[9].Value != null)
                 {
-                    total += double.Parse(row.Cells[9].Value.ToString());
+                    total += decimal.Parse(row.Cells[9].Value.ToString());
                 }
             }
 

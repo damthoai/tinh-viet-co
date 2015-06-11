@@ -95,19 +95,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>j2QHJqe6fIJCnykP+ChYVrfO4Uw=</dsig:DigestValue>
+        <dsig:DigestValue>VjBnAQtuyoeAOgbCCZjODSrQGKs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="7135232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="7335936">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XsRg6/wWwBytNcaHb5iV62xnDso=</dsig:DigestValue>
+        <dsig:DigestValue>b0+idCm29L5pIvkP7JxvvOvNxr0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -203,7 +203,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>54gBVlKE4WLvcSj+A3HhxJKKtNs=</dsig:DigestValue>
+        <dsig:DigestValue>bfOGi+IZqzKeIwH9UH6hskWSydI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -215,7 +215,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7SZRdaj/S/6/Wy1GS+L2EgHZibE=</dsig:DigestValue>
+        <dsig:DigestValue>Ow1y0ZO8hk4twbrvBHm/U5BZ4Uc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -239,7 +239,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4dP0azkPrXjT7ismKXLcIu8Y0z0=</dsig:DigestValue>
+        <dsig:DigestValue>YNAbW17tDHhjwmOOWQR6AWcwGLQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

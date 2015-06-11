@@ -114,9 +114,11 @@ namespace UKPI.Presentation
                 col.Width = 140;
                 col.HeaderText = "Mã thuốc";
                 col.DataSource = _shareEntityDao.LoadThongTinThuoc();
-                col.DisplayMember = "MedicineID";
-                col.ValueMember = "MedicineID";
+                //col.DisplayMember = "MedicineID";
+                //col.ValueMember = "MedicineID";
                 col.DataPropertyName = "MedicineID";
+                col.DisplayMember = "MaThuocYTeHienThi";
+                col.ValueMember = "MedicineID";
                 grdToaThuoc.Columns.Add(col);
 
 
@@ -175,9 +177,9 @@ namespace UKPI.Presentation
                 col.Width = 140;
                 col.HeaderText = "Mã thuốc";
                 col.DataSource = _shareEntityDao.LoadThongTinThuoc();
-                col.DisplayMember = "MedicineID";
-                col.ValueMember = "MedicineID";
                 col.DataPropertyName = "MedicineID";
+                col.DisplayMember = "MaThuocYTeHienThi";
+                col.ValueMember = "MedicineID";
                 grdToaThuoc.Columns.Add(col);
 
 
@@ -272,6 +274,7 @@ namespace UKPI.Presentation
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
             List<string> listmaThuoc = new List<string>();
+            Dictionary<CustomKey, string> dic = _shareEntityDao.BuildTuDienThuoc();
             List<ChinhSachGiaChiTiet> listChinhSachGiaChiTiet = new List<ChinhSachGiaChiTiet>();
             
             for (int i = 0; i < grdToaThuoc.Rows.Count; i++)
@@ -284,12 +287,14 @@ namespace UKPI.Presentation
                 chinhSachChiTiet.MaChinhSachGia = txtMaChinhSachGia.Text;
                 chinhSachChiTiet.MedicineID = (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
                 chinhSachChiTiet.MedicineName = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
-                chinhSachChiTiet.GiaDNMua = double.Parse((string)grdToaThuoc.Rows[i].Cells[3].FormattedValue);
-                chinhSachChiTiet.GiaDNMuaVAT = double.Parse((string)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
+                chinhSachChiTiet.GiaDNMua = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[3].FormattedValue);
+                chinhSachChiTiet.GiaDNMuaVAT = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
                 chinhSachChiTiet.DonViTinh = GetDonViTinh((string)grdToaThuoc.Rows[i].Cells[5].FormattedValue);
                 chinhSachChiTiet.DienGiai = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
                 chinhSachChiTiet.HoatDong = (bool)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
-
+                //can load them thong tin bao hiem cho thuoc
+                CustomKey ck = new CustomKey(chinhSachChiTiet.MedicineID, true);
+                chinhSachChiTiet.MedicineID = dic[ck];
                 if (!listmaThuoc.Contains(chinhSachChiTiet.MedicineID))
                 {
                     listmaThuoc.Add(chinhSachChiTiet.MedicineID);

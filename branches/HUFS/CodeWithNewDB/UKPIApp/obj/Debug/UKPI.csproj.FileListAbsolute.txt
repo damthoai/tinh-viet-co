@@ -1234,3 +1234,4 @@ D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\UKPI.ImportRegistration
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\EPPlus.xml
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\HHCC.exe.manifest
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\HHCC.application
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChonHanSuDung.resources
