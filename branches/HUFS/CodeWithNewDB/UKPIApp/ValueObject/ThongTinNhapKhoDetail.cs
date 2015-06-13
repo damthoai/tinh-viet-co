@@ -11,7 +11,7 @@ namespace UKPI.ValueObject
         public string TenThuoc {get;set;}
         public string MaThuoc {get;set;}
         public bool ThuocBH {get;set;}
-        public int SoLuong {get;set;}
+        public long SoLuong {get;set;}
         public decimal GiaThoiDiemNhap {get;set;}
         public decimal GiaTT { get; set; }
         public decimal GiaST { get; set; }
@@ -19,5 +19,6 @@ namespace UKPI.ValueObject
         public string MaNhapKho {get;set;}
         public string LoThuoc {get;set;}
         public DateTime HanSuDung { get; set; }
+        public string HamLuong { get; set; }
     }
 }

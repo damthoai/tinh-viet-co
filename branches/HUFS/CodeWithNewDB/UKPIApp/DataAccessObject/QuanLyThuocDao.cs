@@ -140,7 +140,7 @@ namespace UKPI.DataAccessObject
             int lenght = currentMaxMaChinhSachGia.Length;
             int prefixLenght = KeyPrefix.MaChinhSachGia.Length;
 
-            string currentNumber = currentMaxMaChinhSachGia.Remove(0, prefixLenght);
+            string currentNumber = !string.IsNullOrEmpty(currentMaxMaChinhSachGia) ? currentMaxMaChinhSachGia.Remove(0, prefixLenght):"0";
             long keyNumber = 0;
             try
             {

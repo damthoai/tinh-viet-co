@@ -13,7 +13,7 @@ namespace UKPI.ValueObject
         public string DonViTinh { get; set; }
         public string HamLuong { get; set; }
         public bool ThuocBH { get; set; }
-        public string SoLuong { get; set; }
+        public long SoLuong { get; set; }
         public decimal Gia { get; set; }
         public string CachUong { get; set; }
         public decimal ThanhTien { get; set; }

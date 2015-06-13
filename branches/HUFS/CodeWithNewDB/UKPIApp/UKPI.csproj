@@ -456,6 +456,7 @@
     <Compile Include="ValueObject\QuyetDinhNghiPhep.cs" />
     <Compile Include="ValueObject\ThongTinBenhNhan.cs" />
     <Compile Include="ValueObject\ThongTinDonThuocKhamBenh.cs" />
+    <Compile Include="ValueObject\ThongTinGiaoDich.cs" />
     <Compile Include="ValueObject\ThongTinKhamBenh.cs" />
     <Compile Include="ValueObject\ThongTinNhapKho.cs" />
     <Compile Include="ValueObject\ThongTinNhapKhoDetail.cs" />

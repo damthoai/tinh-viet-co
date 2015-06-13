@@ -242,12 +242,14 @@ namespace UKPI.Presentation
             this.EmployeeID.DataPropertyName = "EmployeeID";
             this.EmployeeID.HeaderText = "Mã nhân viên";
             this.EmployeeID.Name = "EmployeeID";
+            this.EmployeeID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // FullName
             // 
             this.FullName.DataPropertyName = "FullName";
             this.FullName.HeaderText = "Tên nhân viên";
             this.FullName.Name = "FullName";
+            this.FullName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.FullName.Width = 150;
             // 
             // GioiTinh
@@ -256,6 +258,7 @@ namespace UKPI.Presentation
             this.GioiTinh.HeaderText = "Giới tính";
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.GioiTinh.Width = 50;
             // 
             // MaBHYT
@@ -264,6 +267,7 @@ namespace UKPI.Presentation
             this.MaBHYT.HeaderText = "Mã BHYT";
             this.MaBHYT.Name = "MaBHYT";
             this.MaBHYT.ReadOnly = true;
+            this.MaBHYT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.MaBHYT.Width = 150;
             // 
             // NamSinh
@@ -273,6 +277,7 @@ namespace UKPI.Presentation
             this.NamSinh.Name = "NamSinh";
             this.NamSinh.ReadOnly = true;
             this.NamSinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NamSinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.NamSinh.Width = 50;
             // 
             // KhuVuc
@@ -281,12 +286,14 @@ namespace UKPI.Presentation
             this.KhuVuc.HeaderText = "Khu vực";
             this.KhuVuc.Name = "KhuVuc";
             this.KhuVuc.ReadOnly = true;
+            this.KhuVuc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // TenBoPhan
             // 
             this.TenBoPhan.DataPropertyName = "TenBoPhan";
             this.TenBoPhan.HeaderText = "Tên bộ phận";
             this.TenBoPhan.Name = "TenBoPhan";
+            this.TenBoPhan.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.TenBoPhan.Width = 150;
             // 
             // frmSearchNhanVien

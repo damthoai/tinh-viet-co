@@ -95,19 +95,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>j2QHJqe6fIJCnykP+ChYVrfO4Uw=</dsig:DigestValue>
+        <dsig:DigestValue>fCyUWDQk0QvuPc/xfHnP1PUu6TA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="7135232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="7340032">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EeRxgSB7CVfgd+m3wq7aRQR2TC4=</dsig:DigestValue>
+        <dsig:DigestValue>VY38hzcHESqlG4+ZLWjnZs6WdE4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -203,7 +203,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>54gBVlKE4WLvcSj+A3HhxJKKtNs=</dsig:DigestValue>
+        <dsig:DigestValue>SwLzvB3qpSsUhaJoCmiDkdRWRYw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -215,7 +215,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7SZRdaj/S/6/Wy1GS+L2EgHZibE=</dsig:DigestValue>
+        <dsig:DigestValue>KeIDUlOa9OzCT9ejuG6TGN8K+P0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -227,7 +227,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FYTLCyXFRwY00AXTtXTXgVOuwgw=</dsig:DigestValue>
+        <dsig:DigestValue>ZeGm7EZskKybOqT5N9hqR8RAs8A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -239,7 +239,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4dP0azkPrXjT7ismKXLcIu8Y0z0=</dsig:DigestValue>
+        <dsig:DigestValue>uM5lbRpfTzXTa3NWapyP0Buovnk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -957,22 +957,22 @@
       <dsig:DigestValue>5q4GMdZmgT5ZFATUpozxL2Bfiso=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="96613" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="96722" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>vZ4mKRGkPUMI5iRvWqFla9ZMIfQ=</dsig:DigestValue>
+      <dsig:DigestValue>p9wXnb5pqZyOW+bmQUss72N+dCY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.VN.xml" size="94916" writeableType="applicationData">
+  <file name="UKPI.Titles.VN.xml" size="95025" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VW83jZjiDLCEW/eRv/Wd/otobho=</dsig:DigestValue>
+      <dsig:DigestValue>cMGaqFJggwC4VNN1b5RcJAZZLdI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Unilever.jpg" size="6652">

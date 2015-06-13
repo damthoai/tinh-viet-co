@@ -32,10 +32,12 @@ namespace UKPI.Presentation
         private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
         QuyetDinhNghiPhep quyetDinhNghiPhep ;
         private Dictionary<int, string> danhSachThuoc = new Dictionary<int, string>();
+        private List<ThongTinGiaoDich> listCurrentTransactions = new List<ThongTinGiaoDich>();
+
         readonly System.Data.DataTable _dt = null;
         ComboBox cbm;
         DataGridViewCell currentCell;
-        
+        //private ComboBox cellComboBox;
         private int _checkRowsCount = 0;
 
         // Declare constants
@@ -67,6 +69,17 @@ namespace UKPI.Presentation
             InitializeComponent();
 
             clsTitleManager.InitTitle(this);
+            //this.cellComboBox = new ComboBox();
+            //this.cellComboBox.DataSource = _shareEntityDao.LoadThongTinCachUongThuoc();
+            //this.cellComboBox.DisplayMember = "CachUong";
+            //this.cellComboBox.ValueMember = "MaUongThuoc";
+            //this.cellComboBox.DropDownStyle = ComboBoxStyle.DropDown;
+            //this.cellComboBox.AutoCompleteSource = AutoCompleteSource.ListItems;
+            //this.cellComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            //this.cellComboBox.SelectedIndexChanged += new EventHandler(cellComboboxValueChanged);
+          //  this.cellComboBox.vi += new EventHandler(oDateTimePicker_CloseUp);
+           // this.cellComboBox.Visible = false;
+           // this.grdToaThuoc.Controls.Add(cellComboBox);
             GetParam();
             SetDefauldValue();
             this.Text = "KHÁM BỆNH CÓ BẢO HIỂM";
@@ -104,6 +117,7 @@ namespace UKPI.Presentation
             cbbGioiTinh.Enabled = false;
             cbbKhuVuc.Enabled = false;
             cbbPhongKham.Enabled = false;
+            btnLuuIn.Visible = false;
         }
         private void LoadThongTinBenhNhan()
         {
@@ -117,6 +131,33 @@ namespace UKPI.Presentation
             cbbGioiTinh.SelectedText = ttBenhNhan.GioiTinh;
             cbbKhuVuc.SelectedText = ttBenhNhan.KhuVuc;
         }
+        //void oDateTimePicker_CloseUp(object sender, EventArgs e)
+        //{
+        //    // Hiding the control after use   
+        //    cellComboBox.Visible = false;
+        //} 
+        //private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    currentCell = this.grdToaThuoc.CurrentCell;
+        //    if (e.ColumnIndex == 8 && e.RowIndex >= 0)
+        //    {
+        //        System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
+
+        //        cellComboBox.Location = tempRect.Location;
+
+        //        cellComboBox.Width = tempRect.Width;
+
+        //        cellComboBox.Visible = true;
+
+        //    }
+
+        //}
+        //void cellComboboxValueChanged(object sender, EventArgs e)
+        //{
+        //    MessageBox.Show(cellComboBox.Text);
+        //    grdToaThuoc.CurrentCell.Value = cellComboBox.Text;
+        //    cellComboBox.Visible = false;
+        //}
         private void txtMaNhanVien_MouseLeave(object sender, EventArgs e)
         {
             string maNhanVien = txtMaNhanVien.Text;
@@ -266,12 +307,14 @@ namespace UKPI.Presentation
 
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
             checkBoxColumn.Width = 60;
+            
             grdToaThuoc.Columns.Add(checkBoxColumn);
 
             DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
             tenThuocColumn.HeaderText = "Tên thuốc";
             tenThuocColumn.ReadOnly = true;
             tenThuocColumn.Width = 130;
+            tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(tenThuocColumn);
 
             DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
@@ -280,6 +323,7 @@ namespace UKPI.Presentation
             col.DataSource = _shareEntityDao.LoadThongTinThuoc();
             col.DisplayMember = "MaThuocYTeHienThi";
             col.ValueMember = "MedicineID";
+            col.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(col);
            // grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
 
@@ -289,53 +333,70 @@ namespace UKPI.Presentation
             baoHiemColumn.Width = 120;
             baoHiemColumn.HeaderText = "Thuốc BH";
             baoHiemColumn.ReadOnly = true;
+            baoHiemColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(baoHiemColumn);
 
             DataGridViewTextBoxColumn donViTinhColumn = new DataGridViewTextBoxColumn();
             donViTinhColumn.Width = 130;
             donViTinhColumn.HeaderText = "Đơn vị tính";
             donViTinhColumn.ReadOnly = true;
+            donViTinhColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(donViTinhColumn);
 
             DataGridViewTextBoxColumn hamLuongColumn = new DataGridViewTextBoxColumn();
             hamLuongColumn.Width = 130;
             hamLuongColumn.HeaderText = "Hàm lượng";
-            hamLuongColumn.ReadOnly = true;
+            hamLuongColumn.ReadOnly = false;
+            hamLuongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(hamLuongColumn);
 
             DataGridViewTextBoxColumn soLuongColumn = new DataGridViewTextBoxColumn();
             soLuongColumn.Width = 130;
             soLuongColumn.HeaderText = "Số lượng";
+            soLuongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(soLuongColumn);
 
             DataGridViewTextBoxColumn giaColumn = new DataGridViewTextBoxColumn();
             giaColumn.Width = 130;
             giaColumn.HeaderText = "Giá";
+            giaColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             //giaColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaColumn);
-
+            /*
             DataGridViewComboBoxColumn cachUongColumn = new DataGridViewComboBoxColumn();
             cachUongColumn.Width = 130;
             cachUongColumn.HeaderText = "Cách uống";
             cachUongColumn.DataSource = _shareEntityDao.LoadThongTinCachUongThuoc();
             cachUongColumn.DisplayMember = "CachUong";
             cachUongColumn.ValueMember = "MaUongThuoc";
+            cachUongColumn.ReadOnly = false;
+            cachUongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+            grdToaThuoc.Columns.Add(cachUongColumn);
+            */
+            DataGridViewTextBoxColumn cachUongColumn = new DataGridViewTextBoxColumn();
+            cachUongColumn.Width = 130;
+            cachUongColumn.HeaderText = "Cách uống";
+            cachUongColumn.ReadOnly = false;
+            cachUongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(cachUongColumn);
 
             DataGridViewTextBoxColumn thanhTienColumn = new DataGridViewTextBoxColumn();
             thanhTienColumn.Width = 130;
             thanhTienColumn.HeaderText = "Thành tiến";
             thanhTienColumn.ReadOnly = true;
+            thanhTienColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(thanhTienColumn);
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
             grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
             grdToaThuoc.CellValueChanged += grdToaThuoc_CellValueChanged;
+            //grdToaThuoc.CellClick += grdToaThuoc_CellDoubleClick;
             int rowIndex = this.grdToaThuoc.Rows.Add(1);
             var row = this.grdToaThuoc.Rows[rowIndex];
 
 
 
         }
+
 
       
 
@@ -400,13 +461,47 @@ namespace UKPI.Presentation
             DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.Waring"), clsResources.GetMessage("messages.frmKhamBenh.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
+                btnLuuIn.Visible = true;
                 grpThongTinKhamBenh.Enabled = false;
                 btnXoaThuoc.Enabled = false;
+                listCurrentTransactions = new List<ThongTinGiaoDich>();
+                ThongTinKhamBenh ttkb = BuildThongTinKhamBenh();
+                if (ttkb != null)
+                {
+                    List<ThongTinGiaoDich> listTransaction = _thongTinKhamBenhDao.XacNhanThongTinKhamBenh(ttkb);
+                    if (listTransaction != null && listTransaction.Count > 0)
+                    {
+                        //DialogResult result1 = MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.Success"), clsResources.GetMessage("messages.frmKhamBenh.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        grdToaThuoc.ReadOnly = true;
+                        btnXacNhan.Enabled = false;
+                        listCurrentTransactions = listTransaction;
+                        MessageBox.Show("Xác nhận thành công");
+                        return;
+                    }
+                    else
+                    {
+                        //MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.Error"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Không Thể Xác nhận");
+                        return;
+                    }
+                }
             }
         }
 
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
+            if (_thongTinKhamBenhDao.ProcessGiaoDichKhamBenh(listCurrentTransactions))
+            {
+                MessageBox.Show("Lưu thành công");
+                grdToaThuoc.ReadOnly = true;
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi trong khi lưu");
+                return;
+            }
+            /*
             if (string.IsNullOrEmpty(txtTongThanhTien.Text))
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidDonThuoc"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -416,8 +511,9 @@ namespace UKPI.Presentation
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidThongTinNhanVien"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
             //MessageBox.Show(_thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh());
+            /*
             ThongTinKhamBenh ttkb = BuildThongTinKhamBenh();
             if(ttkb != null ){
                 if (_thongTinKhamBenhDao.SaveThongTinKhamBenh(ttkb))
@@ -441,6 +537,7 @@ namespace UKPI.Presentation
                     return;
                 }
             }
+             * */
         }
         public void SetQuyetDinhNghiPhep(QuyetDinhNghiPhep qd)
         {
@@ -466,7 +563,7 @@ namespace UKPI.Presentation
             thongTinKhamBenh.NhomBenh = cbbNhomBenh.GetItemText(cbbNhomBenh.SelectedItem);
             thongTinKhamBenh.ChuanDoan = txtChanDoan.Text;
             thongTinKhamBenh.QuyetDinhNghi = chkQuyetDinh.Checked;
-            thongTinKhamBenh.MaICD = cbbMaICD.GetItemText(cbbMaICD.SelectedItem);
+            thongTinKhamBenh.MaICD = ((MaICD)cbbMaICD.SelectedItem).Ma;
             thongTinKhamBenh.DienGiaiICD = txtDienGiaiICD.Text;
             thongTinKhamBenh.TongTien = txtTongThanhTien.Text;
             if (quyetDinhNghiPhep != null)
@@ -498,12 +595,13 @@ namespace UKPI.Presentation
                     thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
                     thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
                     thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
-                    thongTinDonThuoc.SoLuong = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
+                    
                     CustomKey ck = new CustomKey(thongTinDonThuoc.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue );
                     thongTinDonThuoc.MaThuoc = dic[ck];
                     try
                     {
-                        int checkSoluong = int.Parse(thongTinDonThuoc.SoLuong);
+                        long checkSoluong = long.Parse((string)grdToaThuoc.Rows[i].Cells[6].FormattedValue);
+                        thongTinDonThuoc.SoLuong = checkSoluong;
                         if (checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc, checkSoluong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) < 0)
                         {
                             MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -690,6 +788,7 @@ namespace UKPI.Presentation
                 this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
             }
+         
         }
         
 
@@ -719,15 +818,37 @@ namespace UKPI.Presentation
 
         void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
+            string titleText = grdToaThuoc.Columns[8].HeaderText;
             // Here try to add subscription for selected index changed event
             if (e.Control is ComboBox)
             {
                 cbm = (ComboBox)e.Control;
+
                 if (cbm != null)
                 {
+                    cbm.DropDownStyle = ComboBoxStyle.DropDown;
+                    cbm.AutoCompleteSource = AutoCompleteSource.ListItems;
+                    cbm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+                    //if(currentCell != null && currentCell.ColumnIndex == 8)
+                    //{
+                    //    MessageBox.Show((string)this.grdToaThuoc[8, currentCell.RowIndex].Value.ToString());
+                    //}
                     cbm.SelectedIndexChanged += new EventHandler(cbm_SelectedIndexChanged);
                 }
                 currentCell = this.grdToaThuoc.CurrentCell;
+            }
+
+            if (titleText.Equals("Cách uống"))
+            {
+                System.Windows.Forms.TextBox autoText = e.Control as System.Windows.Forms.TextBox;
+                if (autoText != null)
+                {
+                    autoText.AutoCompleteMode = AutoCompleteMode.Suggest;
+                    autoText.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                    AutoCompleteStringCollection DataCollection = new AutoCompleteStringCollection();
+                    addItems(DataCollection);
+                    autoText.AutoCompleteCustomSource = DataCollection;
+                }
             }
             //if (e.Control is System.Windows.Forms.TextBox)
             //{
@@ -736,6 +857,14 @@ namespace UKPI.Presentation
             //    tb.KeyPress += new KeyPressEventHandler(Control_KeyPress);
 
             //}
+        }
+        public void addItems(AutoCompleteStringCollection col)
+        {
+            List<CachUongThuoc> listCachUongThuoc = _shareEntityDao.LoadThongTinCachUongThuoc();
+            for (int i = 0; i < listCachUongThuoc.Count; i++)
+            {
+                col.Add(listCachUongThuoc[i].CachUong);
+            }
         }
        
         void cbm_SelectedIndexChanged(object sender, EventArgs e)
@@ -749,41 +878,45 @@ namespace UKPI.Presentation
             // Change the content of appropriate cell when selected index changes
             if (cbm != null)
             {
-                ThongTinThuoc ttt = cbm.SelectedItem as ThongTinThuoc;
-                //DataRowView drv = cbm.SelectedItem as DataRowView;
-                if (ttt != null)
+                if (currentCell.ColumnIndex == 2)
                 {
-                  //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
-                    if (currentCell.ColumnIndex == 2)
+                    ThongTinThuoc ttt = cbm.SelectedItem as ThongTinThuoc;
+                    //DataRowView drv = cbm.SelectedItem as DataRowView;
+                    if (ttt != null)
                     {
-                   //     MessageBox.Show(ttt.MedicineName);
-                        if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
+                        //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
+                        if (currentCell.ColumnIndex == 2)
                         {
-                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            //     MessageBox.Show(ttt.MedicineName);
+                            if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
+                            {
+                                danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            }
+                            else if (danhSachThuoc.ContainsKey(currentCell.RowIndex))
+                            {
+                                danhSachThuoc.Remove(currentCell.RowIndex);
+                                danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            }
+                            else
+                            {
+                                MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                            this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.DonViTinh;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.HamLuong;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.CachUongThuoc;
                         }
-                        else if (danhSachThuoc.ContainsKey(currentCell.RowIndex))
+                        if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
                         {
-                            danhSachThuoc.Remove(currentCell.RowIndex);
-                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            grdToaThuoc.Rows.Add(1);
                         }
-                        else
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                        this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.DonViTinh;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.HamLuong;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.CachUong;
-                    }
-                    if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
-                    {
-                        grdToaThuoc.Rows.Add(1);
-                    }
 
+                    }
                 }
+             
             }
         }
 
@@ -794,6 +927,20 @@ namespace UKPI.Presentation
             a.Show();
         }
 
+        private void btnTiepTucKham_Click(object sender, EventArgs e)
+        {
+            grdToaThuoc.Rows.Clear();
+            grdToaThuoc.Rows.Add(1);
+            txtTongThanhTien.Text = string.Empty;
+            txtBenhNhan.Text = string.Empty;
+            txtMaNhanVien.Text = string.Empty;
+            grpThongTinKhamBenh.Enabled = true;
+            btnXoaThuoc.Enabled = true;
+            grdToaThuoc.ReadOnly = false;
+            btnXacNhan.Enabled = true;
+        }
+
+       
         
     }
 }

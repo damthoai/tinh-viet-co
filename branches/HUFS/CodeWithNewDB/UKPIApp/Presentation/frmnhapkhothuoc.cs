@@ -116,6 +116,7 @@ namespace UKPI.Presentation
         {
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
             checkBoxColumn.Width = 60;
+            checkBoxColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(checkBoxColumn);
 
            
@@ -123,6 +124,7 @@ namespace UKPI.Presentation
             tenThuocColumn.HeaderText = "Tên thuốc";
             tenThuocColumn.Width = 145;
             tenThuocColumn.ReadOnly = true;
+            tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(tenThuocColumn);
 
             DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
@@ -131,22 +133,26 @@ namespace UKPI.Presentation
             col.DataSource = _shareEntityDao.LoadThongTinThuoc();
             col.DisplayMember = "MaThuocYTeHienThi";
             col.ValueMember = "MedicineID";
+            col.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(col);
 
             DataGridViewTextBoxColumn hanSuDungColumn = new DataGridViewTextBoxColumn();
-            hanSuDungColumn.Width = 130;
+            hanSuDungColumn.Width = 100;
             hanSuDungColumn.HeaderText = "Hạn sử dụng";
+            hanSuDungColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(hanSuDungColumn);
 
             DataGridViewCheckBoxColumn baoHiemColumn = new DataGridViewCheckBoxColumn();
             baoHiemColumn.Width = 100;
             baoHiemColumn.HeaderText = "Thuốc BH";
             baoHiemColumn.ReadOnly = true;
+            baoHiemColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(baoHiemColumn);
 
             DataGridViewTextBoxColumn soLuongColumn = new DataGridViewTextBoxColumn();
             soLuongColumn.Width = 130;
             soLuongColumn.HeaderText = "Số lượng";
+            soLuongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(soLuongColumn);
 
             //DataGridViewTextBoxColumn hamLuongColumn = new DataGridViewTextBoxColumn();
@@ -157,12 +163,14 @@ namespace UKPI.Presentation
             DataGridViewTextBoxColumn giaNhapColumn = new DataGridViewTextBoxColumn();
             giaNhapColumn.Width = 130;
             giaNhapColumn.HeaderText = "Giá thời diểm nhập";
+            giaNhapColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             //giaNhapColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaNhapColumn);
 
             DataGridViewTextBoxColumn giaTTColumn = new DataGridViewTextBoxColumn();
             giaTTColumn.Width = 130;
             giaTTColumn.HeaderText = "Giá TT";
+            giaTTColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
            // giaTTColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaTTColumn);
 
@@ -176,13 +184,22 @@ namespace UKPI.Presentation
             DataGridViewTextBoxColumn giaSTColumn = new DataGridViewTextBoxColumn();
             giaSTColumn.Width = 130;
             giaSTColumn.HeaderText = "Giá ST";
+            giaSTColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             //giaSTColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaSTColumn);
+
+            DataGridViewTextBoxColumn hamLuongColumn = new DataGridViewTextBoxColumn();
+            hamLuongColumn.Width = 130;
+            hamLuongColumn.HeaderText = "Hàm lượng";
+            hamLuongColumn.ReadOnly = false;
+            hamLuongColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+            grdToaThuoc.Columns.Add(hamLuongColumn);
 
             DataGridViewTextBoxColumn thanhTienColumn = new DataGridViewTextBoxColumn();
             thanhTienColumn.Width = 130;
             thanhTienColumn.HeaderText = "Thành tiến";
             thanhTienColumn.ReadOnly = true;
+            thanhTienColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(thanhTienColumn);
 
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
@@ -213,7 +230,7 @@ namespace UKPI.Presentation
         }
          void cellDateTimePickerValueChanged(object sender, EventArgs e)
          {
-             grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString("dd-MM-yyyy");//convert the date as per your format
+             grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format
              cellDateTimePicker.Visible = false;
          }
 
@@ -284,80 +301,82 @@ namespace UKPI.Presentation
         {
             this.quyetDinhNghiPhep = qd;
         }
-        private ThongTinKhamBenh BuildThongTinKhamBenh()
-        {
-            List<string> listmaThuoc = new List<string>();
-            ThongTinKhamBenh thongTinKhamBenh = new ThongTinKhamBenh();
-            thongTinKhamBenh.MaKhamBenh = _thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh();
-            thongTinKhamBenh.PhongKhamBenh = cbbPhongKham.GetItemText(cbbPhongKham.SelectedItem);
-            thongTinKhamBenh.NgayKhamBenh = dtpNgayNhapKho.Value;
-            thongTinKhamBenh.TongTien = txtTongThanhTien.Text;
-            if (quyetDinhNghiPhep != null)
-                thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
-            else
-            {
-                quyetDinhNghiPhep = new QuyetDinhNghiPhep();
-                quyetDinhNghiPhep.TuNgay = null;
-                quyetDinhNghiPhep.DenNgay = null;
-                quyetDinhNghiPhep.LyDo = string.Empty;
-                quyetDinhNghiPhep.LyDoChiTiet = string.Empty;
-                quyetDinhNghiPhep.DienGiai = string.Empty;
-                quyetDinhNghiPhep.SoNgayNghi = null;
-                quyetDinhNghiPhep.ChuThich = string.Empty;
-                thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
-            }
+        //private ThongTinKhamBenh BuildThongTinKhamBenh()
+        //{
+        //    List<string> listmaThuoc = new List<string>();
+        //    ThongTinKhamBenh thongTinKhamBenh = new ThongTinKhamBenh();
+        //    thongTinKhamBenh.MaKhamBenh = _thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh();
+        //    thongTinKhamBenh.PhongKhamBenh = cbbPhongKham.GetItemText(cbbPhongKham.SelectedItem);
+        //    thongTinKhamBenh.NgayKhamBenh = dtpNgayNhapKho.Value;
+        //    thongTinKhamBenh.TongTien = txtTongThanhTien.Text;
+        //    if (quyetDinhNghiPhep != null)
+        //        thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
+        //    else
+        //    {
+        //        quyetDinhNghiPhep = new QuyetDinhNghiPhep();
+        //        quyetDinhNghiPhep.TuNgay = null;
+        //        quyetDinhNghiPhep.DenNgay = null;
+        //        quyetDinhNghiPhep.LyDo = string.Empty;
+        //        quyetDinhNghiPhep.LyDoChiTiet = string.Empty;
+        //        quyetDinhNghiPhep.DienGiai = string.Empty;
+        //        quyetDinhNghiPhep.SoNgayNghi = null;
+        //        quyetDinhNghiPhep.ChuThich = string.Empty;
+        //        thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
+        //    }
    
-            if (grdToaThuoc.Rows.Count > 0)
-            {
-                List<ThongTinDonThuocKhamBenh> listDonThuoc = new List<ThongTinDonThuocKhamBenh>();
-                for (int i = 0; i < grdToaThuoc.Rows.Count; i++)
-                {
+        //    if (grdToaThuoc.Rows.Count > 0)
+        //    {
+        //        List<ThongTinDonThuocKhamBenh> listDonThuoc = new List<ThongTinDonThuocKhamBenh>();
+        //        for (int i = 0; i < grdToaThuoc.Rows.Count; i++)
+        //        {
 
-                    ThongTinDonThuocKhamBenh thongTinDonThuoc = new ThongTinDonThuocKhamBenh();
-                    if ((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue == "")
-                        continue;
-                    thongTinDonThuoc.TenThuoc = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
-                    thongTinDonThuoc.MaThuoc  =  (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
-                    thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
-                    thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
-                    thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
-                    thongTinDonThuoc.SoLuong = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
-                    try
-                    {
-                        int checkSoluong = int.Parse(thongTinDonThuoc.SoLuong);
-                        if(checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc,checkSoluong) == -1)
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return null;
-                        }
-                    }
-                    catch {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                    thongTinDonThuoc.Gia = (decimal)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
-                    thongTinDonThuoc.CachUong = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
-                    thongTinDonThuoc.ThanhTien = (decimal)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
-                    thongTinDonThuoc.MaKhamBenh = thongTinKhamBenh.MaKhamBenh;
-                    //if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
-                    //{
-                    //    grdToaThuoc.Rows.RemoveAt(i);
-                    //}
-                    if (!listmaThuoc.Contains(thongTinDonThuoc.MaThuoc))
-                    {
-                        listmaThuoc.Add(thongTinDonThuoc.MaThuoc);
-                    }
-                    else {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckTrungLapThuoc"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                    listDonThuoc.Add(thongTinDonThuoc);
-                }
-                thongTinKhamBenh.ThongTinToaThuoc = listDonThuoc;
-            }
+        //            ThongTinDonThuocKhamBenh thongTinDonThuoc = new ThongTinDonThuocKhamBenh();
+        //            if ((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue == "")
+        //                continue;
+        //            thongTinDonThuoc.TenThuoc = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
+        //            thongTinDonThuoc.MaThuoc  =  (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
+        //            thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
+        //            thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
+        //            thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
+                    
+        //            try
+        //            {
 
-            return thongTinKhamBenh;
-        }
+        //                long checkSoluong = long.Parse((string)grdToaThuoc.Rows[i].Cells[6].FormattedValue);
+        //                thongTinDonThuoc.SoLuong = checkSoluong;
+        //                if(checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc,checkSoluong) == -1)
+        //                {
+        //                    MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                    return null;
+        //                }
+        //            }
+        //            catch {
+        //                MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                return null;
+        //            }
+        //            thongTinDonThuoc.Gia = (decimal)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
+        //            thongTinDonThuoc.CachUong = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
+        //            thongTinDonThuoc.ThanhTien = (decimal)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+        //            thongTinDonThuoc.MaKhamBenh = thongTinKhamBenh.MaKhamBenh;
+        //            //if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
+        //            //{
+        //            //    grdToaThuoc.Rows.RemoveAt(i);
+        //            //}
+        //            if (!listmaThuoc.Contains(thongTinDonThuoc.MaThuoc))
+        //            {
+        //                listmaThuoc.Add(thongTinDonThuoc.MaThuoc);
+        //            }
+        //            else {
+        //                MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckTrungLapThuoc"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                return null;
+        //            }
+        //            listDonThuoc.Add(thongTinDonThuoc);
+        //        }
+        //        thongTinKhamBenh.ThongTinToaThuoc = listDonThuoc;
+        //    }
+
+        //    return thongTinKhamBenh;
+        //}
 
         private bool ValidateThongSoNhapKho()
         {
@@ -434,11 +453,13 @@ namespace UKPI.Presentation
                     thongTinNhapKhoDetail.ThuocBH = (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
                     thongTinNhapKhoDetail.MaNhapKho = maNhapKho;
                     thongTinNhapKhoDetail.LoThuoc = DateTime.Now.ToString("yyyyMMddHHmmss");
+                    thongTinNhapKhoDetail.HamLuong = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+
                     CustomKey ck = new CustomKey(thongTinNhapKhoDetail.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
                     thongTinNhapKhoDetail.MaThuoc = dic[ck];
                     try
                     {
-                        string strThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+                        string strThanhTien = (string)grdToaThuoc.Rows[i].Cells[10].FormattedValue;
                         thongTinNhapKhoDetail.ThanhTien = decimal.Parse(strThanhTien);
                     }
                     catch { }
@@ -565,7 +586,7 @@ namespace UKPI.Presentation
                 }
                 decimal currentTienThuoc = currentSoLuong * currentGia;
                // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
-                this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = currentTienThuoc.ToString();
+                this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
             }
             //Check gia sau thue
@@ -611,7 +632,7 @@ namespace UKPI.Presentation
 
                 decimal currentTienThuoc = currentSoLuong * currentGia;
                 // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
-                this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = currentTienThuoc.ToString();
+                this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
             }
             //check gia thoi diem nhap
@@ -664,9 +685,9 @@ namespace UKPI.Presentation
 
             foreach (DataGridViewRow row in grdToaThuoc.Rows)
             {
-                if (row.Cells[9].Value != null)
+                if (row.Cells[10].Value != null)
                 {
-                    total += decimal.Parse(row.Cells[9].Value.ToString());
+                    total += decimal.Parse(row.Cells[10].Value.ToString());
                 }
             }
 
@@ -690,6 +711,9 @@ namespace UKPI.Presentation
                 cbm = (ComboBox)e.Control;
                 if (cbm != null)
                 {
+                    cbm.DropDownStyle = ComboBoxStyle.DropDown;
+                    cbm.AutoCompleteSource = AutoCompleteSource.ListItems;
+                    cbm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
                     cbm.SelectedIndexChanged += new EventHandler(cbm_SelectedIndexChanged);
                 }
                 currentCell = this.grdToaThuoc.CurrentCell;
@@ -735,6 +759,7 @@ namespace UKPI.Presentation
                         this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
                         this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMua;
                         this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 7, currentCell.RowIndex].Value = ttt.HamLuong;
                     }
                     if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
                     {

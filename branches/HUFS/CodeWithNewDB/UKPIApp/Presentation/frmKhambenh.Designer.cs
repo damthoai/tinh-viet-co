@@ -41,6 +41,7 @@ namespace UKPI.Presentation
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhambenh));
             this.grpThongTinKhamBenh = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.txtDienGiaiICD = new System.Windows.Forms.TextBox();
             this.cbbMaICD = new System.Windows.Forms.ComboBox();
             this.lblDienGiaiICD = new System.Windows.Forms.Label();
@@ -102,8 +103,8 @@ namespace UKPI.Presentation
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTongThanhTien = new System.Windows.Forms.Label();
             this.txtTongThanhTien = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
+            this.btnTiepTucKham = new System.Windows.Forms.Button();
             this.grpThongTinKhamBenh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
             this.SuspendLayout();
@@ -161,6 +162,17 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.TabStop = false;
             this.grpThongTinKhamBenh.Text = "Thông tin khám bệnh";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnSearch.Location = new System.Drawing.Point(263, 88);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(26, 23);
+            this.btnSearch.TabIndex = 76;
+            this.btnSearch.Text = "...";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
             // txtDienGiaiICD
             // 
             this.txtDienGiaiICD.Location = new System.Drawing.Point(896, 66);
@@ -191,7 +203,6 @@ namespace UKPI.Presentation
             this.lblDienGiaiICD.Size = new System.Drawing.Size(69, 13);
             this.lblDienGiaiICD.TabIndex = 73;
             this.lblDienGiaiICD.Text = "Diễn giải ICD";
- 
             // 
             // lblMaICD
             // 
@@ -237,7 +248,6 @@ namespace UKPI.Presentation
             this.lblLyDo.Size = new System.Drawing.Size(33, 13);
             this.lblLyDo.TabIndex = 68;
             this.lblLyDo.Text = "Lý do";
-
             // 
             // chkQuyetDinh
             // 
@@ -363,7 +373,6 @@ namespace UKPI.Presentation
             this.lblNhomBenh.Size = new System.Drawing.Size(62, 13);
             this.lblNhomBenh.TabIndex = 55;
             this.lblNhomBenh.Text = "Nhóm bệnh";
-
             // 
             // cbbKhuVuc
             // 
@@ -534,6 +543,7 @@ namespace UKPI.Presentation
             // dtpNgayKham
             // 
             this.dtpNgayKham.CustomFormat = "dd-MM-yyyy";
+            this.dtpNgayKham.Enabled = false;
             this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayKham.Location = new System.Drawing.Point(101, 55);
             this.dtpNgayKham.Name = "dtpNgayKham";
@@ -556,7 +566,7 @@ namespace UKPI.Presentation
             // 
             this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDong.Location = new System.Drawing.Point(1095, 326);
+            this.btnDong.Location = new System.Drawing.Point(1121, 326);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 23);
             this.btnDong.TabIndex = 79;
@@ -568,7 +578,7 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(994, 326);
+            this.btnLuuIn.Location = new System.Drawing.Point(922, 326);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(86, 23);
             this.btnLuuIn.TabIndex = 78;
@@ -580,7 +590,7 @@ namespace UKPI.Presentation
             // 
             this.btnXacNhan.Image = global::UKPI.Properties.Resources.save_as3;
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXacNhan.Location = new System.Drawing.Point(902, 326);
+            this.btnXacNhan.Location = new System.Drawing.Point(821, 326);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(86, 23);
             this.btnXacNhan.TabIndex = 77;
@@ -592,7 +602,7 @@ namespace UKPI.Presentation
             // 
             this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(810, 326);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(719, 326);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
             this.btnXoaThuoc.Size = new System.Drawing.Size(86, 23);
             this.btnXoaThuoc.TabIndex = 76;
@@ -764,17 +774,6 @@ namespace UKPI.Presentation
             this.txtTongThanhTien.TabIndex = 70;
             this.txtTongThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSearch.Location = new System.Drawing.Point(263, 88);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(26, 23);
-            this.btnSearch.TabIndex = 76;
-            this.btnSearch.Text = "...";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
-            // 
             // grdToaThuoc
             // 
             this.grdToaThuoc.AllowUserToAddRows = false;
@@ -806,11 +805,24 @@ namespace UKPI.Presentation
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 
+            // btnTiepTucKham
+            // 
+            this.btnTiepTucKham.Image = global::UKPI.Properties.Resources.btnSearch;
+            this.btnTiepTucKham.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnTiepTucKham.Location = new System.Drawing.Point(1014, 326);
+            this.btnTiepTucKham.Name = "btnTiepTucKham";
+            this.btnTiepTucKham.Size = new System.Drawing.Size(101, 23);
+            this.btnTiepTucKham.TabIndex = 80;
+            this.btnTiepTucKham.Text = "Tiếp Tục Khám";
+            this.btnTiepTucKham.UseVisualStyleBackColor = true;
+            this.btnTiepTucKham.Click += new System.EventHandler(this.btnTiepTucKham_Click);
+            // 
             // frmKhambenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 648);
+            this.Controls.Add(this.btnTiepTucKham);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.txtTongThanhTien);
             this.Controls.Add(this.btnLuuIn);
@@ -822,8 +834,6 @@ namespace UKPI.Presentation
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmKhambenh";
             this.Text = "KHÁM BỆNH CÓ BẢO HIỂM";
-            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditStore_FormClosing);
-            //this.Load += new System.EventHandler(this.frmEditStore_Load);
             this.grpThongTinKhamBenh.ResumeLayout(false);
             this.grpThongTinKhamBenh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();
@@ -899,5 +909,6 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Label lblTongThanhTien;
         private System.Windows.Forms.TextBox txtTongThanhTien;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnTiepTucKham;
     }
 }

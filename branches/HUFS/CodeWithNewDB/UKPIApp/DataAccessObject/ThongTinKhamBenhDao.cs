@@ -18,6 +18,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_searchThongTinBenhNhan = "p_HUFS_searchThongTinBenhNhan";
         private const string p_HUFS_TinhSoLuongThuocTrongKho = "p_HUFS_TinhSoLuongThuocTrongKho";
         private const string p_HUFS_insertDataForTransactionTheoKho = "p_HUFS_insertDataForTransactionTheoKho";
+        private const string p_HUFS_ProcessTransactionXuatKho = "p_HUFS_ProcessTransactionXuatKho";
         public ThongTinBenhNhan GetThongTinBenhNhan(string maBenhNhan)
         {
             ThongTinBenhNhan info = new ThongTinBenhNhan();
@@ -89,7 +90,7 @@ namespace UKPI.DataAccessObject
             }
         }
 
-        public int CheckSoLuongThuocTrongKho(string maThuoc, int soLuongXuat,string tenKho)
+        public int CheckSoLuongThuocTrongKho(string maThuoc, long soLuongXuat,string tenKho)
         {
             try
             {
@@ -129,7 +130,40 @@ namespace UKPI.DataAccessObject
                 return false;
             }
         }
-
+        private bool ProcessGiaoDichXuatKho(string listTransaction)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@ListTransaction", listTransaction);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessTransactionXuatKho, Params);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private List<ThongTinGiaoDich> InsertThongTinGiaoDich(string maThuoc, long soLuong, bool nhapKho, bool xuatKho, string maKhamBenh, string tenKho)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[6];
+                Params[0] = new SqlParameter("@MaThuoc", maThuoc);
+                Params[1] = new SqlParameter("@Soluong", soLuong);
+                Params[2] = new SqlParameter("@NhapKho", nhapKho);
+                Params[3] = new SqlParameter("@XuatKho", xuatKho);
+                Params[4] = new SqlParameter("@MaKhamBenh", maKhamBenh);
+                Params[5] = new SqlParameter("@TenKho", tenKho);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_insertDataForTransactionTheoKho, Params);
+                return this.ConvertDataTableToList<ThongTinGiaoDich>(dtResult);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        /*
         private bool InsertThongTinGiaoDich(string maThuoc, double soLuong, bool nhapKho, bool xuatKho, string maKhamBenh,string tenKho)
         {
             try
@@ -222,7 +256,94 @@ namespace UKPI.DataAccessObject
 
 
         }
+        */
+        public List<ThongTinGiaoDich> XacNhanThongTinKhamBenh(ThongTinKhamBenh thongTinKhamBenh)
+        {
 
+            string conStr = System.Configuration.ConfigurationManager.AppSettings["ConnectionString"];
+            List<ThongTinGiaoDich> list = new List<ThongTinGiaoDich>();
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+                    SqlParameter[] Params = new SqlParameter[24];
+                    Params[0] = new SqlParameter("@MaKhamBenh", thongTinKhamBenh.MaKhamBenh);
+                    Params[1] = new SqlParameter("@PhongKhamBenh", thongTinKhamBenh.PhongKhamBenh);
+                    Params[2] = new SqlParameter("@NgayKhamBenh", thongTinKhamBenh.NgayKhamBenh);
+                    Params[3] = new SqlParameter("@BenhNhan", thongTinKhamBenh.BenhNhan);
+                    Params[4] = new SqlParameter("@MaBenhNhan", thongTinKhamBenh.MaBenhNhan);
+                    Params[5] = new SqlParameter("@GioiTinh", thongTinKhamBenh.GioiTinh);
+                    Params[6] = new SqlParameter("@NamSinh", thongTinKhamBenh.NamSinh);
+                    Params[7] = new SqlParameter("@BoPhan", thongTinKhamBenh.BoPhan);
+                    Params[8] = new SqlParameter("@CongTy", thongTinKhamBenh.CongTy);
+                    Params[9] = new SqlParameter("@KhuVuc", thongTinKhamBenh.KhuVuc);
+                    Params[10] = new SqlParameter("@NhomBenh", thongTinKhamBenh.NhomBenh);
+                    Params[11] = new SqlParameter("@ChuanDoan", thongTinKhamBenh.ChuanDoan);
+                    Params[12] = new SqlParameter("@QuyetDinhNghi", thongTinKhamBenh.QuyetDinhNghi);
+                    Params[13] = new SqlParameter("@TuNgay", thongTinKhamBenh.QuyetDinhNghiPhep.TuNgay);
+                    Params[14] = new SqlParameter("@DenNgay", thongTinKhamBenh.QuyetDinhNghiPhep.DenNgay);
+                    Params[15] = new SqlParameter("@LyDo", thongTinKhamBenh.QuyetDinhNghiPhep.LyDo);
+                    Params[16] = new SqlParameter("@DienGiai", thongTinKhamBenh.QuyetDinhNghiPhep.DienGiai);
+                    Params[17] = new SqlParameter("@SoNgayNghi", thongTinKhamBenh.QuyetDinhNghiPhep.SoNgayNghi);
+                    Params[18] = new SqlParameter("@TongTien", thongTinKhamBenh.TongTien);
+                    Params[19] = new SqlParameter("@MaBHYT", thongTinKhamBenh.MaBHYT);
+                    Params[20] = new SqlParameter("@MaICD", thongTinKhamBenh.MaICD);
+                    Params[21] = new SqlParameter("@DienGiaiICD", thongTinKhamBenh.DienGiaiICD);
+                    Params[22] = new SqlParameter("@LyDoChiTiet", thongTinKhamBenh.QuyetDinhNghiPhep.LyDoChiTiet);
+                    Params[23] = new SqlParameter("@ChuThich", thongTinKhamBenh.QuyetDinhNghiPhep.ChuThich);
+
+
+                    DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_InsertThongTinKhamBenh, Params);
+                    if (thongTinKhamBenh.ThongTinToaThuoc != null && thongTinKhamBenh.ThongTinToaThuoc.Count > 0)
+                    {
+                        this.BulkInsert(ConvertToDataTable(thongTinKhamBenh.ThongTinToaThuoc), "HUFS_KHAMBENH_DETAIL");
+                        for (int i = 0; i < thongTinKhamBenh.ThongTinToaThuoc.Count; i++)
+                        {
+                            List<ThongTinGiaoDich> listi = InsertThongTinGiaoDich(thongTinKhamBenh.ThongTinToaThuoc[i].MaThuoc,
+                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].SoLuong,
+                                                                 false,
+                                                                 true,
+                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].MaKhamBenh, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                            if (listi != null && listi.Count > 0)
+                            {
+                                list.AddRange(listi);
+                            }
+                        }
+                    }
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    log.Error(ex.Message, ex);
+                    return null;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+            return list;
+
+
+        }
+
+        public bool ProcessGiaoDichKhamBenh(List<ThongTinGiaoDich>  listTransaction)
+        {
+            string strListTransaction = "";
+            for (int i = 0; i < listTransaction.Count; i++)
+            {
+                if (i == listTransaction.Count - 1)
+                    strListTransaction += listTransaction[i].MaTransaction.ToString();
+                else
+                    strListTransaction += ","+listTransaction[i].MaTransaction.ToString();
+            }
+            return ProcessGiaoDichXuatKho(strListTransaction);
+
+        }
         public List<ThongTinBenhNhan> SearchThongTinBenhNhan(string maBenhNhan, string tenBenhNhan)
         {
             try
@@ -266,7 +387,7 @@ namespace UKPI.DataAccessObject
             int lenght = currentMaxMaKhamBenh.Length;
             int prefixLenght = KeyPrefix.MaKhamBenh.Length;
 
-            string currentNumber = currentMaxMaKhamBenh.Remove(0, prefixLenght);
+            string currentNumber = !string.IsNullOrEmpty(currentMaxMaKhamBenh) ? currentMaxMaKhamBenh.Remove(0, prefixLenght): "0";
             long keyNumber = 0;
             try
             {

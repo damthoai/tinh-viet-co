@@ -15,6 +15,7 @@ namespace UKPI.DataAccessObject
         private static readonly ILog log = log4net.LogManager.GetLogger(typeof(ThongTinNhapKhoDao));
         private const string p_HUFS_GetMaxMaNhapKho = "p_HUFS_GetMaxMaNhapKho";
         private const string p_HUFS_SearchXuatKho = "p_HUFS_SearchXuatKho";
+        private const string p_HUFS_insertDataForTransactionKhiNhapKho = "p_HUFS_insertDataForTransactionKhiNhapKho";
         public string GetMaxMaNhapKho()
         {
 
@@ -42,7 +43,7 @@ namespace UKPI.DataAccessObject
             int lenght = currentMaxMaNhapKho.Length;
             int prefixLenght = KeyPrefix.MaNhapKho.Length;
 
-            string currentNumber = currentMaxMaNhapKho.Remove(0, prefixLenght);
+            string currentNumber = !string.IsNullOrEmpty(currentMaxMaNhapKho) ? currentMaxMaNhapKho.Remove(0, prefixLenght): "0";
             long keyNumber = 0;
             try
             {
@@ -100,6 +101,18 @@ namespace UKPI.DataAccessObject
                         if (listThongTinNhapKhoDetail != null && listThongTinNhapKhoDetail.Count > 0)
                         {
                             this.BulkInsert(ConvertToDataTable(listThongTinNhapKhoDetail), "HUFS_NHAPKHO_DETAIL");
+                            for (int i = 0; i < listThongTinNhapKhoDetail.Count; i++)
+                            {
+                                bool result = InsertThongTinGiaoDichKhiNhapKho(listThongTinNhapKhoDetail[i].MaThuoc,
+                                                                     listThongTinNhapKhoDetail[i].SoLuong,
+                                                                     listThongTinNhapKhoDetail[i].LoThuoc,
+                                                                     listThongTinNhapKhoDetail[i].HanSuDung);
+                                if (!result)
+                                {
+                                    transaction.Rollback();
+                                    return false;
+                                }
+                            }
                         }
                     }
                     transaction.Commit();
@@ -116,6 +129,23 @@ namespace UKPI.DataAccessObject
                 }
             }
             return true;
+        }
+        private bool InsertThongTinGiaoDichKhiNhapKho(string maThuoc, long soLuong, string maLoThuoc,DateTime hanSuDung)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[4];
+                Params[0] = new SqlParameter("@MaThuoc", maThuoc);
+                Params[1] = new SqlParameter("@Soluong", soLuong);
+                Params[2] = new SqlParameter("@MaLoThuoc", maLoThuoc);
+                Params[3] = new SqlParameter("@HanSuDung", hanSuDung);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_insertDataForTransactionKhiNhapKho, Params);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

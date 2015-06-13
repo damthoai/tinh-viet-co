@@ -3287,6 +3287,10 @@
     <Value>Đóng</Value>
   </Titles>
   <Titles>
+    <Name>frmKhambenh.btnTiepTucKham</Name>
+    <Value>Tiếp Tục Khám</Value>
+  </Titles>
+  <Titles>
     <Name>frmKhambenh.lblTongThanhTien</Name>
     <Value>Tổng thành tiền</Value>
   </Titles>
