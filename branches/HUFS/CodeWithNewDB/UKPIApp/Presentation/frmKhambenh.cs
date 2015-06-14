@@ -462,6 +462,7 @@ namespace UKPI.Presentation
             if (result == DialogResult.OK)
             {
                 btnLuuIn.Visible = true;
+                btnLuuIn.Enabled = true;
                 grpThongTinKhamBenh.Enabled = false;
                 btnXoaThuoc.Enabled = false;
                 listCurrentTransactions = new List<ThongTinGiaoDich>();
@@ -494,6 +495,7 @@ namespace UKPI.Presentation
             {
                 MessageBox.Show("Lưu thành công");
                 grdToaThuoc.ReadOnly = true;
+                btnLuuIn.Enabled = false;
                 return;
             }
             else
@@ -938,6 +940,9 @@ namespace UKPI.Presentation
             btnXoaThuoc.Enabled = true;
             grdToaThuoc.ReadOnly = false;
             btnXacNhan.Enabled = true;
+            btnLuuIn.Enabled = false;
+            btnLuuIn.Visible = false;
+            txtMaBHYT.Text = string.Empty;
         }
 
        
