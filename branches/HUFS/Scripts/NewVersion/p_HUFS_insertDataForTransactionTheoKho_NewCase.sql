@@ -50,6 +50,7 @@ BEGIN
 		INNER JOIN HUFS_NHAPKHO_HEADER b ON a.MaNhapKho = b.MaNhapKho
 		WHERE b.PhongKhamKho = @TenKho
 			AND a.MaThuoc = @MaThuoc
+			AND a.SoLuong > 0
 		) T1
 	ORDER BY T1.HanSuDung
 
