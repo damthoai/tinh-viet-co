@@ -3378,6 +3378,10 @@
     <Value>Đóng</Value>
   </Titles>
   <Titles>
+    <Name>frmKhambenh.btnTiepTucKham</Name>
+    <Value>Tiếp Tục Khám</Value>
+  </Titles>
+  <Titles>
     <Name>frmKhambenh.lblTongThanhTien</Name>
     <Value>Tổng thành tiền</Value>
   </Titles>
@@ -3417,6 +3421,10 @@
   <Titles>
     <Name>frmKhambenh.grdToanThuoc.colThanhTien</Name>
     <Value>Thành tiền</Value>
+  </Titles>
+  <Titles>
+    <Name>frmKhambenh.btnSearch</Name>
+    <Value>...</Value>
   </Titles>
   <!-- End frmKhambenh-->
 
@@ -3509,11 +3517,15 @@
   <!-- Start frmXuatKho-->
   <Titles>
     <Name>frmXuatKho.btnLuuIn</Name>
-    <Value>Lưu</Value>
+    <Value>Xuất kho</Value>
   </Titles>
   <Titles>
     <Name>frmXuatKho.btnExport</Name>
     <Value>Export</Value>
+  </Titles>
+  <Titles>
+    <Name>frmXuatKho.lblPhongKhamKho</Name>
+    <Value>Phòng khám/Kho</Value>
   </Titles>
   <!-- End frmXuatKho-->
   <Titles>
@@ -3622,4 +3634,23 @@
     <Value>Export</Value>
   </Titles>
   <!-- Start frmbaocaotonkho-->
+
+  <!-- Start frmSearchNhanVien-->
+  <Titles>
+    <Name>frmSearchNhanVien.lblMaBenhNhan</Name>
+    <Value>Mã nhân viên</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.lblTenBenhNhan</Name>
+    <Value>Tên nhân viên</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.btnSearch</Name>
+    <Value>Tìm</Value>
+  </Titles>
+  <Titles>
+    <Name>frmSearchNhanVien.btnChon</Name>
+    <Value>Chọn</Value>
+  </Titles>
+  <!-- End frmSearchNhanVien-->
 </HUFS>

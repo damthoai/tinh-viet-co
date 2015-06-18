@@ -1909,6 +1909,20 @@
   </Messages>
 
   <Messages>
+    <Name>messages.frmKhamBenh.CheckValidGia</Name>
+    <Value>Giá thuốc không hợp lệ .Vui lòng nhập lại</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmKhamBenh.CheckValidDonThuoc</Name>
+    <Value>Đơn thuốc không hợp lệ. Không thể xác nhận đơn thuốc</Value>
+  </Messages>
+  
+   <Messages>
+    <Name>messages.frmKhamBenh.CheckValidThongTinNhanVien</Name>
+    <Value>Thông tin nhân viên không hợp lệ</Value>
+  </Messages>
+  <Messages>
     <Name>messages.frmKhamBenh.CheckSoLuongTrongKho</Name>
     <Value>Thuốc này không còn trong kho</Value>
   </Messages>
@@ -1971,6 +1985,21 @@
   <Messages>
     <Name>messages.frmnhapkhothuoc.ValidateThongSoNhapKho</Name>
     <Value>Bạn vui lòng nhập thông tin bắt buộc</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.CheckValidGiaSauThue</Name>
+    <Value>Thông tin giá sau thuế không hợp lệ</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.CheckValidGiaTruocThue</Name>
+    <Value>Thông tin giá trước thuế không hợp lệ</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.CheckValidGiaMua</Name>
+    <Value>Thông tin giá thời điểm nhập không hợp lệ</Value>
   </Messages>
   
   <Messages>
@@ -2069,5 +2098,14 @@
     <Name>messages.frmChinhSachGiaChiTiet.CheckTrungLapThuoc</Name>
     <Value>Thông tin thuốc bị trùng lặp.Vui lòng kiểm tra lại</Value>
   </Messages>
-  
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.ErrorTitle</Name>
+    <Value>Lỗi</Value>
+  </Messages>
+
+  <Messages>
+    <Name>messages.frmSearchNhanVien.SelectNhanVien</Name>
+    <Value>Bạn chưa chọn nhân viên</Value>
+  </Messages>
 </HUFS>

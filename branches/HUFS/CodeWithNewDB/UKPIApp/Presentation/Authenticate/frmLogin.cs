@@ -132,7 +132,6 @@ namespace UKPI.Presentation
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(145, 13);
             this.txtUserName.TabIndex = 0;
-            this.txtUserName.Text = "000001";
             // 
             // txtPassword
             // 

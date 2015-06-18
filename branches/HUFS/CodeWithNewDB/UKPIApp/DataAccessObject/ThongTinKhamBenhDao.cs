@@ -19,6 +19,8 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_TinhSoLuongThuocTrongKho = "p_HUFS_TinhSoLuongThuocTrongKho";
         private const string p_HUFS_insertDataForTransactionTheoKho = "p_HUFS_insertDataForTransactionTheoKho";
         private const string p_HUFS_ProcessTransactionXuatKho = "p_HUFS_ProcessTransactionXuatKho";
+
+        private const string p_HUFS_GetMaKhamBenhForPrint = "p_HUFS_GetMaKhamBenhForPrint";
         public ThongTinBenhNhan GetThongTinBenhNhan(string maBenhNhan)
         {
             ThongTinBenhNhan info = new ThongTinBenhNhan();
@@ -380,6 +382,32 @@ namespace UKPI.DataAccessObject
                 return "";
             }
         }
+
+        public string GetMaKhamBenhForPrint(long maTransaction)
+        {
+
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@MaTransaction", maTransaction);
+
+                string MaKhamBenh = "";
+
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_GetMaKhamBenhForPrint, Params);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    MaKhamBenh = dr["MaKhamBenh"].ToString();
+                }
+                return MaKhamBenh;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return "";
+            }
+        }
+
+
         public string GenerateNewMaKhamKhamBenh()
         {
             string currentMaxMaKhamBenh = GetMaxMaKhamBenh();

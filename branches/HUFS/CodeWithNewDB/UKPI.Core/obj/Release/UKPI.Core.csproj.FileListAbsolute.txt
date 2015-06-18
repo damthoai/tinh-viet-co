@@ -17,3 +17,10 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\bin\Release\log4net.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Release\UKPI.Core.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.Core\obj\Release\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Release\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Release\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Release\log4net.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\obj\Release\UKPI.Core.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\obj\Release\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\obj\Release\UKPI.Core.pdb

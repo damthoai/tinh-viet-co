@@ -83,3 +83,20 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\bi
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Library\EPPlus_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Library\NPOI_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\BlendConfig.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\UKPI.BlendedReport.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\NPOI.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\EPPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Interop.Excel.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\Ionic.Zip.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Release\EPPlus.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Release\UKPI.BlendedReport.pdb

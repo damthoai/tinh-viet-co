@@ -43,3 +43,9 @@ D:\Working\PartTime\HUFS\CodeWithNewDB\UKPI.Core\bin\Debug\ICSharpCode.SharpZipL
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPI.Core\bin\Debug\log4net.dll
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPI.Core\obj\Debug\UKPI.Core.dll
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPI.Core\obj\Debug\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Debug\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Debug\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Debug\log4net.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\obj\Debug\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\obj\Debug\UKPI.Core.pdb

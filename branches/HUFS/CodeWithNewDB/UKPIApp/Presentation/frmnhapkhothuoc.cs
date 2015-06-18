@@ -107,9 +107,9 @@ namespace UKPI.Presentation
 
         private void LoadThongTinNhanVien()
         {
-            ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
-            txtMaNhanVienNhap.Text = ttNhanVien.EmployeeID;
-            txtNhanVienNhap.Text = ttNhanVien.FullName;
+           // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
+            txtMaNhanVienNhap.Text = clsSystemConfig.UserName;
+            txtNhanVienNhap.Text = clsSystemConfig.FullName;
         }
         
         private void BuildGridViewRow()

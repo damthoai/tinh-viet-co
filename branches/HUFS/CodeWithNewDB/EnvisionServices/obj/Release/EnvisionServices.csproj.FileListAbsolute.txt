@@ -100,3 +100,37 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\EnvisionServices\obj\
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\EnvisionServices\obj\Release\EnvisionServices.csproj.GenerateResource.Cache
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\EnvisionServices\obj\Release\EnvisionServices.exe
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\EnvisionServices\obj\Release\EnvisionServices.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Log4Net.config
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Library\EPPlus_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Library\NPOI_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\AuditResultDetail.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\AuditResultInformation.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\RegImportMapping.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.Messages.EN.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.Titles.EN.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\EnvisionServices.exe.config
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\EnvisionServices.exe
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\EnvisionServices.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\log4net.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.AuditResult.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.ImportRegistration.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\EPPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\NPOI.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Interop.Excel.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\Ionic.Zip.dll
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.AuditResult.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\UKPI.ImportRegistration.pdb
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\bin\Release\EPPlus.xml
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.ProjectInstaller.resources
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.ServiceDebug.resources
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.csproj.GenerateResource.Cache
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.exe
+D:\Disk E\HTYT\CodeWithNewDB\EnvisionServices\obj\Release\EnvisionServices.pdb

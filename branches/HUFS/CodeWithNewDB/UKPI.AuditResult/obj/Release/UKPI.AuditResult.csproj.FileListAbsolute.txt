@@ -108,3 +108,25 @@ E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Release\UKPI.AuditResult.csprojResolveAssemblyReference.cache
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Release\UKPI.AuditResult.dll
 E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Release\UKPI.AuditResult.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Library\EPPlus_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Library\NPOI_License.txt
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\AuditResultDetail.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\AuditResultInformation.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\UKPI.AuditResult.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\UKPI.AuditResult.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\log4net.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\UKPI.Core.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\EPPlus.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\NPOI.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Interop.Excel.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\Ionic.Zip.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\UKPI.Core.pdb
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Release\EPPlus.xml
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Release\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Release\UKPI.AuditResult.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Release\UKPI.AuditResult.pdb

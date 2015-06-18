@@ -129,6 +129,8 @@
       <HintPath>DLL\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="MT.WindowsUI, Version=2.6.4.0, Culture=neutral, PublicKeyToken=6a0e81d0b9165633, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\MT.WindowsUI.dll</HintPath>
@@ -159,6 +161,7 @@
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms">
       <Name>System.Windows.Forms</Name>
     </Reference>
@@ -175,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObject\BenhNhanExporter.cs" />
+    <Compile Include="BusinessObject\ReportBo.cs" />
     <Compile Include="BusinessObject\TonKhoExporter.cs" />
     <Compile Include="BusinessObject\XuatKhoExporter.cs" />
     <Compile Include="BusinessObject\ManageStaffOfGroupBO.cs">
@@ -199,10 +203,38 @@
     <Compile Include="DataAccessObject\CreatedTimesheetDao.cs" />
     <Compile Include="DataAccessObject\QuanLyThuocDao.cs" />
     <Compile Include="DataAccessObject\ShareEntityDao.cs" />
+    <Compile Include="DataAccessObject\ReportDao.cs" />
     <Compile Include="DataAccessObject\TeamDao.cs" />
     <Compile Include="DataAccessObject\ParameterDao.cs" />
     <Compile Include="DataAccessObject\ThongTinKhamBenhDao.cs" />
     <Compile Include="DataAccessObject\ThongTinNhapKhoDao.cs" />
+    <Compile Include="HTYTDataSet.cs">
+      <DependentUpon>HTYTDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HTYTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTYTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HTYTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTYTDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentation\Reports\ReportInDonThuocBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Reports\ReportInDonThuocBH.Designer.cs">
+      <DependentUpon>ReportInDonThuocBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Reports\ReportInDonThuocFull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Reports\ReportInDonThuocFull.Designer.cs">
+      <DependentUpon>ReportInDonThuocFull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\ApproveTSLookup\AddL0ForL1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,6 +460,11 @@
     <Compile Include="Presentation\frmApproveTimesheetL2.Designer.cs">
       <DependentUpon>frmApproveTimesheetL2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="ValueObject\BenhNhanExportColumns.cs" />
     <Compile Include="ValueObject\BoPhan.cs" />
     <Compile Include="ValueObject\CachUongThuoc.cs" />
@@ -472,6 +509,31 @@
     <Content Include="AuditResultDetail.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="HTYTDataSet.xsc">
+      <DependentUpon>HTYTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HTYTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HTYTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HTYTDataSet.xss">
+      <DependentUpon>HTYTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HTYTDataSet1.xsc">
+      <DependentUpon>HTYTDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="HTYTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HTYTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="HTYTDataSet1.xss">
+      <DependentUpon>HTYTDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Images\HelpIcon.png" />
     <None Include="Image\Filter.png" />
     <Content Include="KPITemplate.xml">
@@ -480,6 +542,10 @@
     <Content Include="Log4Net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="PureComponents_NicePanel.license" />
     <Content Include="App.ico" />
     <Content Include="Icons\applications.ico">
@@ -963,6 +1029,23 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Languages\TitleVN.resx">
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Reports\Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Reports\Report2.rdlc" />
+    <EmbeddedResource Include="Presentation\Reports\Report3.rdlc" />
+    <EmbeddedResource Include="Presentation\Reports\Report4.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Reports\Report5.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Reports\ReportInDonThuocBH.resx">
+      <DependentUpon>ReportInDonThuocBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Reports\ReportInDonThuocFull.resx">
+      <DependentUpon>ReportInDonThuocFull.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\ApproveTSLookup\AddL0ForL1.resx">
       <DependentUpon>AddL0ForL1.cs</DependentUpon>

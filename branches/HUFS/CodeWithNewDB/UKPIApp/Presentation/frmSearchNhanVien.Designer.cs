@@ -144,13 +144,14 @@ namespace UKPI.Presentation
             this.grpStore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpStore.Controls.Add(this.btnSearch);
+            this.grpStore.Controls.Add(this.btnChon);
             this.grpStore.Controls.Add(this.txtTenBenhNhan);
             this.grpStore.Controls.Add(this.lblTenBenhNhan);
             this.grpStore.Controls.Add(this.txtMaBenhNhan);
             this.grpStore.Controls.Add(this.lblMaBenhNhan);
             this.grpStore.Location = new System.Drawing.Point(4, 6);
             this.grpStore.Name = "grpStore";
-            this.grpStore.Size = new System.Drawing.Size(788, 92);
+            this.grpStore.Size = new System.Drawing.Size(826, 81);
             this.grpStore.TabIndex = 0;
             this.grpStore.TabStop = false;
             // 
@@ -182,7 +183,7 @@ namespace UKPI.Presentation
             // 
             // btnChon
             // 
-            this.btnChon.Location = new System.Drawing.Point(332, 274);
+            this.btnChon.Location = new System.Drawing.Point(423, 50);
             this.btnChon.Name = "btnChon";
             this.btnChon.Size = new System.Drawing.Size(75, 23);
             this.btnChon.TabIndex = 46;
@@ -223,10 +224,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdBenhNhan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdBenhNhan.Location = new System.Drawing.Point(4, 104);
+            this.grdBenhNhan.Location = new System.Drawing.Point(4, 93);
             this.grdBenhNhan.Name = "grdBenhNhan";
             this.grdBenhNhan.RowHeadersWidth = 39;
-            this.grdBenhNhan.Size = new System.Drawing.Size(826, 164);
+            this.grdBenhNhan.Size = new System.Drawing.Size(826, 294);
             this.grdBenhNhan.TabIndex = 47;
             this.grdBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBenhNhan_CellClick);
             // 
@@ -300,9 +301,8 @@ namespace UKPI.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 309);
+            this.ClientSize = new System.Drawing.Size(842, 399);
             this.Controls.Add(this.grdBenhNhan);
-            this.Controls.Add(this.btnChon);
             this.Controls.Add(this.grpStore);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSearchNhanVien";

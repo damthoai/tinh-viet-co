@@ -83,11 +83,14 @@ namespace UKPI.Presentation
             // 
             this.grpThongTinKhamBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpThongTinKhamBenh.Controls.Add(this.btnDong);
             this.grpThongTinKhamBenh.Controls.Add(this.txtMaDonViCungCap);
             this.grpThongTinKhamBenh.Controls.Add(this.lblMaDonViCungCap);
+            this.grpThongTinKhamBenh.Controls.Add(this.btnLuuIn);
             this.grpThongTinKhamBenh.Controls.Add(this.lblDonViCungCap);
             this.grpThongTinKhamBenh.Controls.Add(this.txtMaSoHDD);
             this.grpThongTinKhamBenh.Controls.Add(this.txtMaNhanVienNhap);
+            this.grpThongTinKhamBenh.Controls.Add(this.btnXoaThuoc);
             this.grpThongTinKhamBenh.Controls.Add(this.txtNhanVienNhap);
             this.grpThongTinKhamBenh.Controls.Add(this.lblPhongKhamKho);
             this.grpThongTinKhamBenh.Controls.Add(this.txtDonViCungCap);
@@ -99,14 +102,14 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.cbbPhongKham);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 182);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(990, 165);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             this.grpThongTinKhamBenh.Text = "Thông tin nhập kho";
             // 
             // txtMaDonViCungCap
             // 
-            this.txtMaDonViCungCap.Location = new System.Drawing.Point(423, 132);
+            this.txtMaDonViCungCap.Location = new System.Drawing.Point(733, 58);
             this.txtMaDonViCungCap.MaxLength = 250;
             this.txtMaDonViCungCap.Multiline = true;
             this.txtMaDonViCungCap.Name = "txtMaDonViCungCap";
@@ -116,7 +119,7 @@ namespace UKPI.Presentation
             // lblMaDonViCungCap
             // 
             this.lblMaDonViCungCap.AutoSize = true;
-            this.lblMaDonViCungCap.Location = new System.Drawing.Point(314, 135);
+            this.lblMaDonViCungCap.Location = new System.Drawing.Point(624, 61);
             this.lblMaDonViCungCap.Name = "lblMaDonViCungCap";
             this.lblMaDonViCungCap.Size = new System.Drawing.Size(107, 13);
             this.lblMaDonViCungCap.TabIndex = 81;
@@ -125,7 +128,7 @@ namespace UKPI.Presentation
             // lblDonViCungCap
             // 
             this.lblDonViCungCap.AutoSize = true;
-            this.lblDonViCungCap.Location = new System.Drawing.Point(314, 96);
+            this.lblDonViCungCap.Location = new System.Drawing.Point(624, 24);
             this.lblDonViCungCap.Name = "lblDonViCungCap";
             this.lblDonViCungCap.Size = new System.Drawing.Size(90, 13);
             this.lblDonViCungCap.TabIndex = 80;
@@ -133,7 +136,7 @@ namespace UKPI.Presentation
             // 
             // txtMaSoHDD
             // 
-            this.txtMaSoHDD.Location = new System.Drawing.Point(423, 24);
+            this.txtMaSoHDD.Location = new System.Drawing.Point(423, 26);
             this.txtMaSoHDD.MaxLength = 250;
             this.txtMaSoHDD.Multiline = true;
             this.txtMaSoHDD.Name = "txtMaSoHDD";
@@ -143,11 +146,11 @@ namespace UKPI.Presentation
             // txtMaNhanVienNhap
             // 
             this.txtMaNhanVienNhap.Enabled = false;
-            this.txtMaNhanVienNhap.Location = new System.Drawing.Point(122, 58);
+            this.txtMaNhanVienNhap.Location = new System.Drawing.Point(122, 60);
             this.txtMaNhanVienNhap.MaxLength = 250;
             this.txtMaNhanVienNhap.Multiline = true;
             this.txtMaNhanVienNhap.Name = "txtMaNhanVienNhap";
-            this.txtMaNhanVienNhap.Size = new System.Drawing.Size(138, 24);
+            this.txtMaNhanVienNhap.Size = new System.Drawing.Size(169, 24);
             this.txtMaNhanVienNhap.TabIndex = 78;
             // 
             // txtNhanVienNhap
@@ -157,7 +160,7 @@ namespace UKPI.Presentation
             this.txtNhanVienNhap.MaxLength = 250;
             this.txtNhanVienNhap.Multiline = true;
             this.txtNhanVienNhap.Name = "txtNhanVienNhap";
-            this.txtNhanVienNhap.Size = new System.Drawing.Size(138, 24);
+            this.txtNhanVienNhap.Size = new System.Drawing.Size(169, 24);
             this.txtNhanVienNhap.TabIndex = 77;
             // 
             // lblPhongKhamKho
@@ -171,7 +174,7 @@ namespace UKPI.Presentation
             // 
             // txtDonViCungCap
             // 
-            this.txtDonViCungCap.Location = new System.Drawing.Point(423, 96);
+            this.txtDonViCungCap.Location = new System.Drawing.Point(733, 24);
             this.txtDonViCungCap.MaxLength = 250;
             this.txtDonViCungCap.Multiline = true;
             this.txtDonViCungCap.Name = "txtDonViCungCap";
@@ -217,10 +220,11 @@ namespace UKPI.Presentation
             // dtpNgayNhapKho
             // 
             this.dtpNgayNhapKho.CustomFormat = "dd-MM-yyyy";
+            this.dtpNgayNhapKho.Enabled = false;
             this.dtpNgayNhapKho.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayNhapKho.Location = new System.Drawing.Point(423, 63);
+            this.dtpNgayNhapKho.Location = new System.Drawing.Point(423, 62);
             this.dtpNgayNhapKho.Name = "dtpNgayNhapKho";
-            this.dtpNgayNhapKho.Size = new System.Drawing.Size(121, 20);
+            this.dtpNgayNhapKho.Size = new System.Drawing.Size(174, 20);
             this.dtpNgayNhapKho.TabIndex = 39;
             // 
             // cbbPhongKham
@@ -231,7 +235,7 @@ namespace UKPI.Presentation
             this.cbbPhongKham.FormattingEnabled = true;
             this.cbbPhongKham.Location = new System.Drawing.Point(122, 93);
             this.cbbPhongKham.Name = "cbbPhongKham";
-            this.cbbPhongKham.Size = new System.Drawing.Size(156, 21);
+            this.cbbPhongKham.Size = new System.Drawing.Size(169, 21);
             this.cbbPhongKham.TabIndex = 38;
             this.cbbPhongKham.ValueMember = "RoomID";
             // 
@@ -239,7 +243,7 @@ namespace UKPI.Presentation
             // 
             this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDong.Location = new System.Drawing.Point(1078, 208);
+            this.btnDong.Location = new System.Drawing.Point(529, 136);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 23);
             this.btnDong.TabIndex = 79;
@@ -251,9 +255,9 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(937, 208);
+            this.btnLuuIn.Location = new System.Drawing.Point(429, 136);
             this.btnLuuIn.Name = "btnLuuIn";
-            this.btnLuuIn.Size = new System.Drawing.Size(86, 23);
+            this.btnLuuIn.Size = new System.Drawing.Size(95, 23);
             this.btnLuuIn.TabIndex = 78;
             this.btnLuuIn.Text = "Lưu/In";
             this.btnLuuIn.UseVisualStyleBackColor = true;
@@ -263,9 +267,9 @@ namespace UKPI.Presentation
             // 
             this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(790, 208);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(317, 136);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
-            this.btnXoaThuoc.Size = new System.Drawing.Size(86, 23);
+            this.btnXoaThuoc.Size = new System.Drawing.Size(106, 23);
             this.btnXoaThuoc.TabIndex = 76;
             this.btnXoaThuoc.Text = "Xóa Thuốc";
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
@@ -458,10 +462,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 237);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 177);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 320);
+            this.grdToaThuoc.Size = new System.Drawing.Size(990, 292);
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 
@@ -469,13 +473,10 @@ namespace UKPI.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 648);
-            this.Controls.Add(this.btnDong);
+            this.ClientSize = new System.Drawing.Size(1000, 481);
             this.Controls.Add(this.txtTongThanhTien);
-            this.Controls.Add(this.btnLuuIn);
             this.Controls.Add(this.lblTongThanhTien);
             this.Controls.Add(this.grdToaThuoc);
-            this.Controls.Add(this.btnXoaThuoc);
             this.Controls.Add(this.grpThongTinKhamBenh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmnhapkhothuoc";
