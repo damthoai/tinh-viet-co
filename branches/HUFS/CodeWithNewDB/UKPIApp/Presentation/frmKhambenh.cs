@@ -288,6 +288,9 @@ namespace UKPI.Presentation
         }
         private void BindMaICD()
         {
+
+            cbbMaICD.ValueMember = "DienGiai";
+            cbbMaICD.DisplayMember = "Ma";
             cbbMaICD.DataSource = _shareEntityDao.LoadDanhSachMaICD();
         }
         private void BindGroup()
@@ -407,9 +410,6 @@ namespace UKPI.Presentation
 
         }
 
-
-
-
         private void chkQuyetDinh_CheckedChanged(object sender, EventArgs e)
         {
             btnQuyetDinh.Enabled = true;
@@ -453,7 +453,7 @@ namespace UKPI.Presentation
 
         private void cbbMaICD_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtDienGiaiICD.Text = this.cbbMaICD.GetItemText(this.cbbMaICD.SelectedItem);
+            txtDienGiaiICD.Text = this.cbbMaICD.GetItemText(this.cbbMaICD.SelectedValue);
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
@@ -522,7 +522,7 @@ namespace UKPI.Presentation
 
 
                 ReportInDonThuocFull frmChild = new ReportInDonThuocFull(maKhamBenh);
-              //  frmChild.maKhamBenh = maKhamBenh;
+                //  frmChild.maKhamBenh = maKhamBenh;
                 frmChild.Show();
 
                 ReportInDonThuocBH frmChildBh = new ReportInDonThuocBH(maKhamBenh);

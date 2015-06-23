@@ -3277,7 +3277,16 @@
     <Name>frmKhambenh.lblPhongKham</Name>
     <Value>Phòng Khám</Value>
   </Titles>
-  
+  <Titles>
+    <Name>frmKhambenh.Title</Name>
+    <Value>Khám Bệnh</Value>
+  </Titles>
+
+  <Titles>
+    <Name>frmKhambenh.btnIn</Name>
+    <Value>In</Value>
+  </Titles>
+
   <Titles>
     <Name>frmKhambenh.lblNgayKham</Name>
     <Value>Ngày Khám</Value>
@@ -3317,7 +3326,7 @@
     <Value>Khu vực</Value>
   </Titles>
 
-<Titles>
+  <Titles>
     <Name>frmKhambenh.lblNhomBenh</Name>
     <Value>Nhóm bệnh</Value>
   </Titles>
@@ -3428,7 +3437,7 @@
   </Titles>
   <!-- End frmKhambenh-->
 
- <!-- Start frmNghiPhep-->
+  <!-- Start frmNghiPhep-->
   <Titles>
     <Name>frmNghiPhep.lblBenhNhan</Name>
     <Value>Bệnh nhân</Value>

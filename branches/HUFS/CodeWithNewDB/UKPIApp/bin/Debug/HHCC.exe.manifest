@@ -132,7 +132,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+mfOUMOwQc+6e/+HxjWwJCgJh/8=</dsig:DigestValue>
+        <dsig:DigestValue>BnqHEiJGNxXUGvbdIPI4I6EcT80=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -982,22 +982,22 @@
       <dsig:DigestValue>5q4GMdZmgT5ZFATUpozxL2Bfiso=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="96722" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="96903" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>p9wXnb5pqZyOW+bmQUss72N+dCY=</dsig:DigestValue>
+      <dsig:DigestValue>v5nmnPUieUJUr6zWbcmoq2lYfDk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.VN.xml" size="95025" writeableType="applicationData">
+  <file name="UKPI.Titles.VN.xml" size="95205" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>cMGaqFJggwC4VNN1b5RcJAZZLdI=</dsig:DigestValue>
+      <dsig:DigestValue>8OihSr7dM/nxlwgsq77Kjk5YfDs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Unilever.jpg" size="6652">

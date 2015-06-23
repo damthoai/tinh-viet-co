@@ -206,7 +206,7 @@ namespace UKPI.DataAccessObject
 
             try
             {
-                cmd = new SqlCommand("SELECT MaICD,DienGiai FROM HUFS_ICD", con);
+                cmd = new SqlCommand("SELECT MaICD, DienGiai FROM HUFS_ICD", con);
 
                 if (con.State != ConnectionState.Open)
                     con.Open();

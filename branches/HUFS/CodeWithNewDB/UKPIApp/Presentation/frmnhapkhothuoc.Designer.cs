@@ -41,11 +41,14 @@ namespace UKPI.Presentation
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmnhapkhothuoc));
             this.grpThongTinKhamBenh = new System.Windows.Forms.GroupBox();
+            this.btnDong = new System.Windows.Forms.Button();
             this.txtMaDonViCungCap = new System.Windows.Forms.TextBox();
             this.lblMaDonViCungCap = new System.Windows.Forms.Label();
+            this.btnLuuIn = new System.Windows.Forms.Button();
             this.lblDonViCungCap = new System.Windows.Forms.Label();
             this.txtMaSoHDD = new System.Windows.Forms.TextBox();
             this.txtMaNhanVienNhap = new System.Windows.Forms.TextBox();
+            this.btnXoaThuoc = new System.Windows.Forms.Button();
             this.txtNhanVienNhap = new System.Windows.Forms.TextBox();
             this.lblPhongKhamKho = new System.Windows.Forms.Label();
             this.txtDonViCungCap = new System.Windows.Forms.TextBox();
@@ -55,9 +58,6 @@ namespace UKPI.Presentation
             this.lblNhanVienNhap = new System.Windows.Forms.Label();
             this.dtpNgayNhapKho = new System.Windows.Forms.DateTimePicker();
             this.cbbPhongKham = new System.Windows.Forms.ComboBox();
-            this.btnDong = new System.Windows.Forms.Button();
-            this.btnLuuIn = new System.Windows.Forms.Button();
-            this.btnXoaThuoc = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,6 +107,18 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.TabStop = false;
             this.grpThongTinKhamBenh.Text = "Thông tin nhập kho";
             // 
+            // btnDong
+            // 
+            this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnDong.Location = new System.Drawing.Point(529, 136);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(86, 23);
+            this.btnDong.TabIndex = 79;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
             // txtMaDonViCungCap
             // 
             this.txtMaDonViCungCap.Location = new System.Drawing.Point(733, 58);
@@ -124,6 +136,18 @@ namespace UKPI.Presentation
             this.lblMaDonViCungCap.Size = new System.Drawing.Size(107, 13);
             this.lblMaDonViCungCap.TabIndex = 81;
             this.lblMaDonViCungCap.Text = "Mã đơn vị cung cấp*";
+            // 
+            // btnLuuIn
+            // 
+            this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
+            this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnLuuIn.Location = new System.Drawing.Point(429, 136);
+            this.btnLuuIn.Name = "btnLuuIn";
+            this.btnLuuIn.Size = new System.Drawing.Size(95, 23);
+            this.btnLuuIn.TabIndex = 78;
+            this.btnLuuIn.Text = "Lưu/In";
+            this.btnLuuIn.UseVisualStyleBackColor = true;
+            this.btnLuuIn.Click += new System.EventHandler(this.btnLuuIn_Click);
             // 
             // lblDonViCungCap
             // 
@@ -152,6 +176,18 @@ namespace UKPI.Presentation
             this.txtMaNhanVienNhap.Name = "txtMaNhanVienNhap";
             this.txtMaNhanVienNhap.Size = new System.Drawing.Size(169, 24);
             this.txtMaNhanVienNhap.TabIndex = 78;
+            // 
+            // btnXoaThuoc
+            // 
+            this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
+            this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnXoaThuoc.Location = new System.Drawing.Point(317, 136);
+            this.btnXoaThuoc.Name = "btnXoaThuoc";
+            this.btnXoaThuoc.Size = new System.Drawing.Size(106, 23);
+            this.btnXoaThuoc.TabIndex = 76;
+            this.btnXoaThuoc.Text = "Xóa Thuốc";
+            this.btnXoaThuoc.UseVisualStyleBackColor = true;
+            this.btnXoaThuoc.Click += new System.EventHandler(this.btnXoaThuoc_Click);
             // 
             // txtNhanVienNhap
             // 
@@ -238,42 +274,6 @@ namespace UKPI.Presentation
             this.cbbPhongKham.Size = new System.Drawing.Size(169, 21);
             this.cbbPhongKham.TabIndex = 38;
             this.cbbPhongKham.ValueMember = "RoomID";
-            // 
-            // btnDong
-            // 
-            this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
-            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDong.Location = new System.Drawing.Point(529, 136);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(86, 23);
-            this.btnDong.TabIndex = 79;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
-            // 
-            // btnLuuIn
-            // 
-            this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
-            this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(429, 136);
-            this.btnLuuIn.Name = "btnLuuIn";
-            this.btnLuuIn.Size = new System.Drawing.Size(95, 23);
-            this.btnLuuIn.TabIndex = 78;
-            this.btnLuuIn.Text = "Lưu/In";
-            this.btnLuuIn.UseVisualStyleBackColor = true;
-            this.btnLuuIn.Click += new System.EventHandler(this.btnLuuIn_Click);
-            // 
-            // btnXoaThuoc
-            // 
-            this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
-            this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(317, 136);
-            this.btnXoaThuoc.Name = "btnXoaThuoc";
-            this.btnXoaThuoc.Size = new System.Drawing.Size(106, 23);
-            this.btnXoaThuoc.TabIndex = 76;
-            this.btnXoaThuoc.Text = "Xóa Thuốc";
-            this.btnXoaThuoc.UseVisualStyleBackColor = true;
-            this.btnXoaThuoc.Click += new System.EventHandler(this.btnXoaThuoc_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -465,7 +465,7 @@ namespace UKPI.Presentation
             this.grdToaThuoc.Location = new System.Drawing.Point(4, 177);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(990, 292);
+            this.grdToaThuoc.Size = new System.Drawing.Size(990, 259);
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 

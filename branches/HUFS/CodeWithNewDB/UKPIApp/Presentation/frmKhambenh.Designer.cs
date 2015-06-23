@@ -579,9 +579,9 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(856, 326);
+            this.btnLuuIn.Location = new System.Drawing.Point(843, 326);
             this.btnLuuIn.Name = "btnLuuIn";
-            this.btnLuuIn.Size = new System.Drawing.Size(60, 23);
+            this.btnLuuIn.Size = new System.Drawing.Size(78, 23);
             this.btnLuuIn.TabIndex = 78;
             this.btnLuuIn.Text = "Lưu";
             this.btnLuuIn.UseVisualStyleBackColor = true;
@@ -826,7 +826,7 @@ namespace UKPI.Presentation
             this.btnIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnIn.Location = new System.Drawing.Point(927, 326);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(56, 23);
+            this.btnIn.Size = new System.Drawing.Size(64, 23);
             this.btnIn.TabIndex = 81;
             this.btnIn.Text = "In";
             this.btnIn.UseVisualStyleBackColor = true;

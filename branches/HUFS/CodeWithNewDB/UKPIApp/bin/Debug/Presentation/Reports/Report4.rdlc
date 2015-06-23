@@ -143,9 +143,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ĐƠN THUỐC</Value>
+                    <Value>ĐƠN THUỐC BẢO HIỂM</Value>
                     <Style>
-                      <FontSize>22pt</FontSize>
+                      <FontSize>18pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -156,9 +156,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Left>2.99875in</Left>
-            <Height>0.54167in</Height>
-            <Width>2.38542in</Width>
+            <Left>2.60292in</Left>
+            <Height>0.48833in</Height>
+            <Width>3.38542in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -185,7 +185,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>0.405in</Top>
+            <Top>0.53in</Top>
             <Left>5.50917in</Left>
             <Height>0.25in</Height>
             <Width>2.5in</Width>

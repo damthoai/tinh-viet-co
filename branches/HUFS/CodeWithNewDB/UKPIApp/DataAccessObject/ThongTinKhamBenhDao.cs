@@ -43,7 +43,7 @@ namespace UKPI.DataAccessObject
                     info.FullName = reader[1] != null ? (string)reader[1] : "";
                     info.GioiTinh = reader[2] != null ? (string)reader[2] : "";
                     info.MaBHYT = reader[3] != null ? (string)reader[3] : "";
-                    info.NamSinh = reader[4] != null ? (int)reader[4] : 0;
+                    info.NamSinh = reader[4] != null ? (string)reader[4] : "";
                     info.KhuVuc = reader[5] != null ? (string)reader[5] : "";
                     info.BoPhan = reader[6] != null ? (int)reader[6] : 0;
                     break;
