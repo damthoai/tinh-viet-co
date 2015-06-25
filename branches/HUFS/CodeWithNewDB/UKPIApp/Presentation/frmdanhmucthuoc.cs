@@ -50,13 +50,15 @@ namespace UKPI.Presentation
         private String parChuanTinhCong = "";
         private String parHanMucTinhOt = "";
 
+        private List<ThongTinThuoc> listThuoc = new List<ThongTinThuoc>();
+        private ThongTinThuoc selectedThuoc;
 
         // Declare private fields
         private ChamCongLichLamViecBo _lichLamViecBo = new ChamCongLichLamViecBo();
 
         readonly DataGridViewColumn _originalColumns;
         private DataTable _dtApproveTimesheet;
-
+        int currentRowIndex = -1;
         #endregion
 
         #region Constructors
@@ -66,7 +68,7 @@ namespace UKPI.Presentation
 
             InitializeComponent();
            // grdToaThuoc.AutoGenerateColumns = false;
-            clsTitleManager.InitTitle(this);
+        //    clsTitleManager.InitTitle(this);
             //this.cellDateTimePicker = new DateTimePicker();
             //this.cellDateTimePicker.Format = DateTimePickerFormat.Custom;
             //this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
@@ -74,6 +76,7 @@ namespace UKPI.Presentation
             ////this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             //this.cellDateTimePicker.Visible = false;
             //this.grdToaThuoc.Controls.Add(cellDateTimePicker);
+            
             SetDefauldValue();
             this.Text = "XUẤT KHO THUỐC";
            // Save original columns
@@ -90,6 +93,22 @@ namespace UKPI.Presentation
         private void SetDefauldValue()
         {
         //    BuildGridViewRow();
+            grdToaThuoc.AutoGenerateColumns = false;
+            grdToaThuoc.CellDoubleClick += grdToaThuoc_CellDoubleClick;
+            btnUpdate.Enabled = false;
+
+            cbbDonViTinh.DataSource = _shareEntityDao.LoadDonViTinh();
+            txtNhaSanXuat.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtNhaSanXuat.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection nsxDataCollection = new AutoCompleteStringCollection();
+            addNhaSanXuatItems(nsxDataCollection);
+            txtNhaSanXuat.AutoCompleteCustomSource = nsxDataCollection;
+
+            txtQuocGia.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtQuocGia.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection qgDataCollection = new AutoCompleteStringCollection();
+            addQUocGiaItems(qgDataCollection);
+            txtQuocGia.AutoCompleteCustomSource = qgDataCollection;
             LoadDanhMucThuoc();
         }
 
@@ -97,9 +116,28 @@ namespace UKPI.Presentation
         private void LoadDanhMucThuoc()
         {
            // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
-            grdToaThuoc.DataSource = _quanLyThuocDao.LoadDanhMucThuoc();
+            listThuoc =  _quanLyThuocDao.LoadDanhMucThuoc();
+            grdToaThuoc.DataSource = listThuoc;
+
+
+
         }
-        
+        public void addNhaSanXuatItems(AutoCompleteStringCollection col)
+        {
+            List<NhaSanXuat> listNhaSanXuat = _shareEntityDao.LoadNhaSanXuat();
+            for (int i = 0; i < listNhaSanXuat.Count; i++)
+            {
+                col.Add(listNhaSanXuat[i].TenNhaSanXuat);
+            }
+        }
+        public void addQUocGiaItems(AutoCompleteStringCollection col)
+        {
+            List<QuocGia> listQuocGia = _shareEntityDao.LoadQuocGia();
+            for (int i = 0; i < listQuocGia.Count; i++)
+            {
+                col.Add(listQuocGia[i].TenQuocGia);
+            }
+        }
         private void BuildGridViewRow()
         {
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
@@ -183,19 +221,95 @@ namespace UKPI.Presentation
          private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             currentCell = this.grdToaThuoc.CurrentCell;
-            bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
-            if (e.ColumnIndex == 3 && isValidMaThuoc)
+            if (currentCell != null)
             {
-                System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
- 
-                cellDateTimePicker.Location = tempRect.Location;
- 
-                cellDateTimePicker.Width = tempRect.Width;
- 
-                cellDateTimePicker.Visible = true;
- 
+                currentRowIndex = currentCell.RowIndex;
+                selectedThuoc = listThuoc[currentRowIndex];
+                LoadThongTinThuocToForm(selectedThuoc);
+                btnUpdate.Enabled = true;
+                btnLuu.Enabled = false;
+            }
+            else
+            {
+                currentRowIndex = -1;
             }
  
+        }
+         private void ResetFormThongTinThuoc()
+         {
+             txtMaThuoc.Text = string.Empty;
+             txtTenThuoc.Text = string.Empty;
+             txtSoTT.Text = string.Empty;
+             txtTenThanhPhanThuoc.Text = string.Empty;
+             cbbDonViTinh.SelectedIndex = 0;
+             cbBaoHiem.Checked = false;
+             txtGiaDNMua.Text = string.Empty;
+             txtGiaDNMuaVAT.Text = string.Empty;
+             txtGiaThucMua.Text = string.Empty;
+             txtGiaDNBan.Text = string.Empty;
+             txtGiaDNBanVAT.Text = string.Empty;
+             txtGiaThucBan.Text = string.Empty;
+             txtHamLuong.Text = string.Empty;
+             txtSoDangKy.Text = string.Empty;
+             txtDangBaoChe.Text = string.Empty;
+             txtNhaSanXuat.Text = string.Empty;
+             txtQuocGia.Text = string.Empty;
+             cbHoatDong.Checked = false;
+         }
+        private void LoadThongTinThuocToForm(ThongTinThuoc selectedThuoc)
+        {
+            txtMaThuoc.Text = selectedThuoc.MaThuocYTe;
+            txtTenThuoc.Text = selectedThuoc.MedicineName;
+            txtSoTT.Text = selectedThuoc.STTTheoDMTCuaBYT;
+            txtTenThanhPhanThuoc.Text = selectedThuoc.TenThanhPhanThuoc;
+            cbbDonViTinh.SelectedValue = selectedThuoc.DonViTinh;
+            cbBaoHiem.Checked = selectedThuoc.BaoHiem;
+            txtGiaDNMua.Text = selectedThuoc.GiaDNMua.ToString();
+            txtGiaDNMuaVAT.Text = selectedThuoc.GiaDNMuaVAT.ToString();
+            txtGiaThucMua.Text = selectedThuoc.GiaThucMua.ToString();
+            txtGiaDNBan.Text = selectedThuoc.GiaDNBan.ToString();
+            txtGiaDNBanVAT.Text = selectedThuoc.GiaDNBanVAT.ToString();
+            txtGiaThucBan.Text = selectedThuoc.GiaThucBan.ToString();
+            txtHamLuong.Text = selectedThuoc.HamLuong;
+            txtSoDangKy.Text = selectedThuoc.SoDKHoacGPKD;
+            txtDangBaoChe.Text = selectedThuoc.DangBaoCheDuongUong;
+            txtNhaSanXuat.Text = selectedThuoc.NhaSanXuat;
+            txtQuocGia.Text = selectedThuoc.QuocGia;
+            cbHoatDong.Checked = selectedThuoc.HoatDong;
+        }
+        private ThongTinThuoc BuildThongTinThuoc(bool isNew)
+        {
+            ThongTinThuoc thongTinThuoc = new ThongTinThuoc();
+            if (isNew)
+            {
+                thongTinThuoc.MedicineID = string.Empty;
+                thongTinThuoc.CreatedBy = clsSystemConfig.UserName;
+            }
+            else
+            {
+                thongTinThuoc.MedicineID = selectedThuoc.MedicineID;
+                thongTinThuoc.CreatedBy = string.Empty;
+            }
+            thongTinThuoc.MaThuocYTe = txtMaThuoc.Text;
+            thongTinThuoc.MedicineName = txtTenThuoc.Text;
+            thongTinThuoc.STTTheoDMTCuaBYT = txtSoTT.Text;
+            thongTinThuoc.TenThanhPhanThuoc = txtTenThanhPhanThuoc.Text;
+            thongTinThuoc.DonViTinh = (int)cbbDonViTinh.SelectedValue;
+            thongTinThuoc.BaoHiem = cbBaoHiem.Checked;
+            thongTinThuoc.GiaDNMua = decimal.Parse(txtGiaDNMua.Text);
+            thongTinThuoc.GiaDNMuaVAT = decimal.Parse(txtGiaDNMuaVAT.Text);
+            thongTinThuoc.GiaThucMua = decimal.Parse(txtGiaThucMua.Text);
+            thongTinThuoc.GiaDNBan = decimal.Parse(txtGiaDNBan.Text);
+            thongTinThuoc.GiaDNBanVAT = decimal.Parse(txtGiaDNBanVAT.Text);
+            thongTinThuoc.GiaThucBan = decimal.Parse(txtGiaThucBan.Text);
+            thongTinThuoc.HamLuong = txtHamLuong.Text;
+            thongTinThuoc.SoDKHoacGPKD = txtSoDangKy.Text;
+            thongTinThuoc.DangBaoCheDuongUong = txtDangBaoChe.Text;
+            thongTinThuoc.NhaSanXuat = txtNhaSanXuat.Text;
+            thongTinThuoc.QuocGia = txtQuocGia.Text;
+            thongTinThuoc.HoatDong = cbHoatDong.Checked;
+            thongTinThuoc.LastUpdatedBy = clsSystemConfig.UserName;
+            return thongTinThuoc;
         }
          void cellDateTimePickerValueChanged(object sender, EventArgs e)
          {
@@ -208,88 +322,103 @@ namespace UKPI.Presentation
        
        
 
-        private void Export()
-        {
-            try
-            {
-                var dtStoreList = grdToaThuoc.DataSource as System.Data.DataTable;
-                if (dtStoreList == null)
-                {
-                    return;
-                }
-                // Open Save dialog
-                using (var saveDlg = new SaveFileDialog())
-                {
-                    saveDlg.AddExtension = true;
-                    saveDlg.Filter = "Excel 2007 Workbook (*.xlsx)|*.xlsx|Excel 97 - 2003 Workbook (*.xls)|*.xls";
-                    if (saveDlg.ShowDialog(this) != DialogResult.OK) return;
-                    Cursor.Current = Cursors.WaitCursor;
-
-                    // Build Selected Stores as DataTable
-                    DataTable dtSelectedStores = dtStoreList.Clone();
-
-                    for (int i = 0; i < dtStoreList.Rows.Count; i++)
-                    {
-                        dtSelectedStores.ImportRow(dtStoreList.Rows[i]);
-                    }
-
-
-
-                    // Execute export
-                    var exporter = new XuatKhoExporter(true);
-                    exporter.AddExportTable(dtSelectedStores);
-                    exporter.Export(saveDlg.FileName);
-
-                    MessageBox.Show(clsResources.GetMessage("messages.exportStore.EditStore") + Environment.NewLine + saveDlg.FileName,
-                        clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex.Message);
-                MessageBox.Show(clsResources.GetMessage("errors.unknown"),
-                    clsResources.GetMessage("errors.general"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                Cursor.Current = Cursors.Default;
-            }
-        }
+       
 
 
         #endregion
 
-      
-        private void btnExport_Click(object sender, EventArgs e)
-        {
-           // this.Export();
-        }
 
 
       
 
-        private void btnLuuIn_Click(object sender, EventArgs e)
+        
+
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DataTable tblDanhMucThuoc = grdToaThuoc.DataSource as DataTable;
-            if (tblDanhMucThuoc == null)
-                return;
-            if (_quanLyThuocDao.LuuThongTinDanhMucThuoc(tblDanhMucThuoc))
+            if (!CheckThongTinGiaThuoc())
             {
-                DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmdanhmucthuoc.Success"), clsResources.GetMessage("messages.frmdanhmucthuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Thông tin giá thuốc không hợp lệ");
                 return;
+            }
+            ThongTinThuoc tttCapNhat = BuildThongTinThuoc(false);
+            if (_quanLyThuocDao.CheckThuocExist(tttCapNhat.MaThuocYTe, tttCapNhat.BaoHiem) == 1)
+            {
+                MessageBox.Show("Mã thuốc đã tồn tại. Vui lòng chọn mã khác");
+                return;
+            }
+            if (string.IsNullOrEmpty(tttCapNhat.MaThuocYTe))
+            {
+                MessageBox.Show("Vui lòng nhập thông tin thuốc");
+                return;
+            }
+           
+            if (_quanLyThuocDao.LuuCapNhatThongTinThuoc(tttCapNhat))
+            {
+                LoadDanhMucThuoc();
+                MessageBox.Show("Cập nhật thành công");
             }
             else
             {
-                MessageBox.Show(clsResources.GetMessage("messages.frmdanhmucthuoc.Error"), clsResources.GetMessage("messages.frmdanhmucthuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Không thể cập nhật thông tin thuốc");
             }
         }
 
-
-        private void btnExport_Click_1(object sender, EventArgs e)
+        private void btnTaoMoi_Click(object sender, EventArgs e)
         {
-            Export();
+            btnUpdate.Enabled = false;
+            btnLuu.Enabled = true;
+            ResetFormThongTinThuoc();
+        }
+        private bool CheckThongTinGiaThuoc()
+        {
+            bool result = true;
+            try
+            {
+                decimal giaDNMua = decimal.Parse(txtGiaDNMua.Text);
+                decimal giaDNMuaVAT = decimal.Parse(txtGiaDNMuaVAT.Text);
+                decimal giaThucMua = decimal.Parse(txtGiaThucMua.Text);
+                decimal giaDNBan = decimal.Parse(txtGiaDNBan.Text);
+                decimal giaDNBanVAT = decimal.Parse(txtGiaDNBanVAT.Text);
+                decimal giaThucBan = decimal.Parse(txtGiaThucBan.Text);
+                if (giaDNMua < 0 || giaDNMuaVAT < 0 || giaThucMua < 0 || giaDNBan < 0 || giaDNBanVAT < 0 || giaThucBan < 0)
+                {
+                    result = false;
+                }
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (!CheckThongTinGiaThuoc())
+            {
+                MessageBox.Show("Thông tin giá thuốc không hợp lệ");
+                return;
+            }
+            ThongTinThuoc tttCapNhat = BuildThongTinThuoc(true);
+            if (_quanLyThuocDao.CheckThuocExist(tttCapNhat.MaThuocYTe, tttCapNhat.BaoHiem) == 1)
+            {
+                MessageBox.Show("Mã thuốc đã tồn tại. Vui lòng chọn mã khác");
+                return;
+            }
+            if (string.IsNullOrEmpty(tttCapNhat.MaThuocYTe))
+            {
+                MessageBox.Show("Vui lòng nhập thông tin thuốc");
+                return;
+            }
+           
+            if (_quanLyThuocDao.LuuCapNhatThongTinThuoc(tttCapNhat))
+            {
+                LoadDanhMucThuoc();
+                MessageBox.Show("Lưu thành công");
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi trong khi lưu");
+            }
         }
        
 

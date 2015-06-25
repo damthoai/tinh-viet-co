@@ -481,6 +481,7 @@
     <Compile Include="ValueObject\ChinhSachGiaDT.cs" />
     <Compile Include="ValueObject\CustomKey.cs" />
     <Compile Include="ValueObject\DanhMucThuoc.cs" />
+    <Compile Include="ValueObject\NhaSanXuat.cs" />
     <Compile Include="ValueObject\DonViTinh.cs" />
     <Compile Include="ValueObject\GioiTinh.cs" />
     <Compile Include="ValueObject\KeyPrefix.cs" />
@@ -490,6 +491,7 @@
     <Compile Include="ValueObject\MaICD.cs" />
     <Compile Include="ValueObject\NhomBenh.cs" />
     <Compile Include="ValueObject\PhongKham.cs" />
+    <Compile Include="ValueObject\QuocGia.cs" />
     <Compile Include="ValueObject\QuyetDinhNghiPhep.cs" />
     <Compile Include="ValueObject\ThongTinBenhNhan.cs" />
     <Compile Include="ValueObject\ThongTinDonThuocKhamBenh.cs" />

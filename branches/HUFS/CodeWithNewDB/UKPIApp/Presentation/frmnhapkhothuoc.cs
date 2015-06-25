@@ -253,12 +253,13 @@ namespace UKPI.Presentation
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
            // MessageBox.Show(clsResources.GetMessage("messages.save.success"), clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-            DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Waring"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Waring"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"),MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
                 grpThongTinKhamBenh.Enabled = false;
                 btnXoaThuoc.Enabled = false;
             }
+            
         }
 
         private void btnLuuIn_Click(object sender, EventArgs e)

@@ -20,13 +20,83 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_UpdateChinhSachGia = "p_HUFS_UpdateChinhSachGia";
         private const string HUFS_GetChinhSachGiaChiTiet = "HUFS_GetChinhSachGiaChiTiet";
         private const string HUFS_ChinhSachGiaChiTiet = "HUFS_ChinhSachGiaChiTiet";
+        private const string p_HUFS_CheckThuocExist = "p_HUFS_CheckThuocExist";
+        private const string p_HUFS_ProcessDanhMucThuoc = "p_HUFS_ProcessDanhMucThuoc";
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
-        public DataTable LoadDanhMucThuoc()
+
+        public bool LuuCapNhatThongTinThuoc(ThongTinThuoc thongTinThuoc)
         {
             try
             {
+                SqlParameter[] Params = new SqlParameter[21];
+                Params[0] = new SqlParameter("@MedicineID", thongTinThuoc.MedicineID);
+                Params[1] = new SqlParameter("@MedicineName", thongTinThuoc.MedicineName);
+                Params[2] = new SqlParameter("@STTTheoDMTCuaBYT", thongTinThuoc.STTTheoDMTCuaBYT);
+                Params[3] = new SqlParameter("@TenThanhPhanThuoc", thongTinThuoc.TenThanhPhanThuoc);
+                Params[4] = new SqlParameter("@DonViTinh", thongTinThuoc.DonViTinh);
+                Params[5] = new SqlParameter("@BaoHiem", thongTinThuoc.BaoHiem);
+                Params[6] = new SqlParameter("@GiaDNMua", thongTinThuoc.GiaDNMua);
+                Params[7] = new SqlParameter("@GiaDNMuaVAT", thongTinThuoc.GiaDNMuaVAT);
+                Params[8] = new SqlParameter("@GiaThucMua", thongTinThuoc.GiaThucMua);
+                Params[9] = new SqlParameter("@GiaDNBan", thongTinThuoc.GiaDNBan);
+                Params[10] = new SqlParameter("@GiaDNBanVAT", thongTinThuoc.GiaDNBanVAT);
+                Params[11] = new SqlParameter("@GiaThucBan", thongTinThuoc.GiaThucBan);
+                Params[12] = new SqlParameter("@HamLuong", thongTinThuoc.HamLuong);
+                Params[13] = new SqlParameter("@SoDKHoacGPKD", thongTinThuoc.SoDKHoacGPKD);
+                Params[14] = new SqlParameter("@DangBaoCheDuongUong", thongTinThuoc.DangBaoCheDuongUong);
+                Params[15] = new SqlParameter("@NhaSanXuat", thongTinThuoc.NhaSanXuat);
+                Params[16] = new SqlParameter("@QuocGia", thongTinThuoc.QuocGia);
+                Params[17] = new SqlParameter("@HoatDong", thongTinThuoc.HoatDong);
+                Params[18] = new SqlParameter("@CreatedBy", thongTinThuoc.CreatedBy);
+                Params[19] = new SqlParameter("@LastUpdatedBy", thongTinThuoc.LastUpdatedBy);
+                Params[20] = new SqlParameter("@MaThuocYTe", thongTinThuoc.MaThuocYTe);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessDanhMucThuoc, Params);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public int CheckThuocExist(string maThuocYTe, bool baoHiem)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[2];
+                Params[0] = new SqlParameter("@MaThuocYTe", maThuocYTe);
+                Params[1] = new SqlParameter("@BaoHiem", baoHiem);
+                int soLuong = -1;
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_CheckThuocExist, Params);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    soLuong = int.Parse(dr["Result"].ToString());
+                    break;
+                }
+                return soLuong;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return -1;
+            }
+        }
+        public List<ThongTinThuoc> LoadDanhMucThuoc()
+        {
+            //try
+            //{
+            //    var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, HUFS_SelectDanhMucThuoc);
+            //    return dtResult;
+            //}
+            //catch (Exception ex)
+            //{
+            //    log.Error(ex.Message, ex);
+            //    return null;
+            //}
+
+            try
+            {
                 var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, HUFS_SelectDanhMucThuoc);
-                return dtResult;
+                return this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
             }
             catch (Exception ex)
             {

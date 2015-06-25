@@ -1429,3 +1429,14 @@ D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\HHCC.exe.config
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReportInDonThuocBH.resources
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report4.rdlc
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report5.rdlc
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report1.rdlc
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report4.rdlc
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report5.rdlc
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\HTYTDataSet1.Designer.cs
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\HTYTDataSet1.xsc
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\HTYTDataSet1.xsd
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\bin\Debug\HTYTDataSet1.xss
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReportInDonThuocBH.resources
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReportInDonThuocFull.resources
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.cache
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.compiled

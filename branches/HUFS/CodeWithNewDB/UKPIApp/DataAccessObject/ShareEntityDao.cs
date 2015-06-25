@@ -548,6 +548,92 @@ namespace UKPI.DataAccessObject
                     con.Close();
             }
         }
+
+        public List<NhaSanXuat> LoadNhaSanXuat()
+        {
+            List<NhaSanXuat> arrs = new List<NhaSanXuat>();
+            SqlConnection con = Connection;
+            SqlDataReader reader = null;
+            SqlCommand cmd = null;
+
+            try
+            {
+                cmd = new SqlCommand("SELECT  MaNhaSanXuat,TenNhaSanXuat FROM HUFS_NHASANXUAT", con);
+
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+
+                reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    NhaSanXuat pk = new NhaSanXuat();
+                    pk.MaNhaSanXuat = (int)reader[0];
+                    pk.TenNhaSanXuat = (string)reader[1];
+                    arrs.Add(pk);
+                }
+
+                reader.Close();
+                return arrs;
+            }
+            catch (SqlException ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+        }
+
+        public List<QuocGia> LoadQuocGia()
+        {
+            List<QuocGia> arrs = new List<QuocGia>();
+            SqlConnection con = Connection;
+            SqlDataReader reader = null;
+            SqlCommand cmd = null;
+
+            try
+            {
+                cmd = new SqlCommand("SELECT  MaQuocGia,TenQuocGia FROM HUFS_QUOCGIA", con);
+
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+
+                reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    QuocGia pk = new QuocGia();
+                    pk.MaQuocGia = (int)reader[0];
+                    pk.TenQuocGia = (string)reader[1];
+                    arrs.Add(pk);
+                }
+
+                reader.Close();
+                return arrs;
+            }
+            catch (SqlException ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+        }
     }
 
 }
