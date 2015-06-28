@@ -226,6 +226,7 @@ namespace UKPI.Presentation
                 currentRowIndex = currentCell.RowIndex;
                 selectedThuoc = listThuoc[currentRowIndex];
                 LoadThongTinThuocToForm(selectedThuoc);
+                txtMaThuoc.ReadOnly = true;
                 btnUpdate.Enabled = true;
                 btnLuu.Enabled = false;
             }
@@ -341,11 +342,11 @@ namespace UKPI.Presentation
                 return;
             }
             ThongTinThuoc tttCapNhat = BuildThongTinThuoc(false);
-            if (_quanLyThuocDao.CheckThuocExist(tttCapNhat.MaThuocYTe, tttCapNhat.BaoHiem) == 1)
-            {
-                MessageBox.Show("Mã thuốc đã tồn tại. Vui lòng chọn mã khác");
-                return;
-            }
+            //if (_quanLyThuocDao.CheckThuocExist(tttCapNhat.MaThuocYTe, tttCapNhat.BaoHiem) == 1)
+            //{
+            //    MessageBox.Show("Mã thuốc đã tồn tại. Vui lòng chọn mã khác");
+            //    return;
+            //}
             if (string.IsNullOrEmpty(tttCapNhat.MaThuocYTe))
             {
                 MessageBox.Show("Vui lòng nhập thông tin thuốc");
@@ -365,6 +366,7 @@ namespace UKPI.Presentation
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
+            txtMaThuoc.ReadOnly = false;
             btnUpdate.Enabled = false;
             btnLuu.Enabled = true;
             ResetFormThongTinThuoc();
@@ -380,7 +382,7 @@ namespace UKPI.Presentation
                 decimal giaDNBan = decimal.Parse(txtGiaDNBan.Text);
                 decimal giaDNBanVAT = decimal.Parse(txtGiaDNBanVAT.Text);
                 decimal giaThucBan = decimal.Parse(txtGiaThucBan.Text);
-                if (giaDNMua < 0 || giaDNMuaVAT < 0 || giaThucMua < 0 || giaDNBan < 0 || giaDNBanVAT < 0 || giaThucBan < 0)
+                if ((giaDNMua <= 0) || (giaDNMuaVAT <= 0) || (giaThucMua <= 0) || (giaDNBan <= 0) || (giaDNBanVAT <= 0) || (giaThucBan <= 0))
                 {
                     result = false;
                 }
