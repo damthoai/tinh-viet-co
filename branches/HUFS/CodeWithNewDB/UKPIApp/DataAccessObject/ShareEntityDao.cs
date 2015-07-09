@@ -15,6 +15,7 @@ namespace UKPI.DataAccessObject
         private static readonly ILog log = log4net.LogManager.GetLogger(typeof(ShareEntityDao));
         private static string m_strConn = clsCommon.GetConnectionString();
         private const string p_HUFS_LoadThongTinThuoc = "p_HUFS_LoadThongTinThuoc";
+        private const string p_HUFS_LoadAllThongTinThuoc = "p_HUFS_LoadAllThongTinThuoc";
         private const string p_HUFS_LoadThongTinThuocTheoMaThuocYTe = "p_HUFS_LoadThongTinThuocTheoMaThuocYTe";
         public  List<PhongKham> LoadDanhSachPhongKham()
         {
@@ -335,6 +336,20 @@ namespace UKPI.DataAccessObject
                 return null;
             }
         }
+
+        public List<ThongTinThuocTomLuoc> LoadAllThongTinThuoc()
+        {
+            try
+            {
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadAllThongTinThuoc);
+                return this.ConvertDataTableToList<ThongTinThuocTomLuoc>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
         public List<ThongTinThuoc> LoadThongTinThuocTheoMaThuocYTe(string maThuocYTe, bool baoHiem)
         {
             try
@@ -612,6 +627,49 @@ namespace UKPI.DataAccessObject
                     QuocGia pk = new QuocGia();
                     pk.MaQuocGia = (int)reader[0];
                     pk.TenQuocGia = (string)reader[1];
+                    arrs.Add(pk);
+                }
+
+                reader.Close();
+                return arrs;
+            }
+            catch (SqlException ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                throw ex;
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+        }
+
+        public List<NhomThuoc> LoadThongTinNhomThuoc()
+        {
+            List<NhomThuoc> arrs = new List<NhomThuoc>();
+            SqlConnection con = Connection;
+            SqlDataReader reader = null;
+            SqlCommand cmd = null;
+
+            try
+            {
+                cmd = new SqlCommand("SELECT MaNhomThuoc,TenNhomThuoc FROM HUFS_NHOMTHUOC", con);
+
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+
+                reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+                    NhomThuoc pk = new NhomThuoc();
+                    pk.MaNhomThuoc = (long)reader[0];
+                    pk.TenNhomThuoc = (string)reader[1];
                     arrs.Add(pk);
                 }
 

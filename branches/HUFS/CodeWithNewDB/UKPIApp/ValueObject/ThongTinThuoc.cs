@@ -43,5 +43,8 @@ namespace UKPI.ValueObject
         public string MaThuocYTe { get; set; }
         public string MaThuocYTeHienThi { get; set; }
         public string CachDungChiTiet { get; set; }
+
+        public int HeSoAnToan { get; set; }
+        public string NhomThuoc { get; set; }
     }
 }

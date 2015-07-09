@@ -28,7 +28,7 @@ namespace UKPI.DataAccessObject
         {
             try
             {
-                SqlParameter[] Params = new SqlParameter[21];
+                SqlParameter[] Params = new SqlParameter[23];
                 Params[0] = new SqlParameter("@MedicineID", thongTinThuoc.MedicineID);
                 Params[1] = new SqlParameter("@MedicineName", thongTinThuoc.MedicineName);
                 Params[2] = new SqlParameter("@STTTheoDMTCuaBYT", thongTinThuoc.STTTheoDMTCuaBYT);
@@ -50,6 +50,8 @@ namespace UKPI.DataAccessObject
                 Params[18] = new SqlParameter("@CreatedBy", thongTinThuoc.CreatedBy);
                 Params[19] = new SqlParameter("@LastUpdatedBy", thongTinThuoc.LastUpdatedBy);
                 Params[20] = new SqlParameter("@MaThuocYTe", thongTinThuoc.MaThuocYTe);
+                Params[21] = new SqlParameter("@HeSoAnToan", thongTinThuoc.HeSoAnToan);
+                Params[22] = new SqlParameter("@NhomThuoc", thongTinThuoc.NhomThuoc);
                 DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessDanhMucThuoc, Params);
                 return true;
             }
@@ -80,7 +82,7 @@ namespace UKPI.DataAccessObject
                 return -1;
             }
         }
-        public List<ThongTinThuoc> LoadDanhMucThuoc()
+        public List<ThongTinThuoc> LoadDanhMucThuoc(string maThuocYTe, string tenThuoc)
         {
             //try
             //{
@@ -95,7 +97,10 @@ namespace UKPI.DataAccessObject
 
             try
             {
-                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, HUFS_SelectDanhMucThuoc);
+                SqlParameter[] Params = new SqlParameter[2];
+                Params[0] = new SqlParameter("@MaThuocYTe", maThuocYTe);
+                Params[1] = new SqlParameter("@TenThuoc", tenThuoc);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, HUFS_SelectDanhMucThuoc,Params);
                 return this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
             }
             catch (Exception ex)

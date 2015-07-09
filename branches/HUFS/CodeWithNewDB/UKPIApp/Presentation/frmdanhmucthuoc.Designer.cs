@@ -94,6 +94,11 @@ namespace UKPI.Presentation
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnTaoMoi = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.lblsMaThuoc = new System.Windows.Forms.Label();
+            this.txtsMaThuoc = new System.Windows.Forms.TextBox();
+            this.lblsTenThuoc = new System.Windows.Forms.Label();
+            this.txtsTenThuoc = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
             this.MaThuocYTeHienThi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MedicineName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,7 +111,13 @@ namespace UKPI.Presentation
             this.NhaSanXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeSoAnToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NhomThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoatDong = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.lblHeSoAnToan = new System.Windows.Forms.Label();
+            this.txtHeSoAnToan = new System.Windows.Forms.TextBox();
+            this.lblNhomThuoc = new System.Windows.Forms.Label();
+            this.txtNhomThuoc = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
             this.SuspendLayout();
@@ -258,6 +269,10 @@ namespace UKPI.Presentation
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtNhomThuoc);
+            this.groupBox1.Controls.Add(this.lblNhomThuoc);
+            this.groupBox1.Controls.Add(this.txtHeSoAnToan);
+            this.groupBox1.Controls.Add(this.lblHeSoAnToan);
             this.groupBox1.Controls.Add(this.cbHoatDong);
             this.groupBox1.Controls.Add(this.txtQuocGia);
             this.groupBox1.Controls.Add(this.txtNhaSanXuat);
@@ -296,7 +311,7 @@ namespace UKPI.Presentation
             this.groupBox1.Controls.Add(this.lblMaThuoc);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1188, 183);
+            this.groupBox1.Size = new System.Drawing.Size(1188, 202);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
@@ -599,7 +614,7 @@ namespace UKPI.Presentation
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(826, 203);
+            this.btnUpdate.Location = new System.Drawing.Point(832, 221);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 4;
@@ -609,7 +624,7 @@ namespace UKPI.Presentation
             // 
             // btnTaoMoi
             // 
-            this.btnTaoMoi.Location = new System.Drawing.Point(913, 203);
+            this.btnTaoMoi.Location = new System.Drawing.Point(913, 221);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(75, 23);
             this.btnTaoMoi.TabIndex = 5;
@@ -619,13 +634,55 @@ namespace UKPI.Presentation
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(995, 203);
+            this.btnLuu.Location = new System.Drawing.Point(994, 221);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // lblsMaThuoc
+            // 
+            this.lblsMaThuoc.AutoSize = true;
+            this.lblsMaThuoc.Location = new System.Drawing.Point(19, 256);
+            this.lblsMaThuoc.Name = "lblsMaThuoc";
+            this.lblsMaThuoc.Size = new System.Drawing.Size(56, 13);
+            this.lblsMaThuoc.TabIndex = 7;
+            this.lblsMaThuoc.Text = "Mã Thuốc";
+            // 
+            // txtsMaThuoc
+            // 
+            this.txtsMaThuoc.Location = new System.Drawing.Point(158, 249);
+            this.txtsMaThuoc.Name = "txtsMaThuoc";
+            this.txtsMaThuoc.Size = new System.Drawing.Size(195, 20);
+            this.txtsMaThuoc.TabIndex = 8;
+            // 
+            // lblsTenThuoc
+            // 
+            this.lblsTenThuoc.AutoSize = true;
+            this.lblsTenThuoc.Location = new System.Drawing.Point(426, 256);
+            this.lblsTenThuoc.Name = "lblsTenThuoc";
+            this.lblsTenThuoc.Size = new System.Drawing.Size(60, 13);
+            this.lblsTenThuoc.TabIndex = 9;
+            this.lblsTenThuoc.Text = "Tên Thuốc";
+            // 
+            // txtsTenThuoc
+            // 
+            this.txtsTenThuoc.Location = new System.Drawing.Point(522, 249);
+            this.txtsTenThuoc.Name = "txtsTenThuoc";
+            this.txtsTenThuoc.Size = new System.Drawing.Size(195, 20);
+            this.txtsTenThuoc.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(741, 246);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Tìm Kiếm";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // grdToaThuoc
             // 
@@ -655,6 +712,8 @@ namespace UKPI.Presentation
             this.NhaSanXuat,
             this.QuocGia,
             this.TenDonViTinh,
+            this.HeSoAnToan,
+            this.NhomThuoc,
             this.HoatDong});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
@@ -664,10 +723,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 232);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 292);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 381);
+            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 321);
             this.grdToaThuoc.TabIndex = 2;
             // 
             // MaThuocYTeHienThi
@@ -685,7 +744,7 @@ namespace UKPI.Presentation
             this.MedicineName.Name = "MedicineName";
             this.MedicineName.ReadOnly = true;
             this.MedicineName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MedicineName.Width = 130;
+            this.MedicineName.Width = 110;
             // 
             // STTTheoDMTCuaBYT
             // 
@@ -712,7 +771,7 @@ namespace UKPI.Presentation
             this.TenThanhPhanThuoc.Name = "TenThanhPhanThuoc";
             this.TenThanhPhanThuoc.ReadOnly = true;
             this.TenThanhPhanThuoc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.TenThanhPhanThuoc.Width = 110;
+            this.TenThanhPhanThuoc.Width = 80;
             // 
             // HamLuong
             // 
@@ -721,6 +780,7 @@ namespace UKPI.Presentation
             this.HamLuong.Name = "HamLuong";
             this.HamLuong.ReadOnly = true;
             this.HamLuong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.HamLuong.Width = 80;
             // 
             // SoDKHoacGPKD
             // 
@@ -729,7 +789,7 @@ namespace UKPI.Presentation
             this.SoDKHoacGPKD.Name = "SoDKHoacGPKD";
             this.SoDKHoacGPKD.ReadOnly = true;
             this.SoDKHoacGPKD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SoDKHoacGPKD.Width = 105;
+            this.SoDKHoacGPKD.Width = 90;
             // 
             // DangBaoCheDuongUong
             // 
@@ -738,7 +798,7 @@ namespace UKPI.Presentation
             this.DangBaoCheDuongUong.Name = "DangBaoCheDuongUong";
             this.DangBaoCheDuongUong.ReadOnly = true;
             this.DangBaoCheDuongUong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DangBaoCheDuongUong.Width = 110;
+            this.DangBaoCheDuongUong.Width = 90;
             // 
             // NhaSanXuat
             // 
@@ -747,7 +807,6 @@ namespace UKPI.Presentation
             this.NhaSanXuat.Name = "NhaSanXuat";
             this.NhaSanXuat.ReadOnly = true;
             this.NhaSanXuat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NhaSanXuat.Width = 120;
             // 
             // QuocGia
             // 
@@ -756,7 +815,7 @@ namespace UKPI.Presentation
             this.QuocGia.Name = "QuocGia";
             this.QuocGia.ReadOnly = true;
             this.QuocGia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.QuocGia.Width = 110;
+            this.QuocGia.Width = 60;
             // 
             // TenDonViTinh
             // 
@@ -765,6 +824,24 @@ namespace UKPI.Presentation
             this.TenDonViTinh.Name = "TenDonViTinh";
             this.TenDonViTinh.ReadOnly = true;
             this.TenDonViTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // HeSoAnToan
+            // 
+            this.HeSoAnToan.DataPropertyName = "HeSoAnToan";
+            this.HeSoAnToan.HeaderText = "Hệ số an toàn";
+            this.HeSoAnToan.Name = "HeSoAnToan";
+            this.HeSoAnToan.ReadOnly = true;
+            this.HeSoAnToan.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.HeSoAnToan.Width = 70;
+            // 
+            // NhomThuoc
+            // 
+            this.NhomThuoc.DataPropertyName = "NhomThuoc";
+            this.NhomThuoc.HeaderText = "Nhóm thuốc";
+            this.NhomThuoc.Name = "NhomThuoc";
+            this.NhomThuoc.ReadOnly = true;
+            this.NhomThuoc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NhomThuoc.Width = 90;
             // 
             // HoatDong
             // 
@@ -775,11 +852,48 @@ namespace UKPI.Presentation
             this.HoatDong.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.HoatDong.Width = 80;
             // 
+            // lblHeSoAnToan
+            // 
+            this.lblHeSoAnToan.AutoSize = true;
+            this.lblHeSoAnToan.Location = new System.Drawing.Point(11, 186);
+            this.lblHeSoAnToan.Name = "lblHeSoAnToan";
+            this.lblHeSoAnToan.Size = new System.Drawing.Size(74, 13);
+            this.lblHeSoAnToan.TabIndex = 36;
+            this.lblHeSoAnToan.Text = "Hệ số an toàn";
+            // 
+            // txtHeSoAnToan
+            // 
+            this.txtHeSoAnToan.Location = new System.Drawing.Point(145, 176);
+            this.txtHeSoAnToan.Name = "txtHeSoAnToan";
+            this.txtHeSoAnToan.Size = new System.Drawing.Size(195, 20);
+            this.txtHeSoAnToan.TabIndex = 37;
+            // 
+            // lblNhomThuoc
+            // 
+            this.lblNhomThuoc.AutoSize = true;
+            this.lblNhomThuoc.Location = new System.Drawing.Point(413, 179);
+            this.lblNhomThuoc.Name = "lblNhomThuoc";
+            this.lblNhomThuoc.Size = new System.Drawing.Size(65, 13);
+            this.lblNhomThuoc.TabIndex = 38;
+            this.lblNhomThuoc.Text = "Nhóm thuốc";
+            // 
+            // txtNhomThuoc
+            // 
+            this.txtNhomThuoc.Location = new System.Drawing.Point(509, 179);
+            this.txtNhomThuoc.Name = "txtNhomThuoc";
+            this.txtNhomThuoc.Size = new System.Drawing.Size(195, 20);
+            this.txtNhomThuoc.TabIndex = 39;
+            // 
             // frmdanhmucthuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 648);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtsTenThuoc);
+            this.Controls.Add(this.lblsTenThuoc);
+            this.Controls.Add(this.txtsMaThuoc);
+            this.Controls.Add(this.lblsMaThuoc);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnTaoMoi);
             this.Controls.Add(this.btnUpdate);
@@ -792,6 +906,7 @@ namespace UKPI.Presentation
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -853,6 +968,11 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnTaoMoi;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label lblsMaThuoc;
+        private System.Windows.Forms.TextBox txtsMaThuoc;
+        private System.Windows.Forms.Label lblsTenThuoc;
+        private System.Windows.Forms.TextBox txtsTenThuoc;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuocYTeHienThi;
         private System.Windows.Forms.DataGridViewTextBoxColumn MedicineName;
         private System.Windows.Forms.DataGridViewTextBoxColumn STTTheoDMTCuaBYT;
@@ -864,6 +984,12 @@ namespace UKPI.Presentation
         private System.Windows.Forms.DataGridViewTextBoxColumn NhaSanXuat;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuocGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDonViTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeSoAnToan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NhomThuoc;
         private System.Windows.Forms.DataGridViewCheckBoxColumn HoatDong;
+        private System.Windows.Forms.Label lblHeSoAnToan;
+        private System.Windows.Forms.Label lblNhomThuoc;
+        private System.Windows.Forms.TextBox txtHeSoAnToan;
+        private System.Windows.Forms.TextBox txtNhomThuoc;
     }
 }

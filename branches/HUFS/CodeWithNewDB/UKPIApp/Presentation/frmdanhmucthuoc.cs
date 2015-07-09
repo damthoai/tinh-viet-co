@@ -109,20 +109,54 @@ namespace UKPI.Presentation
             AutoCompleteStringCollection qgDataCollection = new AutoCompleteStringCollection();
             addQUocGiaItems(qgDataCollection);
             txtQuocGia.AutoCompleteCustomSource = qgDataCollection;
-            LoadDanhMucThuoc();
+
+            txtsMaThuoc.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtsMaThuoc.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            txtsTenThuoc.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtsTenThuoc.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection maThuocDataCollection = new AutoCompleteStringCollection();
+            AutoCompleteStringCollection tenThuocDataCollection = new AutoCompleteStringCollection();
+            addThongTinThuocItems(maThuocDataCollection, tenThuocDataCollection);
+            txtsMaThuoc.AutoCompleteCustomSource = maThuocDataCollection;
+            txtsTenThuoc.AutoCompleteCustomSource = tenThuocDataCollection;
+
+            txtNhomThuoc.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtNhomThuoc.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection nhomThuocDataCollection = new AutoCompleteStringCollection();
+            addNhomThuocItems(nhomThuocDataCollection);
+            txtNhomThuoc.AutoCompleteCustomSource = nhomThuocDataCollection;
+
+            LoadDanhMucThuoc(string.Empty,string.Empty);
         }
 
         
-        private void LoadDanhMucThuoc()
+        private void LoadDanhMucThuoc(string maThuocYTe,string tenThuoc)
         {
            // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
-            listThuoc =  _quanLyThuocDao.LoadDanhMucThuoc();
+            listThuoc = _quanLyThuocDao.LoadDanhMucThuoc(maThuocYTe, tenThuoc);
             grdToaThuoc.DataSource = listThuoc;
 
 
 
         }
-        public void addNhaSanXuatItems(AutoCompleteStringCollection col)
+        private void addNhomThuocItems(AutoCompleteStringCollection col)
+        {
+            List<NhomThuoc> listNhomThuoc= _shareEntityDao.LoadThongTinNhomThuoc();
+            for (int i = 0; i < listNhomThuoc.Count; i++)
+            {
+                col.Add(listNhomThuoc[i].TenNhomThuoc);
+            }
+        }
+        private void addThongTinThuocItems(AutoCompleteStringCollection col1, AutoCompleteStringCollection col2)
+        {
+            List<ThongTinThuocTomLuoc> listThongTinThuoc = _shareEntityDao.LoadAllThongTinThuoc();
+            for (int i = 0; i < listThongTinThuoc.Count; i++)
+            {
+                col1.Add(listThongTinThuoc[i].MaThuocYTeHienThi);
+                col2.Add(listThongTinThuoc[i].MedicineName);
+            }
+        }
+        private void addNhaSanXuatItems(AutoCompleteStringCollection col)
         {
             List<NhaSanXuat> listNhaSanXuat = _shareEntityDao.LoadNhaSanXuat();
             for (int i = 0; i < listNhaSanXuat.Count; i++)
@@ -130,7 +164,7 @@ namespace UKPI.Presentation
                 col.Add(listNhaSanXuat[i].TenNhaSanXuat);
             }
         }
-        public void addQUocGiaItems(AutoCompleteStringCollection col)
+        private void addQUocGiaItems(AutoCompleteStringCollection col)
         {
             List<QuocGia> listQuocGia = _shareEntityDao.LoadQuocGia();
             for (int i = 0; i < listQuocGia.Count; i++)
@@ -256,6 +290,8 @@ namespace UKPI.Presentation
              txtNhaSanXuat.Text = string.Empty;
              txtQuocGia.Text = string.Empty;
              cbHoatDong.Checked = false;
+             txtNhomThuoc.Text = string.Empty;
+             txtHeSoAnToan.Text = string.Empty;
          }
         private void LoadThongTinThuocToForm(ThongTinThuoc selectedThuoc)
         {
@@ -277,6 +313,8 @@ namespace UKPI.Presentation
             txtNhaSanXuat.Text = selectedThuoc.NhaSanXuat;
             txtQuocGia.Text = selectedThuoc.QuocGia;
             cbHoatDong.Checked = selectedThuoc.HoatDong;
+            txtHeSoAnToan.Text = selectedThuoc.HeSoAnToan.ToString();
+            txtNhomThuoc.Text = selectedThuoc.NhomThuoc;
         }
         private ThongTinThuoc BuildThongTinThuoc(bool isNew)
         {
@@ -310,6 +348,8 @@ namespace UKPI.Presentation
             thongTinThuoc.QuocGia = txtQuocGia.Text;
             thongTinThuoc.HoatDong = cbHoatDong.Checked;
             thongTinThuoc.LastUpdatedBy = clsSystemConfig.UserName;
+            thongTinThuoc.HeSoAnToan = int.Parse(txtHeSoAnToan.Text);
+            thongTinThuoc.NhomThuoc = txtNhomThuoc.Text;
             return thongTinThuoc;
         }
          void cellDateTimePickerValueChanged(object sender, EventArgs e)
@@ -341,6 +381,16 @@ namespace UKPI.Presentation
                 MessageBox.Show("Thông tin giá thuốc không hợp lệ");
                 return;
             }
+            if (!CheckThongTinGiaThuocVAT())
+            {
+                MessageBox.Show("Thông tin giá thuốc VAT không hợp lệ");
+                return;
+            }
+            if (!CheckThongTinHeSoAnToan())
+            {
+                MessageBox.Show("Hệ số an toàn không hợp lệ");
+                return;
+            }
             ThongTinThuoc tttCapNhat = BuildThongTinThuoc(false);
             //if (_quanLyThuocDao.CheckThuocExist(tttCapNhat.MaThuocYTe, tttCapNhat.BaoHiem) == 1)
             //{
@@ -355,7 +405,8 @@ namespace UKPI.Presentation
            
             if (_quanLyThuocDao.LuuCapNhatThongTinThuoc(tttCapNhat))
             {
-                LoadDanhMucThuoc();
+                LoadDanhMucThuoc(txtsMaThuoc.Text,txtsTenThuoc.Text);
+                ResetFormThongTinThuoc();
                 MessageBox.Show("Cập nhật thành công");
             }
             else
@@ -393,11 +444,60 @@ namespace UKPI.Presentation
             }
             return result;
         }
+
+        private bool CheckThongTinGiaThuocVAT()
+        {
+            bool result = true;
+            try
+            {
+                decimal giaDNMua = decimal.Parse(txtGiaDNMua.Text);
+                decimal giaDNMuaVAT = decimal.Parse(txtGiaDNMuaVAT.Text);
+                decimal giaDNBan = decimal.Parse(txtGiaDNBan.Text);
+                decimal giaDNBanVAT = decimal.Parse(txtGiaDNBanVAT.Text);
+                if (giaDNMua > giaDNMuaVAT || giaDNBan > giaDNBanVAT)
+                {
+                    result = false;
+                }
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
+        }
+
+        private bool CheckThongTinHeSoAnToan()
+        {
+            bool result = true;
+            try
+            {
+                int heSoAnToan = int.Parse(txtHeSoAnToan.Text);
+                if (heSoAnToan <= 0)
+                {
+                    result = false;
+                }
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
+        }
         private void btnLuu_Click(object sender, EventArgs e)
         {
             if (!CheckThongTinGiaThuoc())
             {
                 MessageBox.Show("Thông tin giá thuốc không hợp lệ");
+                return;
+            }
+            if (!CheckThongTinGiaThuocVAT())
+            {
+                MessageBox.Show("Thông tin giá thuốc VAT không hợp lệ");
+                return;
+            }
+            if (!CheckThongTinHeSoAnToan())
+            {
+                MessageBox.Show("Hệ số an toàn không hợp lệ");
                 return;
             }
             ThongTinThuoc tttCapNhat = BuildThongTinThuoc(true);
@@ -414,13 +514,19 @@ namespace UKPI.Presentation
            
             if (_quanLyThuocDao.LuuCapNhatThongTinThuoc(tttCapNhat))
             {
-                LoadDanhMucThuoc();
+                LoadDanhMucThuoc(txtsMaThuoc.Text, txtsTenThuoc.Text);
+                ResetFormThongTinThuoc();
                 MessageBox.Show("Lưu thành công");
             }
             else
             {
                 MessageBox.Show("Có lỗi trong khi lưu");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadDanhMucThuoc(txtsMaThuoc.Text, txtsTenThuoc.Text);
         }
        
 
