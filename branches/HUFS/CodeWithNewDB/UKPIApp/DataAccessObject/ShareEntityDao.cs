@@ -17,6 +17,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_LoadThongTinThuoc = "p_HUFS_LoadThongTinThuoc";
         private const string p_HUFS_LoadAllThongTinThuoc = "p_HUFS_LoadAllThongTinThuoc";
         private const string p_HUFS_LoadThongTinThuocTheoMaThuocYTe = "p_HUFS_LoadThongTinThuocTheoMaThuocYTe";
+        private const string p_HUFS_LoadThongTinThuocForDictionary = "p_HUFS_LoadThongTinThuocForDictionary";
         public  List<PhongKham> LoadDanhSachPhongKham()
         {
             List<PhongKham> arrs = new List<PhongKham>();
@@ -367,10 +368,26 @@ namespace UKPI.DataAccessObject
                 return null;
             }
         }
+
+        public List<ThongTinThuocDictionary> LoadThongTinThuocForDictionary()
+        {
+            try
+            {
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadThongTinThuocForDictionary);
+                return this.ConvertDataTableToList<ThongTinThuocDictionary>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
+
         public Dictionary<CustomKey, string> BuildTuDienThuoc()
         {
-            List<ThongTinThuoc> list = LoadThongTinThuoc();
+            List<ThongTinThuocDictionary> list = LoadThongTinThuocForDictionary();
             Dictionary<CustomKey, string> dic = new Dictionary<CustomKey, string>(new CustomKey.EqualityComparer());
+            if (list != null) {
             for(int i = 0;i<list.Count;i++)
             {
                 CustomKey key = new CustomKey(list[i].MaThuocYTeHienThi, list[i].BaoHiem);
@@ -380,6 +397,7 @@ namespace UKPI.DataAccessObject
                 else
                     continue;
             }
+        }
             return dic;
         }
         public string LoadMaThuocThucTheoMaThuocYTe(string maThuocYTe, bool baoHiem)

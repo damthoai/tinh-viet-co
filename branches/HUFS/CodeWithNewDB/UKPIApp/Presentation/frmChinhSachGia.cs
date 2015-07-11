@@ -443,6 +443,7 @@ namespace UKPI.Presentation
         {
             frmChinhSachGiaChiTiet frmChiTiet = new frmChinhSachGiaChiTiet();
             frmChiTiet.SetMaChinhSachGia(txtMaChinhSachGia.Text);
+            frmChiTiet.SetTenChinhSachGia(txtTenChinhSachGia.Text);
             frmChiTiet.Show();
         }
      

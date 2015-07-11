@@ -501,6 +501,7 @@
     <Compile Include="ValueObject\ThongTinNhapKho.cs" />
     <Compile Include="ValueObject\ThongTinNhapKhoDetail.cs" />
     <Compile Include="ValueObject\ThongTinThuoc.cs" />
+    <Compile Include="ValueObject\ThongTinThuocDictionary.cs" />
     <Compile Include="ValueObject\ThongTinThuocTomLuoc.cs" />
     <Compile Include="ValueObject\TonKhoExportColumns.cs" />
     <Compile Include="ValueObject\XuatKhoExportColumns.cs" />

@@ -22,6 +22,8 @@ namespace UKPI.DataAccessObject
         private const string HUFS_ChinhSachGiaChiTiet = "HUFS_ChinhSachGiaChiTiet";
         private const string p_HUFS_CheckThuocExist = "p_HUFS_CheckThuocExist";
         private const string p_HUFS_ProcessDanhMucThuoc = "p_HUFS_ProcessDanhMucThuoc";
+        private const string p_HUFS_ProcessChinhSachGiaChiTiet = "p_HUFS_ProcessChinhSachGiaChiTiet";
+        private const string p_HUFS_ProcessMarkDeleteChinhSachGiaChiTiet = "p_HUFS_ProcessMarkDeleteChinhSachGiaChiTiet";
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
 
         public bool LuuCapNhatThongTinThuoc(ThongTinThuoc thongTinThuoc)
@@ -162,6 +164,73 @@ namespace UKPI.DataAccessObject
                     Params[6] = new SqlParameter("@DienGiai", listChinhSachGiaChiTiet[i].DienGiai);
                     Params[7] = new SqlParameter("@HoatDong", listChinhSachGiaChiTiet[i].HoatDong);
                     DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, HUFS_ChinhSachGiaChiTiet, Params);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return false;
+            }
+        }
+
+        public bool ProcessChinhGiaChiTiet(List<ChinhSachGiaChiTiet> listChinhSachGiaChiTiet)
+        {
+            try
+            {
+                for (int i = 0; i < listChinhSachGiaChiTiet.Count; i++)
+                {
+                    SqlParameter[] Params = new SqlParameter[16];
+                    Params[0] = new SqlParameter("@Id", listChinhSachGiaChiTiet[i].Id);
+                    Params[1] = new SqlParameter("@MaChinhSachGia", listChinhSachGiaChiTiet[i].MaChinhSachGia);
+                    Params[2] = new SqlParameter("@TenChinhSachGia", listChinhSachGiaChiTiet[i].TenChinhSachGia);
+                    Params[3] = new SqlParameter("@MedicineID", listChinhSachGiaChiTiet[i].MedicineID);
+                    Params[4] = new SqlParameter("@MedicineName", listChinhSachGiaChiTiet[i].MedicineName);
+                    Params[5] = new SqlParameter("@GiaDNMua", listChinhSachGiaChiTiet[i].GiaDNMua);
+                    Params[6] = new SqlParameter("@GiaDNMuaVAT", listChinhSachGiaChiTiet[i].GiaDNMuaVAT);
+                    Params[7] = new SqlParameter("@GiaThucMua", listChinhSachGiaChiTiet[i].GiaThucMua);
+                    Params[8] = new SqlParameter("@GiaDNBan", listChinhSachGiaChiTiet[i].GiaDNBan);
+                    Params[9] = new SqlParameter("@GiaDNBanVAT", listChinhSachGiaChiTiet[i].GiaDNBanVAT);
+                    Params[10] = new SqlParameter("@GiaThucBan", listChinhSachGiaChiTiet[i].GiaThucBan);
+                    Params[11] = new SqlParameter("@MaThuocYTeHienThi", listChinhSachGiaChiTiet[i].MaThuocYTeHienThi);
+                    Params[12] = new SqlParameter("@BaoHiem", listChinhSachGiaChiTiet[i].BaoHiem);
+                    Params[13] = new SqlParameter("@DonViTinh", listChinhSachGiaChiTiet[i].DonViTinh);
+                    Params[14] = new SqlParameter("@DienGiai", listChinhSachGiaChiTiet[i].DienGiai);
+                    Params[15] = new SqlParameter("@HoatDong", listChinhSachGiaChiTiet[i].HoatDong);
+                    DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessChinhSachGiaChiTiet, Params);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return false;
+            }
+        }
+
+        public bool ProcessMarkDeleteChinhGiaChiTiet(List<ChinhSachGiaChiTiet> oldListChinhSachGiaChiTiet,List<ChinhSachGiaChiTiet> listChinhSachGiaChiTiet)
+        {
+            try
+            {
+                List<ChinhSachGiaChiTiet> deleteList = new List<ChinhSachGiaChiTiet>();
+                for (int i = 0; i < oldListChinhSachGiaChiTiet.Count; i++)
+                {
+                    if (listChinhSachGiaChiTiet.Where(x => x.Id == oldListChinhSachGiaChiTiet[i].Id).FirstOrDefault() == null)
+                        deleteList.Add(oldListChinhSachGiaChiTiet[i]);
+                }
+                if (deleteList.Count > 0)
+                {
+                    string strId = "";
+                    for (int i = 0; i < deleteList.Count; i++)
+                    {
+                        if (i == deleteList.Count - 1)
+                            strId += deleteList[i].Id.ToString();
+                        else
+                            strId += "," + deleteList[i].Id.ToString();
+                    }
+                    SqlParameter[] Params = new SqlParameter[1];
+                    Params[0] = new SqlParameter("@ListId", strId);
+                    DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessMarkDeleteChinhSachGiaChiTiet, Params);
                 }
                 return true;
             }

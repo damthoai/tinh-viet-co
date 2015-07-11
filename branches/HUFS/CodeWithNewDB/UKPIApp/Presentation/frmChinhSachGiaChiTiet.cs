@@ -37,6 +37,7 @@ namespace UKPI.Presentation
         ComboBox cbm;
         DataGridViewCell currentCell;
         private string maChinhSachGia;
+        private string tenChinhSachGia;
         private int _checkRowsCount = 0;
 
         // Declare constants
@@ -55,6 +56,7 @@ namespace UKPI.Presentation
         // Declare private fields
         private ChamCongLichLamViecBo _lichLamViecBo = new ChamCongLichLamViecBo();
         private List<DonViTinh> listDonViTinh = new List<DonViTinh>();
+        private List<ChinhSachGiaChiTiet> oldListChinhSachGiaChiTiet = new List<ChinhSachGiaChiTiet>();
         readonly DataGridViewColumn _originalColumns;
         private DataTable _dtApproveTimesheet;
 
@@ -84,6 +86,10 @@ namespace UKPI.Presentation
             SetDefauldValue();
         }
 
+        public void SetTenChinhSachGia(string value)
+        {
+            this.tenChinhSachGia = value;
+        }
         
         private void SetDefauldValue()
         {        
@@ -97,18 +103,30 @@ namespace UKPI.Presentation
         private void BuildGridViewRow()
         {
             List<ChinhSachGiaChiTiet> listChinhSachGiaChiTiet = _quanLyThuocDao.GetChinhSachGiaChiTiet(maChinhSachGia);
+            oldListChinhSachGiaChiTiet = listChinhSachGiaChiTiet;
             if (listChinhSachGiaChiTiet == null || listChinhSachGiaChiTiet.Count == 0)
             {
                 DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
-                checkBoxColumn.Width = 60;
+                checkBoxColumn.Width = 40;
+                checkBoxColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
                 grdToaThuoc.Columns.Add(checkBoxColumn);
+
+                DataGridViewTextBoxColumn maCSGChiTietColumn = new DataGridViewTextBoxColumn();
+                maCSGChiTietColumn.Width = 1;
+                maCSGChiTietColumn.Visible = false;
+                maCSGChiTietColumn.ReadOnly = true;
+                maCSGChiTietColumn.DataPropertyName = "Id";
+                maCSGChiTietColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(maCSGChiTietColumn);
 
                 DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
                 tenThuocColumn.HeaderText = "Tên thuốc";
                 tenThuocColumn.ReadOnly = true;
                 tenThuocColumn.Width = 140;
                 tenThuocColumn.DataPropertyName = "MedicineName";
+                tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
                 grdToaThuoc.Columns.Add(tenThuocColumn);
+
 
                 DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
                 col.Width = 140;
@@ -121,22 +139,58 @@ namespace UKPI.Presentation
                 col.ValueMember = "MedicineID";
                 grdToaThuoc.Columns.Add(col);
 
+                DataGridViewCheckBoxColumn baoHiemColumn = new DataGridViewCheckBoxColumn();
+                baoHiemColumn.Width = 60;
+                baoHiemColumn.HeaderText = "Thuốc BH";
+                baoHiemColumn.ReadOnly = true;
+                baoHiemColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(baoHiemColumn);
 
-                DataGridViewTextBoxColumn giaColumn = new DataGridViewTextBoxColumn();
-                giaColumn.Width = 130;
-                giaColumn.HeaderText = "Giá";
-                giaColumn.DataPropertyName = "GiaDNMua";
-                grdToaThuoc.Columns.Add(giaColumn);
+                DataGridViewTextBoxColumn giaDNBanColumn = new DataGridViewTextBoxColumn();
+                giaDNBanColumn.Width = 70;
+                giaDNBanColumn.HeaderText = "Giá bán";
+                giaDNBanColumn.DataPropertyName = "GiaDNBan";
+                giaDNBanColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNBanColumn);
 
-                DataGridViewTextBoxColumn giaColumnVat = new DataGridViewTextBoxColumn();
-                giaColumnVat.Width = 140;
-                giaColumnVat.HeaderText = "Giá VAT";
-                giaColumnVat.DataPropertyName = "GiaDNMuaVAT";
-                grdToaThuoc.Columns.Add(giaColumnVat);
+                DataGridViewTextBoxColumn giaDNBanVATColumn = new DataGridViewTextBoxColumn();
+                giaDNBanVATColumn.Width = 70;
+                giaDNBanVATColumn.HeaderText = "Giá bán VAT";
+                giaDNBanVATColumn.DataPropertyName = "GiaDNBanVAT";
+                giaDNBanVATColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNBanVATColumn);
 
+                DataGridViewTextBoxColumn giaThucBanColumn = new DataGridViewTextBoxColumn();
+                giaThucBanColumn.Width = 70;
+                giaThucBanColumn.HeaderText = "Giá thực bán";
+                giaThucBanColumn.DataPropertyName = "GiaThucBan";
+                giaThucBanColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaThucBanColumn);
+
+
+                DataGridViewTextBoxColumn giaDNMuaColumn = new DataGridViewTextBoxColumn();
+                giaDNMuaColumn.Width = 70;
+                giaDNMuaColumn.HeaderText = "Giá mua";
+                giaDNMuaColumn.DataPropertyName = "GiaDNMua";
+                giaDNMuaColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNMuaColumn);
+
+                DataGridViewTextBoxColumn giaDNMuaVATColumn = new DataGridViewTextBoxColumn();
+                giaDNMuaVATColumn.Width = 70;
+                giaDNMuaVATColumn.HeaderText = "Giá mua VAT";
+                giaDNMuaVATColumn.DataPropertyName = "GiaDNMuaVAT";
+                giaDNMuaVATColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNMuaVATColumn);
+
+                DataGridViewTextBoxColumn giaThucMuaColumn = new DataGridViewTextBoxColumn();
+                giaThucMuaColumn.Width = 70;
+                giaThucMuaColumn.HeaderText = "Giá thực mua";
+                giaThucMuaColumn.DataPropertyName = "GiaThucMua";
+                giaThucMuaColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaThucMuaColumn);
   
                 DataGridViewComboBoxColumn donViTinhColumn = new DataGridViewComboBoxColumn();
-                donViTinhColumn.Width = 150;
+                donViTinhColumn.Width = 130;
                 donViTinhColumn.HeaderText = "Đơn vị tính";
                 donViTinhColumn.DataSource = _shareEntityDao.LoadDonViTinh();
                 donViTinhColumn.DisplayMember = "TenDonViTinh";
@@ -163,41 +217,90 @@ namespace UKPI.Presentation
             else if (listChinhSachGiaChiTiet != null || listChinhSachGiaChiTiet.Count > 0)
             {
                 DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
-                checkBoxColumn.Width = 60;
+                checkBoxColumn.Width = 40;
+                checkBoxColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
                 grdToaThuoc.Columns.Add(checkBoxColumn);
+
+                DataGridViewTextBoxColumn maCSGChiTietColumn = new DataGridViewTextBoxColumn();
+                maCSGChiTietColumn.Width = 1;
+                maCSGChiTietColumn.Visible = false;
+                maCSGChiTietColumn.ReadOnly = true;
+                maCSGChiTietColumn.DataPropertyName = "Id";
+                maCSGChiTietColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(maCSGChiTietColumn);
 
                 DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
                 tenThuocColumn.HeaderText = "Tên thuốc";
                 tenThuocColumn.ReadOnly = true;
                 tenThuocColumn.Width = 140;
                 tenThuocColumn.DataPropertyName = "MedicineName";
+                tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
                 grdToaThuoc.Columns.Add(tenThuocColumn);
+
 
                 DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
                 col.Width = 140;
                 col.HeaderText = "Mã thuốc";
                 col.DataSource = _shareEntityDao.LoadThongTinThuoc();
+                //col.DisplayMember = "MedicineID";
+                //col.ValueMember = "MedicineID";
                 col.DataPropertyName = "MedicineID";
                 col.DisplayMember = "MaThuocYTeHienThi";
                 col.ValueMember = "MedicineID";
                 grdToaThuoc.Columns.Add(col);
 
+                DataGridViewCheckBoxColumn baoHiemColumn = new DataGridViewCheckBoxColumn();
+                baoHiemColumn.Width = 60;
+                baoHiemColumn.HeaderText = "Thuốc BH";
+                baoHiemColumn.ReadOnly = true;
+                baoHiemColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(baoHiemColumn);
 
-                DataGridViewTextBoxColumn giaColumn = new DataGridViewTextBoxColumn();
-                giaColumn.Width = 130;
-                giaColumn.HeaderText = "Giá";
-                giaColumn.DataPropertyName = "GiaDNMua";
-                grdToaThuoc.Columns.Add(giaColumn);
+                DataGridViewTextBoxColumn giaDNBanColumn = new DataGridViewTextBoxColumn();
+                giaDNBanColumn.Width = 70;
+                giaDNBanColumn.HeaderText = "Giá bán";
+                giaDNBanColumn.DataPropertyName = "GiaDNBan";
+                giaDNBanColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNBanColumn);
 
-                DataGridViewTextBoxColumn giaColumnVat = new DataGridViewTextBoxColumn();
-                giaColumnVat.Width = 140;
-                giaColumnVat.HeaderText = "Giá VAT";
-                giaColumnVat.DataPropertyName = "GiaDNMuaVAT";
-                grdToaThuoc.Columns.Add(giaColumnVat);
+                DataGridViewTextBoxColumn giaDNBanVATColumn = new DataGridViewTextBoxColumn();
+                giaDNBanVATColumn.Width = 70;
+                giaDNBanVATColumn.HeaderText = "Giá bán VAT";
+                giaDNBanVATColumn.DataPropertyName = "GiaDNBanVAT";
+                giaDNBanVATColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNBanVATColumn);
 
+                DataGridViewTextBoxColumn giaThucBanColumn = new DataGridViewTextBoxColumn();
+                giaThucBanColumn.Width = 70;
+                giaThucBanColumn.HeaderText = "Giá thực bán";
+                giaThucBanColumn.DataPropertyName = "GiaThucBan";
+                giaThucBanColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaThucBanColumn);
+
+
+                DataGridViewTextBoxColumn giaDNMuaColumn = new DataGridViewTextBoxColumn();
+                giaDNMuaColumn.Width = 70;
+                giaDNMuaColumn.HeaderText = "Giá mua";
+                giaDNMuaColumn.DataPropertyName = "GiaDNMua";
+                giaDNMuaColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNMuaColumn);
+
+                DataGridViewTextBoxColumn giaDNMuaVATColumn = new DataGridViewTextBoxColumn();
+                giaDNMuaVATColumn.Width = 70;
+                giaDNMuaVATColumn.HeaderText = "Giá mua VAT";
+                giaDNMuaVATColumn.DataPropertyName = "GiaDNMuaVAT";
+                giaDNMuaVATColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaDNMuaVATColumn);
+
+                DataGridViewTextBoxColumn giaThucMuaColumn = new DataGridViewTextBoxColumn();
+                giaThucMuaColumn.Width = 70;
+                giaThucMuaColumn.HeaderText = "Giá thực mua";
+                giaThucMuaColumn.DataPropertyName = "GiaThucMua";
+                giaThucMuaColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+                grdToaThuoc.Columns.Add(giaThucMuaColumn);
 
                 DataGridViewComboBoxColumn donViTinhColumn = new DataGridViewComboBoxColumn();
-                donViTinhColumn.Width = 150;
+                donViTinhColumn.Width = 130;
                 donViTinhColumn.HeaderText = "Đơn vị tính";
                 donViTinhColumn.DataSource = _shareEntityDao.LoadDonViTinh();
                 donViTinhColumn.DisplayMember = "TenDonViTinh";
@@ -223,13 +326,19 @@ namespace UKPI.Presentation
                 for (int i = 0; i < listChinhSachGiaChiTiet.Count; i++)
                 {
                     this.grdToaThuoc.Rows.Add(1);
-                    this.grdToaThuoc[1, i].Value = listChinhSachGiaChiTiet[i].MedicineName;
-                    this.grdToaThuoc[2, i].Value = listChinhSachGiaChiTiet[i].MedicineID;
-                    this.grdToaThuoc[3, i].Value = listChinhSachGiaChiTiet[i].GiaDNMua;
-                    this.grdToaThuoc[4, i].Value = listChinhSachGiaChiTiet[i].GiaDNMuaVAT;
-                    this.grdToaThuoc[5, i].Value = listChinhSachGiaChiTiet[i].DonViTinh;
-                    this.grdToaThuoc[6, i].Value = listChinhSachGiaChiTiet[i].DienGiai;
-                    this.grdToaThuoc[7, i].Value = listChinhSachGiaChiTiet[i].HoatDong;
+                    this.grdToaThuoc[1, i].Value = listChinhSachGiaChiTiet[i].Id;
+                    this.grdToaThuoc[2, i].Value = listChinhSachGiaChiTiet[i].MedicineName;
+                    this.grdToaThuoc[3, i].Value = listChinhSachGiaChiTiet[i].MedicineID;
+                    this.grdToaThuoc[4, i].Value = listChinhSachGiaChiTiet[i].BaoHiem;
+                    this.grdToaThuoc[5, i].Value = listChinhSachGiaChiTiet[i].GiaDNBan;
+                    this.grdToaThuoc[6, i].Value = listChinhSachGiaChiTiet[i].GiaDNBanVAT;
+                    this.grdToaThuoc[7, i].Value = listChinhSachGiaChiTiet[i].GiaThucBan;
+                    this.grdToaThuoc[8, i].Value = listChinhSachGiaChiTiet[i].GiaDNMua;
+                    this.grdToaThuoc[9, i].Value = listChinhSachGiaChiTiet[i].GiaDNMuaVAT;
+                    this.grdToaThuoc[10, i].Value = listChinhSachGiaChiTiet[i].GiaThucMua;
+                    this.grdToaThuoc[11, i].Value = listChinhSachGiaChiTiet[i].DonViTinh;
+                    this.grdToaThuoc[12, i].Value = listChinhSachGiaChiTiet[i].DienGiai;
+                    this.grdToaThuoc[13, i].Value = listChinhSachGiaChiTiet[i].HoatDong;
                 }
                 this.grdToaThuoc.Rows.Add(1);
             
@@ -249,15 +358,6 @@ namespace UKPI.Presentation
 
 
         #endregion
-
-
-
-
-
-
-
-
-
 
         private int GetDonViTinh(string name)
         { 
@@ -281,19 +381,26 @@ namespace UKPI.Presentation
             {
 
                 ChinhSachGiaChiTiet chinhSachChiTiet = new ChinhSachGiaChiTiet();
-                if ((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue == "")
+                if ((string)grdToaThuoc.Rows[i].Cells[2].FormattedValue == "")
                     continue;
                 
                 chinhSachChiTiet.MaChinhSachGia = txtMaChinhSachGia.Text;
-                chinhSachChiTiet.MedicineID = (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
-                chinhSachChiTiet.MedicineName = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
-                chinhSachChiTiet.GiaDNMua = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[3].FormattedValue);
-                chinhSachChiTiet.GiaDNMuaVAT = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[4].FormattedValue);
-                chinhSachChiTiet.DonViTinh = GetDonViTinh((string)grdToaThuoc.Rows[i].Cells[5].FormattedValue);
-                chinhSachChiTiet.DienGiai = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
-                chinhSachChiTiet.HoatDong = (bool)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
-                //can load them thong tin bao hiem cho thuoc
-                CustomKey ck = new CustomKey(chinhSachChiTiet.MedicineID, true);
+                chinhSachChiTiet.Id = string.IsNullOrEmpty((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue) ? 0 : long.Parse((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue);
+                chinhSachChiTiet.MedicineID = (string)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
+                chinhSachChiTiet.MedicineName = (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
+                chinhSachChiTiet.BaoHiem = (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
+                chinhSachChiTiet.GiaDNBan = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[5].FormattedValue);
+                chinhSachChiTiet.GiaDNBanVAT = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[6].FormattedValue);
+                chinhSachChiTiet.GiaThucBan = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[7].FormattedValue);
+                chinhSachChiTiet.GiaDNMua = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[8].FormattedValue);
+                chinhSachChiTiet.GiaDNMuaVAT = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[9].FormattedValue);
+                chinhSachChiTiet.GiaThucMua = decimal.Parse((string)grdToaThuoc.Rows[i].Cells[10].FormattedValue);
+                chinhSachChiTiet.DonViTinh = GetDonViTinh((string)grdToaThuoc.Rows[i].Cells[11].FormattedValue);
+                chinhSachChiTiet.DienGiai = (string)grdToaThuoc.Rows[i].Cells[12].FormattedValue;
+                chinhSachChiTiet.HoatDong = (bool)grdToaThuoc.Rows[i].Cells[13].FormattedValue;
+                chinhSachChiTiet.MaThuocYTeHienThi = (string)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
+                chinhSachChiTiet.TenChinhSachGia = tenChinhSachGia;
+                CustomKey ck = new CustomKey(chinhSachChiTiet.MedicineID, chinhSachChiTiet.BaoHiem);
                 chinhSachChiTiet.MedicineID = dic[ck];
                 if (!listmaThuoc.Contains(chinhSachChiTiet.MedicineID))
                 {
@@ -308,7 +415,11 @@ namespace UKPI.Presentation
             }
             if (listChinhSachGiaChiTiet.Count > 0)
             {
-                if (_quanLyThuocDao.UpdateChinhGiaChiTiet(listChinhSachGiaChiTiet))
+                bool updateData = true;
+                bool markDelete = true;
+                updateData = _quanLyThuocDao.ProcessChinhGiaChiTiet(listChinhSachGiaChiTiet);
+                markDelete = _quanLyThuocDao.ProcessMarkDeleteChinhGiaChiTiet(oldListChinhSachGiaChiTiet, listChinhSachGiaChiTiet);
+                if (updateData && markDelete)
                 {
                     DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.Success"), clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     if (result == DialogResult.OK)
@@ -322,26 +433,7 @@ namespace UKPI.Presentation
                     return;
                 }
             }
-            /*
-            ThongTinKhamBenh ttkb = BuildThongTinKhamBenh();
-            if(ttkb != null ){
-                if (_thongTinKhamBenhDao.SaveThongTinKhamBenh(ttkb))
-                {
-                    DialogResult result =  MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.Success"), clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if (result == DialogResult.OK)
-                    {
-                        grdToaThuoc.Rows.Clear();
-                        grdToaThuoc.Rows.Add(1);
-                    }
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.Error"), clsResources.GetMessage("messages.frmChinhSachGiaChiTiet.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-             * */
+
         }
         
 
@@ -464,7 +556,7 @@ namespace UKPI.Presentation
                 if (ttt != null)
                 {
                   //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
-                    if (currentCell.ColumnIndex == 2)
+                    if (currentCell.ColumnIndex == 3)
                     {
                    //     MessageBox.Show(ttt.MedicineName);
                         if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
@@ -483,13 +575,18 @@ namespace UKPI.Presentation
                         }
                         
                         this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.GiaDNMua;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.DonViTinh;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = ttt.DienGiai;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.HoatDong;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.GiaDNBan;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.GiaDNBanVAT;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = ttt.GiaThucBan;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMua;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 7, currentCell.RowIndex].Value = ttt.GiaThucMua;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 8, currentCell.RowIndex].Value = ttt.DonViTinh;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 9, currentCell.RowIndex].Value = ttt.DienGiai;
+                        this.grdToaThuoc[currentCell.ColumnIndex + 10, currentCell.RowIndex].Value = ttt.HoatDong;
                     }
-                    if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
+                    if (currentCell.ColumnIndex == 3 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
                     {
                         grdToaThuoc.Rows.Add(1);
                     }
