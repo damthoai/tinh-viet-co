@@ -1,7 +1,4 @@
---USE [DMSPOPNew]
---GO
-
-/****** Object:  StoredProcedure [dbo].[HUFS_GetChinhSachGiaChiTiet]    Script Date: 06/10/2015 22:56:32 ******/
+/****** Object:  StoredProcedure [dbo].[HUFS_GetChinhSachGiaChiTiet]    Script Date: 07/11/2015 11:42:42 ******/
 IF EXISTS (
 		SELECT *
 		FROM sys.objects
@@ -14,10 +11,7 @@ IF EXISTS (
 	DROP PROCEDURE [dbo].[HUFS_GetChinhSachGiaChiTiet]
 GO
 
---USE [DMSPOPNew]
---GO
-
-/****** Object:  StoredProcedure [dbo].[HUFS_GetChinhSachGiaChiTiet]    Script Date: 06/10/2015 22:56:32 ******/
+/****** Object:  StoredProcedure [dbo].[HUFS_GetChinhSachGiaChiTiet]    Script Date: 07/11/2015 11:42:42 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -26,6 +20,7 @@ GO
 
 CREATE PROC [dbo].[HUFS_GetChinhSachGiaChiTiet] (@MaChinhSachGia VARCHAR(50))
 AS
+/*
 SELECT MedicineName
 	,MedicineID
 	,GiaDNMua
@@ -49,6 +44,26 @@ SELECT MedicineName
 			) AS [MaThuocYTeHienThi]
 FROM HUFS_MEDICINE H
 WHERE H.MaChinhSachGia = @MaChinhSachGia
+*/
+SELECT [Id]
+      ,[MaChinhSachGia]
+      ,[TenChinhSachGia]
+      ,[MedicineID]
+      ,[MedicineName]
+      ,[GiaDNMua]
+      ,[GiaDNMuaVAT]
+      ,[GiaThucMua]
+      ,[GiaDNBan]
+      ,[GiaDNBanVAT]
+      ,[GiaThucBan]
+      ,[MaThuocYTeHienThi]
+      ,[BaoHiem]
+      ,[DonViTinh]
+      ,[DienGiai]
+      ,[HoatDong]
+      ,[IsDeleted]
+FROM [HUFS_CHINHSACH_DETAIL]
+WHERE MaChinhSachGia = @MaChinhSachGia AND IsDeleted = 0
 GO
 
 

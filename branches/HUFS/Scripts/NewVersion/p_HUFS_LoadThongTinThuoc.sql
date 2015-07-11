@@ -1,5 +1,4 @@
-USE [DMSPOP]
-GO
+
 
 /****** Object:  StoredProcedure [dbo].[p_HUFS_LoadThongTinThuoc]    Script Date: 06/03/2015 20:22:37 ******/
 IF EXISTS (
@@ -14,8 +13,7 @@ IF EXISTS (
 	DROP PROCEDURE [dbo].[p_HUFS_LoadThongTinThuoc]
 GO
 
-USE [DMSPOP]
-GO
+
 
 /****** Object:  StoredProcedure [dbo].[p_HUFS_LoadThongTinThuoc]    Script Date: 06/03/2015 20:22:37 ******/
 SET ANSI_NULLS ON
