@@ -39,6 +39,7 @@ namespace UKPI.Presentation
         private string maChinhSachGia;
         private string tenChinhSachGia;
         private int _checkRowsCount = 0;
+        private bool isRealOnlyForm = false;
 
         // Declare constants
         private const string FieldCheck = "colCheck";
@@ -86,9 +87,22 @@ namespace UKPI.Presentation
             SetDefauldValue();
         }
 
+        public void SetRealOnlyForm(bool value)
+        {
+            this.isRealOnlyForm = value;
+            if (isRealOnlyForm == true)
+            {
+                grdToaThuoc.ReadOnly = true;
+            }
+            else
+            {
+                grdToaThuoc.ReadOnly = false;
+            }
+        }
         public void SetTenChinhSachGia(string value)
         {
             this.tenChinhSachGia = value;
+
         }
         
         private void SetDefauldValue()
@@ -96,6 +110,7 @@ namespace UKPI.Presentation
             
             BuildGridViewRow();
             listDonViTinh = _shareEntityDao.LoadDonViTinh();
+           
         }
        
         

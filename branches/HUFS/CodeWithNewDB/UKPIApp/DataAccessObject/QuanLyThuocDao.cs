@@ -24,6 +24,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_ProcessDanhMucThuoc = "p_HUFS_ProcessDanhMucThuoc";
         private const string p_HUFS_ProcessChinhSachGiaChiTiet = "p_HUFS_ProcessChinhSachGiaChiTiet";
         private const string p_HUFS_ProcessMarkDeleteChinhSachGiaChiTiet = "p_HUFS_ProcessMarkDeleteChinhSachGiaChiTiet";
+        private const string p_HUFS_CheckOverlapChinhSachGia = "p_HUFS_CheckOverlapChinhSachGia";
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
 
         public bool LuuCapNhatThongTinThuoc(ThongTinThuoc thongTinThuoc)
@@ -321,7 +322,29 @@ namespace UKPI.DataAccessObject
                 return null;
             }
         }
-        
+        public int CheckOverlapChinhSachGia(string maChinhSachGia,DateTime thoiGianNatDau,DateTime ngayNgungHoatDong)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[3];
+                Params[0] = new SqlParameter("@MaChinhSachGia", maChinhSachGia);
+                Params[1] = new SqlParameter("@ThoiGianBatDau", thoiGianNatDau);
+                Params[2] = new SqlParameter("@NgayNgungHoatDong", ngayNgungHoatDong);
+                int overLap = -1;
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_CheckOverlapChinhSachGia, Params);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    overLap = int.Parse(dr["Result"].ToString());
+                    break;
+                }
+                return overLap;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return -1;
+            }
+        }
         public bool LuuThongTinDanhMucThuoc(DataTable tblDanhMucThuoc)
         {
             List<DanhMucThuoc> listDanhMucThuoc = ConvertDataTableToList<DanhMucThuoc>(tblDanhMucThuoc);

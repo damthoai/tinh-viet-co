@@ -68,8 +68,9 @@ namespace UKPI.Presentation
 
             InitializeComponent();
             grdChinhSachGia.AutoGenerateColumns = false;
-            grdChinhSachGia.CellClick += grdChinhSachGia_CellClick;
-            clsTitleManager.InitTitle(this);
+         //   grdChinhSachGia.CellClick += grdChinhSachGia_CellClick;
+            grdChinhSachGia.CellDoubleClick += grdChinhSachGia_CellDoubleClick;
+            //clsTitleManager.InitTitle(this);
             //this.cellDateTimePicker = new DateTimePicker();
             //this.cellDateTimePicker.Format = DateTimePickerFormat.Custom;
             //this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
@@ -100,7 +101,24 @@ namespace UKPI.Presentation
                 btnCapNhat.Enabled = true;
                 btnChiTietChinhSachGia.Enabled = true;
                 currentRowIndex = currentCell.RowIndex;
+                if (dtpNgayNgungHoatDong.Value <= DateTime.Now.Date || cbHoatDong.Checked == false)
+                {
+                    SetFormEnable(false);
+                }
+                else
+                {
+                    SetFormEnable(true);
+                }
             }
+        }
+
+        private void SetFormEnable(bool value)
+        {
+            txtTenChinhSachGia.Enabled = value;
+            cbHoatDong.Enabled = value;
+            dtpThoiGianBatDau.Enabled = value;
+            dtpThoiGianKetThuc.Enabled = value;
+            dtpNgayNgungHoatDong.Enabled = value;
         }
         private void DeselectOrtherCheckbox(int currentRowIndex)
         {
@@ -154,11 +172,20 @@ namespace UKPI.Presentation
                     txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[0].Cells[2].FormattedValue;
                     cbHoatDong.Checked = (bool)grdChinhSachGia.Rows[0].Cells[5].FormattedValue;
                     //dtpThoiGianBatDau.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue));
-                    dtpThoiGianBatDau.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    dtpThoiGianBatDau.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[3].FormattedValue, System.Configuration.ConfigurationManager.AppSettings["DateFormat"], CultureInfo.InvariantCulture);
                     //dtpThoiGianKetThuc.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue));
                     //dtpNgayNgungHoatDong.Value = DateTime.Parse(((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue));
-                    dtpThoiGianKetThuc.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
-                    dtpNgayNgungHoatDong.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    dtpThoiGianKetThuc.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[4].FormattedValue, System.Configuration.ConfigurationManager.AppSettings["DateFormat"], CultureInfo.InvariantCulture);
+                    dtpNgayNgungHoatDong.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[0].Cells[6].FormattedValue, System.Configuration.ConfigurationManager.AppSettings["DateFormat"], CultureInfo.InvariantCulture);
+
+                    if (dtpNgayNgungHoatDong.Value <= DateTime.Now.Date || cbHoatDong.Checked == false)
+                    {
+                        SetFormEnable(false);
+                    }
+                    else
+                    {
+                        SetFormEnable(true);
+                    }
                 }
             }catch(Exception ex)
             {
@@ -171,22 +198,31 @@ namespace UKPI.Presentation
 
         }
 
-         private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void grdChinhSachGia_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //currentCell = this.grdToaThuoc.CurrentCell;
-            //bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
-            //if (e.ColumnIndex == 3 && isValidMaThuoc)
-            //{
-            //    System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
- 
-            //    cellDateTimePicker.Location = tempRect.Location;
- 
-            //    cellDateTimePicker.Width = tempRect.Width;
- 
-            //    cellDateTimePicker.Visible = true;
- 
-            //}
- 
+            currentCell = this.grdChinhSachGia.CurrentCell;
+            if (currentCell != null && btnLuu.Enabled == false)
+            {
+                txtMaChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[1].FormattedValue;
+                txtTenChinhSachGia.Text = (string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[2].FormattedValue;
+                cbHoatDong.Checked = (bool)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[5].FormattedValue;
+                dtpThoiGianBatDau.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[3].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                dtpThoiGianKetThuc.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[4].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                dtpNgayNgungHoatDong.Value = DateTime.ParseExact((string)grdChinhSachGia.Rows[currentCell.RowIndex].Cells[6].FormattedValue, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                grdChinhSachGia.Rows[currentCell.RowIndex].Cells[0].Value = true;
+                DeselectOrtherCheckbox(currentCell.RowIndex);
+                btnCapNhat.Enabled = true;
+                btnChiTietChinhSachGia.Enabled = true;
+                currentRowIndex = currentCell.RowIndex;
+                if (dtpNgayNgungHoatDong.Value <= DateTime.Now.Date || cbHoatDong.Checked == false)
+                {
+                    SetFormEnable(false);
+                }
+                else
+                {
+                    SetFormEnable(true);
+                }
+            }
         }
          void cellDateTimePickerValueChanged(object sender, EventArgs e)
          {
@@ -280,23 +316,29 @@ namespace UKPI.Presentation
                 return;
             }
 
-            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value)
+            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value || dtpNgayNgungHoatDong.Value > dtpThoiGianKetThuc.Value)
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayHetHan"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
+
+            if (_quanLyThuocDao.CheckOverlapChinhSachGia("", dtpThoiGianBatDau.Value.Date, dtpNgayNgungHoatDong.Value.Date) > 0)
+            {
+                MessageBox.Show("Chính sách giá trùng lặp thời gian với chính sách giá khác", clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
             ChinhSachGiaDT chinhSachGia = new ChinhSachGiaDT();
             chinhSachGia.MaChinhSachGia = txtMaChinhSachGia.Text;
             chinhSachGia.TenChinhSachGia = txtTenChinhSachGia.Text;
             chinhSachGia.HoatDong = cbHoatDong.Checked;
-            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value;
-            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value;
-            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value;
+            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value.Date;
+            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value.Date;
+            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value.Date;
             chinhSachGia.CreatedDate = DateTime.Now;
             chinhSachGia.LastUpdatedDate = DateTime.Now;
-            chinhSachGia.CreatedBy = ttNhanVien.FullName;
-            chinhSachGia.LastUpdatedBy = ttNhanVien.FullName;
+            chinhSachGia.CreatedBy = clsSystemConfig.UserName;
+            chinhSachGia.LastUpdatedBy = clsSystemConfig.UserName;
 
             if (_quanLyThuocDao.SaveChinhSachGia(chinhSachGia))
             {
@@ -397,9 +439,15 @@ namespace UKPI.Presentation
                 return;
             }
 
-            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value)
+            if (dtpNgayNgungHoatDong.Value < dtpThoiGianBatDau.Value || dtpNgayNgungHoatDong.Value > dtpThoiGianKetThuc.Value)
             {
                 MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.NgayHetHan"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (_quanLyThuocDao.CheckOverlapChinhSachGia(txtMaChinhSachGia.Text, dtpThoiGianBatDau.Value.Date, dtpNgayNgungHoatDong.Value.Date) > 0)
+            {
+                MessageBox.Show("Chính sách giá trùng lặp thời gian với chính sách giá khác", clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
@@ -407,9 +455,9 @@ namespace UKPI.Presentation
             chinhSachGia.MaChinhSachGia = txtMaChinhSachGia.Text;
             chinhSachGia.TenChinhSachGia = txtTenChinhSachGia.Text;
             chinhSachGia.HoatDong = cbHoatDong.Checked;
-            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value;
-            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value;
-            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value;
+            chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value.Date;
+            chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value.Date;
+            chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value.Date;
             chinhSachGia.CreatedDate = DateTime.Now;
             chinhSachGia.LastUpdatedDate = DateTime.Now;
             chinhSachGia.CreatedBy = ttNhanVien.FullName;
@@ -444,229 +492,27 @@ namespace UKPI.Presentation
             frmChinhSachGiaChiTiet frmChiTiet = new frmChinhSachGiaChiTiet();
             frmChiTiet.SetMaChinhSachGia(txtMaChinhSachGia.Text);
             frmChiTiet.SetTenChinhSachGia(txtTenChinhSachGia.Text);
+            if (dtpNgayNgungHoatDong.Value <= DateTime.Now.Date || cbHoatDong.Checked == false)
+            {
+                frmChiTiet.SetRealOnlyForm(true);
+            }
+            else
+            {
+                frmChiTiet.SetRealOnlyForm(false);
+            }
             frmChiTiet.Show();
+        }
+
+        private void cbHoatDong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbHoatDong.Checked == false)
+            {
+                dtpThoiGianKetThuc.Value = dtpNgayNgungHoatDong.Value;
+            }
         }
      
 
-        /*
-        private ThongTinNhapKho BuildThongTinNhapKho()
-        {
-            ThongTinNhapKho thongTinNhapKho = new ThongTinNhapKho();
-
-            return thongTinNhapKho;
-        }
-
-        private List<ThongTinNhapKhoDetail> BuildThongTinNhapKhoDetail(string maNhapKho)
-        {
-            List<string> listmaThuoc = new List<string>();
-            List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail = new List<ThongTinNhapKhoDetail>();
-            if (grdToaThuoc.Rows.Count > 0)
-            {
-
-                for (int i = 0; i < grdToaThuoc.Rows.Count; i++)
-                {
-
-                    ThongTinNhapKhoDetail thongTinNhapKhoDetail = new ThongTinNhapKhoDetail();
-                    if ((string)grdToaThuoc.Rows[i].Cells[1].FormattedValue == "")
-                        continue;
-                    thongTinNhapKhoDetail.TenThuoc = (string)grdToaThuoc.Rows[i].Cells[1].FormattedValue;
-                    thongTinNhapKhoDetail.MaThuoc = (string)grdToaThuoc.Rows[i].Cells[2].FormattedValue;
-                    string hanSuDung = grdToaThuoc.Rows[i].Cells[3].FormattedValue.ToString();
-                    if (hanSuDung == "")
-                    {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckHanSuDungThuoc"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                    DateTime dt = DateTime.ParseExact(hanSuDung.Replace("-",""), "ddMMyyyy",
-                                  CultureInfo.InvariantCulture);
-                    dt.ToString("yyyyMMdd");
-                    thongTinNhapKhoDetail.HanSuDung = dt.ToString("yyyyMMdd");;
-                    thongTinNhapKhoDetail.ThuocBH = (bool)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
-                    thongTinNhapKhoDetail.SoLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
-                    thongTinNhapKhoDetail.GiaThoiDiemNhap = (string)grdToaThuoc.Rows[i].Cells[6].FormattedValue;
-                    thongTinNhapKhoDetail.GiaTT = (string)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
-                    thongTinNhapKhoDetail.GiaST = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
-                    thongTinNhapKhoDetail.ThanhTien = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
-                    thongTinNhapKhoDetail.MaNhapKho = maNhapKho;
-                    thongTinNhapKhoDetail.LoThuoc = DateTime.Now.ToString("yyyyMMddHHmmss");
-                    try
-                    {
-                        int checkSoluong = int.Parse(thongTinNhapKhoDetail.SoLuong);
-                        if (checkSoluong <= 0)
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckValidSoLuong"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return null;
-                        }
-                    }
-                    catch
-                    {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckValidSoLuong"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-
-
-                    if (!listmaThuoc.Contains(thongTinNhapKhoDetail.MaThuoc))
-                    {
-                        listmaThuoc.Add(thongTinNhapKhoDetail.MaThuoc);
-                    }
-                    else
-                    {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckTrungLapThuoc"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                    listThongTinNhapKhoDetail.Add(thongTinNhapKhoDetail);
-
-                }
-                
-            }
-            return listThongTinNhapKhoDetail;
-        }
-        private void btnXoaThuoc_Click(object sender, EventArgs e)
-        {
-            for (int i = grdToaThuoc.Rows.Count - 1; i >= 0; i--)
-            {
-                if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
-                {
-                    grdToaThuoc.Rows.RemoveAt(i);
-                }
-            }
-        }
-
-        private void btnDong_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void grdToaThuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-
-        private void grdToaThuoc_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            currentCell = this.grdToaThuoc.CurrentCell;
-            if (currentCell != null && currentCell.ColumnIndex == 5)
-            {
-                int currentSoLuong = 0;
-                bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
-                bool isValidSoLuongThuoc = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null && this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString() != "";
-                if (isValidMaThuoc && isValidSoLuongThuoc)
-                {
-                    try
-                    {
-                        currentSoLuong = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? int.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
-                        if (currentSoLuong <= 0)
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckValidSoLuong"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    
-                    }
-                    catch {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckValidSoLuong"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                }
-                
-                double currentGia = this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value != null ? double.Parse(this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value.ToString()) : 0;
-                double currentTienThuoc = currentSoLuong * currentGia;
-               // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
-                this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = currentTienThuoc.ToString();
-                CalculateTotal();
-            }
-            return;
-        }
-
-        private void CalculateTotal()
-        {
-            double total = 0;
-
-            foreach (DataGridViewRow row in grdToaThuoc.Rows)
-            {
-                if (row.Cells[9].Value != null)
-                {
-                    total += double.Parse(row.Cells[9].Value.ToString());
-                }
-            }
-
-            txtTongThanhTien.Text = total.ToString();
-        }
-
-        void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            if (cbm != null)
-            {
-                // Here we will remove the subscription for selected index changed
-                cbm.SelectedIndexChanged -= new EventHandler(cbm_SelectedIndexChanged);
-            }
-        }
-
-        void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-            // Here try to add subscription for selected index changed event
-            if (e.Control is ComboBox)
-            {
-                cbm = (ComboBox)e.Control;
-                if (cbm != null)
-                {
-                    cbm.SelectedIndexChanged += new EventHandler(cbm_SelectedIndexChanged);
-                }
-                currentCell = this.grdToaThuoc.CurrentCell;
-            }
-        }
-       
-        void cbm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Invoke method if the selection changed event occurs
-            BeginInvoke(new MethodInvoker(EndEdit));
-        }
-
-        void EndEdit()
-        {
-            // Change the content of appropriate cell when selected index changes
-            if (cbm != null)
-            {
-                ThongTinThuoc ttt = cbm.SelectedItem as ThongTinThuoc;
-                //DataRowView drv = cbm.SelectedItem as DataRowView;
-                if (ttt != null)
-                {
-                  //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
-                    if (currentCell.ColumnIndex == 2)
-                    {
-                   //     MessageBox.Show(ttt.MedicineName);
-                           //case 1: chua co thong tin thuoc cho row
-                        if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
-                        {
-                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
-                        }
-                        else if (danhSachThuoc.ContainsKey(currentCell.RowIndex))
-                        {
-                            danhSachThuoc.Remove(currentCell.RowIndex);
-                            danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
-                        }
-                        else
-                        {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmChinhSachGia.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmChinhSachGia.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                        this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.BaoHiem;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMua;
-                        this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
-                    }
-                    if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
-                    {
-                        grdToaThuoc.Rows.Add(1);
-                    }
-
-                }
-            }
-        }
-
-        */
+        
 
  
 

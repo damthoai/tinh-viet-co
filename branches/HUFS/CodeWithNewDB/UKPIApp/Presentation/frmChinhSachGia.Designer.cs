@@ -128,20 +128,23 @@ namespace UKPI.Presentation
             // cbHoatDong
             // 
             this.cbHoatDong.AutoSize = true;
+            this.cbHoatDong.Checked = true;
+            this.cbHoatDong.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbHoatDong.Location = new System.Drawing.Point(122, 91);
             this.cbHoatDong.Name = "cbHoatDong";
             this.cbHoatDong.Size = new System.Drawing.Size(15, 14);
             this.cbHoatDong.TabIndex = 81;
             this.cbHoatDong.UseVisualStyleBackColor = true;
+            this.cbHoatDong.CheckedChanged += new System.EventHandler(this.cbHoatDong_CheckedChanged);
             // 
             // lblNgayNgungHoatDong
             // 
             this.lblNgayNgungHoatDong.AutoSize = true;
             this.lblNgayNgungHoatDong.Location = new System.Drawing.Point(314, 96);
             this.lblNgayNgungHoatDong.Name = "lblNgayNgungHoatDong";
-            this.lblNgayNgungHoatDong.Size = new System.Drawing.Size(117, 13);
+            this.lblNgayNgungHoatDong.Size = new System.Drawing.Size(124, 13);
             this.lblNgayNgungHoatDong.TabIndex = 80;
-            this.lblNgayNgungHoatDong.Text = "Ngày ngưng hoạt động";
+            this.lblNgayNgungHoatDong.Text = "Ngày ngưng hoạt động *";
             // 
             // txtTenChinhSachGia
             // 
@@ -176,18 +179,18 @@ namespace UKPI.Presentation
             this.lblThoiGianKetThuc.AutoSize = true;
             this.lblThoiGianKetThuc.Location = new System.Drawing.Point(314, 62);
             this.lblThoiGianKetThuc.Name = "lblThoiGianKetThuc";
-            this.lblThoiGianKetThuc.Size = new System.Drawing.Size(93, 13);
+            this.lblThoiGianKetThuc.Size = new System.Drawing.Size(100, 13);
             this.lblThoiGianKetThuc.TabIndex = 56;
-            this.lblThoiGianKetThuc.Text = "Thời gian kết thúc";
+            this.lblThoiGianKetThuc.Text = "Thời gian kết thúc *";
             // 
             // lblThoiGianBatDau
             // 
             this.lblThoiGianBatDau.AutoSize = true;
             this.lblThoiGianBatDau.Location = new System.Drawing.Point(314, 31);
             this.lblThoiGianBatDau.Name = "lblThoiGianBatDau";
-            this.lblThoiGianBatDau.Size = new System.Drawing.Size(91, 13);
+            this.lblThoiGianBatDau.Size = new System.Drawing.Size(98, 13);
             this.lblThoiGianBatDau.TabIndex = 55;
-            this.lblThoiGianBatDau.Text = "Thời gian bắt đầu";
+            this.lblThoiGianBatDau.Text = "Thời gian bắt đầu *";
             // 
             // lblTenChinhSachGia
             // 
@@ -460,6 +463,8 @@ namespace UKPI.Presentation
             this.MaChinhSachGia.DataPropertyName = "MaChinhSachGia";
             this.MaChinhSachGia.HeaderText = "Mã chính sách giá";
             this.MaChinhSachGia.Name = "MaChinhSachGia";
+            this.MaChinhSachGia.ReadOnly = true;
+            this.MaChinhSachGia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.MaChinhSachGia.Width = 250;
             // 
             // TenChinhSachGia
@@ -467,6 +472,8 @@ namespace UKPI.Presentation
             this.TenChinhSachGia.DataPropertyName = "TenChinhSachGia";
             this.TenChinhSachGia.HeaderText = "Tên chính sách giá";
             this.TenChinhSachGia.Name = "TenChinhSachGia";
+            this.TenChinhSachGia.ReadOnly = true;
+            this.TenChinhSachGia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.TenChinhSachGia.Width = 250;
             // 
             // ThoiGianBatDau
@@ -475,6 +482,7 @@ namespace UKPI.Presentation
             this.ThoiGianBatDau.HeaderText = "Thời gian bắt đầu";
             this.ThoiGianBatDau.Name = "ThoiGianBatDau";
             this.ThoiGianBatDau.ReadOnly = true;
+            this.ThoiGianBatDau.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.ThoiGianBatDau.Width = 200;
             // 
             // ThoiGianKetThuc
@@ -483,6 +491,7 @@ namespace UKPI.Presentation
             this.ThoiGianKetThuc.HeaderText = "Thời gian kết thúc";
             this.ThoiGianKetThuc.Name = "ThoiGianKetThuc";
             this.ThoiGianKetThuc.ReadOnly = true;
+            this.ThoiGianKetThuc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.ThoiGianKetThuc.Width = 200;
             // 
             // HoatDong
@@ -492,7 +501,6 @@ namespace UKPI.Presentation
             this.HoatDong.Name = "HoatDong";
             this.HoatDong.ReadOnly = true;
             this.HoatDong.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.HoatDong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // NgayNgungHoatDong
             // 
@@ -500,6 +508,7 @@ namespace UKPI.Presentation
             this.NgayNgungHoatDong.HeaderText = "Ngày ngưng hoạt động";
             this.NgayNgungHoatDong.Name = "NgayNgungHoatDong";
             this.NgayNgungHoatDong.ReadOnly = true;
+            this.NgayNgungHoatDong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.NgayNgungHoatDong.Width = 190;
             // 
             // frmChinhSachGia
@@ -515,7 +524,7 @@ namespace UKPI.Presentation
             this.Controls.Add(this.grpThongTinKhamBenh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmChinhSachGia";
-            this.Text = "NHẬP KHO THUỐC";
+            this.Text = "CHÍNH SÁCH GIÁ";
             this.grpThongTinKhamBenh.ResumeLayout(false);
             this.grpThongTinKhamBenh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdChinhSachGia)).EndInit();
