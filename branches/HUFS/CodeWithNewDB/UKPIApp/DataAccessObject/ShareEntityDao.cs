@@ -18,6 +18,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_LoadAllThongTinThuoc = "p_HUFS_LoadAllThongTinThuoc";
         private const string p_HUFS_LoadThongTinThuocTheoMaThuocYTe = "p_HUFS_LoadThongTinThuocTheoMaThuocYTe";
         private const string p_HUFS_LoadThongTinThuocForDictionary = "p_HUFS_LoadThongTinThuocForDictionary";
+        private const string p_HUFS_LoadThongTinThuocForKhamBenh = "p_HUFS_LoadThongTinThuocForKhamBenh";
         public  List<PhongKham> LoadDanhSachPhongKham()
         {
             List<PhongKham> arrs = new List<PhongKham>();
@@ -329,6 +330,20 @@ namespace UKPI.DataAccessObject
             try
             {
                 var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadThongTinThuoc);
+                return this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return null;
+            }
+        }
+
+        public List<ThongTinThuoc> LoadThongTinThuocForKhamBenh()
+        {
+            try
+            {
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadThongTinThuocForKhamBenh);
                 return this.ConvertDataTableToList<ThongTinThuoc>(dtResult);
             }
             catch (Exception ex)

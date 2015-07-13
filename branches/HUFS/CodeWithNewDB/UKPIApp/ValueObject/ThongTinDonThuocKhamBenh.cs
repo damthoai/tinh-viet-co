@@ -18,5 +18,7 @@ namespace UKPI.ValueObject
         public string CachUong { get; set; }
         public decimal ThanhTien { get; set; }
         public string MaKhamBenh { get; set; }
+
+        public string MaChinhSachGia { get; set; }
     }
 }

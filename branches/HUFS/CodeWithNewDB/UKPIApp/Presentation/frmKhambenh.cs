@@ -325,7 +325,7 @@ namespace UKPI.Presentation
             DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
             col.Width = 130;
             col.HeaderText = "Mã thuốc";
-            col.DataSource = _shareEntityDao.LoadThongTinThuoc();
+            col.DataSource = _shareEntityDao.LoadThongTinThuocForKhamBenh();
             col.DisplayMember = "MaThuocYTeHienThi";
             col.ValueMember = "MedicineID";
             col.SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -399,6 +399,13 @@ namespace UKPI.Presentation
             thanhTienColumn.ReadOnly = true;
             thanhTienColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(thanhTienColumn);
+
+            DataGridViewTextBoxColumn maCSGColumn = new DataGridViewTextBoxColumn();
+            maCSGColumn.Width = 0;
+            maCSGColumn.Visible = false;
+            maCSGColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+            grdToaThuoc.Columns.Add(maCSGColumn);
+
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
             grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
             grdToaThuoc.CellValueChanged += grdToaThuoc_CellValueChanged;
@@ -632,6 +639,7 @@ namespace UKPI.Presentation
                     thongTinDonThuoc.ThuocBH = (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
                     thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
                     thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[9].FormattedValue;
+                    thongTinDonThuoc.MaChinhSachGia = (string)grdToaThuoc.Rows[i].Cells[11].FormattedValue;
 
                     CustomKey ck = new CustomKey(thongTinDonThuoc.MaThuoc, (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue);
                     thongTinDonThuoc.MaThuoc = dic[ck];
@@ -957,9 +965,10 @@ namespace UKPI.Presentation
                             this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
                             this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.TenDonViTinh;
                             this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.HamLuong;
-                            this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNMuaVAT;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = ttt.GiaDNBanVAT;
                             this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.CachUongThuoc;
                             this.grdToaThuoc[currentCell.ColumnIndex + 7, currentCell.RowIndex].Value = ttt.CachDungChiTiet;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 9, currentCell.RowIndex].Value = ttt.MaChinhSachGia;
                         }
                         if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
                         {

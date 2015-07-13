@@ -458,10 +458,10 @@ namespace UKPI.Presentation
             chinhSachGia.ThoiGianBatDau = dtpThoiGianBatDau.Value.Date;
             chinhSachGia.ThoiGianKetThuc = dtpThoiGianKetThuc.Value.Date;
             chinhSachGia.NgayNgungHoatDong = dtpNgayNgungHoatDong.Value.Date;
-            chinhSachGia.CreatedDate = DateTime.Now;
+         //   chinhSachGia.CreatedDate = DateTime.Now;
             chinhSachGia.LastUpdatedDate = DateTime.Now;
-            chinhSachGia.CreatedBy = ttNhanVien.FullName;
-            chinhSachGia.LastUpdatedBy = ttNhanVien.FullName;
+           // chinhSachGia.CreatedBy = ttNhanVien.FullName;
+            chinhSachGia.LastUpdatedBy = clsSystemConfig.UserName;
 
             if (_quanLyThuocDao.UpdateChinhSachGia(chinhSachGia))
             {
