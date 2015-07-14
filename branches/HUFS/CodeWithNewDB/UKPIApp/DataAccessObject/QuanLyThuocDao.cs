@@ -224,7 +224,7 @@ namespace UKPI.DataAccessObject
                     string strId = "";
                     for (int i = 0; i < deleteList.Count; i++)
                     {
-                        if (i == deleteList.Count - 1)
+                        if (i == 0 )
                             strId += deleteList[i].Id.ToString();
                         else
                             strId += "," + deleteList[i].Id.ToString();

@@ -338,10 +338,10 @@ namespace UKPI.DataAccessObject
             string strListTransaction = "";
             for (int i = 0; i < listTransaction.Count; i++)
             {
-                if (i == listTransaction.Count - 1)
+                if (i == 0)
                     strListTransaction += listTransaction[i].MaTransaction.ToString();
                 else
-                    strListTransaction += ","+listTransaction[i].MaTransaction.ToString();
+                    strListTransaction += ","+listTransaction[i].MaTransaction.ToString() ;
             }
             return ProcessGiaoDichXuatKho(strListTransaction);
 
