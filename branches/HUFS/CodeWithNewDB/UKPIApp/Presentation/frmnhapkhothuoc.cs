@@ -70,9 +70,11 @@ namespace UKPI.Presentation
             clsTitleManager.InitTitle(this);
             this.cellDateTimePicker = new DateTimePicker();
             this.cellDateTimePicker.Format = DateTimePickerFormat.Custom;
+            this.cellDateTimePicker.Width = 100;
             this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
-            this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePickerValueChanged);
-            this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
+            //this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePickerValueChanged);
+            this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePicker_ValueChanged);
+           // this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             this.cellDateTimePicker.Visible = false;
             this.grdToaThuoc.Controls.Add(cellDateTimePicker);
             cbbPhongKham.Enabled = false;
@@ -202,6 +204,7 @@ namespace UKPI.Presentation
             thanhTienColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(thanhTienColumn);
 
+            grdToaThuoc.CellBeginEdit += this.dataGridView1_CellBeginEdit;
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
             grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
             grdToaThuoc.CellValueChanged += grdToaThuoc_CellValueChanged;
@@ -213,25 +216,25 @@ namespace UKPI.Presentation
 
          private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            currentCell = this.grdToaThuoc.CurrentCell;
-            bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
-            if (e.ColumnIndex == 3 && isValidMaThuoc)
-            {
-                System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
+            //currentCell = this.grdToaThuoc.CurrentCell;
+            //bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
+            //if (e.ColumnIndex == 3 && isValidMaThuoc)
+            //{
+            //    System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
  
-                cellDateTimePicker.Location = tempRect.Location;
+            //    cellDateTimePicker.Location = tempRect.Location;
  
-                cellDateTimePicker.Width = tempRect.Width;
+            //    cellDateTimePicker.Width = tempRect.Width;
  
-                cellDateTimePicker.Visible = true;
+            //    cellDateTimePicker.Visible = true;
  
-            }
+            //}
  
         }
          void cellDateTimePickerValueChanged(object sender, EventArgs e)
          {
-             grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format
-             cellDateTimePicker.Visible = false;
+             //grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format
+             //cellDateTimePicker.Visible = false;
          }
 
       
@@ -282,6 +285,7 @@ namespace UKPI.Presentation
                         {
                             grdToaThuoc.Rows.Clear();
                             grdToaThuoc.Rows.Add(1);
+                            cellDateTimePicker.Visible = false;
                         }
                         return;
                     }
@@ -695,6 +699,32 @@ namespace UKPI.Presentation
             txtTongThanhTien.Text = total.ToString();
         }
 
+        void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            try
+            {
+                if ((grdToaThuoc.Focused) && grdToaThuoc.CurrentCell.ColumnIndex == 3)
+                {
+                    cellDateTimePicker.Location = grdToaThuoc.GetCellDisplayRectangle(grdToaThuoc.CurrentCell.ColumnIndex, grdToaThuoc.CurrentCell.RowIndex, false).Location;
+                    cellDateTimePicker.Visible = true;
+                    if (grdToaThuoc.CurrentCell.Value != null)
+                    {
+                        string hanSuDung = grdToaThuoc.CurrentCell.FormattedValue.ToString();
+                        cellDateTimePicker.Value = DateTime.ParseExact(hanSuDung, System.Configuration.ConfigurationManager.AppSettings["DateFormat"], CultureInfo.InvariantCulture);
+                    }
+                    else
+                    {
+                        cellDateTimePicker.Value = DateTime.Today;
+                    }
+                }
+                else { 
+                    cellDateTimePicker.Visible = false;
+            }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             if (cbm != null)
@@ -702,8 +732,22 @@ namespace UKPI.Presentation
                 // Here we will remove the subscription for selected index changed
                 cbm.SelectedIndexChanged -= new EventHandler(cbm_SelectedIndexChanged);
             }
+            try
+            {
+                if ((grdToaThuoc.Focused) && grdToaThuoc.CurrentCell.ColumnIndex == 3)
+                {
+                    grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format//cellDateTimePicker.Value;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-
+        private void cellDateTimePicker_ValueChanged(object sender,EventArgs e)
+        {
+            grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Text;
+        }
         void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             // Here try to add subscription for selected index changed event

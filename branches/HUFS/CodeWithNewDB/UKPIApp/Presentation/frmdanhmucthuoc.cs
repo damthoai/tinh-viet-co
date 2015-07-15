@@ -59,6 +59,10 @@ namespace UKPI.Presentation
         readonly DataGridViewColumn _originalColumns;
         private DataTable _dtApproveTimesheet;
         int currentRowIndex = -1;
+
+        private int CurrentPage = 1;
+        int PagesCount = 1;
+        int pageRows = 10;
         #endregion
 
         #region Constructors
