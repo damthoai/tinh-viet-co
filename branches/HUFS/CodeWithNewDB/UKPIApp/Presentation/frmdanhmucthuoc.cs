@@ -51,6 +51,7 @@ namespace UKPI.Presentation
         private String parHanMucTinhOt = "";
 
         private List<ThongTinThuoc> listThuoc = new List<ThongTinThuoc>();
+        private List<ThongTinThuoc> listThuocPaging = new List<ThongTinThuoc>();
         private ThongTinThuoc selectedThuoc;
 
         // Declare private fields

@@ -1440,3 +1440,5 @@ D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.Appro
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.ApproveTSLookup.ReportInDonThuocFull.resources
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.cache
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.compiled
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKho.resources
+D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKhoDetail.resources

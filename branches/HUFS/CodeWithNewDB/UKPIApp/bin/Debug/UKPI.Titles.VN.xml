@@ -3574,4 +3574,8 @@
     <Value>Chọn</Value>
   </Titles>
   <!-- End frmSearchNhanVien-->
+  <Titles>
+    <Name>frmMain.mnuChotTonKho</Name>
+    <Value>Chốt Tồn Kho</Value>
+  </Titles>
 </UKPI>

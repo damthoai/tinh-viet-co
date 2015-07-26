@@ -17,6 +17,8 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_SearchXuatKho = "p_HUFS_SearchXuatKho";
         private const string p_HUFS_insertDataForTransactionKhiNhapKho = "p_HUFS_insertDataForTransactionKhiNhapKho";
         private const string p_HUFS_UpdateThongTinGiaThuocKhiNhapKho = "p_HUFS_UpdateThongTinGiaThuocKhiNhapKho";
+        private const string p_HUFS_ProcessBackupSoLuongThuocKhiNhapKho = "p_HUFS_ProcessBackupSoLuongThuocKhiNhapKho";
+        
         public string GetMaxMaNhapKho()
         {
 
@@ -82,7 +84,22 @@ namespace UKPI.DataAccessObject
                 return null;
             }
         }
-        public bool UpdateThongTinGiaThuocKhoNhapKho(string maNhapKho)
+        private void ProcessBackupSoLuongThuocKhiNhapKho(string maNhapKho)
+        {
+             try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@MaNhapKho", maNhapKho);
+                DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_ProcessBackupSoLuongThuocKhiNhapKho, Params);
+   
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+            }
+
+        }
+        public bool UpdateThongTinGiaThuocKhiNhapKho(string maNhapKho)
         {
             try
             {
@@ -117,7 +134,8 @@ namespace UKPI.DataAccessObject
                         if (listThongTinNhapKhoDetail != null && listThongTinNhapKhoDetail.Count > 0)
                         {
                             this.BulkInsert(ConvertToDataTable(listThongTinNhapKhoDetail), "HUFS_NHAPKHO_DETAIL");
-                            UpdateThongTinGiaThuocKhoNhapKho(thongTinNhapKho.MaNhapKho);
+                            UpdateThongTinGiaThuocKhiNhapKho(thongTinNhapKho.MaNhapKho);
+                            ProcessBackupSoLuongThuocKhiNhapKho(thongTinNhapKho.MaNhapKho);
                             for (int i = 0; i < listThongTinNhapKhoDetail.Count; i++)
                             {
                                 bool result = InsertThongTinGiaoDichKhiNhapKho(listThongTinNhapKhoDetail[i].MaThuoc,

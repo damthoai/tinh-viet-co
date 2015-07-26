@@ -194,6 +194,7 @@
     <Compile Include="BusinessObject\EditApproveTimesheetExporter.cs" />
     <Compile Include="BusinessObject\ParameterBo.cs" />
     <Compile Include="DataAccessObject\BaoCaoYTeDao.cs" />
+    <Compile Include="DataAccessObject\ChotTonKhoDao.cs" />
     <Compile Include="DataAccessObject\NhanVienUsersDao.cs" />
     <Compile Include="DataAccessObject\NhanVienDao.cs" />
     <Compile Include="DataAccessObject\CaLamViecDao.cs" />
@@ -222,6 +223,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HTYTDataSet1.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentation\frmChotTonKhoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmChotTonKhoDetail.Designer.cs">
+      <DependentUpon>frmChotTonKhoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmChotTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmChotTonKho.Designer.cs">
+      <DependentUpon>frmChotTonKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Reports\ReportInDonThuocBH.cs">
       <SubType>Form</SubType>
@@ -470,6 +483,8 @@
     <Compile Include="ValueObject\CachUongThuoc.cs" />
     <Compile Include="ValueObject\ChinhSachGia.cs" />
     <Compile Include="ValueObject\ChinhSachGiaChiTiet.cs" />
+    <Compile Include="ValueObject\ChotTonKhoDetail.cs" />
+    <Compile Include="ValueObject\ChotTonKhoHeader.cs" />
     <Compile Include="ValueObject\clsCreateTimesheet.cs" />
     <Compile Include="ValueObject\clsCalamViec.cs" />
     <Compile Include="ValueObject\clsNhanVien.cs" />
@@ -1033,6 +1048,14 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Languages\TitleVN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmChotTonKhoDetail.resx">
+      <DependentUpon>frmChotTonKhoDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmChotTonKho.resx">
+      <DependentUpon>frmChotTonKho.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\Report1.rdlc">

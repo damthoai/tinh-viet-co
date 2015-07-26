@@ -10,4 +10,10 @@ namespace UKPI.ValueObject
         public int MaBoPhan { get; set; }
         public string TenBoPhan { get; set; }
     }
+
+    public class TrangThai
+    {
+        public string MaTrangThai { get; set; }
+        public string TenTrangThai { get; set; }
+    }
 }
