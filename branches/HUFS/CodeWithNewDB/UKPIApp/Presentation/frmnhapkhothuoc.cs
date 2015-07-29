@@ -31,6 +31,7 @@ namespace UKPI.Presentation
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
         private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
         private readonly ThongTinNhapKhoDao _thongTinNhapKhoDao = new ThongTinNhapKhoDao();
+        private readonly ChotTonKhoDao _chotTonKhoDao = new ChotTonKhoDao();
         QuyetDinhNghiPhep quyetDinhNghiPhep ;
         readonly System.Data.DataTable _dt = null;
         ComboBox cbm;
@@ -84,6 +85,15 @@ namespace UKPI.Presentation
            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
            // grdStores.Columns.CopyTo(_originalColumns, 0);
            // grdStores.Sorted += grdStores_Sorted;
+            if (_chotTonKhoDao.CheckChotTonDangHoatDong(System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) > 0)
+            {
+                DialogResult result = MessageBox.Show("Kho đang được chốt tồn. Vui lòng thực hiện sau", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnLuuIn.Enabled = false;
+            }
+            else
+            {
+                btnLuuIn.Enabled = true;
+            }
         }
 
         void oDateTimePicker_CloseUp(object sender, EventArgs e)

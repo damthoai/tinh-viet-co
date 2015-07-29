@@ -21,10 +21,33 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_ProcessChotTonKhoHeaderStatus = "p_HUFS_ProcessChotTonKhoHeaderStatus";
         private const string p_HUFS_SearchChotTonKhoHeader = "p_HUFS_SearchChotTonKhoHeader";
         private const string p_HUFS_LoadChotTonKhoDetail = "p_HUFS_LoadChotTonKhoDetail";
+        private const string p_HUFS_CheckThongTinChotTon = "p_HUFS_CheckThongTinChotTon";
         private const int LuuChotTon = 0;
         private const int TinhChotTon = 1;
         private const int XacNhanChotTon = 2;
         private const int ChotTon = 3;
+
+        public int CheckChotTonDangHoatDong(string maKho)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@TenKho", maKho);
+                int soLuong = -1;
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_CheckThongTinChotTon, Params);
+                foreach (DataRow dr in dtResult.Rows)
+                {
+                    soLuong = int.Parse(dr["Result"].ToString());
+                    break;
+                }
+                return soLuong;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                return -1;
+            }
+        }
         public List<ChotTonKhoHeader> SearchChotTonKho(string maChotTonKho,string dienGiai, string tenKho,DateTime ngayTaoPhieu,string status,bool isUseDate)
         {
             try

@@ -31,6 +31,7 @@ namespace UKPI.Presentation
         private readonly clsCommon _common = new clsCommon();
         private readonly ShareEntityDao _shareEntityDao = new ShareEntityDao();
         private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
+        private readonly ChotTonKhoDao _chotTonKhoDao = new ChotTonKhoDao();
         QuyetDinhNghiPhep quyetDinhNghiPhep;
         private Dictionary<int, string> danhSachThuoc = new Dictionary<int, string>();
         private List<ThongTinGiaoDich> listCurrentTransactions = new List<ThongTinGiaoDich>();
@@ -89,6 +90,15 @@ namespace UKPI.Presentation
             // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
             // grdStores.Columns.CopyTo(_originalColumns, 0);
             // grdStores.Sorted += grdStores_Sorted;
+            if (_chotTonKhoDao.CheckChotTonDangHoatDong(System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) > 0)
+            {
+                DialogResult result = MessageBox.Show("Kho đang được chốt tồn. Vui lòng thực hiện sau", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnSearch.Enabled = false;
+            }
+            else
+            {
+                btnSearch.Enabled = true;
+            }
         }
 
         void grdStores_Sorted(object sender, EventArgs e)
