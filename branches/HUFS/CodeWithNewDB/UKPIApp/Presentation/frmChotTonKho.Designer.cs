@@ -50,8 +50,9 @@ namespace UKPI.Presentation
             this.lblMaChotTonKho = new System.Windows.Forms.Label();
             this.txtMaCHotTonKho = new System.Windows.Forms.TextBox();
             this.grpStore = new System.Windows.Forms.GroupBox();
+            this.ckUseDate = new System.Windows.Forms.CheckBox();
             this.ccbTrangThai = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dpNgayTaoPhieu = new System.Windows.Forms.DateTimePicker();
             this.lblTrangThai = new System.Windows.Forms.Label();
             this.txtDienGiai = new System.Windows.Forms.TextBox();
             this.lblNgayTaoPhieu = new System.Windows.Forms.Label();
@@ -66,7 +67,7 @@ namespace UKPI.Presentation
             this.MaChotTonKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DienGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayTaoPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StrNgayTaoPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpStore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBenhNhan)).BeginInit();
@@ -148,8 +149,9 @@ namespace UKPI.Presentation
             // 
             this.grpStore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpStore.Controls.Add(this.ckUseDate);
             this.grpStore.Controls.Add(this.ccbTrangThai);
-            this.grpStore.Controls.Add(this.dateTimePicker1);
+            this.grpStore.Controls.Add(this.dpNgayTaoPhieu);
             this.grpStore.Controls.Add(this.lblTrangThai);
             this.grpStore.Controls.Add(this.txtDienGiai);
             this.grpStore.Controls.Add(this.lblNgayTaoPhieu);
@@ -167,6 +169,15 @@ namespace UKPI.Presentation
             this.grpStore.TabIndex = 0;
             this.grpStore.TabStop = false;
             // 
+            // ckUseDate
+            // 
+            this.ckUseDate.AutoSize = true;
+            this.ckUseDate.Location = new System.Drawing.Point(299, 78);
+            this.ckUseDate.Name = "ckUseDate";
+            this.ckUseDate.Size = new System.Drawing.Size(15, 14);
+            this.ckUseDate.TabIndex = 54;
+            this.ckUseDate.UseVisualStyleBackColor = true;
+            // 
             // ccbTrangThai
             // 
             this.ccbTrangThai.DisplayMember = "TenTrangThai";
@@ -177,14 +188,15 @@ namespace UKPI.Presentation
             this.ccbTrangThai.Size = new System.Drawing.Size(156, 21);
             this.ccbTrangThai.TabIndex = 53;
             // 
-            // dateTimePicker1
+            // dpNgayTaoPhieu
             // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(136, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(156, 20);
-            this.dateTimePicker1.TabIndex = 52;
+            this.dpNgayTaoPhieu.CustomFormat = "dd-MM-yyyy";
+            this.dpNgayTaoPhieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpNgayTaoPhieu.Location = new System.Drawing.Point(136, 76);
+            this.dpNgayTaoPhieu.Name = "dpNgayTaoPhieu";
+            this.dpNgayTaoPhieu.Size = new System.Drawing.Size(156, 20);
+            this.dpNgayTaoPhieu.TabIndex = 52;
+            this.dpNgayTaoPhieu.Value = new System.DateTime(2015, 7, 27, 0, 0, 0, 0);
             // 
             // lblTrangThai
             // 
@@ -228,6 +240,7 @@ namespace UKPI.Presentation
             this.btnChinhSua.TabIndex = 47;
             this.btnChinhSua.Text = "Chỉnh sửa";
             this.btnChinhSua.UseVisualStyleBackColor = true;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // btnSearch
             // 
@@ -247,12 +260,13 @@ namespace UKPI.Presentation
             this.btnTaoPhieu.TabIndex = 46;
             this.btnTaoPhieu.Text = "Tạo phiếu";
             this.btnTaoPhieu.UseVisualStyleBackColor = true;
-            this.btnTaoPhieu.Click += new System.EventHandler(this.btnChon_Click);
+            this.btnTaoPhieu.Click += new System.EventHandler(this.btnTaoPhieu_Click);
             // 
             // txtKho
             // 
             this.txtKho.Location = new System.Drawing.Point(453, 13);
             this.txtKho.Name = "txtKho";
+            this.txtKho.ReadOnly = true;
             this.txtKho.Size = new System.Drawing.Size(156, 20);
             this.txtKho.TabIndex = 44;
             // 
@@ -286,7 +300,7 @@ namespace UKPI.Presentation
             this.MaChotTonKho,
             this.DienGiai,
             this.TenKho,
-            this.NgayTaoPhieu,
+            this.StrNgayTaoPhieu,
             this.Status});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -335,14 +349,14 @@ namespace UKPI.Presentation
             this.TenKho.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.TenKho.Width = 250;
             // 
-            // NgayTaoPhieu
+            // StrNgayTaoPhieu
             // 
-            this.NgayTaoPhieu.DataPropertyName = "NgayTaoPhieu";
-            this.NgayTaoPhieu.HeaderText = "Ngày tạo phiếu";
-            this.NgayTaoPhieu.Name = "NgayTaoPhieu";
-            this.NgayTaoPhieu.ReadOnly = true;
-            this.NgayTaoPhieu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NgayTaoPhieu.Width = 200;
+            this.StrNgayTaoPhieu.DataPropertyName = "StrNgayTaoPhieu";
+            this.StrNgayTaoPhieu.HeaderText = "Ngày tạo phiếu";
+            this.StrNgayTaoPhieu.Name = "StrNgayTaoPhieu";
+            this.StrNgayTaoPhieu.ReadOnly = true;
+            this.StrNgayTaoPhieu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.StrNgayTaoPhieu.Width = 200;
             // 
             // Status
             // 
@@ -401,13 +415,14 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Label lblDienGiai;
         private System.Windows.Forms.TextBox txtDienGiai;
         private System.Windows.Forms.Label lblTrangThai;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox ccbTrangThai;
         private System.Windows.Forms.DataGridViewCheckBoxColumn IsChecked;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaChotTonKho;
         private System.Windows.Forms.DataGridViewTextBoxColumn DienGiai;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKho;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTaoPhieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StrNgayTaoPhieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DateTimePicker dpNgayTaoPhieu;
+        private System.Windows.Forms.CheckBox ckUseDate;
     }
 }

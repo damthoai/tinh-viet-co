@@ -19,10 +19,49 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_ProcessChotTonKhoHeaderWorkflow = "p_HUFS_ProcessChotTonKhoHeaderWorkflow";
         private const string p_HUFS_ProcessChotTonKhoDetailChotTon = "p_HUFS_ProcessChotTonKhoDetailChotTon";
         private const string p_HUFS_ProcessChotTonKhoHeaderStatus = "p_HUFS_ProcessChotTonKhoHeaderStatus";
+        private const string p_HUFS_SearchChotTonKhoHeader = "p_HUFS_SearchChotTonKhoHeader";
+        private const string p_HUFS_LoadChotTonKhoDetail = "p_HUFS_LoadChotTonKhoDetail";
         private const int LuuChotTon = 0;
         private const int TinhChotTon = 1;
         private const int XacNhanChotTon = 2;
         private const int ChotTon = 3;
+        public List<ChotTonKhoHeader> SearchChotTonKho(string maChotTonKho,string dienGiai, string tenKho,DateTime ngayTaoPhieu,string status,bool isUseDate)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[6];
+                Params[0] = new SqlParameter("@MaChotTonKho", maChotTonKho);
+                Params[1] = new SqlParameter("@DienGiai", dienGiai);
+                Params[2] = new SqlParameter("@TenKho", tenKho);
+                Params[3] = new SqlParameter("@NgayTaoPhieu", ngayTaoPhieu);
+                Params[4] = new SqlParameter("@Status", status);
+                Params[5] = new SqlParameter("@IsUseDate", isUseDate);
+
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_SearchChotTonKhoHeader, Params);
+                return this.ConvertDataTableToList<ChotTonKhoHeader>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Info(ex.Message);
+                return null;
+            }
+        }
+
+        public List<ChotTonKhoDetail> LoadChotTonKhoDetail(string maChotTonKho)
+        {
+            try
+            {
+                SqlParameter[] Params = new SqlParameter[1];
+                Params[0] = new SqlParameter("@MaChotTonKho", maChotTonKho);
+                var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_LoadChotTonKhoDetail, Params);
+                return this.ConvertDataTableToList<ChotTonKhoDetail>(dtResult);
+            }
+            catch (Exception ex)
+            {
+                log.Info(ex.Message);
+                return null;
+            }
+        }
         public List<ChotTonKhoDetail> ProcessChotTonKhoDetailTinhTonKho(string maChotTonKho,string tenKho)
         {
             try

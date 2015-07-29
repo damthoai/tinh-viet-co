@@ -65,6 +65,7 @@ namespace UKPI.Presentation
         private ChotTonKhoDao _chotTonKhoDao = new ChotTonKhoDao();
         int currentRowIndex = -1;
         ChotTonKhoHeader currentChotTonKhoHeader;
+        List<TrangThai> listTrangThai = new List<TrangThai>();
         public frmChotTonKhoDetail()
         {
 
@@ -73,15 +74,22 @@ namespace UKPI.Presentation
            // clsTitleManager.InitTitle(this);
             this.Text = "CHỐT TỒN KHO CHI TIẾT";
            // btnTaoPhieu.Visible = false;
-            SetDefaultValue();
-            SetValueToForm();
             grdBenhNhan.CellValueChanged += grdBenhNhan_CellValueChanged;
+            this.FormClosing +=frmChotTonKhoDetail_FormClosing;
+        }
+
+        private void frmChotTonKhoDetail_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(parentForm != null)
+            {
+                parentForm.ReloadSearchResult();
+            }
         }
         private void SetValueToForm()
         {
             if (currentChotTonKhoHeader == null)
             {
-                txtMaCHotTonKho.Text = System.Configuration.ConfigurationManager.AppSettings["MaCHotTon"] + DateTime.Now.ToString("yyyyMMddhhmmss");
+                txtMaCHotTonKho.Text = System.Configuration.ConfigurationManager.AppSettings["MaCHotTon"] + DateTime.Now.ToString("yyyyMMddHHmmss");
                 txtKho.Text = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
                 txtNguoiXacNhan.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
                 txtNguoiDieuChinh.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
@@ -96,23 +104,75 @@ namespace UKPI.Presentation
                 txtKho.Text = currentChotTonKhoHeader.TenKho;
                 txtDienGiai.Text = currentChotTonKhoHeader.DienGiai;
                 dpNgayTaoPhieu.Value = currentChotTonKhoHeader.NgayTaoPhieu;
-                ccbTrangThai.SelectedValue = currentChotTonKhoHeader.Status;
+                ccbTrangThai.SelectedText = currentChotTonKhoHeader.Status;
+                ccbTrangThai.SelectedIndex = listTrangThai.FindIndex(f => f.TenTrangThai == currentChotTonKhoHeader.Status);
                 txtNguoiXacNhan.Text = currentChotTonKhoHeader.NguoiXacNhan;
                 txtNguoiDieuChinh.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
+                if(currentChotTonKhoHeader.CurrentWorkflow == 0) //moi luu
+                {
+                    btnTinhTonKho.Enabled = true;
+                    btnXacNhan.Enabled = false;
+                    btnChotTon.Enabled = false;
+
+                    txtDienGiai.ReadOnly = false;
+                    dpNgayTaoPhieu.Enabled = true;
+                    ccbTrangThai.Enabled = true;
+                }
+                else if(currentChotTonKhoHeader.CurrentWorkflow == 1)// da tinh chot ton
+                {
+                    btnLuu.Enabled = true;
+                    btnTinhTonKho.Enabled = false;
+                    btnXacNhan.Enabled = true;
+                    btnChotTon.Enabled = false;
+
+                    txtDienGiai.ReadOnly = false;
+                    dpNgayTaoPhieu.Enabled = true;
+                    ccbTrangThai.Enabled = true;
+
+                    listCHotTonKhoDetail = _chotTonKhoDao.LoadChotTonKhoDetail(currentChotTonKhoHeader.MaChotTonKho);
+                    grdBenhNhan.DataSource = listCHotTonKhoDetail;
+                }
+                else if (currentChotTonKhoHeader.CurrentWorkflow == 2)// da xac nhan
+                {
+                    btnLuu.Enabled = true;
+                    btnTinhTonKho.Enabled = false;
+                    btnXacNhan.Enabled = true;
+                    btnChotTon.Enabled = true;
+                    txtDienGiai.ReadOnly = false;
+                    dpNgayTaoPhieu.Enabled = true;
+                    ccbTrangThai.Enabled = true;
+
+                    listCHotTonKhoDetail = _chotTonKhoDao.LoadChotTonKhoDetail(currentChotTonKhoHeader.MaChotTonKho);
+                    grdBenhNhan.DataSource = listCHotTonKhoDetail;
+                }
+                else if(currentChotTonKhoHeader.CurrentWorkflow == 3)
+                {
+                    btnLuu.Enabled = false;
+                    btnTinhTonKho.Enabled = false;
+                    btnXacNhan.Enabled = false;
+                    btnChotTon.Enabled = false;
+                    txtDienGiai.ReadOnly = true;
+                    dpNgayTaoPhieu.Enabled = false;
+                    ccbTrangThai.Enabled = false;
+                    listCHotTonKhoDetail = _chotTonKhoDao.LoadChotTonKhoDetail(currentChotTonKhoHeader.MaChotTonKho);
+                    grdBenhNhan.DataSource = listCHotTonKhoDetail;
+                }
             }
         }
         public void SetCurrentChotTonKhoHeader(ChotTonKhoHeader value)
         {
             currentChotTonKhoHeader = value;
+            SetDefaultValue();
+            SetValueToForm();
         }
         private void SetDefaultValue()
         {
-            string listTrangThai = System.Configuration.ConfigurationManager.AppSettings["ListTrangThai"];
-            string[] list = listTrangThai.Split(',');
+            string listTrangThaiConfig = System.Configuration.ConfigurationManager.AppSettings["ListTrangThai"];
+            string[] list = listTrangThaiConfig.Split(',');
             for (int i = 0; i < list.Length; i++) {
-                ccbTrangThai.Items.Add(new TrangThai { MaTrangThai = list[i], TenTrangThai = list[i] });
+                listTrangThai.Add(new TrangThai { MaTrangThai = list[i], TenTrangThai = list[i] });
              }
-    
+            ccbTrangThai.DataSource = listTrangThai;
         }
         public void SetParentForm(frmChotTonKho parent)
         {
@@ -166,13 +226,15 @@ namespace UKPI.Presentation
             {
                 ctkh.CreatedDate = DateTime.Now;
                 ctkh.ModifiedDate = DateTime.Now;
-                ctkh.Creator = clsSystemConfig.UserName;
-                ctkh.LastModifier = clsSystemConfig.UserName;
+                ctkh.Creator = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
+                ctkh.LastModifier = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
             }
             else
             {
+                ctkh.CreatedDate = currentChotTonKhoHeader.CreatedDate;
                 ctkh.ModifiedDate = DateTime.Now;
-                ctkh.LastModifier = clsSystemConfig.UserName;
+                ctkh.Creator = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
+                ctkh.LastModifier = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
             }
             return ctkh;
             

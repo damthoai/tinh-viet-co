@@ -51,7 +51,9 @@ namespace UKPI.Presentation
 
         // Declare private fields
         private ChamCongLichLamViecBo _lichLamViecBo = new ChamCongLichLamViecBo();
-        List<ThongTinBenhNhan> listBenhNhan = new List<ThongTinBenhNhan>();
+        List<ChotTonKhoHeader> listChotTonKho = new List<ChotTonKhoHeader>();
+        ChotTonKhoHeader currentChotTon = null;
+        private ChotTonKhoDao _chotTonKhoDao = new ChotTonKhoDao();
         //
         readonly DataGridViewColumn[] _originalColumns;
         private DataTable _dtApproveTimesheet;
@@ -77,9 +79,13 @@ namespace UKPI.Presentation
         {
             string listTrangThai = System.Configuration.ConfigurationManager.AppSettings["ListTrangThai"];
             string[] list = listTrangThai.Split(',');
+            ccbTrangThai.Items.Add(new TrangThai { MaTrangThai = "", TenTrangThai = "" });
             for (int i = 0; i < list.Length; i++) {
                 ccbTrangThai.Items.Add(new TrangThai { MaTrangThai = list[i], TenTrangThai = list[i] });
              }
+            ccbTrangThai.SelectedIndex = 0;
+            txtKho.Text = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
+            
     
         }
         public void SetParentForm(frmKhambenh parent)
@@ -99,7 +105,7 @@ namespace UKPI.Presentation
             }
         }
 
-        private bool IsNhanVienSelected()
+        private bool IsChotTonSelected()
         {
             bool result = false;
             for (int i = 0; i < grdBenhNhan.Rows.Count; i++)
@@ -129,46 +135,57 @@ namespace UKPI.Presentation
                 currentRowIndex = -1;
             }
         }
-
-        private void btnSearch_Click(object sender, EventArgs e)
+        public void ReloadSearchResult()
         {
-            string maBenhNhan = txtMaCHotTonKho.Text;
-            string tenBenhNhan = txtKho.Text;
-            listBenhNhan = _thongTinKhamBenhDao.SearchThongTinBenhNhan(maBenhNhan, tenBenhNhan);
-            if(listBenhNhan != null && listBenhNhan.Count > 0)
+            GetChotTonResult();
+        }
+        private void GetChotTonResult()
+        {
+            string maChotTonKho = txtMaCHotTonKho.Text;
+            string dienGiai = txtDienGiai.Text;
+            string tenKho = txtKho.Text;
+            DateTime ngayTaoPhieu = dpNgayTaoPhieu.Value;
+            string status = ((TrangThai)(ccbTrangThai.SelectedItem)).TenTrangThai;
+            bool isUseDate = ckUseDate.Checked;
+            listChotTonKho = _chotTonKhoDao.SearchChotTonKho(maChotTonKho, dienGiai, tenKho, ngayTaoPhieu, status, isUseDate);
+            if (listChotTonKho != null && listChotTonKho.Count > 0)
             {
-                grdBenhNhan.DataSource = listBenhNhan;
-                btnTaoPhieu.Visible = true; 
+                grdBenhNhan.DataSource = listChotTonKho;
+            }
+            else
+            {
+                listChotTonKho = new List<ChotTonKhoHeader>();
+                grdBenhNhan.DataSource = listChotTonKho;
             }
         }
-
-        private void btnChon_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            /*
-            if (!IsNhanVienSelected() || currentRowIndex == -1)
-            {
-                MessageBox.Show(clsResources.GetMessage("messages.frmChotTonKho.SelectNhanVien"), clsResources.GetMessage("messages.frmChotTonKho.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else {
-                if (currentRowIndex != -1)
-                {
-                    ThongTinBenhNhan ttbn = listBenhNhan[currentRowIndex];
-                    parentForm.SetMaNhanVien(ttbn.EmployeeID);
-                    parentForm.SetTenBenhNhan(ttbn.FullName);
-                    parentForm.SetMaBHYT(ttbn.MaBHYT);
-                    parentForm.SetBoPhan(ttbn.TenBoPhan);
-                    parentForm.SetGioiTinh(ttbn.GioiTinh);
-                    parentForm.SetKhuVuc(ttbn.KhuVuc);
-                    parentForm.SetNamSinh(ttbn.NamSinh.ToString());
-                    parentForm.SetCongTy(string.Empty);
-                    this.Close();
-                }
-            }
-             */
+            GetChotTonResult();
+        }
+
+        private void btnTaoPhieu_Click(object sender, EventArgs e)
+        {
             frmChotTonKhoDetail detail = new frmChotTonKhoDetail();
             detail.SetCurrentChotTonKhoHeader(null);
+            detail.SetParentForm(this);
             detail.ShowDialog();
+        }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+            if(!IsChotTonSelected() || currentRowIndex == -1)
+            {
+                DialogResult result = MessageBox.Show("Bạn chưa chọn chốt tồn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                currentChotTon = listChotTonKho[currentRowIndex];
+                frmChotTonKhoDetail detail = new frmChotTonKhoDetail();
+                detail.SetCurrentChotTonKhoHeader(currentChotTon);
+                detail.SetParentForm(this);
+                detail.ShowDialog();
+            }
         }
 
 
