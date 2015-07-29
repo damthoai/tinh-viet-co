@@ -23,7 +23,7 @@ EXEC p_HUFS_ProcessChotTonKhoHeaderStatus @MaChotTonKho = 'TKK20150725115632',
 @TenKho = 'Phòng Khám Khu B'
 */
 CREATE PROCEDURE [dbo].[p_HUFS_ProcessChotTonKhoHeaderStatus] @MaChotTonKho NVARCHAR(50)
-	,@Status INT
+	,@Status NVARCHAR(50)
 AS
 BEGIN
 	
