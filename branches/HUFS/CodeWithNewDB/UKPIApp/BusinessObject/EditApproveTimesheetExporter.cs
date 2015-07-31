@@ -8,6 +8,7 @@ using FPT.Component.ExcelPlus;
 using UKPI.DataAccessObject;
 using UKPI.Utils;
 using System.Drawing;
+using UKPI.ValueObject;
 
 namespace UKPI.BusinessObject
 {
@@ -36,9 +37,9 @@ namespace UKPI.BusinessObject
           //  _basicDisplaySetList = BasicDisplaySetBO.GetAllActiveBasicDisplaySet();//timePeriod
           //  _extraDisplaySetList = ExtraDisplaySetBO.GetAllActiveExtraDisplaySet(timePeriod);
 
-            _columnBeginOfBasicDS = 21;
+           //_columnBeginOfBasicDS = 21;
             //_columnEndOfBasicDS = _columnBeginOfBasicDS + _basicDisplaySetList.Count - 1;
-            _columnBeginOfExtraDS = _columnEndOfBasicDS + 1;
+            //_columnBeginOfExtraDS = _columnEndOfBasicDS + 1;
           //  _columnEndOfExtraDS = _columnBeginOfExtraDS + _extraDisplaySetList.Count - 1;
 
             _exportFailResult = exportFailResult;
@@ -57,55 +58,26 @@ namespace UKPI.BusinessObject
         private DataTable GetExportTableSchema()
         {
             DataTable dtSchema = new DataTable();
-            dtSchema.TableName = "XacNhanChamCong";
+            dtSchema.TableName = "ThongKeThuoc";
 
             // Add first blank colum
             dtSchema.Columns.Add("BLANK1");
 
+            dtSchema.Columns.Add("Title");
+
             // Add columns of store's information
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Ca_DienGiai);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.TruongNhom_TenNgan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.NgayTrongTuan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Ngay);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.NgayRa);
+            dtSchema.Columns.Add("MaThuocYTeHienThi");
+            dtSchema.Columns.Add("TenThuoc");
+            dtSchema.Columns.Add("MaNhapKho");
+            dtSchema.Columns.Add("BaoHiem");
+            dtSchema.Columns.Add("DonViTinh");
+            dtSchema.Columns.Add("HanDung");
+            dtSchema.Columns.Add("NhomThuoc");
+            dtSchema.Columns.Add("SoLuongTon");
+            dtSchema.Columns.Add("SoLuongThucTe");
+            dtSchema.Columns.Add("SoLuongChenhLech");
+            dtSchema.Columns.Add("LoaiChenhLech");
 
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.NhanVien_Ten);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.IsOutSource);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Vao);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Ra);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Vao_L1);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Ra_L1);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.On_Off);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.CoDangKyOT);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.OTHeThongTinh);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.OTL1);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.CoPhep);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.DuocTinhCong);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.L0XacNhan_TenNgan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.L1XacNhan_TenNgan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.L2XacNhan_TenNgan);
-
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.L3XacNhan_TenNgan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.NhanVienThayThe_TenNgan);
-            dtSchema.Columns.Add(ChamCongLichLamViecDAO.Note);
-
-            // Add BasicDisplaySet columns
-            //foreach (BasicDisplaySetBO basicDS in _basicDisplaySetList)
-            //{
-            //    dtSchema.Columns.Add(basicDS.Code);
-            //}
-
-            //// Add ExtraDisplaySet columns
-            //foreach (ExtraDisplaySetBO extraDS in _extraDisplaySetList)
-            //{
-            //    dtSchema.Columns.Add(extraDS.Code);
-            //}
-
-            //// For export fail result of Import
-            //if (_exportFailResult)
-            //{
-            //    dtSchema.Columns.Add(EditStoreImporter.ERROR_MESSAGE);
-            //}
 
             return dtSchema;
 
@@ -225,11 +197,99 @@ namespace UKPI.BusinessObject
             return dtResult;
         }
 
+
+        private DataTable ConvertDSThuocThongKeExportFormat(List<ChotTonKhoDetail> lst, string maChotTon,string  detail, string ngayChotTon)
+        {
+            DataTable dtResult = this.GetExportTableSchema();
+
+            _countNoOfRow = lst.Count;
+            // Fill data to excel formatted table
+            DataRow drDataTemp;
+
+            #region Add title and column headers
+            // Add title "Table export"
+            drDataTemp = dtResult.NewRow();
+            drDataTemp["Title"] = "Danh Sách Thống Kê Thuốc - Xuất ngày " + DateTime.Now.ToString("dd/MM/yyyy");
+            dtResult.Rows.Add(drDataTemp);
+
+            drDataTemp = dtResult.NewRow();
+            drDataTemp["Title"] = "Mã chốt tồn: " + maChotTon;
+            dtResult.Rows.Add(drDataTemp);
+
+            drDataTemp = dtResult.NewRow();
+            drDataTemp["Title"] = "Chi tiết: " + detail;
+            dtResult.Rows.Add(drDataTemp);
+
+            drDataTemp = dtResult.NewRow();
+            drDataTemp["Title"] = "Ngày: " + ngayChotTon;
+            dtResult.Rows.Add(drDataTemp);
+
+
+
+            // Add first blank row
+            drDataTemp = dtResult.NewRow();
+            dtResult.Rows.Add(drDataTemp);
+
+
+            // Add Colum Header
+            drDataTemp = dtResult.NewRow();
+            drDataTemp["MaThuocYTeHienThi"] = "Mã Thuốc";
+            drDataTemp["TenThuoc"] = "Tên Thuốc";
+            drDataTemp["MaNhapKho"] = "Mã Nhập Kho";
+            drDataTemp["BaoHiem"] = "Bảo Hiểm";
+            drDataTemp["DonViTinh"] = "Đơn Vị Tính";
+            drDataTemp["HanDung"] = "Hạn Dùng";
+            drDataTemp["NhomThuoc"] = "Nhóm Thuốc";
+            drDataTemp["SoLuongTon"] = "Số Lượng Tồn";
+            drDataTemp["SoLuongThucTe"] = "Số Lượng Thực Tế";
+            drDataTemp["SoLuongChenhLech"] = "Số Lượng Chênh Lệch";
+            drDataTemp["LoaiChenhLech"] = "Loại Chênh Lệch";
+
+   
+
+            dtResult.Rows.Add(drDataTemp);
+
+            #endregion
+
+            // Add store list
+            foreach (var item in lst)
+            {
+                drDataTemp = dtResult.NewRow();
+
+
+                drDataTemp["MaThuocYTeHienThi"] = item.MaThuocYTeHienThi;
+                drDataTemp["TenThuoc"] = item.TenThuoc;
+                drDataTemp["MaNhapKho"] = item.MaNhapKho;
+                drDataTemp["BaoHiem"] = item.BaoHiem;
+                drDataTemp["DonViTinh"] = item.DonViTinh;
+                drDataTemp["HanDung"] = item.HanDung;
+                drDataTemp["NhomThuoc"] = item.NhomThuoc;
+                drDataTemp["SoLuongTon"] = item.SoLuongTon;
+                drDataTemp["SoLuongThucTe"] = item.SoLuongThucTe;
+                drDataTemp["SoLuongChenhLech"] = item.SoLuongChenhLech;
+                drDataTemp["LoaiChenhLech"] = item.LoaiChenhLech;
+
+                dtResult.Rows.Add(drDataTemp);
+            }
+
+            return dtResult;
+        }
+
+
+
+
         public void AddExportTable(DataTable dt)
         {
             // _channel = channel;
             _exportTables.Add(this.ConvertDataTable2ExportFormat(dt));
         }
+
+        public void AddExportTable(List<ChotTonKhoDetail> lst, string maChotTon, string chiTiet, string ngay)
+        {
+            // _channel = channel;
+            _exportTables.Add(this.ConvertDSThuocThongKeExportFormat(lst, maChotTon, chiTiet, ngay));
+        }
+
 
         public void ClearExportTable()
         {
@@ -263,78 +323,12 @@ namespace UKPI.BusinessObject
             // Channel
             format = new RangesFormat<CellStyle>();
             format.Ranges.Add(new FRangeAddress(1, 2, 1, 4));
-            format.Format.BackGroundColor = Color.FromArgb(153, 51, 0);
-            format.Format.TextStyle.TextColor = Color.White;
+            format.Format.TextStyle.TextColor = Color.Black;
             format.Format.TextStyle.Size = 14;
             format.Format.TextStyle.Bold = true;
             result.Add(format);
 
-            //// Time period
-            //format = new RangesFormat<CellStyle>();
-            //format.Ranges.Add(new FRangeAddress(4, 2, 4, 4));
-            //format.Format.BackGroundColor = Color.FromArgb(228, 109, 10);
-            //format.Format.TextStyle.TextColor = Color.White;
-            //format.Format.TextStyle.Bold = true;
-            //result.Add(format);
 
-            //// Export date
-            //format = new RangesFormat<CellStyle>();
-            //format.Ranges.Add( new FRangeAddress(5, 2, 5, 4));
-            //format.Format.BackGroundColor = Color.FromArgb(255, 204, 153);
-            //format.Format.TextStyle.TextColor = Color.Blue;
-            //result.Add(format);
-            BorderStyle bdStyle = new BorderStyle();
-            bdStyle.BorderColor = Color.Black;
-            bdStyle.Weight = BorderWeight.Thin;
-            bdStyle.Style = LineStyle.Thin;
-
-
-
-            // Column headers: black background
-            format = new RangesFormat<CellStyle>();
-            format.Ranges.Add(new FRangeAddress(3, 2, 3, _columnEndOfExtraDS + 3));
-            format.Format.HAlign = FHorizontalAlignment.Left;
-            format.Format.BackGroundColor = Color.White;
-            format.Format.TextStyle.TextColor = Color.Black;
-            format.Format.Border.Top = bdStyle;
-            format.Format.Border.Left = bdStyle;
-            format.Format.Border.Right = bdStyle;
-            format.Format.Border.Bottom = bdStyle;
-            format.Format.TextStyle.Bold = true;
-            format.Format.TextStyle.Underline = true;
-
-            result.Add(format);
-
-            // Define bolder style
-
-
-            // Bolder "Basic Display Set"
-            format = new RangesFormat<CellStyle>();
-
-
-
-            format.Ranges.Add(new FRangeAddress(4, 2, _countNoOfRow + 3, _columnEndOfExtraDS + 3));
-            format.Format.Border.Top = bdStyle;
-            format.Format.Border.Left = bdStyle;
-            format.Format.Border.Right = bdStyle;
-            format.Format.Border.Bottom = bdStyle;
-            format.Format.HAlign = FHorizontalAlignment.Center;
-
-            result.Add(format);
-
-
-
-            //// Bolder "Extra Display Set"
-            //format = new RangesFormat<CellStyle>();
-
-            //format.Ranges.Add(new FRangeAddress(9, _columnBeginOfExtraDS, 9, _columnEndOfExtraDS));
-            //format.Format.Border.Top = bdStyle;
-            //format.Format.Border.Left = bdStyle;
-            //format.Format.Border.Right = bdStyle;
-            //format.Format.Border.Bottom = bdStyle;
-            //format.Format.HAlign = FHorizontalAlignment.Center;
-            //format.Format.TextStyle.Bold = true;
-            //result.Add(format);
 
             return result;
         }

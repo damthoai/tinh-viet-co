@@ -66,6 +66,7 @@ namespace UKPI.Presentation
             this.btnTinhTonKho = new System.Windows.Forms.Button();
             this.txtKho = new System.Windows.Forms.TextBox();
             this.lblKho = new System.Windows.Forms.Label();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.grdBenhNhan = new UKPI.Controls.DataGridView_RowNum();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaChotTonHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -163,6 +164,7 @@ namespace UKPI.Presentation
             // 
             this.grpStore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpStore.Controls.Add(this.btnExcel);
             this.grpStore.Controls.Add(this.btnChotTon);
             this.grpStore.Controls.Add(this.txtNguoiDieuChinh);
             this.grpStore.Controls.Add(this.txtNguoiXacNhan);
@@ -190,7 +192,7 @@ namespace UKPI.Presentation
             // 
             // btnChotTon
             // 
-            this.btnChotTon.Location = new System.Drawing.Point(644, 136);
+            this.btnChotTon.Location = new System.Drawing.Point(682, 136);
             this.btnChotTon.Name = "btnChotTon";
             this.btnChotTon.Size = new System.Drawing.Size(75, 23);
             this.btnChotTon.TabIndex = 58;
@@ -287,7 +289,7 @@ namespace UKPI.Presentation
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.Location = new System.Drawing.Point(538, 136);
+            this.btnXacNhan.Location = new System.Drawing.Point(592, 136);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
             this.btnXacNhan.TabIndex = 47;
@@ -297,7 +299,7 @@ namespace UKPI.Presentation
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(326, 136);
+            this.btnLuu.Location = new System.Drawing.Point(334, 136);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 45;
@@ -307,7 +309,7 @@ namespace UKPI.Presentation
             // 
             // btnTinhTonKho
             // 
-            this.btnTinhTonKho.Location = new System.Drawing.Point(434, 136);
+            this.btnTinhTonKho.Location = new System.Drawing.Point(420, 136);
             this.btnTinhTonKho.Name = "btnTinhTonKho";
             this.btnTinhTonKho.Size = new System.Drawing.Size(75, 23);
             this.btnTinhTonKho.TabIndex = 46;
@@ -331,6 +333,16 @@ namespace UKPI.Presentation
             this.lblKho.Size = new System.Drawing.Size(26, 13);
             this.lblKho.TabIndex = 43;
             this.lblKho.Text = "Kho";
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(508, 136);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnExcel.TabIndex = 59;
+            this.btnExcel.Text = "Xuất Excel";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // grdBenhNhan
             // 
@@ -583,5 +595,6 @@ namespace UKPI.Presentation
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongChenhLech;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoaiChenhLech;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhapKhoDetail;
+        private System.Windows.Forms.Button btnExcel;
     }
 }

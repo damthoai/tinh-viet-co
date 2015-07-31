@@ -111,6 +111,7 @@ namespace UKPI.Presentation
                 if(currentChotTonKhoHeader.CurrentWorkflow == 0) //moi luu
                 {
                     btnTinhTonKho.Enabled = true;
+                    //btnExcel.Enabled = false;
                     btnXacNhan.Enabled = false;
                     btnChotTon.Enabled = false;
 
@@ -122,6 +123,7 @@ namespace UKPI.Presentation
                 {
                     btnLuu.Enabled = true;
                     btnTinhTonKho.Enabled = false;
+                   btnExcel.Enabled = true;
                     btnXacNhan.Enabled = true;
                     btnChotTon.Enabled = false;
 
@@ -136,6 +138,7 @@ namespace UKPI.Presentation
                 {
                     btnLuu.Enabled = true;
                     btnTinhTonKho.Enabled = false;
+                    btnExcel.Enabled = true;
                     btnXacNhan.Enabled = true;
                     btnChotTon.Enabled = true;
                     txtDienGiai.ReadOnly = false;
@@ -149,6 +152,7 @@ namespace UKPI.Presentation
                 {
                     btnLuu.Enabled = false;
                     btnTinhTonKho.Enabled = false;
+                    btnExcel.Enabled = true;
                     btnXacNhan.Enabled = false;
                     btnChotTon.Enabled = false;
                     txtDienGiai.ReadOnly = true;
@@ -177,18 +181,6 @@ namespace UKPI.Presentation
         public void SetParentForm(frmChotTonKho parent)
         {
             this.parentForm = parent;
-        }
-        private void DeselectOrtherCheckbox(int currentRowIndex)
-        {
-            for (int i = 0; i < grdBenhNhan.Rows.Count; i++)
-            {
-                if (i != currentRowIndex)
-                {
-                    grdBenhNhan.Rows[i].Cells[0].Value = false;
-                }
-                else
-                    continue;
-            }
         }
 
         private bool IsNhanVienSelected()
@@ -399,32 +391,55 @@ namespace UKPI.Presentation
             }
         }
 
-        private void txtKho_TextChanged(object sender, EventArgs e)
+
+        private void Export()
         {
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                var lstChotTon = grdBenhNhan.DataSource as List<ChotTonKhoDetail>;
+                if (lstChotTon == null)
+                {
+                    return;
+                }
+                // Open Save dialog
+                using (var saveDlg = new SaveFileDialog())
+                {
+                    saveDlg.AddExtension = true;
+                    saveDlg.Filter = "Excel 2007 Workbook (*.xlsx)|*.xlsx|Excel 97 - 2003 Workbook (*.xls)|*.xls";
+                    if (saveDlg.ShowDialog(this) != DialogResult.OK) return;
+                    Cursor.Current = Cursors.WaitCursor;
+                    // Execute export
+                    string strMaChotTon = txtMaCHotTonKho.Text;
+                    string strChiTiet = txtDienGiai.Text;
+                    string stringNgay = dpNgayTaoPhieu.Text;
 
+                    var exporter = new EditApproveTimesheetExporter(true);
+                    exporter.AddExportTable(lstChotTon, strMaChotTon, strChiTiet, stringNgay);
+                    exporter.Export(saveDlg.FileName);
 
+                    MessageBox.Show(clsResources.GetMessage("messages.exportStore.EditStore") + Environment.NewLine + saveDlg.FileName,
+                        clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message);
+                MessageBox.Show(clsResources.GetMessage("errors.unknown"),
+                    clsResources.GetMessage("errors.general"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
+        }
 
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Export();
         }
 
 
-
-       
-
-       
-     
-     
-
-      
-
-
-
-
-
-     
-
-
-
-      
     }
 }

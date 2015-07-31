@@ -7,6 +7,7 @@ namespace UKPI.ValueObject
 {
     public class ChotTonKhoHeader
     {
+
         public string MaChotTonKho { get; set; }
         public string DienGiai { get; set; }
         public string TenKho { get; set; }

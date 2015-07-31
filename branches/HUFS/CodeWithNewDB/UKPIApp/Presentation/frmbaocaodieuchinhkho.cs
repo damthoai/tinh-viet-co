@@ -50,9 +50,9 @@ namespace UKPI.Presentation
 
         private void BindDefaultData()
         {
-           // dtpNgayTKK.Format = new cust
-            dtpNgayTKK.Format = DateTimePickerFormat.Custom;
-            dtpNgayTKK.CustomFormat = clsCommon.ApproveTimesheet.DateFormatDisplay;
+           //// dtpNgayTKK.Format = new cust
+           // dtpNgayTKK.Format = DateTimePickerFormat.Custom;
+           // dtpNgayTKK.CustomFormat = clsCommon.ApproveTimesheet.DateFormatDisplay;
 
         }
 

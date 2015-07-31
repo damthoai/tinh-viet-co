@@ -1442,3 +1442,6 @@ D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.cache
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.compiled
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKho.resources
 D:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKhoDetail.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.Frmbaocaodieuchinhkho.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKhoDetail.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Debug\UKPI.Presentation.frmChotTonKho.resources

@@ -58,7 +58,6 @@ namespace UKPI.Presentation
             this.btnExport = new System.Windows.Forms.Button();
             this.lblMaTKK = new System.Windows.Forms.Label();
             this.txtLoaiThuoc = new System.Windows.Forms.TextBox();
-            this.lblKho = new System.Windows.Forms.Label();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
             this.MaChotTonKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,7 +72,6 @@ namespace UKPI.Presentation
             this.SoLuongChenhLech = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiChenhLech = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbTimKiem = new System.Windows.Forms.GroupBox();
-            this.dtpNgayTKK = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
             this.grbTimKiem.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +80,7 @@ namespace UKPI.Presentation
             // 
             this.btnSearch.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSearch.Location = new System.Drawing.Point(526, 21);
+            this.btnSearch.Location = new System.Drawing.Point(280, 20);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(86, 23);
             this.btnSearch.TabIndex = 78;
@@ -263,15 +261,6 @@ namespace UKPI.Presentation
             this.txtLoaiThuoc.Size = new System.Drawing.Size(153, 20);
             this.txtLoaiThuoc.TabIndex = 81;
             // 
-            // lblKho
-            // 
-            this.lblKho.AutoSize = true;
-            this.lblKho.Location = new System.Drawing.Point(309, 26);
-            this.lblKho.Name = "lblKho";
-            this.lblKho.Size = new System.Drawing.Size(77, 13);
-            this.lblKho.TabIndex = 82;
-            this.lblKho.Text = "Ngày thống kê";
-            // 
             // grdToaThuoc
             // 
             this.grdToaThuoc.AllowUserToAddRows = false;
@@ -404,9 +393,7 @@ namespace UKPI.Presentation
             this.grbTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbTimKiem.Controls.Add(this.dtpNgayTKK);
             this.grbTimKiem.Controls.Add(this.lblMaTKK);
-            this.grbTimKiem.Controls.Add(this.lblKho);
             this.grbTimKiem.Controls.Add(this.txtLoaiThuoc);
             this.grbTimKiem.Controls.Add(this.btnSearch);
             this.grbTimKiem.Location = new System.Drawing.Point(4, 5);
@@ -415,13 +402,6 @@ namespace UKPI.Presentation
             this.grbTimKiem.TabIndex = 84;
             this.grbTimKiem.TabStop = false;
             this.grbTimKiem.Text = "Thông tin tìm kiếm";
-            // 
-            // dtpNgayTKK
-            // 
-            this.dtpNgayTKK.Location = new System.Drawing.Point(389, 23);
-            this.dtpNgayTKK.Name = "dtpNgayTKK";
-            this.dtpNgayTKK.Size = new System.Drawing.Size(122, 20);
-            this.dtpNgayTKK.TabIndex = 83;
             // 
             // Frmbaocaodieuchinhkho
             // 
@@ -463,7 +443,6 @@ namespace UKPI.Presentation
         private Controls.DataGridView_RowNum grdToaThuoc;
         private System.Windows.Forms.Label lblMaTKK;
         private System.Windows.Forms.TextBox txtLoaiThuoc;
-        private System.Windows.Forms.Label lblKho;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaChotTonKho;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKho;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTaoPhieu;
@@ -477,6 +456,5 @@ namespace UKPI.Presentation
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongChenhLech;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoaiChenhLech;
         private System.Windows.Forms.GroupBox grbTimKiem;
-        private System.Windows.Forms.DateTimePicker dtpNgayTKK;
     }
 }
