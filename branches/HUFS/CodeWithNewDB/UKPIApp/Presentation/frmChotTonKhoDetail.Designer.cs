@@ -145,7 +145,7 @@ namespace UKPI.Presentation
             // lblMaChotTonKho
             // 
             this.lblMaChotTonKho.AutoSize = true;
-            this.lblMaChotTonKho.Location = new System.Drawing.Point(20, 32);
+            this.lblMaChotTonKho.Location = new System.Drawing.Point(48, 32);
             this.lblMaChotTonKho.Name = "lblMaChotTonKho";
             this.lblMaChotTonKho.Size = new System.Drawing.Size(85, 13);
             this.lblMaChotTonKho.TabIndex = 26;
@@ -183,14 +183,14 @@ namespace UKPI.Presentation
             this.grpStore.Controls.Add(this.lblMaChotTonKho);
             this.grpStore.Location = new System.Drawing.Point(4, 6);
             this.grpStore.Name = "grpStore";
-            this.grpStore.Size = new System.Drawing.Size(1268, 200);
+            this.grpStore.Size = new System.Drawing.Size(1025, 175);
             this.grpStore.TabIndex = 0;
             this.grpStore.TabStop = false;
             this.grpStore.Text = "Tạo phiếu thống kê kho";
             // 
             // btnChotTon
             // 
-            this.btnChotTon.Location = new System.Drawing.Point(644, 154);
+            this.btnChotTon.Location = new System.Drawing.Point(644, 136);
             this.btnChotTon.Name = "btnChotTon";
             this.btnChotTon.Size = new System.Drawing.Size(75, 23);
             this.btnChotTon.TabIndex = 58;
@@ -200,7 +200,7 @@ namespace UKPI.Presentation
             // 
             // txtNguoiDieuChinh
             // 
-            this.txtNguoiDieuChinh.Location = new System.Drawing.Point(471, 94);
+            this.txtNguoiDieuChinh.Location = new System.Drawing.Point(471, 80);
             this.txtNguoiDieuChinh.Name = "txtNguoiDieuChinh";
             this.txtNguoiDieuChinh.ReadOnly = true;
             this.txtNguoiDieuChinh.Size = new System.Drawing.Size(156, 20);
@@ -208,7 +208,7 @@ namespace UKPI.Presentation
             // 
             // txtNguoiXacNhan
             // 
-            this.txtNguoiXacNhan.Location = new System.Drawing.Point(471, 60);
+            this.txtNguoiXacNhan.Location = new System.Drawing.Point(471, 55);
             this.txtNguoiXacNhan.Name = "txtNguoiXacNhan";
             this.txtNguoiXacNhan.ReadOnly = true;
             this.txtNguoiXacNhan.Size = new System.Drawing.Size(156, 20);
@@ -217,7 +217,7 @@ namespace UKPI.Presentation
             // lblNguoiDieuChinh
             // 
             this.lblNguoiDieuChinh.AutoSize = true;
-            this.lblNguoiDieuChinh.Location = new System.Drawing.Point(370, 97);
+            this.lblNguoiDieuChinh.Location = new System.Drawing.Point(382, 84);
             this.lblNguoiDieuChinh.Name = "lblNguoiDieuChinh";
             this.lblNguoiDieuChinh.Size = new System.Drawing.Size(87, 13);
             this.lblNguoiDieuChinh.TabIndex = 55;
@@ -226,7 +226,7 @@ namespace UKPI.Presentation
             // lblNguoiXacNhan
             // 
             this.lblNguoiXacNhan.AutoSize = true;
-            this.lblNguoiXacNhan.Location = new System.Drawing.Point(370, 67);
+            this.lblNguoiXacNhan.Location = new System.Drawing.Point(387, 58);
             this.lblNguoiXacNhan.Name = "lblNguoiXacNhan";
             this.lblNguoiXacNhan.Size = new System.Drawing.Size(82, 13);
             this.lblNguoiXacNhan.TabIndex = 54;
@@ -237,7 +237,7 @@ namespace UKPI.Presentation
             this.ccbTrangThai.DisplayMember = "TenTrangThai";
             this.ccbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ccbTrangThai.FormattingEnabled = true;
-            this.ccbTrangThai.Location = new System.Drawing.Point(471, 24);
+            this.ccbTrangThai.Location = new System.Drawing.Point(471, 26);
             this.ccbTrangThai.Name = "ccbTrangThai";
             this.ccbTrangThai.Size = new System.Drawing.Size(156, 21);
             this.ccbTrangThai.TabIndex = 53;
@@ -246,7 +246,7 @@ namespace UKPI.Presentation
             // 
             this.dpNgayTaoPhieu.CustomFormat = "dd-MM-yyyy HH:mm:ss";
             this.dpNgayTaoPhieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpNgayTaoPhieu.Location = new System.Drawing.Point(135, 127);
+            this.dpNgayTaoPhieu.Location = new System.Drawing.Point(135, 104);
             this.dpNgayTaoPhieu.Name = "dpNgayTaoPhieu";
             this.dpNgayTaoPhieu.Size = new System.Drawing.Size(156, 20);
             this.dpNgayTaoPhieu.TabIndex = 52;
@@ -254,7 +254,7 @@ namespace UKPI.Presentation
             // lblTrangThai
             // 
             this.lblTrangThai.AutoSize = true;
-            this.lblTrangThai.Location = new System.Drawing.Point(370, 32);
+            this.lblTrangThai.Location = new System.Drawing.Point(413, 30);
             this.lblTrangThai.Name = "lblTrangThai";
             this.lblTrangThai.Size = new System.Drawing.Size(55, 13);
             this.lblTrangThai.TabIndex = 51;
@@ -262,7 +262,7 @@ namespace UKPI.Presentation
             // 
             // txtDienGiai
             // 
-            this.txtDienGiai.Location = new System.Drawing.Point(135, 64);
+            this.txtDienGiai.Location = new System.Drawing.Point(135, 54);
             this.txtDienGiai.Name = "txtDienGiai";
             this.txtDienGiai.Size = new System.Drawing.Size(156, 20);
             this.txtDienGiai.TabIndex = 50;
@@ -270,7 +270,7 @@ namespace UKPI.Presentation
             // lblNgayTaoPhieu
             // 
             this.lblNgayTaoPhieu.AutoSize = true;
-            this.lblNgayTaoPhieu.Location = new System.Drawing.Point(20, 127);
+            this.lblNgayTaoPhieu.Location = new System.Drawing.Point(53, 106);
             this.lblNgayTaoPhieu.Name = "lblNgayTaoPhieu";
             this.lblNgayTaoPhieu.Size = new System.Drawing.Size(79, 13);
             this.lblNgayTaoPhieu.TabIndex = 49;
@@ -279,7 +279,7 @@ namespace UKPI.Presentation
             // lblDienGiai
             // 
             this.lblDienGiai.AutoSize = true;
-            this.lblDienGiai.Location = new System.Drawing.Point(20, 67);
+            this.lblDienGiai.Location = new System.Drawing.Point(84, 57);
             this.lblDienGiai.Name = "lblDienGiai";
             this.lblDienGiai.Size = new System.Drawing.Size(48, 13);
             this.lblDienGiai.TabIndex = 48;
@@ -287,7 +287,7 @@ namespace UKPI.Presentation
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.Location = new System.Drawing.Point(538, 154);
+            this.btnXacNhan.Location = new System.Drawing.Point(538, 136);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
             this.btnXacNhan.TabIndex = 47;
@@ -297,7 +297,7 @@ namespace UKPI.Presentation
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(326, 154);
+            this.btnLuu.Location = new System.Drawing.Point(326, 136);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 45;
@@ -307,7 +307,7 @@ namespace UKPI.Presentation
             // 
             // btnTinhTonKho
             // 
-            this.btnTinhTonKho.Location = new System.Drawing.Point(434, 154);
+            this.btnTinhTonKho.Location = new System.Drawing.Point(434, 136);
             this.btnTinhTonKho.Name = "btnTinhTonKho";
             this.btnTinhTonKho.Size = new System.Drawing.Size(75, 23);
             this.btnTinhTonKho.TabIndex = 46;
@@ -317,7 +317,7 @@ namespace UKPI.Presentation
             // 
             // txtKho
             // 
-            this.txtKho.Location = new System.Drawing.Point(135, 90);
+            this.txtKho.Location = new System.Drawing.Point(135, 80);
             this.txtKho.Name = "txtKho";
             this.txtKho.ReadOnly = true;
             this.txtKho.Size = new System.Drawing.Size(156, 20);
@@ -326,7 +326,7 @@ namespace UKPI.Presentation
             // lblKho
             // 
             this.lblKho.AutoSize = true;
-            this.lblKho.Location = new System.Drawing.Point(20, 97);
+            this.lblKho.Location = new System.Drawing.Point(107, 83);
             this.lblKho.Name = "lblKho";
             this.lblKho.Size = new System.Drawing.Size(26, 13);
             this.lblKho.TabIndex = 43;
@@ -372,10 +372,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdBenhNhan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdBenhNhan.Location = new System.Drawing.Point(4, 232);
+            this.grdBenhNhan.Location = new System.Drawing.Point(4, 187);
             this.grdBenhNhan.Name = "grdBenhNhan";
             this.grdBenhNhan.RowHeadersWidth = 39;
-            this.grdBenhNhan.Size = new System.Drawing.Size(1268, 404);
+            this.grdBenhNhan.Size = new System.Drawing.Size(1025, 333);
             this.grdBenhNhan.TabIndex = 47;
             this.grdBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBenhNhan_CellClick);
             // 
@@ -431,7 +431,7 @@ namespace UKPI.Presentation
             this.MaNhapKho.Name = "MaNhapKho";
             this.MaNhapKho.ReadOnly = true;
             this.MaNhapKho.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MaNhapKho.Width = 130;
+            this.MaNhapKho.Width = 90;
             // 
             // BaoHiem
             // 
@@ -450,7 +450,7 @@ namespace UKPI.Presentation
             this.DonViTinh.ReadOnly = true;
             this.DonViTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.DonViTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DonViTinh.Width = 150;
+            this.DonViTinh.Width = 50;
             // 
             // HanDung
             // 
@@ -459,7 +459,7 @@ namespace UKPI.Presentation
             this.HanDung.Name = "HanDung";
             this.HanDung.ReadOnly = true;
             this.HanDung.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.HanDung.Width = 150;
+            this.HanDung.Width = 80;
             // 
             // NhomThuoc
             // 
@@ -468,7 +468,7 @@ namespace UKPI.Presentation
             this.NhomThuoc.Name = "NhomThuoc";
             this.NhomThuoc.ReadOnly = true;
             this.NhomThuoc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NhomThuoc.Width = 110;
+            this.NhomThuoc.Width = 80;
             // 
             // SoLuongTon
             // 
@@ -477,6 +477,7 @@ namespace UKPI.Presentation
             this.SoLuongTon.Name = "SoLuongTon";
             this.SoLuongTon.ReadOnly = true;
             this.SoLuongTon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SoLuongTon.Width = 80;
             // 
             // SoLuongThucTe
             // 
@@ -484,6 +485,7 @@ namespace UKPI.Presentation
             this.SoLuongThucTe.HeaderText = "Số lượng thực tế";
             this.SoLuongThucTe.Name = "SoLuongThucTe";
             this.SoLuongThucTe.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SoLuongThucTe.Width = 80;
             // 
             // SoLuongChenhLech
             // 
@@ -492,6 +494,7 @@ namespace UKPI.Presentation
             this.SoLuongChenhLech.Name = "SoLuongChenhLech";
             this.SoLuongChenhLech.ReadOnly = true;
             this.SoLuongChenhLech.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SoLuongChenhLech.Width = 80;
             // 
             // LoaiChenhLech
             // 
@@ -515,7 +518,7 @@ namespace UKPI.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 648);
+            this.ClientSize = new System.Drawing.Size(1041, 532);
             this.Controls.Add(this.grdBenhNhan);
             this.Controls.Add(this.grpStore);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

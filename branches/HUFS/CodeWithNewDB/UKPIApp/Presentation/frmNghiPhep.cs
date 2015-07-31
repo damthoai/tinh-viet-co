@@ -72,10 +72,7 @@ namespace UKPI.Presentation
             SetDefauldValue();
             InitDataControl();
             this.Text = "QUYẾT ĐỊNH NGHỈ PHÉP CÓ BẢO HIỂM";
-            // Save original columns
-            //_originalColumns = new DataGridViewColumn[grdStores.Columns.Count];
-            //grdStores.Columns.CopyTo(_originalColumns, 0);
-            //grdStores.Sorted += grdStores_Sorted;
+           
         }
 
         public void SetParentForm(frmKhambenh parent)
@@ -85,43 +82,19 @@ namespace UKPI.Presentation
         private void InitDataControl()
         {
             var clvDao = new CaLamViecDao();
-            //CaThucTe.ValueMember = "MoTa";
-            //CaThucTe.DisplayMember = "MoTa";
-            //CaThucTe.DataSource = clvDao.GetCalamViec();
-
-            //LyDoOT.ValueMember = "Name";
-            //LyDoOT.DisplayMember = "Name";
-            //LyDoOT.DataSource = _common.GetLyDoOt();
+          
 
            
         }
 
-        void grdStores_Sorted(object sender, EventArgs e)
-        {
-            this.ProcessDataRow();
-        }
-
         private void GetParam()
         {
-            //parHanChotDuyetCong = ParameterBo.GetParamByName(clsCommon.Parameter.HanChotDuyetcong).ParamValue;
-            //parHanChotDitre = ParameterBo.GetParamByName(clsCommon.Parameter.HanChotDitre).ParamValue;
-            //parHanChotVeSom = ParameterBo.GetParamByName(clsCommon.Parameter.HanChotVesom).ParamValue;
-            //parChuanTinhCong = ParameterBo.GetParamByName(clsCommon.Parameter.ChuanTinhCong).ParamValue;
-            //parHanMucTinhOt = ParameterBo.GetParamByName(clsCommon.Parameter.HanMucTinhOt).ParamValue;
+           
         }
 
         private void SetDefauldValue()
         {
-            //BindYear();
-            //BindMonth();
-            //SetDefauldFilterTime();
-            //BindWeek();
-            //SetFromToDate();
-            //BindStatus();
-            //BindOnOff();
-            //BindShift();
-            //BindTeamLead();
-            //BindGroup();
+           
             BindLyDo();
             txtBenhNhan.Text = clsSystemConfig.UserName;
         }
@@ -641,27 +614,7 @@ namespace UKPI.Presentation
 
         #endregion
 
-        private void radMonth_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void radWeek_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void cboWeek_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void cboMonth_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-
-        private void btnApproveSave_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         public void SendEmailForL2()
         {
        
@@ -677,16 +630,7 @@ namespace UKPI.Presentation
             return lstLichLamViec;
         }
 
-        private bool OnApprove()
-        {
-            
-            return true;
-        }
-
-        private void btnSearchTimesheet_Click(object sender, EventArgs e)
-        {
-          
-        }
+     
         public string GetItemToGetTimesheet()
         {
           
@@ -694,38 +638,7 @@ namespace UKPI.Presentation
         }
 
      
-        private void cboTruongNhomL1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
-     
-
-        private void grdStores_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-   
-
-        }
-
-        private void grdStores_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-  
-        }
-
-        void tb1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
-        }
-
-        void tb_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
-        }
-
-        private void grdStores_DataSourceChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void lblFromDate_Click(object sender, EventArgs e)
         {

@@ -1,7 +1,7 @@
 ﻿using UKPI.Utils;
 namespace UKPI.Presentation
 {
-    partial class frmbaocaotonkho
+    partial class Frmbaocaodieuchinhkho
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@ namespace UKPI.Presentation
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmbaocaotonkho));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmbaocaodieuchinhkho));
             this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,33 +56,33 @@ namespace UKPI.Presentation
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExport = new System.Windows.Forms.Button();
-            this.lblLoaiThuoc = new System.Windows.Forms.Label();
+            this.lblMaTKK = new System.Windows.Forms.Label();
             this.txtLoaiThuoc = new System.Windows.Forms.TextBox();
             this.lblKho = new System.Windows.Forms.Label();
-            this.txtKho = new System.Windows.Forms.TextBox();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
-            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhPhanThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HamLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GPNK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DangBaoChe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NhaSanXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaChotTonKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoatDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayTaoPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhPhanThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanSuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NhomThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongThucTe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongChenhLech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiChenhLech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grbTimKiem = new System.Windows.Forms.GroupBox();
+            this.dtpNgayTKK = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
+            this.grbTimKiem.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSearch
             // 
             this.btnSearch.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSearch.Location = new System.Drawing.Point(386, 7);
+            this.btnSearch.Location = new System.Drawing.Point(526, 21);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(86, 23);
             this.btnSearch.TabIndex = 78;
@@ -239,45 +239,38 @@ namespace UKPI.Presentation
             // 
             this.btnExport.Image = global::UKPI.Properties.Resources.import;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnExport.Location = new System.Drawing.Point(1110, 612);
+            this.btnExport.Location = new System.Drawing.Point(1099, 612);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(91, 28);
+            this.btnExport.Size = new System.Drawing.Size(102, 28);
             this.btnExport.TabIndex = 79;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click_1);
             // 
-            // lblLoaiThuoc
+            // lblMaTKK
             // 
-            this.lblLoaiThuoc.AutoSize = true;
-            this.lblLoaiThuoc.Location = new System.Drawing.Point(13, 13);
-            this.lblLoaiThuoc.Name = "lblLoaiThuoc";
-            this.lblLoaiThuoc.Size = new System.Drawing.Size(57, 13);
-            this.lblLoaiThuoc.TabIndex = 80;
-            this.lblLoaiThuoc.Text = "Loại thuốc";
+            this.lblMaTKK.AutoSize = true;
+            this.lblMaTKK.Location = new System.Drawing.Point(32, 25);
+            this.lblMaTKK.Name = "lblMaTKK";
+            this.lblMaTKK.Size = new System.Drawing.Size(88, 13);
+            this.lblMaTKK.TabIndex = 80;
+            this.lblMaTKK.Text = "Mã thống kê kho";
             // 
             // txtLoaiThuoc
             // 
-            this.txtLoaiThuoc.Location = new System.Drawing.Point(76, 10);
+            this.txtLoaiThuoc.Location = new System.Drawing.Point(121, 22);
             this.txtLoaiThuoc.Name = "txtLoaiThuoc";
-            this.txtLoaiThuoc.Size = new System.Drawing.Size(119, 20);
+            this.txtLoaiThuoc.Size = new System.Drawing.Size(153, 20);
             this.txtLoaiThuoc.TabIndex = 81;
             // 
             // lblKho
             // 
             this.lblKho.AutoSize = true;
-            this.lblKho.Location = new System.Drawing.Point(215, 12);
+            this.lblKho.Location = new System.Drawing.Point(309, 26);
             this.lblKho.Name = "lblKho";
-            this.lblKho.Size = new System.Drawing.Size(26, 13);
+            this.lblKho.Size = new System.Drawing.Size(77, 13);
             this.lblKho.TabIndex = 82;
-            this.lblKho.Text = "Kho";
-            // 
-            // txtKho
-            // 
-            this.txtKho.Location = new System.Drawing.Point(247, 9);
-            this.txtKho.Name = "txtKho";
-            this.txtKho.Size = new System.Drawing.Size(119, 20);
-            this.txtKho.TabIndex = 83;
+            this.lblKho.Text = "Ngày thống kê";
             // 
             // grdToaThuoc
             // 
@@ -296,20 +289,18 @@ namespace UKPI.Presentation
             this.grdToaThuoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.grdToaThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdToaThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TenThuoc,
-            this.ThanhPhanThuoc,
-            this.HamLuong,
-            this.GPNK,
-            this.DangBaoChe,
-            this.NhaSanXuat,
-            this.QuocGia,
-            this.DonViTinh,
-            this.MaKho,
+            this.MaChotTonKho,
             this.TenKho,
-            this.HoatDong,
-            this.SoLuong,
-            this.LoThuoc,
-            this.HanSuDung});
+            this.NgayTaoPhieu,
+            this.ThanhPhanThuoc,
+            this.TenThuoc,
+            this.DonViTinh,
+            this.HanSuDung,
+            this.NhomThuoc,
+            this.SoLuongTon,
+            this.SoLuongThucTe,
+            this.SoLuongChenhLech,
+            this.LoaiChenhLech});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,74 +309,18 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 36);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 69);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 566);
+            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 533);
             this.grdToaThuoc.TabIndex = 2;
             // 
-            // TenThuoc
+            // MaChotTonKho
             // 
-            this.TenThuoc.DataPropertyName = "TenThuoc";
-            this.TenThuoc.HeaderText = "Tên Thuốc";
-            this.TenThuoc.Name = "TenThuoc";
-            this.TenThuoc.ReadOnly = true;
-            // 
-            // ThanhPhanThuoc
-            // 
-            this.ThanhPhanThuoc.DataPropertyName = "ThanhPhanThuoc";
-            this.ThanhPhanThuoc.HeaderText = "Tên Thành Phần Của Thuốc";
-            this.ThanhPhanThuoc.Name = "ThanhPhanThuoc";
-            this.ThanhPhanThuoc.ReadOnly = true;
-            // 
-            // HamLuong
-            // 
-            this.HamLuong.DataPropertyName = "HamLuong";
-            this.HamLuong.HeaderText = "Hàm Lượng";
-            this.HamLuong.Name = "HamLuong";
-            this.HamLuong.ReadOnly = true;
-            // 
-            // GPNK
-            // 
-            this.GPNK.DataPropertyName = "GPNK";
-            this.GPNK.HeaderText = "Số Đăng Ký Hoặc GPNK";
-            this.GPNK.Name = "GPNK";
-            this.GPNK.ReadOnly = true;
-            // 
-            // DangBaoChe
-            // 
-            this.DangBaoChe.DataPropertyName = "DangBaoChe";
-            this.DangBaoChe.HeaderText = "Dạng Bào Chế";
-            this.DangBaoChe.Name = "DangBaoChe";
-            this.DangBaoChe.ReadOnly = true;
-            // 
-            // NhaSanXuat
-            // 
-            this.NhaSanXuat.DataPropertyName = "NhaSanXuat";
-            this.NhaSanXuat.HeaderText = "Nhà Sản Xuất";
-            this.NhaSanXuat.Name = "NhaSanXuat";
-            this.NhaSanXuat.ReadOnly = true;
-            // 
-            // QuocGia
-            // 
-            this.QuocGia.DataPropertyName = "QuocGia";
-            this.QuocGia.HeaderText = "Quốc Gia";
-            this.QuocGia.Name = "QuocGia";
-            this.QuocGia.ReadOnly = true;
-            // 
-            // DonViTinh
-            // 
-            this.DonViTinh.DataPropertyName = "DonViTinh";
-            this.DonViTinh.HeaderText = "Đơn Vị Tính";
-            this.DonViTinh.Name = "DonViTinh";
-            this.DonViTinh.ReadOnly = true;
-            // 
-            // MaKho
-            // 
-            this.MaKho.DataPropertyName = "MaKho";
-            this.MaKho.HeaderText = "Mã Kho";
-            this.MaKho.Name = "MaKho";
-            this.MaKho.ReadOnly = true;
+            this.MaChotTonKho.DataPropertyName = "MaChotTonKho";
+            this.MaChotTonKho.HeaderText = "Mã Thống Kê Kho";
+            this.MaChotTonKho.Name = "MaChotTonKho";
+            this.MaChotTonKho.ReadOnly = true;
             // 
             // TenKho
             // 
@@ -394,26 +329,33 @@ namespace UKPI.Presentation
             this.TenKho.Name = "TenKho";
             this.TenKho.ReadOnly = true;
             // 
-            // HoatDong
+            // NgayTaoPhieu
             // 
-            this.HoatDong.DataPropertyName = "HoatDong";
-            this.HoatDong.HeaderText = "Hoạt Động";
-            this.HoatDong.Name = "HoatDong";
-            this.HoatDong.ReadOnly = true;
+            this.NgayTaoPhieu.DataPropertyName = "NgayTaoPhieu";
+            this.NgayTaoPhieu.HeaderText = "Ngày Tạo Phiếu";
+            this.NgayTaoPhieu.Name = "NgayTaoPhieu";
+            this.NgayTaoPhieu.ReadOnly = true;
             // 
-            // SoLuong
+            // ThanhPhanThuoc
             // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.ReadOnly = true;
+            this.ThanhPhanThuoc.DataPropertyName = "MATHUOC";
+            this.ThanhPhanThuoc.HeaderText = "Mã thuốc";
+            this.ThanhPhanThuoc.Name = "ThanhPhanThuoc";
+            this.ThanhPhanThuoc.ReadOnly = true;
             // 
-            // LoThuoc
+            // TenThuoc
             // 
-            this.LoThuoc.DataPropertyName = "LoThuoc";
-            this.LoThuoc.HeaderText = "Lộ Thuốc";
-            this.LoThuoc.Name = "LoThuoc";
-            this.LoThuoc.ReadOnly = true;
+            this.TenThuoc.DataPropertyName = "TenThuoc";
+            this.TenThuoc.HeaderText = "Tên Thuốc";
+            this.TenThuoc.Name = "TenThuoc";
+            this.TenThuoc.ReadOnly = true;
+            // 
+            // DonViTinh
+            // 
+            this.DonViTinh.DataPropertyName = "DonViTinh";
+            this.DonViTinh.HeaderText = "Đơn Vị Tính";
+            this.DonViTinh.Name = "DonViTinh";
+            this.DonViTinh.ReadOnly = true;
             // 
             // HanSuDung
             // 
@@ -422,24 +364,80 @@ namespace UKPI.Presentation
             this.HanSuDung.Name = "HanSuDung";
             this.HanSuDung.ReadOnly = true;
             // 
-            // frmbaocaotonkho
+            // NhomThuoc
+            // 
+            this.NhomThuoc.DataPropertyName = "NhomThuoc";
+            this.NhomThuoc.HeaderText = "Nhóm Thuốc";
+            this.NhomThuoc.Name = "NhomThuoc";
+            this.NhomThuoc.ReadOnly = true;
+            // 
+            // SoLuongTon
+            // 
+            this.SoLuongTon.DataPropertyName = "SoLuongTon";
+            this.SoLuongTon.HeaderText = "Số Lượng Tồn Kho";
+            this.SoLuongTon.Name = "SoLuongTon";
+            this.SoLuongTon.ReadOnly = true;
+            // 
+            // SoLuongThucTe
+            // 
+            this.SoLuongThucTe.DataPropertyName = "SoLuongThucTe";
+            this.SoLuongThucTe.HeaderText = "Số Lượng Thực Tế";
+            this.SoLuongThucTe.Name = "SoLuongThucTe";
+            this.SoLuongThucTe.ReadOnly = true;
+            // 
+            // SoLuongChenhLech
+            // 
+            this.SoLuongChenhLech.DataPropertyName = "SoLuongChenhLech";
+            this.SoLuongChenhLech.HeaderText = "Số Lượng Chênh Lệch";
+            this.SoLuongChenhLech.Name = "SoLuongChenhLech";
+            this.SoLuongChenhLech.ReadOnly = true;
+            // 
+            // LoaiChenhLech
+            // 
+            this.LoaiChenhLech.DataPropertyName = "LoaiChenhLech";
+            this.LoaiChenhLech.HeaderText = "Loại Chênh Lệch";
+            this.LoaiChenhLech.Name = "LoaiChenhLech";
+            this.LoaiChenhLech.ReadOnly = true;
+            // 
+            // grbTimKiem
+            // 
+            this.grbTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbTimKiem.Controls.Add(this.dtpNgayTKK);
+            this.grbTimKiem.Controls.Add(this.lblMaTKK);
+            this.grbTimKiem.Controls.Add(this.lblKho);
+            this.grbTimKiem.Controls.Add(this.txtLoaiThuoc);
+            this.grbTimKiem.Controls.Add(this.btnSearch);
+            this.grbTimKiem.Location = new System.Drawing.Point(4, 5);
+            this.grbTimKiem.Name = "grbTimKiem";
+            this.grbTimKiem.Size = new System.Drawing.Size(1203, 58);
+            this.grbTimKiem.TabIndex = 84;
+            this.grbTimKiem.TabStop = false;
+            this.grbTimKiem.Text = "Thông tin tìm kiếm";
+            // 
+            // dtpNgayTKK
+            // 
+            this.dtpNgayTKK.Location = new System.Drawing.Point(389, 23);
+            this.dtpNgayTKK.Name = "dtpNgayTKK";
+            this.dtpNgayTKK.Size = new System.Drawing.Size(122, 20);
+            this.dtpNgayTKK.TabIndex = 83;
+            // 
+            // Frmbaocaodieuchinhkho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 648);
-            this.Controls.Add(this.txtKho);
-            this.Controls.Add(this.lblKho);
-            this.Controls.Add(this.txtLoaiThuoc);
-            this.Controls.Add(this.lblLoaiThuoc);
+            this.Controls.Add(this.grbTimKiem);
             this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.grdToaThuoc);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmbaocaotonkho";
+            this.Name = "Frmbaocaodieuchinhkho";
             this.Text = "BÁO CÁO TỒN KHO THUỐC";
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();
+            this.grbTimKiem.ResumeLayout(false);
+            this.grbTimKiem.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -463,23 +461,22 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnExport;
         private Controls.DataGridView_RowNum grdToaThuoc;
-        private System.Windows.Forms.Label lblLoaiThuoc;
+        private System.Windows.Forms.Label lblMaTKK;
         private System.Windows.Forms.TextBox txtLoaiThuoc;
         private System.Windows.Forms.Label lblKho;
-        private System.Windows.Forms.TextBox txtKho;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThanhPhanThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HamLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GPNK;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DangBaoChe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NhaSanXuat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuocGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaChotTonKho;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKho;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoatDong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTaoPhieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThanhPhanThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn HanSuDung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NhomThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongThucTe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongChenhLech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiChenhLech;
+        private System.Windows.Forms.GroupBox grbTimKiem;
+        private System.Windows.Forms.DateTimePicker dtpNgayTKK;
     }
 }

@@ -132,7 +132,7 @@ namespace UKPI.Presentation
             // lblMaChotTonKho
             // 
             this.lblMaChotTonKho.AutoSize = true;
-            this.lblMaChotTonKho.Location = new System.Drawing.Point(21, 16);
+            this.lblMaChotTonKho.Location = new System.Drawing.Point(49, 16);
             this.lblMaChotTonKho.Name = "lblMaChotTonKho";
             this.lblMaChotTonKho.Size = new System.Drawing.Size(85, 13);
             this.lblMaChotTonKho.TabIndex = 26;
@@ -165,14 +165,14 @@ namespace UKPI.Presentation
             this.grpStore.Controls.Add(this.lblMaChotTonKho);
             this.grpStore.Location = new System.Drawing.Point(4, 6);
             this.grpStore.Name = "grpStore";
-            this.grpStore.Size = new System.Drawing.Size(1197, 156);
+            this.grpStore.Size = new System.Drawing.Size(1197, 134);
             this.grpStore.TabIndex = 0;
             this.grpStore.TabStop = false;
             // 
             // ckUseDate
             // 
             this.ckUseDate.AutoSize = true;
-            this.ckUseDate.Location = new System.Drawing.Point(299, 78);
+            this.ckUseDate.Location = new System.Drawing.Point(299, 67);
             this.ckUseDate.Name = "ckUseDate";
             this.ckUseDate.Size = new System.Drawing.Size(15, 14);
             this.ckUseDate.TabIndex = 54;
@@ -183,7 +183,7 @@ namespace UKPI.Presentation
             this.ccbTrangThai.DisplayMember = "TenTrangThai";
             this.ccbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ccbTrangThai.FormattingEnabled = true;
-            this.ccbTrangThai.Location = new System.Drawing.Point(453, 51);
+            this.ccbTrangThai.Location = new System.Drawing.Point(453, 38);
             this.ccbTrangThai.Name = "ccbTrangThai";
             this.ccbTrangThai.Size = new System.Drawing.Size(156, 21);
             this.ccbTrangThai.TabIndex = 53;
@@ -192,7 +192,7 @@ namespace UKPI.Presentation
             // 
             this.dpNgayTaoPhieu.CustomFormat = "dd-MM-yyyy";
             this.dpNgayTaoPhieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpNgayTaoPhieu.Location = new System.Drawing.Point(136, 76);
+            this.dpNgayTaoPhieu.Location = new System.Drawing.Point(136, 65);
             this.dpNgayTaoPhieu.Name = "dpNgayTaoPhieu";
             this.dpNgayTaoPhieu.Size = new System.Drawing.Size(156, 20);
             this.dpNgayTaoPhieu.TabIndex = 52;
@@ -201,7 +201,7 @@ namespace UKPI.Presentation
             // lblTrangThai
             // 
             this.lblTrangThai.AutoSize = true;
-            this.lblTrangThai.Location = new System.Drawing.Point(339, 48);
+            this.lblTrangThai.Location = new System.Drawing.Point(396, 42);
             this.lblTrangThai.Name = "lblTrangThai";
             this.lblTrangThai.Size = new System.Drawing.Size(55, 13);
             this.lblTrangThai.TabIndex = 51;
@@ -209,7 +209,7 @@ namespace UKPI.Presentation
             // 
             // txtDienGiai
             // 
-            this.txtDienGiai.Location = new System.Drawing.Point(136, 48);
+            this.txtDienGiai.Location = new System.Drawing.Point(136, 39);
             this.txtDienGiai.Name = "txtDienGiai";
             this.txtDienGiai.Size = new System.Drawing.Size(156, 20);
             this.txtDienGiai.TabIndex = 50;
@@ -217,7 +217,7 @@ namespace UKPI.Presentation
             // lblNgayTaoPhieu
             // 
             this.lblNgayTaoPhieu.AutoSize = true;
-            this.lblNgayTaoPhieu.Location = new System.Drawing.Point(21, 84);
+            this.lblNgayTaoPhieu.Location = new System.Drawing.Point(54, 68);
             this.lblNgayTaoPhieu.Name = "lblNgayTaoPhieu";
             this.lblNgayTaoPhieu.Size = new System.Drawing.Size(79, 13);
             this.lblNgayTaoPhieu.TabIndex = 49;
@@ -226,7 +226,7 @@ namespace UKPI.Presentation
             // lblDienGiai
             // 
             this.lblDienGiai.AutoSize = true;
-            this.lblDienGiai.Location = new System.Drawing.Point(21, 51);
+            this.lblDienGiai.Location = new System.Drawing.Point(85, 42);
             this.lblDienGiai.Name = "lblDienGiai";
             this.lblDienGiai.Size = new System.Drawing.Size(48, 13);
             this.lblDienGiai.TabIndex = 48;
@@ -234,7 +234,7 @@ namespace UKPI.Presentation
             // 
             // btnChinhSua
             // 
-            this.btnChinhSua.Location = new System.Drawing.Point(534, 127);
+            this.btnChinhSua.Location = new System.Drawing.Point(534, 92);
             this.btnChinhSua.Name = "btnChinhSua";
             this.btnChinhSua.Size = new System.Drawing.Size(75, 23);
             this.btnChinhSua.TabIndex = 47;
@@ -244,7 +244,7 @@ namespace UKPI.Presentation
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(328, 127);
+            this.btnSearch.Location = new System.Drawing.Point(328, 92);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 45;
@@ -254,7 +254,7 @@ namespace UKPI.Presentation
             // 
             // btnTaoPhieu
             // 
-            this.btnTaoPhieu.Location = new System.Drawing.Point(430, 127);
+            this.btnTaoPhieu.Location = new System.Drawing.Point(430, 92);
             this.btnTaoPhieu.Name = "btnTaoPhieu";
             this.btnTaoPhieu.Size = new System.Drawing.Size(75, 23);
             this.btnTaoPhieu.TabIndex = 46;
@@ -273,7 +273,7 @@ namespace UKPI.Presentation
             // lblKho
             // 
             this.lblKho.AutoSize = true;
-            this.lblKho.Location = new System.Drawing.Point(339, 20);
+            this.lblKho.Location = new System.Drawing.Point(426, 16);
             this.lblKho.Name = "lblKho";
             this.lblKho.Size = new System.Drawing.Size(26, 13);
             this.lblKho.TabIndex = 43;
@@ -310,10 +310,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdBenhNhan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdBenhNhan.Location = new System.Drawing.Point(4, 168);
+            this.grdBenhNhan.Location = new System.Drawing.Point(4, 146);
             this.grdBenhNhan.Name = "grdBenhNhan";
             this.grdBenhNhan.RowHeadersWidth = 39;
-            this.grdBenhNhan.Size = new System.Drawing.Size(1197, 468);
+            this.grdBenhNhan.Size = new System.Drawing.Size(1197, 490);
             this.grdBenhNhan.TabIndex = 47;
             this.grdBenhNhan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBenhNhan_CellClick);
             // 

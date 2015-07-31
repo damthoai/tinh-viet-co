@@ -73,7 +73,7 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.lblMaChinhSachGia);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 66);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 88);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             // 
@@ -99,7 +99,7 @@ namespace UKPI.Presentation
             // 
             this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDong.Location = new System.Drawing.Point(1032, 89);
+            this.btnDong.Location = new System.Drawing.Point(1000, 53);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 23);
             this.btnDong.TabIndex = 79;
@@ -111,7 +111,7 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(906, 89);
+            this.btnLuuIn.Location = new System.Drawing.Point(906, 53);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(86, 23);
             this.btnLuuIn.TabIndex = 78;
@@ -123,9 +123,9 @@ namespace UKPI.Presentation
             // 
             this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(789, 89);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(789, 53);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
-            this.btnXoaThuoc.Size = new System.Drawing.Size(86, 23);
+            this.btnXoaThuoc.Size = new System.Drawing.Size(111, 23);
             this.btnXoaThuoc.TabIndex = 76;
             this.btnXoaThuoc.Text = "Xóa Thuốc";
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
@@ -300,17 +300,17 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 144);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 100);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 436);
+            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 299);
             this.grdToaThuoc.TabIndex = 2;
             // 
             // frmChinhSachGiaChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 703);
+            this.ClientSize = new System.Drawing.Size(1213, 411);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnLuuIn);
             this.Controls.Add(this.grdToaThuoc);

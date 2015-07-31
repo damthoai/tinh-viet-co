@@ -224,6 +224,12 @@
       <DependentUpon>HTYTDataSet1.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Presentation\frmbaocaodieuchinhkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmbaocaodieuchinhkho.Designer.cs">
+      <DependentUpon>frmbaocaodieuchinhkho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmChotTonKhoDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -513,6 +519,9 @@
     <Compile Include="ValueObject\ThongTinDonThuocKhamBenh.cs" />
     <Compile Include="ValueObject\ThongTinGiaoDich.cs" />
     <Compile Include="ValueObject\ThongTinKhamBenh.cs" />
+    <Compile Include="ValueObject\ThongTinKhamBenhReport.cs" />
+    <Compile Include="ValueObject\ThongTinKhamBenhReportDetail.cs" />
+    <Compile Include="ValueObject\ThongTinKhamBenhReportHeader.cs" />
     <Compile Include="ValueObject\ThongTinNhapKho.cs" />
     <Compile Include="ValueObject\ThongTinNhapKhoDetail.cs" />
     <Compile Include="ValueObject\ThongTinThuoc.cs" />
@@ -1050,6 +1059,10 @@
     <EmbeddedResource Include="Languages\TitleVN.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmbaocaodieuchinhkho.resx">
+      <DependentUpon>frmbaocaodieuchinhkho.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmChotTonKhoDetail.resx">
       <DependentUpon>frmChotTonKhoDetail.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1276,6 +1289,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InKeToaThuoc.rdlc" />
+    <EmbeddedResource Include="Reports\InNhapKho.rdlc" />
+    <EmbeddedResource Include="Reports\intoathuoc.rdlc" />
     <EmbeddedResource Include="Utils\CustomColumStyles.resx">
       <DependentUpon>CustomColumStyles.cs</DependentUpon>
       <SubType>Designer</SubType>

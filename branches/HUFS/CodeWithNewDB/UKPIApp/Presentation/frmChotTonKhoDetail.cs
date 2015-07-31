@@ -399,6 +399,14 @@ namespace UKPI.Presentation
             }
         }
 
+        private void txtKho_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+
 
 
        
