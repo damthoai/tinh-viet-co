@@ -1,0 +1,286 @@
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+D:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\Projects\SVN_UDMS-D\Modules\HO\Payment Tool\Development\Source\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+C:\Users\lhchinhit\Desktop\HOPaymentTool\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\MTU Manage Timesheet Unilever\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+C:\Users\lhchinhit\Desktop\New folder\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\MTU Manage Timesheet Unilever\HOEnvision\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\log4net.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\NPOI.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\bin\Debug\EPPlus.xml
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+C:\Users\thoai\OneDrive\cham cong project\source\source framework\HOEnvision\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+D:\test\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\test\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+D:\test\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\test\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+D:\test\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+D:\test\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+D:\test\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+D:\test\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+D:\test\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\test\UKPI.AuditResult\bin\Debug\log4net.dll
+D:\test\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+D:\test\UKPI.AuditResult\bin\Debug\EPPlus.dll
+D:\test\UKPI.AuditResult\bin\Debug\NPOI.dll
+D:\test\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+D:\test\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\test\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+D:\test\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\test\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+D:\test\UKPI.AuditResult\bin\Debug\EPPlus.xml
+D:\test\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+D:\test\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+D:\test\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\log4net.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\EPPlus.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\NPOI.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+D:\Disc D\HTCC\UKPI.AuditResult\bin\Debug\EPPlus.xml
+D:\Disc D\HTCC\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+D:\Disc D\HTCC\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+D:\Disc D\HTCC\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Framework\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\log4net.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\EPPlus.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\NPOI.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\bin\Debug\EPPlus.xml
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+E:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\log4net.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\EPPlus.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\NPOI.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\bin\Debug\EPPlus.xml
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+D:\Working\PartTime\HUFS\Code\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb

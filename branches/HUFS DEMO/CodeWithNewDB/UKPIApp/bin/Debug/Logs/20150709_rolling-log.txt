@@ -1,0 +1,37 @@
+﻿2015-07-09 22:08:53,382 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:09:27,868 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:20:44,639 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:20:52,065 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:21:45,508 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:22:15,308 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:45:41,293 [1] ERROR UKPI.DataAccessObject.ShareEntityDao - Specified cast is not valid.
+System.InvalidCastException: Specified cast is not valid.
+   at UKPI.DataAccessObject.ShareEntityDao.LoadThongTinNhomThuoc() in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\DataAccessObject\ShareEntityDao.cs:line 671
+2015-07-09 22:45:41,394 [1] ERROR UKPI.frmMain - Exception has been thrown by the target of an invocation.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidCastException: Specified cast is not valid.
+   at UKPI.DataAccessObject.ShareEntityDao.LoadThongTinNhomThuoc() in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\DataAccessObject\ShareEntityDao.cs:line 694
+   at UKPI.Presentation.frmdanhmucthuoc.addNhomThuocItems(AutoCompleteStringCollection col) in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\Presentation\frmdanhmucthuoc.cs:line 144
+   at UKPI.Presentation.frmdanhmucthuoc.SetDefauldValue() in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\Presentation\frmdanhmucthuoc.cs:line 126
+   at UKPI.Presentation.frmdanhmucthuoc..ctor() in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\Presentation\frmdanhmucthuoc.cs:line 80
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   at System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at UKPI.frmMain.MenuItem_OnClick(Object sender, EventArgs e) in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\Presentation\frmMain.cs:line 646
+2015-07-09 22:45:45,295 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:47:28,105 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:47:59,566 [9] ERROR UKPI.DataAccessObject.ShareEntityDao - Specified cast is not valid.
+System.InvalidCastException: Specified cast is not valid.
+   at UKPI.DataAccessObject.ShareEntityDao.LoadThongTinNhomThuoc() in d:\Working\PartTime\HUFS\CodeWithNewDB\UKPIApp\DataAccessObject\ShareEntityDao.cs:line 671
+2015-07-09 22:47:59,565 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:48:59,359 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:49:13,209 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:49:35,520 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 22:52:11,510 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 22:59:41,440 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 23:00:41,686 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-09 23:01:45,372 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-09 23:03:28,544 [4] DEBUG UKPI.frmMain - Thread was being aborted.
