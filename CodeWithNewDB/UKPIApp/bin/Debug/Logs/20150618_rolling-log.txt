@@ -1,0 +1,87 @@
+﻿2015-06-18 09:57:38,253 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 10:25:58,474 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 10:26:16,584 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 10:53:19,975 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 10:53:43,552 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 11:03:20,951 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 11:13:07,803 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 15:19:02,303 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 15:19:21,058 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 15:20:21,565 [1] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\DataAccessObject\ThongTinKhamBenhDao.cs:line 105
+2015-06-18 15:22:24,873 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 16:55:18,973 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 16:55:38,036 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 16:58:07,795 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 16:58:16,040 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 17:00:14,411 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 17:07:19,554 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 17:07:38,844 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 17:17:54,312 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 17:18:11,441 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 17:21:12,024 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 17:26:42,687 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 17:39:51,101 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:03:50,255 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:04:45,110 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:07:13,094 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:07:39,670 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:11:36,960 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:11:43,883 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:12:31,496 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:13:00,738 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:13:33,571 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:13:43,867 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 18:14:17,643 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 18:14:25,325 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:29:13,786 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:33:06,851 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:34:08,260 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:34:31,333 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:35:48,859 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:37:10,419 [9] ERROR UKPI.Presentation.frmKhambenh - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at UKPI.Presentation.frmKhambenh.BuildThongTinKhamBenh() in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\frmKhambenh.cs:line 665
+   at UKPI.Presentation.frmKhambenh.btnXacNhan_Click(Object sender, EventArgs e) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\frmKhambenh.cs:line 482
+2015-06-18 19:40:02,163 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:40:42,323 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:41:42,055 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:45:43,217 [10] ERROR UKPI.Presentation.frmKhambenh - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at UKPI.Presentation.frmKhambenh.BuildThongTinKhamBenh() in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\frmKhambenh.cs:line 665
+   at UKPI.Presentation.frmKhambenh.btnXacNhan_Click(Object sender, EventArgs e) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\frmKhambenh.cs:line 482
+2015-06-18 19:47:15,371 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:50:07,240 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:50:22,561 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:52:20,928 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 19:52:37,135 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:56:29,850 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 19:57:14,833 [9] ERROR UKPI.Presentation.ApproveTSLookup.ReportInDonThuocFull - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at UKPI.Presentation.ApproveTSLookup.ReportInDonThuocFull.BindReport() in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\Reports\ReportInDonThuocFull.cs:line 40
+2015-06-18 20:01:49,259 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 20:01:49,289 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 20:02:14,599 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 20:12:57,254 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 20:13:56,911 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 20:19:00,805 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 20:19:44,157 [1] ERROR UKPI.Presentation.ApproveTSLookup.ReportInDonThuocBH - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at UKPI.Presentation.ApproveTSLookup.ReportInDonThuocBH.BindReport() in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\Presentation\Reports\ReportInDonThuocBH.cs:line 42
+2015-06-18 20:20:03,366 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 20:28:02,097 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 20:29:33,920 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 21:01:22,071 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 21:12:46,169 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 21:15:49,969 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-18 21:22:18,071 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-18 21:27:52,520 [4] DEBUG UKPI.frmMain - Thread was being aborted.

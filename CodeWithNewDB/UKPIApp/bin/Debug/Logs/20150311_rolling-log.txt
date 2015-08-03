@@ -1,0 +1,38 @@
+﻿2015-03-11 00:16:33,192 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-03-11 00:20:26,262 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-03-11 00:21:20,829 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-03-11 02:00:36,211 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-03-11 20:43:30,480 [10] ERROR UKPI.BusinessObject.clsAutUserBO - System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.BusinessObject.clsAutUserBO.Login(String username, String password) in d:\test\UKPIApp\BusinessObject\Authenticate\clsAutUserBO.cs:line 284
+2015-03-11 20:44:22,123 [10] ERROR UKPI.BusinessObject.clsAutUserBO - System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.BusinessObject.clsAutUserBO.Login(String username, String password) in d:\test\UKPIApp\BusinessObject\Authenticate\clsAutUserBO.cs:line 284
+2015-03-11 20:49:06,070 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-03-11 21:20:47,163 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-03-11 21:26:18,984 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-03-11 22:47:02,077 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-03-11 22:47:33,953 [1] ERROR UKPI.DataAccessObject.TeamDao - Incorrect syntax near '@SysId'.
+System.Data.SqlClient.SqlException: Incorrect syntax near '@SysId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at UKPI.Utils.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\test\UKPIApp\Utils\SQLHelper.cs:line 281
+   at UKPI.Utils.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\test\UKPIApp\Utils\SQLHelper.cs:line 204
+   at UKPI.Utils.DataServices.ExecuteNonQuery(CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\test\UKPIApp\Utils\DataServices.cs:line 43
+   at UKPI.DataAccessObject.TeamDao.CreateTeam(ClsTeam team, String username) in d:\test\UKPIApp\DataAccessObject\TeamDao.cs:line 184
+2015-03-11 22:47:34,023 [1] ERROR UKPI.Presentation.FrmManageTeam - Incorrect syntax near '@SysId'.
+System.Data.SqlClient.SqlException: Incorrect syntax near '@SysId'.
+   at UKPI.DataAccessObject.TeamDao.CreateTeam(ClsTeam team, String username) in d:\test\UKPIApp\DataAccessObject\TeamDao.cs:line 191
+   at UKPI.BusinessObject.TeamBo.CreateTeam(ClsTeam team, String userName) in d:\test\UKPIApp\BusinessObject\TeamBo.cs:line 37
+   at UKPI.Presentation.FrmManageTeam.btnAddNew_Click(Object sender, EventArgs e) in d:\test\UKPIApp\Presentation\frmManageTeam.cs:line 275
+2015-03-11 22:47:35,433 [4] DEBUG UKPI.frmMain - Thread was being aborted.
