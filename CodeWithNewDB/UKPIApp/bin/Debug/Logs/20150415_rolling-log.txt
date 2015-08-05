@@ -1,0 +1,270 @@
+﻿2015-04-15 00:01:36,147 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 00:01:44,012 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 00:05:00,694 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 00:07:05,447 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 20:23:38,943 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 20:24:19,319 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 20:57:54,594 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 20:59:29,051 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:00:53,819 [9] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:03:31,191 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:05:15,412 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:07:52,328 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:12:06,506 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:16:34,408 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:18:25,623 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:30:48,796 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:33:01,362 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:33:44,410 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:34:09,929 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:37:15,160 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:49:21,615 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:49:52,445 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:52:36,616 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:53:24,531 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:53:51,259 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:56:37,927 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 21:57:16,114 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 21:58:18,387 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 22:18:26,259 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 22:59:17,371 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 22:59:17,997 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 22:59:51,921 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:09:07,261 [9] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:09:12,986 [7] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:09:25,730 [9] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:10:45,941 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:10:50,529 [9] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:15:11,446 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:15:13,040 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:19:11,708 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:19:43,196 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:19:44,595 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:22:14,015 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:22:44,586 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:22:44,752 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:22:51,755 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:22:55,148 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:23:23,250 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:23:35,403 [1] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'HUFS_GetChinhSachGiaChiTiet' expects parameter '@MaChinhSachGia', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 536
+   at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\SQLHelper.cs:line 455
+   at UKPI.Utils.DataServices.ExecuteDataTable(CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\Utils\DataServices.cs:line 33
+   at UKPI.DataAccessObject.QuanLyThuocDao.GetChinhSachGiaChiTiet(String maChinhSachGia) in e:\Working\Projects\UngDungQuanLyYTe\Application\HUFS\Code\UKPIApp\DataAccessObject\QuanLyThuocDao.cs:line 63
+2015-04-15 23:24:07,732 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:25:59,102 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:29:03,660 [9] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:30:32,328 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:32:24,156 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:39:40,178 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:40:57,106 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-04-15 23:41:22,415 [10] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:47:53,431 [10] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:49:41,818 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-04-15 23:49:53,681 [4] DEBUG UKPI.frmMain - Thread was being aborted.
