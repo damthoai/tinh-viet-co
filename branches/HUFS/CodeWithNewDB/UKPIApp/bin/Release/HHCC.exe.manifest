@@ -132,7 +132,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PY1XtGKZhvgMNayyBaltb8FolEM=</dsig:DigestValue>
+        <dsig:DigestValue>FwOnXAtFelPprnCOeF3CcKNEMq8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -982,13 +982,13 @@
       <dsig:DigestValue>5q4GMdZmgT5ZFATUpozxL2Bfiso=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="97007" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="97015" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>nSNCd90psZYoQrDOK4aEdC3QAGc=</dsig:DigestValue>
+      <dsig:DigestValue>OyPRgyHcFKzvE5DIPy6IyLBLEAw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UKPI.Titles.VN.xml" size="95307" writeableType="applicationData">
