@@ -418,7 +418,15 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value />
+                        <Value>=First(Fields!CongTy.Value, "DataSet1")</Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">   </Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!BoPhan.Value, "DataSet1")</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -538,7 +546,15 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value />
+                        <Value>=First(Fields!ChanDoanBanDau.Value, "DataSet1")</Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">   </Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!NhomBenh.Value, "DataSet1")</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -655,7 +671,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=First(Fields!TenThuoc.Value, "DataSet1")</Value>
+                                      <Value>=Fields!TenThuoc.Value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -698,7 +714,7 @@
                                       <Style />
                                     </TextRun>
                                     <TextRun>
-                                      <Value>=Sum(Fields!SoLuong.Value, "DataSet1")</Value>
+                                      <Value>=Fields!SoLuong.Value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
