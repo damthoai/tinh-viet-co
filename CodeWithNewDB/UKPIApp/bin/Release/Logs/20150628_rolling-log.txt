@@ -1,0 +1,67 @@
+﻿2015-06-28 09:49:16,889 [10] ERROR UKPI.DataAccessObject.ShareEntityDao - Invalid object name 'HUFS_NHASANXUAT'.
+System.Data.SqlClient.SqlException: Invalid object name 'HUFS_NHASANXUAT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at UKPI.DataAccessObject.ShareEntityDao.LoadNhaSanXuat()
+2015-06-28 09:49:16,933 [10] ERROR UKPI.frmMain - Exception has been thrown by the target of an invocation.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Data.SqlClient.SqlException: Invalid object name 'HUFS_NHASANXUAT'.
+   at UKPI.DataAccessObject.ShareEntityDao.LoadNhaSanXuat()
+   at UKPI.Presentation.frmdanhmucthuoc.addNhaSanXuatItems(AutoCompleteStringCollection col)
+   at UKPI.Presentation.frmdanhmucthuoc.SetDefauldValue()
+   at UKPI.Presentation.frmdanhmucthuoc..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   at System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at UKPI.frmMain.MenuItem_OnClick(Object sender, EventArgs e)
+2015-06-28 09:49:20,017 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-28 09:51:20,214 [10] ERROR UKPI.DataAccessObject.QuanLyThuocDao - Procedure or function 'p_HUFS_UpdateChinhSachGia' expects parameter '@LastUpdatedBy', which was not supplied.
+System.Data.SqlClient.SqlException: Procedure or function 'p_HUFS_UpdateChinhSachGia' expects parameter '@LastUpdatedBy', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at UKPI.Utils.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at UKPI.Utils.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at UKPI.Utils.DataServices.ExecuteStoredProcedure(CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at UKPI.DataAccessObject.QuanLyThuocDao.UpdateChinhSachGia(ChinhSachGiaDT chinhSachGia)
+2015-06-28 10:33:35,459 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-28 10:47:04,492 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-28 22:45:05,022 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-28 22:51:09,915 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-28 22:51:26,143 [1] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho)
+2015-06-28 22:51:28,187 [1] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho)
+2015-06-28 22:51:40,882 [1] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho)
+2015-06-28 22:51:50,801 [1] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho)

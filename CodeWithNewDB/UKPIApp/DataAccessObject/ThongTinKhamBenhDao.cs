@@ -92,7 +92,7 @@ namespace UKPI.DataAccessObject
             }
         }
 
-        public int CheckSoLuongThuocTrongKho(string maThuoc, long soLuongXuat,string tenKho)
+        public int CheckSoLuongThuocTrongKho(string maThuoc, long soLuongXuat, string tenKho)
         {
             try
             {
@@ -115,7 +115,7 @@ namespace UKPI.DataAccessObject
                 return -1;
             }
         }
-        private bool InsertThongTinGiaoDich(string maThuoc,double soLuong, bool nhapKho, bool xuatKho,string maKhamBenh)
+        private bool InsertThongTinGiaoDich(string maThuoc, double soLuong, bool nhapKho, bool xuatKho, string maKhamBenh)
         {
             try
             {
@@ -128,7 +128,8 @@ namespace UKPI.DataAccessObject
                 DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_insertDataForTransaction, Params);
                 return true;
             }
-            catch {
+            catch
+            {
                 return false;
             }
         }
@@ -333,7 +334,7 @@ namespace UKPI.DataAccessObject
 
         }
 
-        public bool ProcessGiaoDichKhamBenh(List<ThongTinGiaoDich>  listTransaction)
+        public bool ProcessGiaoDichKhamBenh(List<ThongTinGiaoDich> listTransaction)
         {
             string strListTransaction = "";
             for (int i = 0; i < listTransaction.Count; i++)
@@ -341,7 +342,7 @@ namespace UKPI.DataAccessObject
                 if (i == 0)
                     strListTransaction += listTransaction[i].MaTransaction.ToString();
                 else
-                    strListTransaction += ","+listTransaction[i].MaTransaction.ToString() ;
+                    strListTransaction += "," + listTransaction[i].MaTransaction.ToString();
             }
             return ProcessGiaoDichXuatKho(strListTransaction);
 
@@ -415,7 +416,7 @@ namespace UKPI.DataAccessObject
             int lenght = currentMaxMaKhamBenh.Length;
             int prefixLenght = KeyPrefix.MaKhamBenh.Length;
 
-            string currentNumber = !string.IsNullOrEmpty(currentMaxMaKhamBenh) ? currentMaxMaKhamBenh.Remove(0, prefixLenght): "0";
+            string currentNumber = !string.IsNullOrEmpty(currentMaxMaKhamBenh) ? currentMaxMaKhamBenh.Remove(0, prefixLenght) : "0";
             long keyNumber = 0;
             try
             {
