@@ -774,7 +774,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>0.9675in</Top>
             <Left>0.13417in</Left>
-            <Height>6.40625in</Height>
+            <Height>5.45833in</Height>
             <Width>7.97958in</Width>
             <ZIndex>2</ZIndex>
             <Style>
@@ -784,7 +784,7 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>7.5in</Height>
+        <Height>6.57292in</Height>
         <Style />
       </Body>
       <Width>8.27in</Width>
