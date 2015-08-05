@@ -1,0 +1,20 @@
+﻿2015-06-16 22:15:44,671 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 22:59:22,780 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 22:59:47,225 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:00:24,000 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:00:44,297 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:01:48,482 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:02:07,807 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:05:32,930 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:40:33,449 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:42:41,663 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:42:55,020 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:42:55,434 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:44:04,135 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:45:33,111 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:55:44,684 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:55:58,799 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:56:36,488 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:57:02,103 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-06-16 23:57:53,056 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-06-16 23:59:20,775 [4] DEBUG UKPI.frmMain - Thread was being aborted.

@@ -1,0 +1,55 @@
+﻿2015-07-26 11:44:37,654 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 11:46:35,957 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 11:50:01,004 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 11:51:13,440 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+2015-07-26 11:51:39,814 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+2015-07-26 11:53:57,486 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 12:10:01,131 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 12:10:41,138 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:11:21,337 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:15:35,945 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:16:42,706 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:20:41,733 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:25:08,677 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:26:55,046 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:32:27,554 [8] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:33:34,113 [8] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:34:39,024 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:36:25,780 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:37:01,142 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:38:05,215 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:38:48,715 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:39:30,998 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:41:18,247 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:43:57,925 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:44:31,938 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:45:22,005 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:45:52,364 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:49:08,098 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:49:58,751 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:51:20,565 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:55:44,939 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:56:03,530 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Could not find stored procedure 'p_HUFS_ProcessChotTonKhoDetailXacNhan'.
+2015-07-26 21:57:06,181 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 21:57:52,065 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 21:57:59,967 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 21:58:49,156 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 21:59:08,841 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 22:00:49,587 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 22:01:06,182 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 22:02:28,183 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 22:03:31,769 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 22:31:53,325 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 22:32:17,916 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 22:34:50,261 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 22:35:14,388 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 22:36:55,918 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 22:39:33,337 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 22:39:37,282 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to bigint.
+2015-07-26 22:40:52,077 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Procedure or function 'p_HUFS_ProcessChotTonKhoHeaderWorkflow' expects parameter '@CurrentWorkflow', which was not supplied.
+2015-07-26 22:44:36,153 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-07-26 22:45:27,374 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-07-26 22:46:04,211 [1] INFO  UKPI.DataAccessObject.ChotTonKhoDao - Error converting data type nvarchar to int.
+2015-07-26 22:57:32,889 [4] DEBUG UKPI.frmMain - Thread was being aborted.
