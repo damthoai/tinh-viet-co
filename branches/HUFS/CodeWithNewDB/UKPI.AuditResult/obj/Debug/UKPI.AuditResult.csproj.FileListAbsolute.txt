@@ -328,3 +328,25 @@ D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\bin\Debug\EPPlus.xml
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Library\EPPlus_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Library\NPOI_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\AuditResultDetail.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\AuditResultInformation.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\UKPI.AuditResult.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\log4net.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\UKPI.Core.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\EPPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\NPOI.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Interop.Excel.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\Ionic.Zip.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\UKPI.Core.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\bin\Debug\EPPlus.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.AuditResult\obj\Debug\UKPI.AuditResult.pdb

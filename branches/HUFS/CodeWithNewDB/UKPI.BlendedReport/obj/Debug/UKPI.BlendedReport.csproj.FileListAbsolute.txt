@@ -253,3 +253,20 @@ D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\EPPlus.xml
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.dll
 D:\Disk E\HTYT\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Library\EPPlus_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Library\NPOI_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\BlendConfig.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\UKPI.BlendedReport.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\UKPI.BlendedReport.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\NPOI.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\EPPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Interop.Excel.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\Ionic.Zip.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\bin\Debug\EPPlus.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\UKPI.BlendedReport\obj\Debug\UKPI.BlendedReport.pdb

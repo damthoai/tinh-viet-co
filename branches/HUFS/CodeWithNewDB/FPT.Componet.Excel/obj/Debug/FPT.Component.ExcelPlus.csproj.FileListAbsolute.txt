@@ -222,3 +222,18 @@ D:\Disk E\HTYT\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlu
 D:\Disk E\HTYT\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb
 D:\Disk E\HTYT\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
 D:\Working\PartTime\HUFS\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Library\EPPlusXmlDocumentationFile.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Library\EPPlus_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Library\Ionic_Utils_Zip_license.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Library\NPOI_License.txt
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll.config
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\FPT.Component.ExcelPlus.pdb
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\EPPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Interop.Excel.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\NPOI.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\Ionic.Zip.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\bin\Debug\EPPlus.xml
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.csprojResolveAssemblyReference.cache
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.dll
+D:\Disk E\HTYT 1\CodeWithNewDB\FPT.Componet.Excel\obj\Debug\FPT.Component.ExcelPlus.pdb

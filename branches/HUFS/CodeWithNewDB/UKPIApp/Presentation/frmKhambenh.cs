@@ -120,15 +120,15 @@ namespace UKPI.Presentation
             BindMaICD();
             // LoadThongTinBenhNhan();
             BuildGridViewRow();
-            txtBenhNhan.ReadOnly = true;
-            txtMaBHYT.ReadOnly = true;
-            txtNamSinh.ReadOnly = true;
-            txtCongTy.ReadOnly = true;
-            cbbBoPhan.Enabled = false;
-            cbbGioiTinh.Enabled = false;
-            cbbKhuVuc.Enabled = false;
-            cbbPhongKham.Enabled = false;
-            btnLuuIn.Enabled = false;
+            //txtBenhNhan.ReadOnly = true;
+            //txtMaBHYT.ReadOnly = true;
+            //txtNamSinh.ReadOnly = true;
+            //txtCongTy.ReadOnly = true;
+            //cbbBoPhan.Enabled = false;
+            //cbbGioiTinh.Enabled = false;
+            //cbbKhuVuc.Enabled = false;
+            //cbbPhongKham.Enabled = false;
+            //btnLuuIn.Enabled = false;
         }
         private void LoadThongTinBenhNhan()
         {
@@ -426,12 +426,10 @@ namespace UKPI.Presentation
 
 
         }
-
         private void chkQuyetDinh_CheckedChanged(object sender, EventArgs e)
         {
             btnQuyetDinh.Enabled = true;
         }
-
         private void lblTongThanhTien_Click(object sender, EventArgs e)
         {
 
@@ -593,6 +591,7 @@ namespace UKPI.Presentation
             }
              * */
         }
+
         public void SetQuyetDinhNghiPhep(QuyetDinhNghiPhep qd)
         {
             this.quyetDinhNghiPhep = qd;
@@ -737,7 +736,6 @@ namespace UKPI.Presentation
         {
 
         }
-
 
         private void grdToaThuoc_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
