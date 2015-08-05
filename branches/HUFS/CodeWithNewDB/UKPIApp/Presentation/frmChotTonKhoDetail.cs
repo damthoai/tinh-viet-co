@@ -111,7 +111,7 @@ namespace UKPI.Presentation
                 if(currentChotTonKhoHeader.CurrentWorkflow == 0) //moi luu
                 {
                     btnTinhTonKho.Enabled = true;
-                    //btnExcel.Enabled = false;
+                    btnExcel.Enabled = false;
                     btnXacNhan.Enabled = false;
                     btnChotTon.Enabled = false;
 

@@ -119,6 +119,7 @@ namespace UKPI.Presentation
             dtpThoiGianBatDau.Enabled = value;
             dtpThoiGianKetThuc.Enabled = value;
             dtpNgayNgungHoatDong.Enabled = value;
+            
         }
         private void DeselectOrtherCheckbox(int currentRowIndex)
         {
@@ -294,8 +295,6 @@ namespace UKPI.Presentation
         }
 
 
-    
-
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
             if (txtTenChinhSachGia.Text.Trim() == "")
@@ -403,6 +402,8 @@ namespace UKPI.Presentation
             dtpNgayNgungHoatDong.Value = DateTime.Now;
             dtpThoiGianKetThuc.Value = DateTime.Now;
             dtpThoiGianBatDau.Value = DateTime.Now;
+            cbHoatDong.Checked = true;
+            SetFormEnable(true);
         }
 
         private void dtpThoiGianBatDau_ValueChanged(object sender, EventArgs e)

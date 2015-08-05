@@ -1,0 +1,28 @@
+﻿2015-08-05 14:33:34,000 [4] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 14:37:40,342 [4] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-08-05 14:38:43,639 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 14:52:53,346 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-08-05 14:54:33,495 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 14:58:48,855 [11] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 15:00:33,581 [11] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-08-05 15:01:33,037 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 15:17:44,195 [10] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\DataAccessObject\ThongTinKhamBenhDao.cs:line 107
+2015-08-05 15:17:57,638 [10] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\DataAccessObject\ThongTinKhamBenhDao.cs:line 107
+2015-08-05 15:18:02,750 [10] ERROR UKPI.DataAccessObject.ThongTinKhamBenhDao - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at UKPI.DataAccessObject.ThongTinKhamBenhDao.CheckSoLuongThuocTrongKho(String maThuoc, Int64 soLuongXuat, String tenKho) in d:\Disk E\HTYT\CodeWithNewDB\UKPIApp\DataAccessObject\ThongTinKhamBenhDao.cs:line 107
+2015-08-05 16:41:54,032 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 16:45:12,051 [12] DEBUG UKPI.frmMain - Thread was being aborted.
+2015-08-05 16:46:53,072 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 16:53:27,015 [12] ERROR UKPI.frmMain - Import folder 'D:\UKPI\Import\Stores' is not exist.
+2015-08-05 16:54:29,640 [12] DEBUG UKPI.frmMain - Thread was being aborted.
