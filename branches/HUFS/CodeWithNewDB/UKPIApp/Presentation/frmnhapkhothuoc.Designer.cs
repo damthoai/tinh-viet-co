@@ -102,7 +102,7 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.cbbPhongKham);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(990, 165);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(927, 165);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             this.grpThongTinKhamBenh.Text = "Thông tin nhập kho";
@@ -422,8 +422,9 @@ namespace UKPI.Presentation
             // 
             // lblTongThanhTien
             // 
+            this.lblTongThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTongThanhTien.AutoSize = true;
-            this.lblTongThanhTien.Location = new System.Drawing.Point(977, 626);
+            this.lblTongThanhTien.Location = new System.Drawing.Point(700, 470);
             this.lblTongThanhTien.Name = "lblTongThanhTien";
             this.lblTongThanhTien.Size = new System.Drawing.Size(82, 13);
             this.lblTongThanhTien.TabIndex = 58;
@@ -431,10 +432,11 @@ namespace UKPI.Presentation
             // 
             // txtTongThanhTien
             // 
+            this.txtTongThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTongThanhTien.Enabled = false;
-            this.txtTongThanhTien.Location = new System.Drawing.Point(1078, 623);
+            this.txtTongThanhTien.Location = new System.Drawing.Point(788, 467);
             this.txtTongThanhTien.Name = "txtTongThanhTien";
-            this.txtTongThanhTien.Size = new System.Drawing.Size(127, 20);
+            this.txtTongThanhTien.Size = new System.Drawing.Size(137, 20);
             this.txtTongThanhTien.TabIndex = 70;
             this.txtTongThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -465,7 +467,7 @@ namespace UKPI.Presentation
             this.grdToaThuoc.Location = new System.Drawing.Point(4, 177);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(990, 259);
+            this.grdToaThuoc.Size = new System.Drawing.Size(921, 266);
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 
@@ -473,7 +475,7 @@ namespace UKPI.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 481);
+            this.ClientSize = new System.Drawing.Size(937, 495);
             this.Controls.Add(this.txtTongThanhTien);
             this.Controls.Add(this.lblTongThanhTien);
             this.Controls.Add(this.grdToaThuoc);

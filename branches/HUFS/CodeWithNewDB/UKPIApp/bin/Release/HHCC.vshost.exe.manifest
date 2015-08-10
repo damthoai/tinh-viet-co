@@ -132,7 +132,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FwOnXAtFelPprnCOeF3CcKNEMq8=</dsig:DigestValue>
+        <dsig:DigestValue>4qdYXSAwdPL+YGglrZJ3YzcRDkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -307,13 +307,13 @@
       <dsig:DigestValue>oUMoMyhWr1j8EJwnDGfNWQC2lsI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="HHCC.exe.config" size="9070">
+  <file name="HHCC.exe.config" size="9062">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fTTHeAtuldix1ExhTFSL6kCy24Y=</dsig:DigestValue>
+      <dsig:DigestValue>B2TgxzlVQ8kKWB3tF7oQimu8xvQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icons\applications.ico" size="29926">
@@ -982,22 +982,22 @@
       <dsig:DigestValue>5q4GMdZmgT5ZFATUpozxL2Bfiso=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.EN.xml" size="97015" writeableType="applicationData">
+  <file name="UKPI.Titles.EN.xml" size="97018" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>OyPRgyHcFKzvE5DIPy6IyLBLEAw=</dsig:DigestValue>
+      <dsig:DigestValue>DpX6jSQsef9kATyW7ZVeddj5C24=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Titles.VN.xml" size="95307" writeableType="applicationData">
+  <file name="UKPI.Titles.VN.xml" size="95310" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Vo+vygsqz+toSUwOpG0UNBGNpWc=</dsig:DigestValue>
+      <dsig:DigestValue>QCnkjuRSULzslKb9qz3p3WfwizY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Unilever.jpg" size="6652">

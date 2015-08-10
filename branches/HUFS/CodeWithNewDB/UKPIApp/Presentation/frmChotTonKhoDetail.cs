@@ -89,8 +89,13 @@ namespace UKPI.Presentation
         {
             if (currentChotTonKhoHeader == null)
             {
+                List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
                 txtMaCHotTonKho.Text = System.Configuration.ConfigurationManager.AppSettings["MaCHotTon"] + DateTime.Now.ToString("yyyyMMddHHmmss");
-                txtKho.Text = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
+                string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+                var firstOrDefault = listPhongKham.FirstOrDefault(a => a.RoomID == currentKho);
+                if (firstOrDefault != null)
+                    txtKho.Text = firstOrDefault.RoomName;
+                ;
                 txtNguoiXacNhan.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
                 txtNguoiDieuChinh.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
                 ccbTrangThai.SelectedIndex = 0;

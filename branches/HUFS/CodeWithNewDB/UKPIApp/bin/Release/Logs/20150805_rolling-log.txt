@@ -372,3 +372,4 @@ System.Data.SqlClient.SqlException: Procedure or function 'p_HUFS_CheckThongTinC
    at UKPI.Utils.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
    at UKPI.Utils.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
    at UKPI.DataAccessObject.ChotTonKhoDao.CheckChotTonDangHoatDong(String maKho)
+2015-08-06 00:04:24,835 [4] DEBUG UKPI.frmMain - Thread was being aborted.

@@ -84,7 +84,7 @@ namespace UKPI.Presentation.ApproveTSLookup
 
             DataTable _tbToaThuoc = new DataTable();
 
-            _tbToaThuoc = _reportBo.GetToaThuoc(this.maKhamBenh);
+            _tbToaThuoc = _reportBo.GetToaThuocBh(this.maKhamBenh);
 
             // Create a report data source for the sales order data
             ReportDataSource dsToaThuoc = new ReportDataSource();
