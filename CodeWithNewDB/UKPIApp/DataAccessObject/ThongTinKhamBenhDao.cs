@@ -308,7 +308,7 @@ namespace UKPI.DataAccessObject
                                                                  thongTinKhamBenh.ThongTinToaThuoc[i].SoLuong,
                                                                  false,
                                                                  true,
-                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].MaKhamBenh, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                                                                 thongTinKhamBenh.ThongTinToaThuoc[i].MaKhamBenh, thongTinKhamBenh.PhongKhamBenh);
                             if (listi != null && listi.Count > 0)
                             {
                                 list.AddRange(listi);

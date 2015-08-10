@@ -84,7 +84,14 @@ namespace UKPI.Presentation
                 ccbTrangThai.Items.Add(new TrangThai { MaTrangThai = list[i], TenTrangThai = list[i] });
              }
             ccbTrangThai.SelectedIndex = 0;
-            txtKho.Text = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
+
+            List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
+
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+            var firstOrDefault = listPhongKham.FirstOrDefault(a => a.RoomID == currentKho);
+            if (firstOrDefault != null)
+                txtKho.Text = firstOrDefault.RoomName;
+            ;
             
     
         }

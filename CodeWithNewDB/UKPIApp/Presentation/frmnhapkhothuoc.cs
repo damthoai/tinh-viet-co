@@ -112,8 +112,8 @@ namespace UKPI.Presentation
             //cbbPhongKham.DataSource = _shareEntityDao.LoadDanhSachPhongKham();
             List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
             cbbPhongKham.DataSource = listPhongKham;
-            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
-            int currentIndex = listPhongKham.FindIndex(a => a.RoomName == currentKho);
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+            int currentIndex = listPhongKham.FindIndex(a => a.RoomID == currentKho);
             cbbPhongKham.SelectedIndex = currentIndex;
         }
 
@@ -296,6 +296,14 @@ namespace UKPI.Presentation
                             grdToaThuoc.Rows.Clear();
                             grdToaThuoc.Rows.Add(1);
                             cellDateTimePicker.Visible = false;
+                            txtDonViCungCap.Clear();
+                            txtMaSoHDD.Clear();
+                            txtMaDonViCungCap.Clear();
+
+
+
+
+
                         }
                         return;
                     }
