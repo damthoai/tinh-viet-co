@@ -234,19 +234,22 @@ namespace UKPI.Presentation
             // 
             // btnChinhSua
             // 
+            this.btnChinhSua.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnChinhSua.Location = new System.Drawing.Point(534, 92);
             this.btnChinhSua.Name = "btnChinhSua";
-            this.btnChinhSua.Size = new System.Drawing.Size(75, 23);
+            this.btnChinhSua.Size = new System.Drawing.Size(127, 23);
             this.btnChinhSua.TabIndex = 47;
-            this.btnChinhSua.Text = "Chỉnh sửa";
+            this.btnChinhSua.Text = "Xem/Chỉnh sửa";
             this.btnChinhSua.UseVisualStyleBackColor = true;
             this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // btnSearch
             // 
+            this.btnSearch.Image = global::UKPI.Properties.Resources.btnSearch1;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnSearch.Location = new System.Drawing.Point(328, 92);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(87, 23);
             this.btnSearch.TabIndex = 45;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -254,9 +257,11 @@ namespace UKPI.Presentation
             // 
             // btnTaoPhieu
             // 
+            this.btnTaoPhieu.Image = global::UKPI.Properties.Resources.save_as3;
+            this.btnTaoPhieu.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnTaoPhieu.Location = new System.Drawing.Point(430, 92);
             this.btnTaoPhieu.Name = "btnTaoPhieu";
-            this.btnTaoPhieu.Size = new System.Drawing.Size(75, 23);
+            this.btnTaoPhieu.Size = new System.Drawing.Size(98, 23);
             this.btnTaoPhieu.TabIndex = 46;
             this.btnTaoPhieu.Text = "Tạo phiếu";
             this.btnTaoPhieu.UseVisualStyleBackColor = true;
