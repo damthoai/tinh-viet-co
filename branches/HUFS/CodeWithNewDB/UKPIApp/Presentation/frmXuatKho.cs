@@ -101,7 +101,7 @@ namespace UKPI.Presentation
             //cbbPhongKham.DataSource = _shareEntityDao.LoadDanhSachPhongKham();
             List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
             cbbPhongKham.DataSource = listPhongKham;
-            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
             int currentIndex = listPhongKham.FindIndex(a => a.RoomName == currentKho);
             cbbPhongKham.SelectedIndex = currentIndex;
         }

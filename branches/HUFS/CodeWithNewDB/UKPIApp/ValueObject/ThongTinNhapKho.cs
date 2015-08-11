@@ -11,6 +11,7 @@ namespace UKPI.ValueObject
       public string TenNhanVien {get;set;}
       public string MaNhanVien {get;set;}
       public string PhongKhamKho {get;set;}
+        public string MaKho { get; set; }
       public string MaHDD {get;set;}
       public DateTime NgayNhapKho {get;set;}
       public string DonViCungCap {get;set;}

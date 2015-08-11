@@ -90,7 +90,7 @@ namespace UKPI.Presentation
             // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
             // grdStores.Columns.CopyTo(_originalColumns, 0);
             // grdStores.Sorted += grdStores_Sorted;
-            if (_chotTonKhoDao.CheckChotTonDangHoatDong(System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) > 0)
+            if (_chotTonKhoDao.CheckChotTonDangHoatDong(cbbPhongKham.SelectedValue.ToString()) > 0)
             {
                 DialogResult result = MessageBox.Show("Kho đang được chốt tồn. Vui lòng thực hiện sau", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnSearch.Enabled = false;
@@ -256,12 +256,11 @@ namespace UKPI.Presentation
         }
         private void BindPhongKham()
         {
-            //cbbPhongKham.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            //cbbPhongKham.AutoCompleteSource = AutoCompleteSource.ListItems; 
+          
             List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
             cbbPhongKham.DataSource = listPhongKham;
-            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"];
-            int currentIndex = listPhongKham.FindIndex(a => a.RoomName == currentKho);
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+            int currentIndex = listPhongKham.FindIndex(a => a.RoomID == currentKho);
             cbbPhongKham.SelectedIndex = currentIndex;
 
             /*
@@ -604,7 +603,7 @@ namespace UKPI.Presentation
             Dictionary<CustomKey, string> dic = _shareEntityDao.BuildTuDienThuoc();
             ThongTinKhamBenh thongTinKhamBenh = new ThongTinKhamBenh();
             thongTinKhamBenh.MaKhamBenh = _thongTinKhamBenhDao.GenerateNewMaKhamKhamBenh();
-            thongTinKhamBenh.PhongKhamBenh = cbbPhongKham.GetItemText(cbbPhongKham.SelectedItem);
+            thongTinKhamBenh.PhongKhamBenh = cbbPhongKham.SelectedValue.ToString();
             thongTinKhamBenh.NgayKhamBenh = dtpNgayKham.Value;
             thongTinKhamBenh.BenhNhan = txtBenhNhan.Text;
             thongTinKhamBenh.MaBenhNhan = txtMaNhanVien.Text;
@@ -657,7 +656,7 @@ namespace UKPI.Presentation
                     {
                         long checkSoluong = long.Parse((string)grdToaThuoc.Rows[i].Cells[6].FormattedValue);
                         thongTinDonThuoc.SoLuong = checkSoluong;
-                        if (checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc, checkSoluong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) < 0)
+                        if (checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc, checkSoluong, cbbPhongKham.SelectedValue.ToString()) < 0)
                         {
                             MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return null;
@@ -763,7 +762,7 @@ namespace UKPI.Presentation
                         if (isValidSoLuongThuoc)
                         {
                             string maThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString();
-                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, cbbPhongKham.SelectedValue.ToString());
                             if (soLuongThuocTrongKho < 0)
                             {
                                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckSoLuongTrongKho"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -836,7 +835,7 @@ namespace UKPI.Presentation
                         if (isValidSoLuongThuoc)
                         {
                             string maThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString();
-                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]);
+                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, cbbPhongKham.SelectedValue.ToString());
                             if (soLuongThuocTrongKho < 0)
                             {
                                 MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckSoLuongTrongKho"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -431,7 +431,8 @@ namespace UKPI.Presentation
         {
             ThongTinNhapKho thongTinNhapKho = new ThongTinNhapKho();
             thongTinNhapKho.MaNhapKho = _thongTinNhapKhoDao.GenerateNewMaNhapKho();
-            thongTinNhapKho.PhongKhamKho = cbbPhongKham.GetItemText(cbbPhongKham.SelectedItem);
+            thongTinNhapKho.PhongKhamKho = cbbPhongKham.Text;
+            thongTinNhapKho.MaKho = cbbPhongKham.SelectedValue.ToString();
             thongTinNhapKho.NgayNhapKho = dtpNgayNhapKho.Value;
             thongTinNhapKho.TongTienHD = txtTongThanhTien.Text;
             thongTinNhapKho.MaNhanVien = txtMaNhanVienNhap.Text;
