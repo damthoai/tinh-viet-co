@@ -50,6 +50,7 @@ namespace UKPI.Presentation
             this.lblMaChotTonKho = new System.Windows.Forms.Label();
             this.txtMaCHotTonKho = new System.Windows.Forms.TextBox();
             this.grpStore = new System.Windows.Forms.GroupBox();
+            this.cbbKhoThuoc = new System.Windows.Forms.ComboBox();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnChotTon = new System.Windows.Forms.Button();
             this.txtNguoiDieuChinh = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@ namespace UKPI.Presentation
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnTinhTonKho = new System.Windows.Forms.Button();
-            this.txtKho = new System.Windows.Forms.TextBox();
             this.lblKho = new System.Windows.Forms.Label();
             this.grdBenhNhan = new UKPI.Controls.DataGridView_RowNum();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -164,6 +164,7 @@ namespace UKPI.Presentation
             // 
             this.grpStore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpStore.Controls.Add(this.cbbKhoThuoc);
             this.grpStore.Controls.Add(this.btnExcel);
             this.grpStore.Controls.Add(this.btnChotTon);
             this.grpStore.Controls.Add(this.txtNguoiDieuChinh);
@@ -179,7 +180,6 @@ namespace UKPI.Presentation
             this.grpStore.Controls.Add(this.btnXacNhan);
             this.grpStore.Controls.Add(this.btnLuu);
             this.grpStore.Controls.Add(this.btnTinhTonKho);
-            this.grpStore.Controls.Add(this.txtKho);
             this.grpStore.Controls.Add(this.lblKho);
             this.grpStore.Controls.Add(this.txtMaCHotTonKho);
             this.grpStore.Controls.Add(this.lblMaChotTonKho);
@@ -190,11 +190,22 @@ namespace UKPI.Presentation
             this.grpStore.TabStop = false;
             this.grpStore.Text = "Tạo phiếu thống kê kho";
             // 
+            // cbbKhoThuoc
+            // 
+            this.cbbKhoThuoc.DisplayMember = "TenTrangThai";
+            this.cbbKhoThuoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbKhoThuoc.Enabled = false;
+            this.cbbKhoThuoc.FormattingEnabled = true;
+            this.cbbKhoThuoc.Location = new System.Drawing.Point(135, 78);
+            this.cbbKhoThuoc.Name = "cbbKhoThuoc";
+            this.cbbKhoThuoc.Size = new System.Drawing.Size(156, 21);
+            this.cbbKhoThuoc.TabIndex = 60;
+            // 
             // btnExcel
             // 
-            this.btnExcel.Location = new System.Drawing.Point(508, 136);
+            this.btnExcel.Location = new System.Drawing.Point(501, 136);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnExcel.Size = new System.Drawing.Size(82, 23);
             this.btnExcel.TabIndex = 59;
             this.btnExcel.Text = "Xuất Excel";
             this.btnExcel.UseVisualStyleBackColor = true;
@@ -204,7 +215,7 @@ namespace UKPI.Presentation
             // 
             this.btnChotTon.Location = new System.Drawing.Point(682, 136);
             this.btnChotTon.Name = "btnChotTon";
-            this.btnChotTon.Size = new System.Drawing.Size(75, 23);
+            this.btnChotTon.Size = new System.Drawing.Size(95, 23);
             this.btnChotTon.TabIndex = 58;
             this.btnChotTon.Text = "Chốt tồn";
             this.btnChotTon.UseVisualStyleBackColor = true;
@@ -302,7 +313,7 @@ namespace UKPI.Presentation
             // 
             this.btnXacNhan.Location = new System.Drawing.Point(592, 136);
             this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
+            this.btnXacNhan.Size = new System.Drawing.Size(84, 23);
             this.btnXacNhan.TabIndex = 47;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
@@ -320,21 +331,13 @@ namespace UKPI.Presentation
             // 
             // btnTinhTonKho
             // 
-            this.btnTinhTonKho.Location = new System.Drawing.Point(420, 136);
+            this.btnTinhTonKho.Location = new System.Drawing.Point(416, 136);
             this.btnTinhTonKho.Name = "btnTinhTonKho";
-            this.btnTinhTonKho.Size = new System.Drawing.Size(75, 23);
+            this.btnTinhTonKho.Size = new System.Drawing.Size(79, 23);
             this.btnTinhTonKho.TabIndex = 46;
             this.btnTinhTonKho.Text = "Tinh tồn kho";
             this.btnTinhTonKho.UseVisualStyleBackColor = true;
             this.btnTinhTonKho.Click += new System.EventHandler(this.btnTinhTonKho_Click);
-            // 
-            // txtKho
-            // 
-            this.txtKho.Location = new System.Drawing.Point(135, 80);
-            this.txtKho.Name = "txtKho";
-            this.txtKho.ReadOnly = true;
-            this.txtKho.Size = new System.Drawing.Size(156, 20);
-            this.txtKho.TabIndex = 44;
             // 
             // lblKho
             // 
@@ -464,7 +467,6 @@ namespace UKPI.Presentation
             this.DonViTinh.ReadOnly = true;
             this.DonViTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.DonViTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DonViTinh.Width = 50;
             // 
             // HanDung
             // 
@@ -566,7 +568,6 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Label lblMaChotTonKho;
         private System.Windows.Forms.TextBox txtMaCHotTonKho;
         private System.Windows.Forms.GroupBox grpStore;
-        private System.Windows.Forms.TextBox txtKho;
         private System.Windows.Forms.Label lblKho;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnTinhTonKho;
@@ -584,6 +585,7 @@ namespace UKPI.Presentation
         private System.Windows.Forms.TextBox txtNguoiDieuChinh;
         private System.Windows.Forms.TextBox txtNguoiXacNhan;
         private System.Windows.Forms.Button btnExcel;
+        private System.Windows.Forms.ComboBox cbbKhoThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaChotTonHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;

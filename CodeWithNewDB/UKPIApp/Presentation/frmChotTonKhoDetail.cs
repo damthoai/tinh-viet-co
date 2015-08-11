@@ -70,12 +70,24 @@ namespace UKPI.Presentation
         {
 
             InitializeComponent();
+            BindKhoThuoc();
             grdBenhNhan.AutoGenerateColumns = false;
            // clsTitleManager.InitTitle(this);
             this.Text = "CHỐT TỒN KHO CHI TIẾT";
            // btnTaoPhieu.Visible = false;
             grdBenhNhan.CellValueChanged += grdBenhNhan_CellValueChanged;
             this.FormClosing +=frmChotTonKhoDetail_FormClosing;
+        }
+
+        private void BindKhoThuoc()
+        {
+            List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
+            cbbKhoThuoc.ValueMember = "RoomId";
+            cbbKhoThuoc.DisplayMember = "RoomName";
+            cbbKhoThuoc.DataSource = listPhongKham;
+            string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+            int currentIndex = listPhongKham.FindIndex(a => a.RoomID == currentKho);
+            cbbKhoThuoc.SelectedIndex = currentIndex;
         }
 
         private void frmChotTonKhoDetail_FormClosing(object sender, FormClosingEventArgs e)
@@ -89,13 +101,13 @@ namespace UKPI.Presentation
         {
             if (currentChotTonKhoHeader == null)
             {
-                List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
+                //List<PhongKham> listPhongKham = _shareEntityDao.LoadDanhSachPhongKham();
                 txtMaCHotTonKho.Text = System.Configuration.ConfigurationManager.AppSettings["MaCHotTon"] + DateTime.Now.ToString("yyyyMMddHHmmss");
-                string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
-                var firstOrDefault = listPhongKham.FirstOrDefault(a => a.RoomID == currentKho);
-                if (firstOrDefault != null)
-                    txtKho.Text = firstOrDefault.RoomName;
-                ;
+                //string currentKho = System.Configuration.ConfigurationManager.AppSettings["RCLINIC00002"];
+                //var firstOrDefault = listPhongKham.FirstOrDefault(a => a.RoomID == currentKho);
+                //if (firstOrDefault != null)
+                //    txtKho.Text = firstOrDefault.RoomName;
+                //;
                 txtNguoiXacNhan.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
                 txtNguoiDieuChinh.Text = clsSystemConfig.UserName + "-" + clsSystemConfig.FullName;
                 ccbTrangThai.SelectedIndex = 0;
@@ -106,7 +118,7 @@ namespace UKPI.Presentation
             else
             {
                 txtMaCHotTonKho.Text = currentChotTonKhoHeader.MaChotTonKho;
-                txtKho.Text = currentChotTonKhoHeader.TenKho;
+               // txtKho.Text = currentChotTonKhoHeader.TenKho;
                 txtDienGiai.Text = currentChotTonKhoHeader.DienGiai;
                 dpNgayTaoPhieu.Value = currentChotTonKhoHeader.NgayTaoPhieu;
                 ccbTrangThai.SelectedText = currentChotTonKhoHeader.Status;
@@ -213,7 +225,8 @@ namespace UKPI.Presentation
             ChotTonKhoHeader ctkh = new ChotTonKhoHeader();
             ctkh.MaChotTonKho = txtMaCHotTonKho.Text;
             ctkh.IsDeleted = false;
-            ctkh.TenKho = txtKho.Text;
+            ctkh.TenKho = cbbKhoThuoc.Text;
+            ctkh.MaKho = cbbKhoThuoc.SelectedValue.ToString();
             ctkh.DienGiai = txtDienGiai.Text;
             ctkh.NgayTaoPhieu = dpNgayTaoPhieu.Value;
             ctkh.NguoiXacNhan = txtNguoiXacNhan.Text;
@@ -256,7 +269,7 @@ namespace UKPI.Presentation
 
         private void btnTinhTonKho_Click(object sender, EventArgs e)
         {
-            listCHotTonKhoDetail = _chotTonKhoDao.ProcessChotTonKhoDetailTinhTonKho(txtMaCHotTonKho.Text, txtKho.Text);
+            listCHotTonKhoDetail = _chotTonKhoDao.ProcessChotTonKhoDetailTinhTonKho(txtMaCHotTonKho.Text, cbbKhoThuoc.SelectedValue.ToString());
             if(listCHotTonKhoDetail ==  null)
             {
                 DialogResult result = MessageBox.Show("Có lỗi trong quá trình tính chốt tồn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);

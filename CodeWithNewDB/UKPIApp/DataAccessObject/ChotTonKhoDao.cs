@@ -32,7 +32,7 @@ namespace UKPI.DataAccessObject
             try
             {
                 SqlParameter[] Params = new SqlParameter[1];
-                Params[0] = new SqlParameter("@TenKho", maKho);
+                Params[0] = new SqlParameter("@MaKho", maKho);
                 int soLuong = -1;
                 var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_CheckThongTinChotTon, Params);
                 foreach (DataRow dr in dtResult.Rows)
@@ -91,7 +91,7 @@ namespace UKPI.DataAccessObject
             {
                 SqlParameter[] Params = new SqlParameter[2];
                 Params[0] = new SqlParameter("@MaChotTonKho", maChotTonKho);
-                Params[1] = new SqlParameter("@TenKho", tenKho);
+                Params[1] = new SqlParameter("@MaKho", tenKho);
                 var dtResult = DataServices.ExecuteDataTable(CommandType.StoredProcedure, p_HUFS_ProcessChotTonKhoDetailTinhTonKho, Params);
                 return this.ConvertDataTableToList<ChotTonKhoDetail>(dtResult);
             }

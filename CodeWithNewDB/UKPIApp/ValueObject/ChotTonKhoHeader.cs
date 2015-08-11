@@ -10,6 +10,7 @@ namespace UKPI.ValueObject
 
         public string MaChotTonKho { get; set; }
         public string DienGiai { get; set; }
+        public string MaKho { get; set; }
         public string TenKho { get; set; }
         public DateTime NgayTaoPhieu { get; set; }
         public string StrNgayTaoPhieu { get; set; }

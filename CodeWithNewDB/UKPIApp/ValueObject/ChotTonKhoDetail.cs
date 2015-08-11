@@ -21,7 +21,6 @@ namespace UKPI.ValueObject
         public long SoLuongChenhLech { get; set; }
         public string LoaiChenhLech { get; set; }
         public string MaChotTonHeader { get; set; }
-
         public long MaNhapKhoDetail { get; set; }
     }
 }

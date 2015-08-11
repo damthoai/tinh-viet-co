@@ -102,16 +102,16 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.cbbPhongKham);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(927, 165);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(927, 150);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             this.grpThongTinKhamBenh.Text = "Thông tin nhập kho";
             // 
             // btnDong
             // 
-            this.btnDong.Image = global::UKPI.Properties.Resources.cancel_4;
+            this.btnDong.Image = global::UKPI.Properties.Resources.btnClose;
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnDong.Location = new System.Drawing.Point(529, 136);
+            this.btnDong.Location = new System.Drawing.Point(529, 120);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 23);
             this.btnDong.TabIndex = 79;
@@ -121,7 +121,7 @@ namespace UKPI.Presentation
             // 
             // txtMaDonViCungCap
             // 
-            this.txtMaDonViCungCap.Location = new System.Drawing.Point(733, 58);
+            this.txtMaDonViCungCap.Location = new System.Drawing.Point(677, 60);
             this.txtMaDonViCungCap.MaxLength = 250;
             this.txtMaDonViCungCap.Multiline = true;
             this.txtMaDonViCungCap.Name = "txtMaDonViCungCap";
@@ -131,7 +131,7 @@ namespace UKPI.Presentation
             // lblMaDonViCungCap
             // 
             this.lblMaDonViCungCap.AutoSize = true;
-            this.lblMaDonViCungCap.Location = new System.Drawing.Point(624, 61);
+            this.lblMaDonViCungCap.Location = new System.Drawing.Point(567, 64);
             this.lblMaDonViCungCap.Name = "lblMaDonViCungCap";
             this.lblMaDonViCungCap.Size = new System.Drawing.Size(107, 13);
             this.lblMaDonViCungCap.TabIndex = 81;
@@ -141,7 +141,7 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.save_as3;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(429, 136);
+            this.btnLuuIn.Location = new System.Drawing.Point(429, 120);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(95, 23);
             this.btnLuuIn.TabIndex = 78;
@@ -152,7 +152,7 @@ namespace UKPI.Presentation
             // lblDonViCungCap
             // 
             this.lblDonViCungCap.AutoSize = true;
-            this.lblDonViCungCap.Location = new System.Drawing.Point(624, 24);
+            this.lblDonViCungCap.Location = new System.Drawing.Point(585, 31);
             this.lblDonViCungCap.Name = "lblDonViCungCap";
             this.lblDonViCungCap.Size = new System.Drawing.Size(90, 13);
             this.lblDonViCungCap.TabIndex = 80;
@@ -160,7 +160,7 @@ namespace UKPI.Presentation
             // 
             // txtMaSoHDD
             // 
-            this.txtMaSoHDD.Location = new System.Drawing.Point(423, 26);
+            this.txtMaSoHDD.Location = new System.Drawing.Point(384, 26);
             this.txtMaSoHDD.MaxLength = 250;
             this.txtMaSoHDD.Multiline = true;
             this.txtMaSoHDD.Name = "txtMaSoHDD";
@@ -181,7 +181,7 @@ namespace UKPI.Presentation
             // 
             this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(317, 136);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(317, 120);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
             this.btnXoaThuoc.Size = new System.Drawing.Size(106, 23);
             this.btnXoaThuoc.TabIndex = 76;
@@ -202,7 +202,7 @@ namespace UKPI.Presentation
             // lblPhongKhamKho
             // 
             this.lblPhongKhamKho.AutoSize = true;
-            this.lblPhongKhamKho.Location = new System.Drawing.Point(8, 96);
+            this.lblPhongKhamKho.Location = new System.Drawing.Point(28, 96);
             this.lblPhongKhamKho.Name = "lblPhongKhamKho";
             this.lblPhongKhamKho.Size = new System.Drawing.Size(91, 13);
             this.lblPhongKhamKho.TabIndex = 76;
@@ -210,7 +210,7 @@ namespace UKPI.Presentation
             // 
             // txtDonViCungCap
             // 
-            this.txtDonViCungCap.Location = new System.Drawing.Point(733, 24);
+            this.txtDonViCungCap.Location = new System.Drawing.Point(677, 26);
             this.txtDonViCungCap.MaxLength = 250;
             this.txtDonViCungCap.Multiline = true;
             this.txtDonViCungCap.Name = "txtDonViCungCap";
@@ -220,7 +220,7 @@ namespace UKPI.Presentation
             // lblNgayNhapKho
             // 
             this.lblNgayNhapKho.AutoSize = true;
-            this.lblNgayNhapKho.Location = new System.Drawing.Point(314, 62);
+            this.lblNgayNhapKho.Location = new System.Drawing.Point(301, 65);
             this.lblNgayNhapKho.Name = "lblNgayNhapKho";
             this.lblNgayNhapKho.Size = new System.Drawing.Size(80, 13);
             this.lblNgayNhapKho.TabIndex = 56;
@@ -229,7 +229,7 @@ namespace UKPI.Presentation
             // lblMaHopDong
             // 
             this.lblMaHopDong.AutoSize = true;
-            this.lblMaHopDong.Location = new System.Drawing.Point(314, 31);
+            this.lblMaHopDong.Location = new System.Drawing.Point(314, 30);
             this.lblMaHopDong.Name = "lblMaHopDong";
             this.lblMaHopDong.Size = new System.Drawing.Size(67, 13);
             this.lblMaHopDong.TabIndex = 55;
@@ -238,7 +238,7 @@ namespace UKPI.Presentation
             // lblMaNhanVienNhap
             // 
             this.lblMaNhanVienNhap.AutoSize = true;
-            this.lblMaNhanVienNhap.Location = new System.Drawing.Point(8, 62);
+            this.lblMaNhanVienNhap.Location = new System.Drawing.Point(20, 64);
             this.lblMaNhanVienNhap.Name = "lblMaNhanVienNhap";
             this.lblMaNhanVienNhap.Size = new System.Drawing.Size(99, 13);
             this.lblMaNhanVienNhap.TabIndex = 28;
@@ -247,7 +247,7 @@ namespace UKPI.Presentation
             // lblNhanVienNhap
             // 
             this.lblNhanVienNhap.AutoSize = true;
-            this.lblNhanVienNhap.Location = new System.Drawing.Point(8, 31);
+            this.lblNhanVienNhap.Location = new System.Drawing.Point(36, 33);
             this.lblNhanVienNhap.Name = "lblNhanVienNhap";
             this.lblNhanVienNhap.Size = new System.Drawing.Size(83, 13);
             this.lblNhanVienNhap.TabIndex = 27;
@@ -258,7 +258,7 @@ namespace UKPI.Presentation
             this.dtpNgayNhapKho.CustomFormat = "dd-MM-yyyy";
             this.dtpNgayNhapKho.Enabled = false;
             this.dtpNgayNhapKho.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayNhapKho.Location = new System.Drawing.Point(423, 62);
+            this.dtpNgayNhapKho.Location = new System.Drawing.Point(384, 62);
             this.dtpNgayNhapKho.Name = "dtpNgayNhapKho";
             this.dtpNgayNhapKho.Size = new System.Drawing.Size(174, 20);
             this.dtpNgayNhapKho.TabIndex = 39;
@@ -464,10 +464,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 177);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 162);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(927, 266);
+            this.grdToaThuoc.Size = new System.Drawing.Size(927, 281);
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 
