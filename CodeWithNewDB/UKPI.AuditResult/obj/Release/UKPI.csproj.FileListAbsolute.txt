@@ -189,3 +189,7 @@ D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\RdlCompile.cache
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\RdlCompile.compiled
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\HHCC.exe.manifest
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\HHCC.application
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.Frmbaocaodieuchinhkho.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.frmChotTonKhoDetail.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.frmChotTonKho.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPI.Core\bin\Release\HHCC.exe.config
