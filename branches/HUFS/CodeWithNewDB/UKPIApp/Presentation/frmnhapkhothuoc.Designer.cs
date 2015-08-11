@@ -109,7 +109,7 @@ namespace UKPI.Presentation
             // 
             // btnDong
             // 
-            this.btnDong.Image = global::UKPI.Properties.Resources.btnSearch;
+            this.btnDong.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDong.Location = new System.Drawing.Point(529, 136);
             this.btnDong.Name = "btnDong";
@@ -139,13 +139,13 @@ namespace UKPI.Presentation
             // 
             // btnLuuIn
             // 
-            this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
+            this.btnLuuIn.Image = global::UKPI.Properties.Resources.save_as3;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnLuuIn.Location = new System.Drawing.Point(429, 136);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(95, 23);
             this.btnLuuIn.TabIndex = 78;
-            this.btnLuuIn.Text = "Lưu/In";
+            this.btnLuuIn.Text = "Nhập kho";
             this.btnLuuIn.UseVisualStyleBackColor = true;
             this.btnLuuIn.Click += new System.EventHandler(this.btnLuuIn_Click);
             // 
@@ -467,7 +467,7 @@ namespace UKPI.Presentation
             this.grdToaThuoc.Location = new System.Drawing.Point(4, 177);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(921, 266);
+            this.grdToaThuoc.Size = new System.Drawing.Size(927, 266);
             this.grdToaThuoc.TabIndex = 2;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
             // 

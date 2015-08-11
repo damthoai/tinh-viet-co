@@ -50,6 +50,7 @@ namespace UKPI.Presentation
             this.lblMaChotTonKho = new System.Windows.Forms.Label();
             this.txtMaCHotTonKho = new System.Windows.Forms.TextBox();
             this.grpStore = new System.Windows.Forms.GroupBox();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.btnChotTon = new System.Windows.Forms.Button();
             this.txtNguoiDieuChinh = new System.Windows.Forms.TextBox();
             this.txtNguoiXacNhan = new System.Windows.Forms.TextBox();
@@ -66,7 +67,6 @@ namespace UKPI.Presentation
             this.btnTinhTonKho = new System.Windows.Forms.Button();
             this.txtKho = new System.Windows.Forms.TextBox();
             this.lblKho = new System.Windows.Forms.Label();
-            this.btnExcel = new System.Windows.Forms.Button();
             this.grdBenhNhan = new UKPI.Controls.DataGridView_RowNum();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaChotTonHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -190,6 +190,16 @@ namespace UKPI.Presentation
             this.grpStore.TabStop = false;
             this.grpStore.Text = "Tạo phiếu thống kê kho";
             // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(508, 136);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnExcel.TabIndex = 59;
+            this.btnExcel.Text = "Xuất Excel";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // btnChotTon
             // 
             this.btnChotTon.Location = new System.Drawing.Point(682, 136);
@@ -238,6 +248,7 @@ namespace UKPI.Presentation
             // 
             this.ccbTrangThai.DisplayMember = "TenTrangThai";
             this.ccbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ccbTrangThai.Enabled = false;
             this.ccbTrangThai.FormattingEnabled = true;
             this.ccbTrangThai.Location = new System.Drawing.Point(471, 26);
             this.ccbTrangThai.Name = "ccbTrangThai";
@@ -333,16 +344,6 @@ namespace UKPI.Presentation
             this.lblKho.Size = new System.Drawing.Size(26, 13);
             this.lblKho.TabIndex = 43;
             this.lblKho.Text = "Kho";
-            // 
-            // btnExcel
-            // 
-            this.btnExcel.Location = new System.Drawing.Point(508, 136);
-            this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(75, 23);
-            this.btnExcel.TabIndex = 59;
-            this.btnExcel.Text = "Xuất Excel";
-            this.btnExcel.UseVisualStyleBackColor = true;
-            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // grdBenhNhan
             // 
@@ -443,6 +444,7 @@ namespace UKPI.Presentation
             this.MaNhapKho.Name = "MaNhapKho";
             this.MaNhapKho.ReadOnly = true;
             this.MaNhapKho.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MaNhapKho.Visible = false;
             this.MaNhapKho.Width = 90;
             // 
             // BaoHiem
@@ -480,6 +482,7 @@ namespace UKPI.Presentation
             this.NhomThuoc.Name = "NhomThuoc";
             this.NhomThuoc.ReadOnly = true;
             this.NhomThuoc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NhomThuoc.Visible = false;
             this.NhomThuoc.Width = 80;
             // 
             // SoLuongTon
@@ -580,6 +583,7 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Button btnChotTon;
         private System.Windows.Forms.TextBox txtNguoiDieuChinh;
         private System.Windows.Forms.TextBox txtNguoiXacNhan;
+        private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaChotTonHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
@@ -595,6 +599,5 @@ namespace UKPI.Presentation
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongChenhLech;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoaiChenhLech;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhapKhoDetail;
-        private System.Windows.Forms.Button btnExcel;
     }
 }

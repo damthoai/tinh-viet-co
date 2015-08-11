@@ -32,7 +32,7 @@ namespace UKPI.Presentation
         private readonly ThongTinKhamBenhDao _thongTinKhamBenhDao = new ThongTinKhamBenhDao();
         private readonly ThongTinNhapKhoDao _thongTinNhapKhoDao = new ThongTinNhapKhoDao();
         private readonly ChotTonKhoDao _chotTonKhoDao = new ChotTonKhoDao();
-        QuyetDinhNghiPhep quyetDinhNghiPhep ;
+        QuyetDinhNghiPhep quyetDinhNghiPhep;
         readonly System.Data.DataTable _dt = null;
         ComboBox cbm;
         DataGridViewCell currentCell;
@@ -75,16 +75,16 @@ namespace UKPI.Presentation
             this.cellDateTimePicker.CustomFormat = "dd-MM-yyyy";
             //this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePickerValueChanged);
             this.cellDateTimePicker.ValueChanged += new EventHandler(cellDateTimePicker_ValueChanged);
-           // this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
+            // this.cellDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);  
             this.cellDateTimePicker.Visible = false;
             this.grdToaThuoc.Controls.Add(cellDateTimePicker);
             cbbPhongKham.Enabled = false;
             SetDefauldValue();
             this.Text = "NHẬP KHO THUỐC";
-           // Save original columns
-           // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
-           // grdStores.Columns.CopyTo(_originalColumns, 0);
-           // grdStores.Sorted += grdStores_Sorted;
+            // Save original columns
+            // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
+            // grdStores.Columns.CopyTo(_originalColumns, 0);
+            // grdStores.Sorted += grdStores_Sorted;
             if (_chotTonKhoDao.CheckChotTonDangHoatDong(System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) > 0)
             {
                 DialogResult result = MessageBox.Show("Kho đang được chốt tồn. Vui lòng thực hiện sau", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -100,7 +100,7 @@ namespace UKPI.Presentation
         {
             // Hiding the control after use   
             cellDateTimePicker.Visible = false;
-        } 
+        }
         private void SetDefauldValue()
         {
             BindPhongKham();
@@ -119,11 +119,11 @@ namespace UKPI.Presentation
 
         private void LoadThongTinNhanVien()
         {
-           // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
+            // ThongTinBenhNhan ttNhanVien = _thongTinKhamBenhDao.GetThongTinBenhNhan(clsSystemConfig.UserName);
             txtMaNhanVienNhap.Text = clsSystemConfig.UserName;
             txtNhanVienNhap.Text = clsSystemConfig.FullName;
         }
-        
+
         private void BuildGridViewRow()
         {
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
@@ -131,7 +131,7 @@ namespace UKPI.Presentation
             checkBoxColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
             grdToaThuoc.Columns.Add(checkBoxColumn);
 
-           
+
             DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
             tenThuocColumn.HeaderText = "Tên thuốc";
             tenThuocColumn.Width = 145;
@@ -183,7 +183,7 @@ namespace UKPI.Presentation
             giaTTColumn.Width = 130;
             giaTTColumn.HeaderText = "Giá TT";
             giaTTColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
-           // giaTTColumn.ReadOnly = true;
+            // giaTTColumn.ReadOnly = true;
             grdToaThuoc.Columns.Add(giaTTColumn);
 
             //DataGridViewComboBoxColumn cachUongColumn = new DataGridViewComboBoxColumn();
@@ -218,105 +218,101 @@ namespace UKPI.Presentation
             grdToaThuoc.CellEndEdit += new DataGridViewCellEventHandler(dataGridView1_CellEndEdit);
             grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
             grdToaThuoc.CellValueChanged += grdToaThuoc_CellValueChanged;
-            grdToaThuoc.CellClick +=grdToaThuoc_CellDoubleClick;
+            grdToaThuoc.CellClick += grdToaThuoc_CellDoubleClick;
             int rowIndex = this.grdToaThuoc.Rows.Add(1);
             var row = this.grdToaThuoc.Rows[rowIndex];
 
         }
 
-         private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void grdToaThuoc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //currentCell = this.grdToaThuoc.CurrentCell;
             //bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
             //if (e.ColumnIndex == 3 && isValidMaThuoc)
             //{
             //    System.Drawing.Rectangle tempRect = grdToaThuoc.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
- 
-            //    cellDateTimePicker.Location = tempRect.Location;
- 
-            //    cellDateTimePicker.Width = tempRect.Width;
- 
-            //    cellDateTimePicker.Visible = true;
- 
-            //}
- 
-        }
-         void cellDateTimePickerValueChanged(object sender, EventArgs e)
-         {
-             //grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format
-             //cellDateTimePicker.Visible = false;
-         }
 
-      
+            //    cellDateTimePicker.Location = tempRect.Location;
+
+            //    cellDateTimePicker.Width = tempRect.Width;
+
+            //    cellDateTimePicker.Visible = true;
+
+            //}
+
+        }
+        void cellDateTimePickerValueChanged(object sender, EventArgs e)
+        {
+            //grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Value.ToString(System.Configuration.ConfigurationManager.AppSettings["DateFormat"]);//convert the date as per your format
+            //cellDateTimePicker.Visible = false;
+        }
+
+
         private void Export()
         {
-            
+
         }
 
 
         #endregion
 
-      
+
         private void btnExport_Click(object sender, EventArgs e)
         {
-           // this.Export();
+            // this.Export();
         }
 
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-           // MessageBox.Show(clsResources.GetMessage("messages.save.success"), clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-            DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Waring"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"),MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            // MessageBox.Show(clsResources.GetMessage("messages.save.success"), clsResources.GetMessage("messages.general"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Waring"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"), MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
                 grpThongTinKhamBenh.Enabled = false;
                 btnXoaThuoc.Enabled = false;
             }
-            
+
         }
 
         private void btnLuuIn_Click(object sender, EventArgs e)
         {
-            if (!ValidateThongSoNhapKho())
+            DialogResult warningMessage = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.WarningMessage"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (warningMessage == DialogResult.OK)
             {
-                MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.ValidateThongSoNhapKho"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            ThongTinNhapKho thongTinNhapKho = BuildThongTinNhapKho();
-            if (thongTinNhapKho != null)
-            {
-                List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail = BuildThongTinNhapKhoDetail(thongTinNhapKho.MaNhapKho);
-                if (listThongTinNhapKhoDetail != null && listThongTinNhapKhoDetail.Count > 0)
+
+                if (!ValidateThongSoNhapKho())
                 {
-                    if (_thongTinNhapKhoDao.SaveThongTinNhapKho(thongTinNhapKho, listThongTinNhapKhoDetail))
-                    {
-                        DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Success"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        if (result == DialogResult.OK)
-                        {
-                            grdToaThuoc.Rows.Clear();
-                            grdToaThuoc.Rows.Add(1);
-                            cellDateTimePicker.Visible = false;
-                            txtDonViCungCap.Clear();
-                            txtMaSoHDD.Clear();
-                            txtMaDonViCungCap.Clear();
-
-
-
-
-
-                        }
-                        return;
-                    }
-                    else
-                    {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+                    MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.ValidateThongSoNhapKho"), clsResources.GetMessage("messages.frmnhapkhothuoc.Title"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                else
+                ThongTinNhapKho thongTinNhapKho = BuildThongTinNhapKho();
+                if (thongTinNhapKho != null)
                 {
-                    //MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //return;
+                    List<ThongTinNhapKhoDetail> listThongTinNhapKhoDetail = BuildThongTinNhapKhoDetail(thongTinNhapKho.MaNhapKho);
+                    if (listThongTinNhapKhoDetail != null && listThongTinNhapKhoDetail.Count > 0)
+                    {
+                        if (_thongTinNhapKhoDao.SaveThongTinNhapKho(thongTinNhapKho, listThongTinNhapKhoDetail))
+                        {
+                            DialogResult result = MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Success"), clsResources.GetMessage("messages.frmnhapkhothuoc.SuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            if (result == DialogResult.OK)
+                            {
+                                grdToaThuoc.Rows.Clear();
+                                grdToaThuoc.Rows.Add(1);
+                                cellDateTimePicker.Visible = false;
+                                txtDonViCungCap.Clear();
+                                txtMaSoHDD.Clear();
+                                txtMaDonViCungCap.Clear();
+                            }
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.Error"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                  
                 }
             }
         }
@@ -346,7 +342,7 @@ namespace UKPI.Presentation
         //        quyetDinhNghiPhep.ChuThich = string.Empty;
         //        thongTinKhamBenh.QuyetDinhNghiPhep = quyetDinhNghiPhep;
         //    }
-   
+
         //    if (grdToaThuoc.Rows.Count > 0)
         //    {
         //        List<ThongTinDonThuocKhamBenh> listDonThuoc = new List<ThongTinDonThuocKhamBenh>();
@@ -361,7 +357,7 @@ namespace UKPI.Presentation
         //            thongTinDonThuoc.ThuocBH =  (bool)grdToaThuoc.Rows[i].Cells[3].FormattedValue;
         //            thongTinDonThuoc.DonViTinh = (string)grdToaThuoc.Rows[i].Cells[4].FormattedValue;
         //            thongTinDonThuoc.HamLuong = (string)grdToaThuoc.Rows[i].Cells[5].FormattedValue;
-                    
+
         //            try
         //            {
 
@@ -539,7 +535,7 @@ namespace UKPI.Presentation
                     listThongTinNhapKhoDetail.Add(thongTinNhapKhoDetail);
 
                 }
-                
+
             }
             return listThongTinNhapKhoDetail;
         }
@@ -567,7 +563,7 @@ namespace UKPI.Presentation
 
         private void grdToaThuoc_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             currentCell = this.grdToaThuoc.CurrentCell;
             if (currentCell != null && currentCell.ColumnIndex == 5)
             {
@@ -584,9 +580,10 @@ namespace UKPI.Presentation
                             MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
-                    
+
                     }
-                    catch {
+                    catch
+                    {
                         MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidSoLuong"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
@@ -608,7 +605,7 @@ namespace UKPI.Presentation
                     return;
                 }
                 decimal currentTienThuoc = currentSoLuong * currentGia;
-               // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
+                // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
                 this.grdToaThuoc[currentCell.ColumnIndex + 5, currentCell.RowIndex].Value = currentTienThuoc.ToString();
                 CalculateTotal();
             }
@@ -617,7 +614,7 @@ namespace UKPI.Presentation
             {
                 int currentSoLuong = 0;
                 bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
-                bool isValidSoLuongThuoc = this.grdToaThuoc[currentCell.ColumnIndex-3, currentCell.RowIndex].Value != null && this.grdToaThuoc[currentCell.ColumnIndex-3, currentCell.RowIndex].Value.ToString() != "";
+                bool isValidSoLuongThuoc = this.grdToaThuoc[currentCell.ColumnIndex - 3, currentCell.RowIndex].Value != null && this.grdToaThuoc[currentCell.ColumnIndex - 3, currentCell.RowIndex].Value.ToString() != "";
                 decimal currentGia = 0;
                 try
                 {
@@ -677,7 +674,7 @@ namespace UKPI.Presentation
                     MessageBox.Show(clsResources.GetMessage("messages.frmnhapkhothuoc.CheckValidGiaMua"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
- 
+
             }
             //check gia truoc thue
             if (currentCell != null && currentCell.ColumnIndex == 7)
@@ -735,10 +732,12 @@ namespace UKPI.Presentation
                         cellDateTimePicker.Value = DateTime.Today;
                     }
                 }
-                else { 
+                else
+                {
                     cellDateTimePicker.Visible = false;
+                }
             }
-            }catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -762,7 +761,7 @@ namespace UKPI.Presentation
                 MessageBox.Show(ex.Message);
             }
         }
-        private void cellDateTimePicker_ValueChanged(object sender,EventArgs e)
+        private void cellDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             grdToaThuoc.CurrentCell.Value = cellDateTimePicker.Text;
         }
@@ -782,7 +781,7 @@ namespace UKPI.Presentation
                 currentCell = this.grdToaThuoc.CurrentCell;
             }
         }
-       
+
         void cbm_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Invoke method if the selection changed event occurs
@@ -798,11 +797,11 @@ namespace UKPI.Presentation
                 //DataRowView drv = cbm.SelectedItem as DataRowView;
                 if (ttt != null)
                 {
-                  //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
+                    //  string item = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString();
                     if (currentCell.ColumnIndex == 2)
                     {
-                   //     MessageBox.Show(ttt.MedicineName);
-                           //case 1: chua co thong tin thuoc cho row
+                        //     MessageBox.Show(ttt.MedicineName);
+                        //case 1: chua co thong tin thuoc cho row
                         if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
                         {
                             danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
@@ -835,8 +834,8 @@ namespace UKPI.Presentation
 
 
 
- 
 
-      
+
+
     }
 }

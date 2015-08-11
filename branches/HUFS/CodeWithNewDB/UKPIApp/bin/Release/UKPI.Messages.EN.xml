@@ -1870,7 +1870,7 @@
     <Value>Cảnh báo</Value>
   </Messages>
 
- <Messages>
+  <Messages>
     <Name>messages.frmNghiPhep.Waring</Name>
     <Value>Từ ngày lớn hơn Đến ngày .Hãy nhập lại</Value>
   </Messages>
@@ -1917,8 +1917,8 @@
     <Name>messages.frmKhamBenh.CheckValidDonThuoc</Name>
     <Value>Đơn thuốc không hợp lệ. Không thể xác nhận đơn thuốc</Value>
   </Messages>
-  
-   <Messages>
+
+  <Messages>
     <Name>messages.frmKhamBenh.CheckValidThongTinNhanVien</Name>
     <Value>Thông tin nhân viên không hợp lệ</Value>
   </Messages>
@@ -2001,7 +2001,10 @@
     <Name>messages.frmnhapkhothuoc.CheckValidGiaMua</Name>
     <Value>Thông tin giá thời điểm nhập không hợp lệ</Value>
   </Messages>
-  
+  <Messages>
+    <Name>messages.frmnhapkhothuoc.WarningMessage</Name>
+    <Value>Bạn có chắt chắn muốn nhập kho?</Value>
+  </Messages>
   <Messages>
     <Name>messages.frmKhamBenh.CheckTrungLapThuoc1</Name>
     <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
