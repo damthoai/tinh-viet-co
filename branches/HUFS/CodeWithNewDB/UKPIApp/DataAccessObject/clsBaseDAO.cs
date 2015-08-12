@@ -1514,7 +1514,16 @@ namespace UKPI.DataAccessObject
                     if (pro.Name == column.ColumnName)
                     {
                         if (dr[column.ColumnName] == DBNull.Value)
-                            dr[column.ColumnName] = string.Empty;
+                        {
+                            try
+                            {
+                                dr[column.ColumnName] = string.Empty;
+                            }
+                            catch
+                            {
+                                dr[column.ColumnName] = 0;
+                            }
+                        }
                         pro.SetValue(obj, dr[column.ColumnName], null);
                     }
                     else
