@@ -324,12 +324,21 @@ namespace UKPI.Presentation
 
             grdToaThuoc.Columns.Add(checkBoxColumn);
 
-            DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
-            tenThuocColumn.HeaderText = "Tên thuốc";
-            tenThuocColumn.ReadOnly = true;
-            tenThuocColumn.Width = 130;
-            tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
-            grdToaThuoc.Columns.Add(tenThuocColumn);
+            DataGridViewComboBoxColumn col1 = new DataGridViewComboBoxColumn();
+            col1.Width = 130;
+            col1.HeaderText = "Tên Thuốc";
+            col1.DataSource = _shareEntityDao.LoadThongTinThuocForKhamBenh();
+            col1.DisplayMember = "MedicineName";
+            col1.ValueMember = "MedicineID";
+            col1.SortMode = DataGridViewColumnSortMode.NotSortable;
+            grdToaThuoc.Columns.Add(col1);
+
+            //DataGridViewTextBoxColumn tenThuocColumn = new DataGridViewTextBoxColumn();
+            //tenThuocColumn.HeaderText = "Tên thuốc";
+            //tenThuocColumn.ReadOnly = true;
+            //tenThuocColumn.Width = 130;
+            //tenThuocColumn.SortMode = DataGridViewColumnSortMode.NotSortable;
+            //grdToaThuoc.Columns.Add(tenThuocColumn);
 
             DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
             col.Width = 130;
@@ -341,7 +350,7 @@ namespace UKPI.Presentation
             grdToaThuoc.Columns.Add(col);
             // grdToaThuoc.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
 
-
+            
 
             DataGridViewCheckBoxColumn baoHiemColumn = new DataGridViewCheckBoxColumn();
             baoHiemColumn.Width = 120;
@@ -886,7 +895,11 @@ namespace UKPI.Presentation
 
         void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-            string titleText = grdToaThuoc.Columns[8].HeaderText;
+            //string titleText = grdToaThuoc.Columns[8].HeaderText;
+            int columnIndex = 0;
+            currentCell = this.grdToaThuoc.CurrentCell;
+            if (currentCell != null)
+                columnIndex = currentCell.ColumnIndex;
             // Here try to add subscription for selected index changed event
             if (e.Control is ComboBox)
             {
@@ -906,7 +919,7 @@ namespace UKPI.Presentation
                 currentCell = this.grdToaThuoc.CurrentCell;
             }
 
-            if (titleText.Equals("Cách uống"))
+            if (columnIndex == 8)
             {
                 System.Windows.Forms.TextBox autoText = e.Control as System.Windows.Forms.TextBox;
                 if (autoText != null)
@@ -940,13 +953,114 @@ namespace UKPI.Presentation
             // Invoke method if the selection changed event occurs
             BeginInvoke(new MethodInvoker(EndEdit));
         }
+        void TinhTienThuoc()
+        {
+            if (currentCell != null)
+            {
+                int currentSoLuong = 0;
+                bool isValidMaThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value != null && this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString() != "";
+                bool isValidSoLuongThuoc = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null && this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString() != "";
+                if (isValidMaThuoc && isValidSoLuongThuoc)
+                {
+                    try
+                    {
+                        currentSoLuong = this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value != null ? int.Parse(this.grdToaThuoc[currentCell.ColumnIndex, currentCell.RowIndex].Value.ToString()) : 0;
+                        /*
+                        if (currentSoLuong <= 0)
+                        {
+                            MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        //check thuoc trong kho
+                        if (isValidSoLuongThuoc)
+                        {
+                            string maThuoc = this.grdToaThuoc[2, currentCell.RowIndex].Value.ToString();
+                            int soLuongThuocTrongKho = _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(maThuoc, currentSoLuong, cbbPhongKham.SelectedValue.ToString());
+                            if (soLuongThuocTrongKho < 0)
+                            {
+                                MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckSoLuongTrongKho"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                        }*/
+                    }
+                    catch
+                    {
+                        //MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //return;
+                        currentSoLuong = 0;
+                    }
+                }
 
+                decimal currentGia = 0;
+                try
+                {
+                    currentGia = this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value != null ? decimal.Parse(this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value.ToString()) : 0;
+
+                }
+                catch
+                {
+                    currentGia = 0;
+                }
+                /*
+                if (currentGia <= 0)
+                {
+                    MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidGia"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                */
+                decimal currentTienThuoc = currentSoLuong * currentGia;
+                // MessageBox.Show("CellChange" + currentTienThuoc.ToString());
+                this.grdToaThuoc[10, currentCell.RowIndex].Value = currentTienThuoc.ToString();
+                CalculateTotal();
+            }
+        }
         void EndEdit()
         {
             // Change the content of appropriate cell when selected index changes
             if (cbm != null)
             {
-                if (currentCell.ColumnIndex == 2)
+
+                if (currentCell != null && currentCell.ColumnIndex == 1)
+                {
+                    ThongTinThuoc ttt = cbm.SelectedItem as ThongTinThuoc;
+                    //DataRowView drv = cbm.SelectedItem as DataRowView;
+                    if (ttt != null)
+                    {
+                        if (currentCell.ColumnIndex == 1)
+                        {
+                            if (!danhSachThuoc.ContainsKey(currentCell.RowIndex) && !danhSachThuoc.ContainsValue(ttt.MedicineID))
+                            {
+                                danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            }
+                            else if (danhSachThuoc.ContainsKey(currentCell.RowIndex))
+                            {
+                                danhSachThuoc.Remove(currentCell.RowIndex);
+                                danhSachThuoc.Add(currentCell.RowIndex, ttt.MedicineID);
+                            }
+                            else
+                            {
+                                MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                           // this.grdToaThuoc[currentCell.ColumnIndex - 2, currentCell.RowIndex].Value = ttt.MedicineName;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.MedicineID;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.BaoHiem;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.TenDonViTinh;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 4, currentCell.RowIndex].Value = ttt.HamLuong;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.GiaDNBanVAT;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 7, currentCell.RowIndex].Value = ttt.CachUongThuoc;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 8, currentCell.RowIndex].Value = ttt.CachDungChiTiet;
+                            this.grdToaThuoc[currentCell.ColumnIndex + 10, currentCell.RowIndex].Value = ttt.MaChinhSachGia;
+                            TinhTienThuoc();
+                        }
+                        if (currentCell.ColumnIndex == 1 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
+                        {
+                            grdToaThuoc.Rows.Add(1);
+                        }
+
+                    }
+                }
+                if (currentCell != null && currentCell.ColumnIndex == 2)
                 {
                     ThongTinThuoc ttt = cbm.SelectedItem as ThongTinThuoc;
                     //DataRowView drv = cbm.SelectedItem as DataRowView;
@@ -970,7 +1084,7 @@ namespace UKPI.Presentation
                                 MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
-                            this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineName;
+                            this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineID;
                             this.grdToaThuoc[currentCell.ColumnIndex + 1, currentCell.RowIndex].Value = ttt.BaoHiem;
                             this.grdToaThuoc[currentCell.ColumnIndex + 2, currentCell.RowIndex].Value = ttt.TenDonViTinh;
                             this.grdToaThuoc[currentCell.ColumnIndex + 3, currentCell.RowIndex].Value = ttt.HamLuong;
@@ -978,7 +1092,9 @@ namespace UKPI.Presentation
                             this.grdToaThuoc[currentCell.ColumnIndex + 6, currentCell.RowIndex].Value = ttt.CachUongThuoc;
                             this.grdToaThuoc[currentCell.ColumnIndex + 7, currentCell.RowIndex].Value = ttt.CachDungChiTiet;
                             this.grdToaThuoc[currentCell.ColumnIndex + 9, currentCell.RowIndex].Value = ttt.MaChinhSachGia;
+                            TinhTienThuoc();
                         }
+                        
                         if (currentCell.ColumnIndex == 2 && (currentCell.RowIndex == grdToaThuoc.Rows.Count - 1))
                         {
                             grdToaThuoc.Rows.Add(1);
@@ -986,6 +1102,10 @@ namespace UKPI.Presentation
 
                     }
                 }
+               
+
+
+
 
             }
         }
