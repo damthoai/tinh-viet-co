@@ -73,7 +73,7 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.lblMaChinhSachGia);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 88);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 70);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             // 
@@ -111,7 +111,7 @@ namespace UKPI.Presentation
             // 
             this.btnLuuIn.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuuIn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuuIn.Location = new System.Drawing.Point(906, 53);
+            this.btnLuuIn.Location = new System.Drawing.Point(906, 48);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(86, 23);
             this.btnLuuIn.TabIndex = 78;
@@ -123,7 +123,7 @@ namespace UKPI.Presentation
             // 
             this.btnXoaThuoc.Image = global::UKPI.Properties.Resources.cancel_4;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(789, 53);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(789, 48);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
             this.btnXoaThuoc.Size = new System.Drawing.Size(111, 23);
             this.btnXoaThuoc.TabIndex = 76;
@@ -300,10 +300,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdToaThuoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdToaThuoc.Location = new System.Drawing.Point(4, 100);
+            this.grdToaThuoc.Location = new System.Drawing.Point(4, 82);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 299);
+            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 317);
             this.grdToaThuoc.TabIndex = 2;
             // 
             // frmChinhSachGiaChiTiet

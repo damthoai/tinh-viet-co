@@ -1079,7 +1079,8 @@
     <EmbeddedResource Include="Presentation\Reports\Report4.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Reports\Report5.rdlc">
+    <EmbeddedResource Include="Presentation\Reports\Report5.rdlc" />
+    <EmbeddedResource Include="Presentation\Reports\Report51.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\ReportInDonThuocBH.resx">

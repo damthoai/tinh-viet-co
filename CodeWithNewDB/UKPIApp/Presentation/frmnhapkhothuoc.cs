@@ -85,7 +85,7 @@ namespace UKPI.Presentation
             // _originalColumns = new DataGridViewColumn[grdStores.Columns.Count;
             // grdStores.Columns.CopyTo(_originalColumns, 0);
             // grdStores.Sorted += grdStores_Sorted;
-            if (_chotTonKhoDao.CheckChotTonDangHoatDong(System.Configuration.ConfigurationManager.AppSettings["RCLINIC00001"]) > 0)
+            if (_chotTonKhoDao.CheckChotTonDangHoatDong(cbbPhongKham.SelectedValue.ToString()) > 0)
             {
                 DialogResult result = MessageBox.Show("Kho đang được chốt tồn. Vui lòng thực hiện sau", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnLuuIn.Enabled = false;

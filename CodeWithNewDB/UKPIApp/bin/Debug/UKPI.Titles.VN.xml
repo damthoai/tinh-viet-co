@@ -3329,7 +3329,7 @@
   </Titles>
   <Titles>
     <Name>frmKhambenh.grdToanThuoc.colGia</Name>
-    <Value>Giá</Value>
+    <Value>Giá ST</Value>
   </Titles>
   <Titles>
     <Name>frmKhambenh.grdToanThuoc.colCachUong</Name>
@@ -3419,7 +3419,7 @@
   </Titles>
   <Titles>
     <Name>frmnhapkhothuoc.btnLuuIn</Name>
-    <Value>Lưu/In</Value>
+    <Value>Nhập kho</Value>
   </Titles>
   <Titles>
     <Name>frmnhapkhothuoc.btnDong</Name>

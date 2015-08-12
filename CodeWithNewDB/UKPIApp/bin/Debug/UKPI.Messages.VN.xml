@@ -1492,6 +1492,12 @@
     <Value>Thông tin giá thời điểm nhập không hợp lệ</Value>
   </Messages>
   <Messages>
+    <Name>messages.frmnhapkhothuoc.WarningMessage</Name>
+    <Value>Bạn có chắt chắn muốn nhập kho?</Value>
+  </Messages>
+  
+  
+  <Messages>
     <Name>messages.frmKhamBenh.CheckTrungLapThuoc1</Name>
     <Value>Thuốc đã được chọn. Bạn vui lòng chọn thuốc khác</Value>
   </Messages>

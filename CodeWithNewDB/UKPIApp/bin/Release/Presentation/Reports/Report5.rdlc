@@ -7,6 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>a23608e9-20f0-4e38-9aad-30faf1d11bc3</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -145,7 +146,7 @@
                   <TextRun>
                     <Value>ĐƠN THUỐC</Value>
                     <Style>
-                      <FontSize>22pt</FontSize>
+                      <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -156,7 +157,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Left>2.99875in</Left>
+            <Left>2.12375in</Left>
             <Height>0.54167in</Height>
             <Width>2.38542in</Width>
             <Style>
@@ -164,164 +165,6 @@
                 <Style>None</Style>
               </Border>
               <VerticalAlign>Middle</VerticalAlign>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox3">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Số: ...................................................</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>0.405in</Top>
-            <Left>5.50917in</Left>
-            <Height>0.25in</Height>
-            <Width>2.5in</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox15">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Ngày:............tháng...............năm .................</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>BÁC SĨ KHÁM BỆNH</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Họ tên:..............................................................</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>5.95361in</Top>
-            <Left>4.99917in</Left>
-            <Height>1.96556in</Height>
-            <Width>3.11458in</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -337,18 +180,20 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Họ Tên người bệnh:</Value>
-                        <Style />
+                        <Value>Họ Tên:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox4</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>0.1875in</Left>
+                <Top>0.09375in</Top>
+                <Left>0.07709in</Left>
                 <Height>0.25in</Height>
-                <Width>1.27083in</Width>
+                <Width>0.49305in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -367,17 +212,20 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=First(Fields!BenhNhan.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>1.52778in</Left>
+                <Top>0.09375in</Top>
+                <Left>0.61181in</Left>
                 <Height>0.25in</Height>
-                <Width>3.02431in</Width>
+                <Width>2.71737in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -397,15 +245,17 @@
                     <TextRuns>
                       <TextRun>
                         <Value>Tuổi:</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>4.59375in</Left>
+                <Top>0.09375in</Top>
+                <Left>3.38473in</Left>
                 <Height>0.25in</Height>
                 <Width>0.36458in</Width>
                 <ZIndex>2</ZIndex>
@@ -427,17 +277,20 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=First(Fields!NamSinh.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>5.04166in</Left>
+                <Top>0.09375in</Top>
+                <Left>3.80347in</Left>
                 <Height>0.25in</Height>
-                <Width>1in</Width>
+                <Width>0.52084in</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -456,18 +309,20 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Nam/Nữ</Value>
-                        <Style />
+                        <Value>Giới tính:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>6.09722in</Left>
+                <Top>0.09375in</Top>
+                <Left>4.37986in</Left>
                 <Height>0.25in</Height>
-                <Width>0.58333in</Width>
+                <Width>0.53541in</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -487,17 +342,20 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=First(Fields!GioiTinh.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox9</rd:DefaultName>
-                <Top>0.125in</Top>
-                <Left>6.75in</Left>
+                <Top>0.08889in</Top>
+                <Left>4.94306in</Left>
                 <Height>0.25in</Height>
-                <Width>1.12499in</Width>
+                <Width>0.67013in</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
@@ -517,17 +375,19 @@
                     <TextRuns>
                       <TextRun>
                         <Value>Địa Chỉ:</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox18</rd:DefaultName>
-                <Top>0.54167in</Top>
-                <Left>0.1875in</Left>
+                <Top>0.40834in</Top>
+                <Left>0.07709in</Left>
                 <Height>0.25in</Height>
-                <Width>0.58333in</Width>
+                <Width>0.49305in</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
@@ -547,86 +407,32 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=First(Fields!CongTy.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve">   </Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=First(Fields!BoPhan.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox19</rd:DefaultName>
-                <Top>0.54167in</Top>
-                <Left>0.78472in</Left>
+                <Top>0.40834in</Top>
+                <Left>0.61181in</Left>
                 <Height>0.25in</Height>
-                <Width>5.25694in</Width>
+                <Width>5.00138in</Width>
                 <ZIndex>7</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox20">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>ĐT:</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox20</rd:DefaultName>
-                <Top>0.54167in</Top>
-                <Left>6.09722in</Left>
-                <Height>0.25in</Height>
-                <Width>0.30208in</Width>
-                <ZIndex>8</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox21">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value />
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox21</rd:DefaultName>
-                <Top>0.54167in</Top>
-                <Left>6.44097in</Left>
-                <Height>0.25in</Height>
-                <Width>1.43403in</Width>
-                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -644,19 +450,21 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Chẩn đoán:</Value>
-                        <Style />
+                        <Value>Số thẻ Bảo hiểm Y tế:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>0.9375in</Top>
-                <Left>0.1875in</Left>
+                <Top>0.70833in</Top>
+                <Left>0.06667in</Left>
                 <Height>0.25in</Height>
-                <Width>0.76042in</Width>
-                <ZIndex>10</ZIndex>
+                <Width>1.14861in</Width>
+                <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -675,58 +483,26 @@
                     <TextRuns>
                       <TextRun>
                         <Value>=First(Fields!ChanDoanBanDau.Value, "DataSet1")</Value>
-                        <Style />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve">   </Value>
-                        <Style />
-                      </TextRun>
-                      <TextRun>
-                        <Value>=First(Fields!NhomBenh.Value, "DataSet1")</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox19</rd:DefaultName>
-                <Top>0.9375in</Top>
-                <Left>0.96181in</Left>
-                <Height>0.25in</Height>
-                <Width>6.91318in</Width>
-                <ZIndex>11</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox24">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Chỉ định dùng thuốc:</Value>
                         <Style>
-                          <FontWeight>Bold</FontWeight>
+                          <FontSize>8pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>Textbox24</rd:DefaultName>
-                <Top>1.34375in</Top>
-                <Left>0.1875in</Left>
+                <rd:DefaultName>Textbox19</rd:DefaultName>
+                <Top>0.71528in</Top>
+                <Left>1.28473in</Left>
                 <Height>0.25in</Height>
-                <Width>1.55208in</Width>
-                <ZIndex>12</ZIndex>
+                <Width>4.31457in</Width>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -741,18 +517,18 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>0.58681in</Width>
+                      <Width>0.61435in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.59027in</Width>
+                      <Width>3.71502in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>4.51041in</Width>
+                      <Width>1.20326in</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.26041in</Height>
+                      <Height>0.26562in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -763,12 +539,17 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
+                                      <Label>STT</Label>
                                       <Value>=RowNumber("DataSet1")</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value> .</Value>
-                                      <Style />
+                                      <Value> /</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -800,7 +581,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!TenThuoc.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style />
@@ -839,11 +622,15 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>Số lượng: </Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=Fields!SoLuong.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -868,7 +655,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.39062in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -909,8 +696,25 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
+                                      <Label>Liều Dùng</Label>
                                       <Value>=Fields!HamLuong.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve">
+</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>*Ghi chú:</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style />
@@ -954,11 +758,11 @@
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
-                <Top>1.66319in</Top>
-                <Left>0.1875in</Left>
-                <Height>0.51041in</Height>
-                <Width>7.68749in</Width>
-                <ZIndex>13</ZIndex>
+                <Top>1.41319in</Top>
+                <Left>0.06667in</Left>
+                <Height>0.65624in</Height>
+                <Width>5.53263in</Width>
+                <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
                     <Color>White</Color>
@@ -966,13 +770,92 @@
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox25">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!ChanDoanBanDau.Value, "DataSet1")</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve">   </Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!NhomBenh.Value, "DataSet1")</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox19</rd:DefaultName>
+                <Top>1.02431in</Top>
+                <Left>0.81389in</Left>
+                <Height>0.25in</Height>
+                <Width>4.78541in</Width>
+                <ZIndex>11</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox27">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Chẩn đoán:</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox22</rd:DefaultName>
+                <Top>1.02431in</Top>
+                <Left>0.075in</Left>
+                <Height>0.25in</Height>
+                <Width>0.69722in</Width>
+                <ZIndex>12</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.9675in</Top>
-            <Left>0.13417in</Left>
-            <Height>4.95833in</Height>
-            <Width>7.97958in</Width>
-            <ZIndex>3</ZIndex>
+            <Top>0.5925in</Top>
+            <Left>0.14458in</Left>
+            <Height>4.74332in</Height>
+            <Width>5.66041in</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -980,13 +863,13 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>7.96083in</Height>
+        <Height>5.35666in</Height>
         <Style />
       </Body>
-      <Width>8.27in</Width>
+      <Width>5.81541in</Width>
       <Page>
         <PageHeader>
-          <Height>1in</Height>
+          <Height>0.875in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -999,6 +882,7 @@
                     <TextRun>
                       <Value>Unilever Vietnam International Company Limited</Value>
                       <Style>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -1006,17 +890,95 @@
                       <Value>
 Lot A2-3, Cu Chi Northwest Industrial Zone, Tan An Hoi Village,
 Cu Chi District, Ho Chi Minh City</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.13417in</Top>
+              <Top>0.03417in</Top>
               <Left>0.13417in</Left>
-              <Height>0.73958in</Height>
-              <Width>4.03125in</Width>
+              <Height>0.79639in</Height>
+              <Width>3.36458in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox3">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Mã y tế:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Mạch:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Huyết áp:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Cân nặng:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Nhiệt độ:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.03417in</Top>
+              <Left>3.60292in</Left>
+              <Height>0.79639in</Height>
+              <Width>2.20207in</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1035,10 +997,138 @@ Cu Chi District, Ho Chi Minh City</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1in</Height>
+          <Height>1.9375in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
+            <Textbox Name="Textbox15">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Ngày:.</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Day(Today())</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>..tháng..</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Month(Today())</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>.. năm ..</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Year(Today())</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>...</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>BÁC SĨ KHÁM BỆNH</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Họ tên:..............................................................</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox15</rd:DefaultName>
+              <Top>0.31985in</Top>
+              <Left>3.06333in</Left>
+              <Height>0.96556in</Height>
+              <Width>2.69166in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
             <Textbox Name="Textbox16">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -1046,8 +1136,42 @@ Cu Chi District, Ho Chi Minh City</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Lời Dặn:</Value>
+                      <Value>Lời dặn của bác sĩ: TÁI KHÁM KHI HẾT THUỐC HOẶC KHI CÓ BẤT THƯỜNG</Value>
                       <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox16</rd:DefaultName>
+              <Top>0.06527in</Top>
+              <Left>0.13417in</Left>
+              <Height>0.19764in</Height>
+              <Width>5.66041in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Họ tên Bố/Mẹ bệnh nhân dưới 72 tháng tuổi: ..............................................................................................</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -1057,8 +1181,11 @@ Cu Chi District, Ho Chi Minh City</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Tái khám: Ngày tái khám .........../......../...............</Value>
-                      <Style />
+                      <Value />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
@@ -1066,18 +1193,22 @@ Cu Chi District, Ho Chi Minh City</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>(Khám lại xin mang theo đơn thuốc này)</Value>
-                      <Style />
+                      <Value>Tái khám vui lòng mang theo đơn này.</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
-              <Top>0.06944in</Top>
-              <Left>0.32167in</Left>
-              <Height>0.78097in</Height>
-              <Width>4.01042in</Width>
+              <Top>1.3616in</Top>
+              <Left>0.0925in</Left>
+              <Height>0.51014in</Height>
+              <Width>5.66041in</Width>
+              <ZIndex>2</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1095,8 +1226,8 @@ Cu Chi District, Ho Chi Minh City</Value>
             </Border>
           </Style>
         </PageFooter>
-        <PageHeight>11.69in</PageHeight>
-        <PageWidth>8.27in</PageWidth>
+        <PageHeight>8.27in</PageHeight>
+        <PageWidth>5.83in</PageWidth>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
