@@ -193,7 +193,7 @@ namespace UKPI.Presentation
                 }
                 else
                 {
-                    txtBenhNhan.BackColor = Color.Red;
+                   // txtBenhNhan.BackColor = Color.Red;
                     txtBenhNhan.Text = string.Empty;
                     txtMaNhanVien.Text = string.Empty;
                     txtMaBHYT.Text = string.Empty;
@@ -206,7 +206,7 @@ namespace UKPI.Presentation
             }
             else
             {
-                txtBenhNhan.BackColor = Color.Red;
+                //txtBenhNhan.BackColor = Color.Red;
                 txtBenhNhan.Text = string.Empty;
                 txtMaNhanVien.Text = string.Empty;
                 txtMaBHYT.Text = string.Empty;
@@ -667,13 +667,13 @@ namespace UKPI.Presentation
                         thongTinDonThuoc.SoLuong = checkSoluong;
                         if (checkSoluong <= 0 || _thongTinKhamBenhDao.CheckSoLuongThuocTrongKho(thongTinDonThuoc.MaThuoc, checkSoluong, cbbPhongKham.SelectedValue.ToString()) < 0)
                         {
-                            MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong") + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong") + "với thuốc "+ thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return null;
                         }
                     }
                     catch
                     {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong") + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidSoLuong") + "với thuốc " + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null;
                     }
                     string gia = (string)grdToaThuoc.Rows[i].Cells[7].FormattedValue;
@@ -685,7 +685,7 @@ namespace UKPI.Presentation
                     }
                     catch
                     {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidGia") + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidGia") + "với thuốc " + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null;
                     }
                     thongTinDonThuoc.CachUong = (string)grdToaThuoc.Rows[i].Cells[8].FormattedValue;
@@ -703,7 +703,7 @@ namespace UKPI.Presentation
                     }
                     else
                     {
-                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckTrungLapThuoc") + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckTrungLapThuoc") + "với thuốc " + thongTinDonThuoc.TenThuoc, clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null;
                     }
                     listDonThuoc.Add(thongTinDonThuoc);
