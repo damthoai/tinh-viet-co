@@ -716,8 +716,8 @@ namespace UKPI.Presentation
 
         private void btnXoaThuoc_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtMaNhanVien.Text))
-            {
+            //if (!string.IsNullOrEmpty(txtMaNhanVien.Text))
+            //{
                 for (int i = grdToaThuoc.Rows.Count - 1; i > 0; i--)
                 {
                     if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
@@ -725,7 +725,7 @@ namespace UKPI.Presentation
                         grdToaThuoc.Rows.RemoveAt(i);
                     }
                 }
-            }
+            //}
         }
 
         private void btnDong_Click(object sender, EventArgs e)
@@ -1039,7 +1039,7 @@ namespace UKPI.Presentation
                             }
                             else
                             {
-                                MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
                            // this.grdToaThuoc[currentCell.ColumnIndex - 2, currentCell.RowIndex].Value = ttt.MedicineName;
@@ -1081,7 +1081,7 @@ namespace UKPI.Presentation
                             }
                             else
                             {
-                                MessageBox.Show(clsResources.GetMessage("messages.frmKhambenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmnhapkhothuoc.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckTrungLapThuoc1"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
                             this.grdToaThuoc[currentCell.ColumnIndex - 1, currentCell.RowIndex].Value = ttt.MedicineID;
