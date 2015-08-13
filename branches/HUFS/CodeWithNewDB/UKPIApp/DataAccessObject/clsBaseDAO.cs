@@ -1469,6 +1469,35 @@ namespace UKPI.DataAccessObject
                 return false;
             }
         }
+
+        public bool BulkInsert(DataTable table, string tableName, SqlConnection con)
+        {
+            try
+            {
+                string conStr = System.Configuration.ConfigurationManager.AppSettings["ConnectionString"];
+                //using (SqlConnection con = new SqlConnection(conStr))
+                //{
+                    //con.Open();
+                    using (SqlBulkCopy copy = new SqlBulkCopy(con))
+                    {
+                        foreach (DataColumn column in table.Columns)
+                        {
+                            copy.ColumnMappings.Add(column.ColumnName, column.ColumnName);
+                        }
+                        copy.DestinationTableName = tableName;
+                        copy.WriteToServer(table);
+                    }
+                    //con.Close();
+                //}
+                return true;
+            }
+            catch (Exception ex)
+            {
+                //string strEx = ex.StackTrace + ex.Message;
+                log.Error(ex);
+                return false;
+            }
+        }
         public DataTable ConvertToDataTable<T>(IList<T> data)
         {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(typeof(T));

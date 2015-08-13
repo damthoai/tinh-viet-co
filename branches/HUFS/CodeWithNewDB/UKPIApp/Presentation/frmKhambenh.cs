@@ -298,8 +298,8 @@ namespace UKPI.Presentation
         private void BindMaICD()
         {
 
-            cbbMaICD.ValueMember = "DienGiai";
-            cbbMaICD.DisplayMember = "Ma";
+            cbbMaICD.ValueMember = "Ma";
+            cbbMaICD.DisplayMember = "DienGiai";
             cbbMaICD.DataSource = _shareEntityDao.LoadDanhSachMaICD();
         }
         private void BindGroup()
@@ -478,7 +478,7 @@ namespace UKPI.Presentation
 
         private void cbbMaICD_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtDienGiaiICD.Text = this.cbbMaICD.GetItemText(this.cbbMaICD.SelectedValue);
+            txtDienGiaiICD.Text = cbbMaICD.Text; //this.cbbMaICD.GetItemText(this.cbbMaICD.SelectedValue);
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
@@ -515,7 +515,7 @@ namespace UKPI.Presentation
                             grdToaThuoc.ReadOnly = true;
                             btnXacNhan.Enabled = false;
                             listCurrentTransactions = listTransaction;
-                            MessageBox.Show("Xác nhận thành công");
+                            //MessageBox.Show("Xác nhận thành công");
                             return;
                         }
                         else
@@ -730,6 +730,7 @@ namespace UKPI.Presentation
                     if ((bool)grdToaThuoc.Rows[i].Cells[0].FormattedValue)
                     {
                         grdToaThuoc.Rows.RemoveAt(i);
+                        CalculateTotal();
                     }
                 }
             //}

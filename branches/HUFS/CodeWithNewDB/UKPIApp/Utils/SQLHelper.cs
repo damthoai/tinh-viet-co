@@ -456,6 +456,18 @@ namespace UKPI.Utils
 			}
 		}
 
+        public static DataSet ExecuteDataset(SqlConnection cn,string connectionString, CommandType commandType, string commandText, params SqlParameter[] commandParameters)
+        {
+            //create & open a SqlConnection, and dispose of it after we are done.
+            //using (SqlConnection cn = new SqlConnection(connectionString))
+            //{
+            //    cn.Open();
+
+                //call the overload that takes a connection in place of the connection string
+                return ExecuteDataset(cn, commandType, commandText, commandParameters);
+           // }
+        }
+
 		/// <summary>
 		/// Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
 		/// the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 

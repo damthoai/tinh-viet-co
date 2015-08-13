@@ -33,6 +33,11 @@ namespace UKPI.Utils
             return SqlHelper.ExecuteDataset(GetConnectionString(), commandType, commandText, commandParameters).Tables[0];
         }
 
+        public static DataTable ExecuteDataTable(SqlConnection cn,CommandType commandType, string commandText, params SqlParameter[] commandParameters)
+        {
+            return SqlHelper.ExecuteDataset(cn,GetConnectionString(), commandType, commandText, commandParameters).Tables[0];
+        }
+
         public static DataSet ExecuteDataSet(CommandType commandType, string commandText, params SqlParameter[] commandParameters)
         {
             return SqlHelper.ExecuteDataset(GetConnectionString(), commandType, commandText, commandParameters);

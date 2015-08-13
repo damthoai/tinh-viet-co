@@ -137,54 +137,6 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>BẢNG KÊ CHI PHÍ KHÁM BỆNH, CHỬA BỆNH</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>TẠI TRẠM Y TẾ CÔNG TY</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Left>1.43625in</Left>
-            <Height>0.56125in</Height>
-            <Width>5.22917in</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle1">
             <ReportItems>
               <Textbox Name="Textbox4">
@@ -204,8 +156,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox4</rd:DefaultName>
-                <Top>0.15973in</Top>
-                <Left>0.15625in</Left>
+                <Top>0.53486in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <Style>
@@ -233,10 +185,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>1.60069in</Left>
+                <Top>0.84111in</Top>
+                <Left>1.44444in</Left>
                 <Height>0.25in</Height>
-                <Width>3.06598in</Width>
+                <Width>2.20139in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -263,10 +215,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>4.70625in</Left>
+                <Top>0.83903in</Top>
+                <Left>3.6625in</Left>
                 <Height>0.25in</Height>
-                <Width>0.70833in</Width>
+                <Width>0.78125in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -293,8 +245,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>5.44652in</Left>
+                <Top>0.84111in</Top>
+                <Left>4.47778in</Left>
                 <Height>0.25in</Height>
                 <Width>1.05278in</Width>
                 <ZIndex>3</ZIndex>
@@ -323,10 +275,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>6.5368in</Left>
+                <Top>0.84111in</Top>
+                <Left>5.56806in</Left>
                 <Height>0.25in</Height>
-                <Width>0.625in</Width>
+                <Width>0.73958in</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -353,8 +305,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox9</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>7.1875in</Left>
+                <Top>0.84111in</Top>
+                <Left>6.34375in</Left>
                 <Height>0.25in</Height>
                 <Width>0.82847in</Width>
                 <ZIndex>5</ZIndex>
@@ -383,9 +335,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox18</rd:DefaultName>
-                <Top>0.80556in</Top>
-                <Left>0.15625in</Left>
-                <Height>0.25in</Height>
+                <Top>1.1432in</Top>
+                <Left>0in</Left>
+                <Height>0.19792in</Height>
                 <Width>0.79167in</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
@@ -413,10 +365,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox19</rd:DefaultName>
-                <Top>0.80556in</Top>
-                <Left>0.98959in</Left>
-                <Height>0.25in</Height>
-                <Width>7.02638in</Width>
+                <Top>1.1432in</Top>
+                <Left>0.83334in</Left>
+                <Height>0.19792in</Height>
+                <Width>6.38263in</Width>
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
@@ -443,8 +395,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.11598in</Top>
-                <Left>0.15625in</Left>
+                <Top>1.39111in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>8</ZIndex>
@@ -475,9 +427,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox24</rd:DefaultName>
-                <Top>2.62223in</Top>
-                <Left>0.15625in</Left>
-                <Height>0.25in</Height>
+                <Top>2.88486in</Top>
+                <Left>0in</Left>
+                <Height>0.2in</Height>
                 <Width>1.98958in</Width>
                 <ZIndex>9</ZIndex>
                 <Style>
@@ -494,10 +446,10 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>2.55947in</Width>
+                      <Width>2.24637in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.63584in</Width>
+                      <Width>0.52959in</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>0.65946in</Width>
@@ -509,10 +461,10 @@
                       <Width>0.86432in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.77474in</Width>
+                      <Width>0.74974in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.79696in</Width>
+                      <Width>0.59756in</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>0.85807in</Width>
@@ -520,7 +472,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.46875in</Height>
+                      <Height>0.38542in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -533,6 +485,7 @@
                                     <TextRun>
                                       <Value>Nội dung</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -566,6 +519,7 @@
                                     <TextRun>
                                       <Value>Đvt</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -599,6 +553,7 @@
                                     <TextRun>
                                       <Value>Số lượng</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -630,9 +585,17 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Đơn giá(đồng)</Value>
+                                      <Value>Đơn giá </Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>(đồng)</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -663,9 +626,17 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Thành tiền (đồng)</Value>
+                                      <Value>Thành tiền </Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>(đồng)</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -696,9 +667,17 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Nguồn thanh toán(đồng)</Value>
+                                      <Value>Nguồn thanh toán </Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>(đồng)</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -727,7 +706,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.20833in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -739,7 +718,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -782,7 +763,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style />
@@ -823,7 +806,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -866,7 +851,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -909,7 +896,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -953,6 +942,7 @@
                                     <TextRun>
                                       <Value>Quỹ BHYT</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -998,6 +988,7 @@
                                     <TextRun>
                                       <Value>Khác</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -1043,6 +1034,7 @@
                                     <TextRun>
                                       <Value>Người bệnh</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -1080,7 +1072,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.20833in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1092,7 +1084,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(1)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1135,7 +1129,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(2)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1178,7 +1174,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(3)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1221,7 +1219,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(4)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1264,7 +1264,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(5)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1307,7 +1309,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(6)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1350,7 +1354,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>(7)</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1393,7 +1399,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1429,7 +1437,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.21875in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1441,7 +1449,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>1. Khám bệnh</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1485,7 +1495,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.21875in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1497,7 +1507,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>1</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1540,7 +1552,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>Lượt</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style />
@@ -1581,7 +1595,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>1</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1624,7 +1640,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>4000</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1667,7 +1685,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>4000</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1710,7 +1730,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>4000</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1753,7 +1775,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>0</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1796,7 +1820,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>0</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1832,7 +1858,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.19792in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1844,7 +1870,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>2. Thuốc:</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1888,7 +1916,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.26042in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1901,15 +1929,22 @@
                                     <TextRun>
                                       <Label>Stt</Label>
                                       <Value>=RowNumber("DataSet1")</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value> . </Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value>=(Fields!TenThuoc.Value, "DataSet1")</Value>
-                                      <Style />
+                                      <Value>=Fields!TenThuoc.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1956,7 +1991,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style />
@@ -2001,7 +2038,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!SoLuong.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2047,8 +2086,10 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=(Fields!Gia.Value, "DataSet1")</Value>
-                                      <Style />
+                                      <Value>=Fields!Gia.Value</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2094,8 +2135,10 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=(Fields!ThanhTien.Value, "DataSet1")</Value>
-                                      <Style />
+                                      <Value>=Fields!ThanhTien.Value</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2142,7 +2185,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2189,7 +2234,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2236,7 +2283,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2276,7 +2325,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.22917in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -2288,7 +2337,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>Cộng 2</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2339,7 +2390,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Sum(Fields!ThanhTien.Value, "DataSet1")</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2386,7 +2439,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2433,7 +2488,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2480,7 +2537,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2520,7 +2579,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.20833in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -2533,6 +2592,7 @@
                                     <TextRun>
                                       <Value>Tổng cộng</Value>
                                       <Style>
+                                        <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -2585,7 +2645,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2632,7 +2694,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2679,7 +2743,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2726,7 +2792,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value />
-                                      <Style />
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -2813,10 +2881,10 @@
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
-                <Top>2.94167in</Top>
-                <Left>0.15625in</Left>
-                <Height>2.46875in</Height>
-                <Width>7.85972in</Width>
+                <Top>3.1168in</Top>
+                <Left>0in</Left>
+                <Height>2.13542in</Height>
+                <Width>7.21596in</Width>
                 <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
@@ -2853,8 +2921,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox4</rd:DefaultName>
-                <Top>0.50348in</Top>
-                <Left>0.15625in</Left>
+                <Top>0.84111in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.41666in</Width>
                 <ZIndex>11</ZIndex>
@@ -3193,8 +3261,8 @@
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
-                <Top>1.11598in</Top>
-                <Left>2.05208in</Left>
+                <Top>1.39111in</Top>
+                <Left>1.89583in</Left>
                 <Height>0.25in</Height>
                 <Width>4.15417in</Width>
                 <ZIndex>12</ZIndex>
@@ -3231,8 +3299,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.43542in</Top>
-                <Left>0.15625in</Left>
+                <Top>1.69806in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>13</ZIndex>
@@ -3261,8 +3329,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.43542in</Top>
-                <Left>3.8125in</Left>
+                <Top>1.69806in</Top>
+                <Left>3.65625in</Left>
                 <Height>0.25in</Height>
                 <Width>0.85417in</Width>
                 <ZIndex>14</ZIndex>
@@ -3293,8 +3361,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.43542in</Top>
-                <Left>2.3in</Left>
+                <Top>1.69806in</Top>
+                <Left>2.14375in</Left>
                 <Height>0.25in</Height>
                 <Width>1.29167in</Width>
                 <ZIndex>15</ZIndex>
@@ -3325,8 +3393,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.43542in</Top>
-                <Left>4.7375in</Left>
+                <Top>1.69806in</Top>
+                <Left>4.58125in</Left>
                 <Height>0.25in</Height>
                 <Width>1.46875in</Width>
                 <ZIndex>16</ZIndex>
@@ -3355,8 +3423,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.72709in</Top>
-                <Left>0.15625in</Left>
+                <Top>1.98972in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>3.43542in</Width>
                 <ZIndex>17</ZIndex>
@@ -3385,8 +3453,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>1.72709in</Top>
-                <Left>3.8125in</Left>
+                <Top>1.98972in</Top>
+                <Left>3.65625in</Left>
                 <Height>0.25in</Height>
                 <Width>0.85417in</Width>
                 <ZIndex>18</ZIndex>
@@ -3463,8 +3531,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>2.01875in</Top>
-                <Left>0.15625in</Left>
+                <Top>2.28139in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>6.05in</Width>
                 <ZIndex>19</ZIndex>
@@ -3493,10 +3561,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>2.31042in</Top>
-                <Left>0.15625in</Left>
+                <Top>2.57931in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
-                <Width>7.85972in</Width>
+                <Width>7.21596in</Width>
                 <ZIndex>20</ZIndex>
                 <Style>
                   <Border>
@@ -3521,7 +3589,7 @@
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>.........................................................................................................................................................</Value>
+                        <Value>.........................................................................................................................</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -3529,10 +3597,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>5.45347in</Top>
-                <Left>0.1875in</Left>
+                <Top>5.28069in</Top>
+                <Left>0.03125in</Left>
                 <Height>0.32292in</Height>
-                <Width>7.82847in</Width>
+                <Width>7.31597in</Width>
                 <ZIndex>21</ZIndex>
                 <Style>
                   <Border>
@@ -3572,10 +3640,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>7.88194in</Top>
-                <Left>0.15625in</Left>
+                <Top>6.34041in</Top>
                 <Height>0.32292in</Height>
-                <Width>7.82847in</Width>
+                <Width>7.34722in</Width>
                 <ZIndex>22</ZIndex>
                 <Style>
                   <Border>
@@ -3615,10 +3682,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>7.49444in</Top>
-                <Left>0.15625in</Left>
+                <Top>5.95291in</Top>
                 <Height>0.32292in</Height>
-                <Width>7.82847in</Width>
+                <Width>7.34722in</Width>
                 <ZIndex>23</ZIndex>
                 <Style>
                   <Border>
@@ -3658,10 +3724,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>8.27431in</Top>
-                <Left>0.15625in</Left>
+                <Top>6.73277in</Top>
                 <Height>0.29514in</Height>
-                <Width>7.82847in</Width>
+                <Width>7.34722in</Width>
                 <ZIndex>24</ZIndex>
                 <Style>
                   <Border>
@@ -3721,10 +3786,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
-                <Top>8.64931in</Top>
-                <Left>0.15625in</Left>
+                <Top>7.10778in</Top>
+                <Left>0in</Left>
                 <Height>0.25in</Height>
-                <Width>7.82847in</Width>
+                <Width>7.34722in</Width>
                 <ZIndex>25</ZIndex>
                 <Style>
                   <Border>
@@ -3737,13 +3802,61 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
+              <Textbox Name="Textbox2">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>BẢNG KÊ CHI PHÍ KHÁM BỆNH, CHỬA BỆNH</Value>
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>TẠI TRẠM Y TẾ CÔNG TY</Value>
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox2</rd:DefaultName>
+                <Top>0.03056in</Top>
+                <Left>1.44444in</Left>
+                <Height>0.41541in</Height>
+                <Width>4.64584in</Width>
+                <ZIndex>26</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
             </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>0.61402in</Top>
-            <Left>0.13417in</Left>
-            <Height>8.9618in</Height>
-            <Width>8.08333in</Width>
-            <ZIndex>1</ZIndex>
+            <Top>0.01389in</Top>
+            <Left>0.04042in</Left>
+            <Height>7.39944in</Height>
+            <Width>7.34722in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3751,13 +3864,13 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>9.69in</Height>
+        <Height>7.42708in</Height>
         <Style />
       </Body>
-      <Width>8.27in</Width>
+      <Width>7.38764in</Width>
       <Page>
         <PageHeader>
-          <Height>1in</Height>
+          <Height>0.49791in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -3777,7 +3890,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Trạm y té công ty THHHQT Unilever VN</Value>
+                      <Value>Trạm y tế công ty THHHQT Unilever VN</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -3785,8 +3898,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.17167in</Top>
-              <Left>0.32167in</Left>
+              <Top>0.05in</Top>
+              <Left>0.03417in</Left>
               <Height>0.44791in</Height>
               <Width>2.82292in</Width>
               <Style>
@@ -3831,10 +3944,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.20917in</Top>
-              <Left>4.92208in</Left>
+              <Top>0.05in</Top>
+              <Left>4.27in</Left>
               <Height>0.44791in</Height>
-              <Width>2.82292in</Width>
+              <Width>3.11764in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -3854,7 +3967,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1in</Height>
+          <Height>0.82403in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -3883,9 +3996,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
               <Top>0.03402in</Top>
-              <Left>0.13417in</Left>
+              <Left>0.11542in</Left>
               <Height>0.78097in</Height>
-              <Width>1.96875in</Width>
+              <Width>2.04697in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -3921,7 +4034,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
               <Top>0.04306in</Top>
-              <Left>2.61334in</Left>
+              <Left>2.42584in</Left>
               <Height>0.78097in</Height>
               <Width>2.54167in</Width>
               <ZIndex>1</ZIndex>
@@ -3960,9 +4073,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
               <Top>0.03402in</Top>
-              <Left>6.04597in</Left>
+              <Left>5.24597in</Left>
               <Height>0.78097in</Height>
-              <Width>2.07292in</Width>
+              <Width>2.11666in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -3983,10 +4096,10 @@
         </PageFooter>
         <PageHeight>11.69in</PageHeight>
         <PageWidth>8.27in</PageWidth>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <LeftMargin>0.5in</LeftMargin>
+        <RightMargin>0.3in</RightMargin>
+        <TopMargin>0.5in</TopMargin>
+        <BottomMargin>0.5in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
