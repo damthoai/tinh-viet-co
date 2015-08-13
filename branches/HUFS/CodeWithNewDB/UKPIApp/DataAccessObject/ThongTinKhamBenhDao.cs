@@ -19,6 +19,7 @@ namespace UKPI.DataAccessObject
         private const string p_HUFS_TinhSoLuongThuocTrongKho = "p_HUFS_TinhSoLuongThuocTrongKho";
         private const string p_HUFS_insertDataForTransactionTheoKho = "p_HUFS_insertDataForTransactionTheoKho";
         private const string p_HUFS_ProcessTransactionXuatKho = "p_HUFS_ProcessTransactionXuatKho";
+        private const string p_HUFS_RollbackThongTinKhamBenh = "p_HUFS_RollbackThongTinKhamBenh";
 
         private const string p_HUFS_GetMaKhamBenhForPrint = "p_HUFS_GetMaKhamBenhForPrint";
         public ThongTinBenhNhan GetThongTinBenhNhan(string maBenhNhan)
@@ -268,7 +269,7 @@ namespace UKPI.DataAccessObject
             using (SqlConnection con = new SqlConnection(conStr))
             {
                 con.Open();
-                SqlTransaction transaction = con.BeginTransaction();
+                //SqlTransaction transaction = con.BeginTransaction();
                 try
                 {
                     SqlParameter[] Params = new SqlParameter[24];
@@ -316,11 +317,21 @@ namespace UKPI.DataAccessObject
                         }
                     }
 
-                    transaction.Commit();
+                    //transaction.Commit();
                 }
                 catch (Exception ex)
                 {
-                    transaction.Rollback();
+                    //transaction.Rollback();
+                    try
+                    {
+                        SqlParameter[] RollbackParams = new SqlParameter[1];
+                        RollbackParams[0] = new SqlParameter("@MaKhamBenh", thongTinKhamBenh.MaKhamBenh);
+                        DataServices.ExecuteStoredProcedure(CommandType.StoredProcedure, p_HUFS_RollbackThongTinKhamBenh, RollbackParams);
+                    }
+                    catch
+                    {
+
+                    }
                     log.Error(ex.Message, ex);
                     return null;
                 }
