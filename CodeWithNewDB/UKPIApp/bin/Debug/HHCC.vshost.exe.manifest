@@ -125,14 +125,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8515584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8458240">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>I5pwfFEL+enGANp0IHmEH1v6bDc=</dsig:DigestValue>
+        <dsig:DigestValue>bw3rkCaKcpNhyeNjgb7Vl9UVzsQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -964,22 +964,22 @@
       <dsig:DigestValue>kK6zh3bJcqjte/RwMcd8ZMcKqxg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.EN.xml" size="70536" writeableType="applicationData">
+  <file name="UKPI.Messages.EN.xml" size="70524" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>3o13OKVuqllB/hQOzSo7/q5Ng/c=</dsig:DigestValue>
+      <dsig:DigestValue>892CBAqP8Psr5Z2OaaPeLtT6hQY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="UKPI.Messages.VN.xml" size="54159" writeableType="applicationData">
+  <file name="UKPI.Messages.VN.xml" size="54147" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>i9LAZXeCZ0PUQUO80dlvrc0Xom8=</dsig:DigestValue>
+      <dsig:DigestValue>vZToRUSeNwjkE0VWFzXSWIUYfcQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UKPI.Titles.EN.xml" size="97021" writeableType="applicationData">
