@@ -321,7 +321,7 @@ namespace UKPI.Presentation
             this.grdToaThuoc.Location = new System.Drawing.Point(4, 36);
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
-            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 566);
+            this.grdToaThuoc.Size = new System.Drawing.Size(1203, 570);
             this.grdToaThuoc.TabIndex = 2;
             // 
             // TenThuoc
