@@ -485,8 +485,6 @@ namespace UKPI.Presentation
         {
             try
             {
-
-
                 if (string.IsNullOrEmpty(txtTongThanhTien.Text))
                 {
                     MessageBox.Show(clsResources.GetMessage("messages.frmKhamBenh.CheckValidDonThuoc"), clsResources.GetMessage("messages.frmKhamBenh.ErrorTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
