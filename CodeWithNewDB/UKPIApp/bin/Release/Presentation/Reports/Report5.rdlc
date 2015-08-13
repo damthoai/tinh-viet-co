@@ -7,7 +7,6 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>a23608e9-20f0-4e38-9aad-30faf1d11bc3</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -448,7 +447,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=First(Fields!ChanDoanBanDau.Value, "DataSet1")</Value>
+                        <Value>=First(Fields!MaBHYT.Value, "DataSet1")</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                         </Style>
@@ -549,6 +548,7 @@
                                       <Value>=Fields!TenThuoc.Value</Value>
                                       <Style>
                                         <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -587,7 +587,14 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Số lượng: </Value>
+                                      <Value>Số lượng:</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
                                       <Style>
                                         <FontSize>8pt</FontSize>
                                       </Style>
@@ -722,7 +729,7 @@
                 </TablixRowHierarchy>
                 <Top>1.87513in</Top>
                 <Left>0.06667in</Left>
-                <Height>0.55207in</Height>
+                <Height>0.55208in</Height>
                 <Width>5.00902in</Width>
                 <ZIndex>10</ZIndex>
                 <Style>
@@ -993,7 +1000,7 @@ Cu Chi District, Ho Chi Minh City</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.83424in</Height>
+          <Height>1.68007in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1053,20 +1060,6 @@ Cu Chi District, Ho Chi Minh City</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value />
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
                       <Value>BÁC SĨ KHÁM BỆNH</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
@@ -1115,7 +1108,7 @@ Cu Chi District, Ho Chi Minh City</Value>
               <rd:DefaultName>Textbox15</rd:DefaultName>
               <Top>0.31985in</Top>
               <Left>2.57931in</Left>
-              <Height>0.96556in</Height>
+              <Height>0.77856in</Height>
               <Width>2.69166in</Width>
               <Style>
                 <Border>
@@ -1202,7 +1195,7 @@ Cu Chi District, Ho Chi Minh City</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
-              <Top>1.3241in</Top>
+              <Top>1.1366in</Top>
               <Left>0.03417in</Left>
               <Height>0.51014in</Height>
               <Width>5.2368in</Width>

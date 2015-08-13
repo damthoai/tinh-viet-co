@@ -7,7 +7,6 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>a23608e9-20f0-4e38-9aad-30faf1d11bc3</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -157,7 +156,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox4</rd:DefaultName>
                 <Top>0.53486in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <Style>
@@ -336,7 +334,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox18</rd:DefaultName>
                 <Top>1.1432in</Top>
-                <Left>0in</Left>
                 <Height>0.19792in</Height>
                 <Width>0.79167in</Width>
                 <ZIndex>6</ZIndex>
@@ -396,7 +393,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>1.39111in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>8</ZIndex>
@@ -428,7 +424,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox24</rd:DefaultName>
                 <Top>2.88486in</Top>
-                <Left>0in</Left>
                 <Height>0.2in</Height>
                 <Width>1.98958in</Width>
                 <ZIndex>9</ZIndex>
@@ -2086,7 +2081,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Gia.Value</Value>
+                                      <Value>=Code.CustomFormatNumber(Fields!Gia.Value)</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -2135,7 +2130,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!ThanhTien.Value</Value>
+                                      <Value>=Code.CustomFormatNumber(Fields!ThanhTien.Value)</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -2389,7 +2384,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Sum(Fields!ThanhTien.Value, "DataSet1")</Value>
+                                      <Value>=Code.CustomFormatNumber(Sum(Fields!ThanhTien.Value, "DataSet1"))</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -2644,7 +2639,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value />
+                                      <Value>=Code.CustomFormatNumber(Sum(Fields!ThanhTien.Value, "DataSet1") + 4000)</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -2682,6 +2677,7 @@
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
+                            <rd:Selected>true</rd:Selected>
                           </CellContents>
                         </TablixCell>
                         <TablixCell>
@@ -2882,7 +2878,6 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <Top>3.1168in</Top>
-                <Left>0in</Left>
                 <Height>2.13542in</Height>
                 <Width>7.21596in</Width>
                 <ZIndex>10</ZIndex>
@@ -2922,7 +2917,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox4</rd:DefaultName>
                 <Top>0.84111in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.41666in</Width>
                 <ZIndex>11</ZIndex>
@@ -3300,7 +3294,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>1.69806in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>13</ZIndex>
@@ -3424,7 +3417,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>1.98972in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>3.43542in</Width>
                 <ZIndex>17</ZIndex>
@@ -3532,7 +3524,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>2.28139in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>6.05in</Width>
                 <ZIndex>19</ZIndex>
@@ -3562,7 +3553,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>2.57931in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>7.21596in</Width>
                 <ZIndex>20</ZIndex>
@@ -3787,7 +3777,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox22</rd:DefaultName>
                 <Top>7.10778in</Top>
-                <Left>0in</Left>
                 <Height>0.25in</Height>
                 <Width>7.34722in</Width>
                 <ZIndex>25</ZIndex>
@@ -4104,6 +4093,18 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <Code>public function CustomFormatNumber(input as Decimal)
+	if instr(Report.Globals!RenderFormat.Name, "EXCEL") &gt; 0 then
+		CustomFormatNumber = input
+		exit function
+	end if
+	dim inputString as String
+	inputString = FormatNumber(input, 2) '123,456.00
+	
+		
+	CustomFormatNumber = inputString 
+	
+end function</Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>f30257ae-a8d2-4a93-b420-50a9df29af74</rd:ReportID>
 </Report>

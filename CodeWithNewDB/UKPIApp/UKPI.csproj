@@ -1072,13 +1072,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\Report4.rdlc" />
-    <EmbeddedResource Include="Presentation\Reports\Report41.rdlc">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\Report5.rdlc" />
-    <EmbeddedResource Include="Presentation\Reports\Report51.rdlc">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\ReportInDonThuocBH.resx">
       <DependentUpon>ReportInDonThuocBH.cs</DependentUpon>
     </EmbeddedResource>

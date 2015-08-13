@@ -1638,5 +1638,3 @@ D:\Disk E\HTYT 1\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.cache
 D:\Disk E\HTYT 1\CodeWithNewDB\UKPIApp\obj\Debug\RdlCompile.compiled
 D:\Disk E\HTYT 1\CodeWithNewDB\UKPIApp\obj\Debug\HHCC.exe.manifest
 D:\Disk E\HTYT 1\CodeWithNewDB\UKPIApp\obj\Debug\HHCC.application
-D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report51.rdlc
-D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Debug\Presentation\Reports\Report41.rdlc
