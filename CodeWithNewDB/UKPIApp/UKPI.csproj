@@ -1071,12 +1071,8 @@
       <DependentUpon>frmChotTonKho.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Reports\Report1.rdlc">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Reports\Report2.rdlc" />
-    <EmbeddedResource Include="Presentation\Reports\Report3.rdlc" />
-    <EmbeddedResource Include="Presentation\Reports\Report4.rdlc">
+    <EmbeddedResource Include="Presentation\Reports\Report4.rdlc" />
+    <EmbeddedResource Include="Presentation\Reports\Report41.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Reports\Report5.rdlc" />
