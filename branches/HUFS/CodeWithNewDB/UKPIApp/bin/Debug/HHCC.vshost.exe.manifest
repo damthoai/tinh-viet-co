@@ -125,14 +125,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8458240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8441856">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bw3rkCaKcpNhyeNjgb7Vl9UVzsQ=</dsig:DigestValue>
+        <dsig:DigestValue>zXaLhx0PAxk/2xM3Ia0AKpIIxcU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

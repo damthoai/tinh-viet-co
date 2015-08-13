@@ -438,7 +438,7 @@ namespace UKPI.Presentation
                 decimal giaDNBan = decimal.Parse(txtGiaDNBan.Text);
                 decimal giaDNBanVAT = decimal.Parse(txtGiaDNBanVAT.Text);
                 decimal giaThucBan = decimal.Parse(txtGiaThucBan.Text);
-                if ((giaDNMua <= 0) || (giaDNMuaVAT <= 0) || (giaThucMua <= 0) || (giaDNBan <= 0) || (giaDNBanVAT <= 0) || (giaThucBan <= 0))
+                if ((giaDNMua < 0) || (giaDNMuaVAT < 0) || (giaThucMua < 0) || (giaDNBan < 0) || (giaDNBanVAT < 0) || (giaThucBan < 0))
                 {
                     result = false;
                 }

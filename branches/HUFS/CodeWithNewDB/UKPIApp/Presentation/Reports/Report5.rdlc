@@ -531,7 +531,7 @@
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
+                                <PaddingBottom>0.5pt</PaddingBottom>
                               </Style>
                             </Textbox>
                           </CellContents>
@@ -573,7 +573,7 @@
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
+                                <PaddingBottom>0.5pt</PaddingBottom>
                               </Style>
                             </Textbox>
                           </CellContents>
@@ -620,7 +620,7 @@
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
+                                <PaddingBottom>0.5pt</PaddingBottom>
                               </Style>
                             </Textbox>
                           </CellContents>

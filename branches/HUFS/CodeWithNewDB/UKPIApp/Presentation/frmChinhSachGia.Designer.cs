@@ -101,7 +101,7 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.Controls.Add(this.dtpThoiGianKetThuc);
             this.grpThongTinKhamBenh.Location = new System.Drawing.Point(4, 6);
             this.grpThongTinKhamBenh.Name = "grpThongTinKhamBenh";
-            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 140);
+            this.grpThongTinKhamBenh.Size = new System.Drawing.Size(1203, 119);
             this.grpThongTinKhamBenh.TabIndex = 0;
             this.grpThongTinKhamBenh.TabStop = false;
             // 
@@ -224,7 +224,7 @@ namespace UKPI.Presentation
             // 
             this.btnCapNhat.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(880, 163);
+            this.btnCapNhat.Location = new System.Drawing.Point(748, 131);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(86, 23);
             this.btnCapNhat.TabIndex = 79;
@@ -236,7 +236,7 @@ namespace UKPI.Presentation
             // 
             this.btnLuu.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLuu.Location = new System.Drawing.Point(788, 163);
+            this.btnLuu.Location = new System.Drawing.Point(656, 131);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(86, 23);
             this.btnLuu.TabIndex = 78;
@@ -246,11 +246,11 @@ namespace UKPI.Presentation
             // 
             // btnThemMoi
             // 
-            this.btnThemMoi.Image = global::UKPI.Properties.Resources.cancel_4;
+            this.btnThemMoi.Image = global::UKPI.Properties.Resources.save_as3;
             this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnThemMoi.Location = new System.Drawing.Point(696, 163);
+            this.btnThemMoi.Location = new System.Drawing.Point(558, 131);
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(86, 23);
+            this.btnThemMoi.Size = new System.Drawing.Size(92, 23);
             this.btnThemMoi.TabIndex = 76;
             this.btnThemMoi.Text = "Thêm mới";
             this.btnThemMoi.UseVisualStyleBackColor = true;
@@ -405,7 +405,7 @@ namespace UKPI.Presentation
             // 
             this.btnChiTietChinhSachGia.Image = global::UKPI.Properties.Resources.btnSearch;
             this.btnChiTietChinhSachGia.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnChiTietChinhSachGia.Location = new System.Drawing.Point(972, 163);
+            this.btnChiTietChinhSachGia.Location = new System.Drawing.Point(840, 131);
             this.btnChiTietChinhSachGia.Name = "btnChiTietChinhSachGia";
             this.btnChiTietChinhSachGia.Size = new System.Drawing.Size(166, 23);
             this.btnChiTietChinhSachGia.TabIndex = 80;
@@ -445,10 +445,10 @@ namespace UKPI.Presentation
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdChinhSachGia.DefaultCellStyle = dataGridViewCellStyle9;
-            this.grdChinhSachGia.Location = new System.Drawing.Point(4, 206);
+            this.grdChinhSachGia.Location = new System.Drawing.Point(4, 160);
             this.grdChinhSachGia.Name = "grdChinhSachGia";
             this.grdChinhSachGia.RowHeadersWidth = 39;
-            this.grdChinhSachGia.Size = new System.Drawing.Size(1203, 406);
+            this.grdChinhSachGia.Size = new System.Drawing.Size(1203, 476);
             this.grdChinhSachGia.TabIndex = 2;
             // 
             // IsChecked
