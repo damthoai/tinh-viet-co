@@ -129,6 +129,14 @@ namespace UKPI.Presentation
             //cbbKhuVuc.Enabled = false;
             //cbbPhongKham.Enabled = false;
             btnLuuIn.Enabled = false;
+
+            cbbMaICD.DropDownStyle = ComboBoxStyle.DropDown;
+            cbbMaICD.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cbbMaICD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+
+            cbbNhomBenh.DropDownStyle = ComboBoxStyle.DropDown;
+            cbbNhomBenh.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cbbNhomBenh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
         }
         private void LoadThongTinBenhNhan()
         {
@@ -193,6 +201,7 @@ namespace UKPI.Presentation
                 }
                 else
                 {
+                    /*
                    // txtBenhNhan.BackColor = Color.Red;
                     txtBenhNhan.Text = string.Empty;
                     txtMaNhanVien.Text = string.Empty;
@@ -202,11 +211,13 @@ namespace UKPI.Presentation
                     cbbBoPhan.SelectedIndex = -1;
                     cbbGioiTinh.SelectedIndex = -1;
                     cbbKhuVuc.SelectedIndex = -1;
+                     */
                 }
             }
             else
             {
                 //txtBenhNhan.BackColor = Color.Red;
+                /*
                 txtBenhNhan.Text = string.Empty;
                 txtMaNhanVien.Text = string.Empty;
                 txtMaBHYT.Text = string.Empty;
@@ -215,6 +226,7 @@ namespace UKPI.Presentation
                 cbbBoPhan.SelectedIndex = -1;
                 cbbGioiTinh.SelectedIndex = -1;
                 cbbKhuVuc.SelectedIndex = -1;
+                 */
             }
         }
         public void SetMaNhanVien(string maNhanVien)
