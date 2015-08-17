@@ -179,6 +179,11 @@ namespace UKPI.Presentation
         //}
         private void txtMaNhanVien_MouseLeave(object sender, EventArgs e)
         {
+            BindBenhNhanInfo();
+        }
+
+        private void BindBenhNhanInfo()
+        {
             string maNhanVien = txtMaNhanVien.Text;
             if (!string.IsNullOrEmpty(maNhanVien))
             {
@@ -1177,6 +1182,11 @@ namespace UKPI.Presentation
                 Log.Error(ex.Message, ex);
             }
 
+        }
+
+        private void txtMaNhanVien_Enter(object sender, EventArgs e)
+        {
+            BindBenhNhanInfo();
         }
 
 

@@ -2081,7 +2081,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Code.CustomFormatNumber(Fields!Gia.Value)</Value>
+                                      <Value>=FormatNumber(Fields!Gia.Value,2)</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -3315,7 +3315,26 @@
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>.............................................................................................................</Value>
+                        <Value>..............................</Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Code.CustomFormatNumber(Sum(Fields!ThanhTien.Value, "DataSet1") + 4000)</Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value>.</Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value>(đồng)</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>...............................</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -3734,7 +3753,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value />
+                        <Value>=First(Fields!MaBHYT.Value, "DataSet1")</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -4033,12 +4052,13 @@
 		exit function
 	end if
 	dim inputString as String
-	inputString = FormatNumber(input, 2) '123,456.00
+	inputString = FormatNumber(input, 0) '123,456.00
 	
 		
 	CustomFormatNumber = inputString 
 	
-end function</Code>
+end function
+</Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>f30257ae-a8d2-4a93-b420-50a9df29af74</rd:ReportID>
 </Report>

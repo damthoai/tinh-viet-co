@@ -24,8 +24,8 @@ namespace UKPI.Presentation.ApproveTSLookup
         public string maKhamBenh { get; set; }
         public ReportInDonThuocFull()
         {
-            InitializeComponent();
-            //BindReport();
+            //InitializeComponent();
+            BindReport();
         }
         public ReportInDonThuocFull(string maKhambenh)
         {
@@ -45,7 +45,7 @@ namespace UKPI.Presentation.ApproveTSLookup
 
                 var dir = System.IO.Directory.GetCurrentDirectory() + "\\Presentation\\reports\\";
 
-                localReport.ReportPath = dir + "Report5.rdlc";
+                localReport.ReportPath = dir + "ReportInDonThuocFull.rdlc";
 
                 DataTable _tbToaThuoc = new DataTable();
 
@@ -81,7 +81,7 @@ namespace UKPI.Presentation.ApproveTSLookup
 
             var dir = System.IO.Directory.GetCurrentDirectory() + "\\Presentation\\reports\\";
 
-            localReport.ReportPath = dir + "Report5.rdlc";
+            localReport.ReportPath = dir + "ReportInDonThuocFull.rdlc";
 
             DataTable _tbToaThuoc = new DataTable();
 
@@ -98,6 +98,9 @@ namespace UKPI.Presentation.ApproveTSLookup
 
             // Refresh the report
             reportViewer1.RefreshReport();
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)

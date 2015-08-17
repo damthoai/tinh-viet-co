@@ -106,14 +106,16 @@ namespace UKPI.Presentation
             this.btnTiepTucKham = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
             this.grdToaThuoc = new UKPI.Controls.DataGridView_RowNum();
+            this.htytDataSet1 = new UKPI.HTYTDataSet();
             this.grpThongTinKhamBenh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htytDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpThongTinKhamBenh
             // 
-            this.grpThongTinKhamBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpThongTinKhamBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.grpThongTinKhamBenh.Controls.Add(this.btnSearch);
             this.grpThongTinKhamBenh.Controls.Add(this.txtDienGiaiICD);
             this.grpThongTinKhamBenh.Controls.Add(this.cbbMaICD);
@@ -166,9 +168,9 @@ namespace UKPI.Presentation
             // btnSearch
             // 
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSearch.Location = new System.Drawing.Point(263, 75);
+            this.btnSearch.Location = new System.Drawing.Point(263, 71);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(26, 23);
+            this.btnSearch.Size = new System.Drawing.Size(46, 23);
             this.btnSearch.TabIndex = 76;
             this.btnSearch.Text = "...";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -181,7 +183,7 @@ namespace UKPI.Presentation
             this.txtDienGiaiICD.Multiline = true;
             this.txtDienGiaiICD.Name = "txtDienGiaiICD";
             this.txtDienGiaiICD.Size = new System.Drawing.Size(446, 66);
-            this.txtDienGiaiICD.TabIndex = 75;
+            this.txtDienGiaiICD.TabIndex = 12;
             // 
             // cbbMaICD
             // 
@@ -192,7 +194,7 @@ namespace UKPI.Presentation
             this.cbbMaICD.Location = new System.Drawing.Point(751, 19);
             this.cbbMaICD.Name = "cbbMaICD";
             this.cbbMaICD.Size = new System.Drawing.Size(446, 21);
-            this.cbbMaICD.TabIndex = 74;
+            this.cbbMaICD.TabIndex = 11;
             this.cbbMaICD.ValueMember = "Ma";
             this.cbbMaICD.SelectedIndexChanged += new System.EventHandler(this.cbbMaICD_SelectedIndexChanged);
             // 
@@ -256,7 +258,7 @@ namespace UKPI.Presentation
             this.chkQuyetDinh.Location = new System.Drawing.Point(495, 123);
             this.chkQuyetDinh.Name = "chkQuyetDinh";
             this.chkQuyetDinh.Size = new System.Drawing.Size(15, 14);
-            this.chkQuyetDinh.TabIndex = 67;
+            this.chkQuyetDinh.TabIndex = 14;
             this.chkQuyetDinh.UseVisualStyleBackColor = true;
             this.chkQuyetDinh.CheckedChanged += new System.EventHandler(this.chkQuyetDinh_CheckedChanged);
             // 
@@ -294,7 +296,7 @@ namespace UKPI.Presentation
             this.btnQuyetDinh.Location = new System.Drawing.Point(403, 119);
             this.btnQuyetDinh.Name = "btnQuyetDinh";
             this.btnQuyetDinh.Size = new System.Drawing.Size(86, 23);
-            this.btnQuyetDinh.TabIndex = 63;
+            this.btnQuyetDinh.TabIndex = 13;
             this.btnQuyetDinh.Text = "QĐ";
             this.btnQuyetDinh.UseVisualStyleBackColor = true;
             this.btnQuyetDinh.Click += new System.EventHandler(this.btnQuyetDinh_Click);
@@ -306,7 +308,7 @@ namespace UKPI.Presentation
             this.txtChanDoan.Multiline = true;
             this.txtChanDoan.Name = "txtChanDoan";
             this.txtChanDoan.Size = new System.Drawing.Size(265, 66);
-            this.txtChanDoan.TabIndex = 62;
+            this.txtChanDoan.TabIndex = 10;
             // 
             // cbbNhomBenh
             // 
@@ -317,7 +319,7 @@ namespace UKPI.Presentation
             this.cbbNhomBenh.Location = new System.Drawing.Point(403, 20);
             this.cbbNhomBenh.Name = "cbbNhomBenh";
             this.cbbNhomBenh.Size = new System.Drawing.Size(265, 21);
-            this.cbbNhomBenh.TabIndex = 61;
+            this.cbbNhomBenh.TabIndex = 9;
             this.cbbNhomBenh.ValueMember = "MaNhomBenh";
             this.cbbNhomBenh.SelectedIndexChanged += new System.EventHandler(this.cbbNhomBenh_SelectedIndexChanged);
             // 
@@ -384,7 +386,7 @@ namespace UKPI.Presentation
             this.cbbKhuVuc.Location = new System.Drawing.Point(101, 253);
             this.cbbKhuVuc.Name = "cbbKhuVuc";
             this.cbbKhuVuc.Size = new System.Drawing.Size(156, 21);
-            this.cbbKhuVuc.TabIndex = 54;
+            this.cbbKhuVuc.TabIndex = 8;
             this.cbbKhuVuc.ValueMember = "MaKhuVuc";
             // 
             // txtCongTy
@@ -392,7 +394,7 @@ namespace UKPI.Presentation
             this.txtCongTy.Location = new System.Drawing.Point(101, 227);
             this.txtCongTy.Name = "txtCongTy";
             this.txtCongTy.Size = new System.Drawing.Size(156, 20);
-            this.txtCongTy.TabIndex = 53;
+            this.txtCongTy.TabIndex = 7;
             // 
             // cbbBoPhan
             // 
@@ -403,7 +405,7 @@ namespace UKPI.Presentation
             this.cbbBoPhan.Location = new System.Drawing.Point(101, 200);
             this.cbbBoPhan.Name = "cbbBoPhan";
             this.cbbBoPhan.Size = new System.Drawing.Size(156, 21);
-            this.cbbBoPhan.TabIndex = 52;
+            this.cbbBoPhan.TabIndex = 6;
             this.cbbBoPhan.ValueMember = "MaBoPhan";
             // 
             // txtNamSinh
@@ -411,7 +413,7 @@ namespace UKPI.Presentation
             this.txtNamSinh.Location = new System.Drawing.Point(101, 175);
             this.txtNamSinh.Name = "txtNamSinh";
             this.txtNamSinh.Size = new System.Drawing.Size(156, 20);
-            this.txtNamSinh.TabIndex = 51;
+            this.txtNamSinh.TabIndex = 5;
             // 
             // cbbGioiTinh
             // 
@@ -422,7 +424,7 @@ namespace UKPI.Presentation
             this.cbbGioiTinh.Location = new System.Drawing.Point(101, 149);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
             this.cbbGioiTinh.Size = new System.Drawing.Size(156, 21);
-            this.cbbGioiTinh.TabIndex = 50;
+            this.cbbGioiTinh.TabIndex = 4;
             this.cbbGioiTinh.ValueMember = "Name";
             // 
             // txtMaBHYT
@@ -431,7 +433,7 @@ namespace UKPI.Presentation
             this.txtMaBHYT.Location = new System.Drawing.Point(101, 124);
             this.txtMaBHYT.Name = "txtMaBHYT";
             this.txtMaBHYT.Size = new System.Drawing.Size(156, 20);
-            this.txtMaBHYT.TabIndex = 49;
+            this.txtMaBHYT.TabIndex = 3;
             // 
             // lblKhuVuc
             // 
@@ -492,7 +494,8 @@ namespace UKPI.Presentation
             this.txtMaNhanVien.Location = new System.Drawing.Point(101, 73);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(156, 20);
-            this.txtMaNhanVien.TabIndex = 42;
+            this.txtMaNhanVien.TabIndex = 1;
+            this.txtMaNhanVien.Enter += new System.EventHandler(this.txtMaNhanVien_Enter);
             this.txtMaNhanVien.MouseLeave += new System.EventHandler(this.txtMaNhanVien_MouseLeave);
             // 
             // txtBenhNhan
@@ -500,7 +503,7 @@ namespace UKPI.Presentation
             this.txtBenhNhan.Location = new System.Drawing.Point(101, 99);
             this.txtBenhNhan.Name = "txtBenhNhan";
             this.txtBenhNhan.Size = new System.Drawing.Size(156, 20);
-            this.txtBenhNhan.TabIndex = 41;
+            this.txtBenhNhan.TabIndex = 2;
             // 
             // lblMaNhanVien
             // 
@@ -553,6 +556,7 @@ namespace UKPI.Presentation
             this.cbbPhongKham.DisplayMember = "RoomName";
             this.cbbPhongKham.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbPhongKham.DropDownWidth = 130;
+            this.cbbPhongKham.Enabled = false;
             this.cbbPhongKham.FormattingEnabled = true;
             this.cbbPhongKham.Location = new System.Drawing.Point(101, 20);
             this.cbbPhongKham.Name = "cbbPhongKham";
@@ -567,7 +571,7 @@ namespace UKPI.Presentation
             this.btnDong.Location = new System.Drawing.Point(1121, 304);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 23);
-            this.btnDong.TabIndex = 79;
+            this.btnDong.TabIndex = 20;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
@@ -579,7 +583,7 @@ namespace UKPI.Presentation
             this.btnLuuIn.Location = new System.Drawing.Point(843, 304);
             this.btnLuuIn.Name = "btnLuuIn";
             this.btnLuuIn.Size = new System.Drawing.Size(78, 23);
-            this.btnLuuIn.TabIndex = 78;
+            this.btnLuuIn.TabIndex = 17;
             this.btnLuuIn.Text = "Lưu";
             this.btnLuuIn.UseVisualStyleBackColor = true;
             this.btnLuuIn.Click += new System.EventHandler(this.btnLuuIn_Click);
@@ -591,7 +595,7 @@ namespace UKPI.Presentation
             this.btnXacNhan.Location = new System.Drawing.Point(740, 304);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(97, 23);
-            this.btnXacNhan.TabIndex = 77;
+            this.btnXacNhan.TabIndex = 16;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -603,7 +607,7 @@ namespace UKPI.Presentation
             this.btnXoaThuoc.Location = new System.Drawing.Point(630, 304);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
             this.btnXoaThuoc.Size = new System.Drawing.Size(104, 23);
-            this.btnXoaThuoc.TabIndex = 76;
+            this.btnXoaThuoc.TabIndex = 15;
             this.btnXoaThuoc.Text = "Xóa Thuốc";
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
             this.btnXoaThuoc.Click += new System.EventHandler(this.btnXoaThuoc_Click);
@@ -781,7 +785,7 @@ namespace UKPI.Presentation
             this.btnTiepTucKham.Location = new System.Drawing.Point(997, 304);
             this.btnTiepTucKham.Name = "btnTiepTucKham";
             this.btnTiepTucKham.Size = new System.Drawing.Size(117, 23);
-            this.btnTiepTucKham.TabIndex = 80;
+            this.btnTiepTucKham.TabIndex = 19;
             this.btnTiepTucKham.Text = "Tiếp Tục Khám";
             this.btnTiepTucKham.UseVisualStyleBackColor = true;
             this.btnTiepTucKham.Click += new System.EventHandler(this.btnTiepTucKham_Click);
@@ -793,7 +797,7 @@ namespace UKPI.Presentation
             this.btnIn.Location = new System.Drawing.Point(927, 304);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(64, 23);
-            this.btnIn.TabIndex = 81;
+            this.btnIn.TabIndex = 18;
             this.btnIn.Text = "In";
             this.btnIn.UseVisualStyleBackColor = true;
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
@@ -802,9 +806,9 @@ namespace UKPI.Presentation
             // 
             this.grdToaThuoc.AllowUserToAddRows = false;
             this.grdToaThuoc.AllowUserToDeleteRows = false;
-            this.grdToaThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdToaThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -826,8 +830,13 @@ namespace UKPI.Presentation
             this.grdToaThuoc.Name = "grdToaThuoc";
             this.grdToaThuoc.RowHeadersWidth = 39;
             this.grdToaThuoc.Size = new System.Drawing.Size(1203, 266);
-            this.grdToaThuoc.TabIndex = 2;
+            this.grdToaThuoc.TabIndex = 21;
             this.grdToaThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdToaThuoc_CellContentClick);
+            // 
+            // htytDataSet1
+            // 
+            this.htytDataSet1.DataSetName = "HTYTDataSet";
+            this.htytDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmKhambenh
             // 
@@ -850,6 +859,7 @@ namespace UKPI.Presentation
             this.grpThongTinKhamBenh.ResumeLayout(false);
             this.grpThongTinKhamBenh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdToaThuoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htytDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,5 +934,6 @@ namespace UKPI.Presentation
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnTiepTucKham;
         private System.Windows.Forms.Button btnIn;
+        private HTYTDataSet htytDataSet1;
     }
 }
