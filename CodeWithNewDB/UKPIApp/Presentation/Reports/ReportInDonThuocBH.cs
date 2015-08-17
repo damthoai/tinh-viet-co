@@ -36,36 +36,7 @@ namespace UKPI.Presentation.ApproveTSLookup
            
         }
 
-        private void BindReport()
-        {
-            try
-            {
-                this.reportViewer1.RefreshReport();
-                reportViewer1.Reset();
-                reportViewer1.ProcessingMode = ProcessingMode.Local;
-                LocalReport localReport = reportViewer1.LocalReport;
-                var dir = System.IO.Directory.GetCurrentDirectory() + "\\Presentation\\reports\\";
-
-                localReport.ReportPath = dir + "Report4.rdlc";
-
-                DataTable _tbToaThuoc = new DataTable();
-
-                _tbToaThuoc = _reportBo.GetToaThuocBh(this.maKhamBenh);
-
-                // Create a report data source for the sales order data
-                ReportDataSource dsToaThuoc = new ReportDataSource();
-                dsToaThuoc.Name = "DataSet1";
-                dsToaThuoc.Value = _tbToaThuoc;
-
-                localReport.DataSources.Add(dsToaThuoc);
-                // Refresh the report
-                reportViewer1.RefreshReport();
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex.Message, ex);
-            }
-        }
+       
 
 
 
@@ -80,7 +51,7 @@ namespace UKPI.Presentation.ApproveTSLookup
             LocalReport localReport = reportViewer1.LocalReport;
             var dir = System.IO.Directory.GetCurrentDirectory() + "\\Presentation\\reports\\";
 
-            localReport.ReportPath = dir + "Report4.rdlc";
+            localReport.ReportPath = dir + "ReportInDonThuoc.rdlc";
 
             DataTable _tbToaThuoc = new DataTable();
 
@@ -94,6 +65,7 @@ namespace UKPI.Presentation.ApproveTSLookup
             localReport.DataSources.Add(dsToaThuoc);
             // Refresh the report
             reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)

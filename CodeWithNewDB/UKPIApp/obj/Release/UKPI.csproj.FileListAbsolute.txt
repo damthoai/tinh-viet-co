@@ -189,3 +189,8 @@ D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\HHCC.application
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.Frmbaocaodieuchinhkho.resources
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.frmChotTonKhoDetail.resources
 D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\obj\Release\UKPI.Presentation.frmChotTonKho.resources
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Release\Microsoft.ReportViewer.Common.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Release\Microsoft.ReportViewer.WinForms.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Release\System.Xml.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Release\System.Xml.Linq.dll
+D:\Disk E\HTYT\CodeWithNewDB\UKPIApp\bin\Release\Microsoft.ReportViewer.WinForms.xml

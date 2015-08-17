@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.htytDataSet11 = new UKPI.HTYTDataSet1();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.htytDataSet11)).BeginInit();
             this.SuspendLayout();
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "UKPI.Presentation.Reports.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(984, 538);
-            this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // htytDataSet11
             // 
             this.htytDataSet11.DataSetName = "HTYTDataSet1";
             this.htytDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.Location = new System.Drawing.Point(13, 13);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(983, 537);
+            this.reportViewer1.TabIndex = 0;
             // 
             // ReportInDonThuocBH
             // 
@@ -67,8 +65,10 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private HTYTDataSet1 htytDataSet11;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+
+
 
     }
 }

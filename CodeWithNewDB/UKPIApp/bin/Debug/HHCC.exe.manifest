@@ -43,27 +43,22 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.SqlServer.Types" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -113,26 +108,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FPT.Component.ExcelPlus.dll" size="78848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FPT.Component.ExcelPlus.dll" size="78336">
       <assemblyIdentity name="FPT.Component.ExcelPlus" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/pIPf+GzPhd7V5MctZ+71AMn+jg=</dsig:DigestValue>
+        <dsig:DigestValue>CpeJBewGAjc0xzS97OWvEiRZZhE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8441856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HHCC.exe" size="8417280">
       <assemblyIdentity name="HHCC" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zXaLhx0PAxk/2xM3Ia0AKpIIxcU=</dsig:DigestValue>
+        <dsig:DigestValue>XMT1TtzDPg1UXQijVzEMjBj/vIw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -228,7 +223,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>l2YN6LMqC4CYeVgbIAQhpCzwg0A=</dsig:DigestValue>
+        <dsig:DigestValue>gzEoI+S6UkzOfJHjgrAT1tgvE2c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -240,7 +235,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6XIcbyw+lXk8wB0fczOB9hgULCo=</dsig:DigestValue>
+        <dsig:DigestValue>drC022TGTpsVey8uX+9TN/lDJfM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -252,7 +247,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>UNh20zjvU/C04Jzw27oicnnuJ3I=</dsig:DigestValue>
+        <dsig:DigestValue>weLNxBWI1CFnv1V36ELmNJPoqnE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -264,7 +259,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>K9oSvGMDOY8Hr83ZOJHHAkjDiZE=</dsig:DigestValue>
+        <dsig:DigestValue>tIkBPPBxm9RARuFeEnQomzVOHuw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
